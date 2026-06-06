@@ -18,7 +18,7 @@ faqs:
   -
     question: "这款脱毛机适合小型屠宰档口吗？"
     answer: "适合。55型或60型通常能满足小型档口，若有大鹅、番鸭或批发档口需求，可考虑65型或六滚筒机型。"
-relatedProducts: ["scalding-dehairing-integrated-machine", "multi-function-poultry-processing-machine"]
+relatedProducts: ["58-turbine-stainless-poultry-plucker", "six-roller-stainless-poultry-plucker", "nine-roller-stainless-poultry-plucker"]
 relatedArticles: ["how-to-choose-poultry-dehairing-machine"]
 seo:
   title: "滚筒式全自动家禽脱毛机｜洪弟机械"
