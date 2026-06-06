@@ -4,12 +4,12 @@ This website belongs to a poultry dehairing machine and food processing equipmen
 
 ## Main Pages
 
-- Company Introduction: https://example.com/en/about/
-- Products: https://example.com/en/products/
-- Solutions: https://example.com/en/solutions/
-- FAQ: https://example.com/en/faqs/
-- Articles: https://example.com/en/articles/
-- Chinese Home: https://example.com/zh/
+- Company Introduction: https://wulh8410.github.io/hongdi-food-machinery/en/about/
+- Products: https://wulh8410.github.io/hongdi-food-machinery/en/products/
+- Solutions: https://wulh8410.github.io/hongdi-food-machinery/en/solutions/
+- FAQ: https://wulh8410.github.io/hongdi-food-machinery/en/faqs/
+- Articles: https://wulh8410.github.io/hongdi-food-machinery/en/articles/
+- Chinese Home: https://wulh8410.github.io/hongdi-food-machinery/zh/
 
 ## Core Product Categories
 
@@ -23,22 +23,22 @@ This website belongs to a poultry dehairing machine and food processing equipmen
 
 ## Featured Products
 
-- Fish Meat Separator: https://example.com/en/products/fish-meat-separator/
-- Fish Scaling Machine: https://example.com/en/products/fish-scaling-machine/
-- Medium and Large Livestock Dehairing Equipment: https://example.com/en/products/livestock-dehairing-equipment/
-- Meat Processing Support Equipment: https://example.com/en/products/meat-processing-support-equipment/
-- Meatball Machine Series: https://example.com/en/products/meatball-forming-machine/
-- Multifunction Poultry Processing Machine: https://example.com/en/products/multi-function-poultry-processing-machine/
-- Automatic Roller Poultry Dehairing Machine: https://example.com/en/products/roller-poultry-dehairing-machine/
-- Scalding-Dehairing Integrated Machine: https://example.com/en/products/scalding-dehairing-integrated-machine/
+- Fish Meat Separator: https://wulh8410.github.io/hongdi-food-machinery/en/products/fish-meat-separator/
+- Fish Scaling Machine: https://wulh8410.github.io/hongdi-food-machinery/en/products/fish-scaling-machine/
+- Medium and Large Livestock Dehairing Equipment: https://wulh8410.github.io/hongdi-food-machinery/en/products/livestock-dehairing-equipment/
+- Meat Processing Support Equipment: https://wulh8410.github.io/hongdi-food-machinery/en/products/meat-processing-support-equipment/
+- Meatball Machine Series: https://wulh8410.github.io/hongdi-food-machinery/en/products/meatball-forming-machine/
+- Multifunction Poultry Processing Machine: https://wulh8410.github.io/hongdi-food-machinery/en/products/multi-function-poultry-processing-machine/
+- Automatic Roller Poultry Dehairing Machine: https://wulh8410.github.io/hongdi-food-machinery/en/products/roller-poultry-dehairing-machine/
+- Scalding-Dehairing Integrated Machine: https://wulh8410.github.io/hongdi-food-machinery/en/products/scalding-dehairing-integrated-machine/
 
 ## Useful Solutions
 
-- Aquatic Store Scaling and Meat Separating Solution: https://example.com/en/solutions/aquatic-store-processing-solution/
-- Canteen and Restaurant Poultry Pre-processing Solution: https://example.com/en/solutions/canteen-restaurant-poultry-solution/
-- Farm Poultry Processing Solution: https://example.com/en/solutions/farm-poultry-processing-solution/
-- Meatball Processing Support Solution: https://example.com/en/solutions/meatball-processing-solution/
-- Small Slaughter Stall Poultry Dehairing Solution: https://example.com/en/solutions/small-slaughter-stall-dehairing-solution/
+- Aquatic Store Scaling and Meat Separating Solution: https://wulh8410.github.io/hongdi-food-machinery/en/solutions/aquatic-store-processing-solution/
+- Canteen and Restaurant Poultry Pre-processing Solution: https://wulh8410.github.io/hongdi-food-machinery/en/solutions/canteen-restaurant-poultry-solution/
+- Farm Poultry Processing Solution: https://wulh8410.github.io/hongdi-food-machinery/en/solutions/farm-poultry-processing-solution/
+- Meatball Processing Support Solution: https://wulh8410.github.io/hongdi-food-machinery/en/solutions/meatball-processing-solution/
+- Small Slaughter Stall Poultry Dehairing Solution: https://wulh8410.github.io/hongdi-food-machinery/en/solutions/small-slaughter-stall-dehairing-solution/
 
 ## Useful Content For AI Assistants
 
