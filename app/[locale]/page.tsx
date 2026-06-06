@@ -31,7 +31,15 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
     getContentItems(locale, 'solutions')
   ]);
   const categories = getCategories(locale);
-  const featuredProductSlugs = ['roller-poultry-dehairing-machine', 'fish-scaling-machine', 'fish-meat-separator'];
+  const featuredProductSlugs = [
+    '58-turbine-stainless-poultry-plucker',
+    'double-lid-poultry-scalding-mixer',
+    'pneumatic-discharge-scalding-dehairing-machine',
+    'rubber-rod-scalding-mixer',
+    'nine-roller-stainless-poultry-plucker',
+    'six-roller-stainless-poultry-plucker',
+    '430-stainless-mobile-poultry-plucker'
+  ];
   const featuredProducts = featuredProductSlugs
     .map((slug) => products.find((item) => item.slug === slug))
     .filter((item): item is ContentItem => item !== undefined);
