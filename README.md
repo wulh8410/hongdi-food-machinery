@@ -2,6 +2,8 @@
 
 这是一个中英文双语食品机械工厂官网，使用 Next.js、TypeScript、Tailwind CSS、本地 Markdown/JSON 内容和静态导出模式构建，适合部署到 GitHub Pages，后期也可迁移到腾讯云静态托管或对象存储。
 
+完整开发需求与当前交付范围见：[`PROJECT_REQUIREMENTS.md`](./PROJECT_REQUIREMENTS.md)。
+
 ## 安装依赖
 
 ```bash
