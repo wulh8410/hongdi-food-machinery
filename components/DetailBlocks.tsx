@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { ContentItem, Locale } from '@/lib/types';
+import { assetPath } from '@/lib/asset';
 
 export function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -16,7 +17,7 @@ export function ProductGallery({ images = [], title = '' }: { images?: string[];
   return (
     <div className="rounded bg-white p-3 ring-1 ring-slate-200">
       {image ? (
-        <Image src={image} alt={title} width={900} height={675} className="aspect-[4/3] w-full rounded object-contain" />
+        <Image src={assetPath(image)} alt={title} width={900} height={675} className="aspect-[4/3] w-full rounded object-contain" />
       ) : (
         <div className="aspect-[4/3] rounded bg-gradient-to-br from-slate-200 to-slate-100" aria-label="Product image placeholder" />
       )}

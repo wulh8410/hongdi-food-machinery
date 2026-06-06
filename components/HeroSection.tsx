@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Locale, SiteConfig } from '@/lib/types';
+import { assetPath } from '@/lib/asset';
 
 export function HeroSection({ locale }: { locale: Locale; site: SiteConfig }) {
   const isZh = locale === 'zh';
@@ -23,7 +24,7 @@ export function HeroSection({ locale }: { locale: Locale; site: SiteConfig }) {
     <section className="relative overflow-hidden bg-[#061a31] text-white">
       <div className="relative min-h-[610px] md:min-h-[690px]">
         <Image
-          src="/images/hero/hongdi-factory-showroom-hero.png"
+          src={assetPath('/images/hero/hongdi-factory-showroom-hero.png')}
           alt={isZh ? '洪弟机械食品厂门面与食品加工设备展示' : 'Hongdi Machinery factory and food processing equipment display'}
           fill
           className="object-cover object-[58%_center]"

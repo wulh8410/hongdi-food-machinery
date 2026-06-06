@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Locale, SiteConfig } from '@/lib/types';
+import { assetPath } from '@/lib/asset';
 
 export function Footer({ locale, site }: { locale: Locale; site: SiteConfig }) {
   const isZh = locale === 'zh';
@@ -20,7 +21,7 @@ export function Footer({ locale, site }: { locale: Locale; site: SiteConfig }) {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-10 md:grid-cols-[1.5fr_0.8fr_0.8fr] md:px-6">
         <div>
           <div className="relative h-14 w-[260px] max-w-full rounded bg-white px-3 py-2">
-            <Image src="/images/factory/hongdi-logo-header.png" alt={site.name} fill className="object-contain object-left p-2" sizes="260px" />
+            <Image src={assetPath('/images/factory/hongdi-logo-header.png')} alt={site.name} fill className="object-contain object-left p-2" sizes="260px" />
           </div>
           <p className="mt-5 max-w-xl text-sm leading-7 text-slate-200">{site.companyPositioning}</p>
           <p className="mt-4 text-xs leading-6 text-slate-400">{site.address}</p>

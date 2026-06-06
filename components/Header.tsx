@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Locale, SiteConfig } from '@/lib/types';
+import { assetPath } from '@/lib/asset';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 const navKeys = ['products', 'solutions', 'faqs', 'articles', 'about', 'contact'];
@@ -11,7 +12,7 @@ export function Header({ locale, site, path }: { locale: Locale; site: SiteConfi
       <div className="flex w-full flex-nowrap items-center justify-between gap-3 py-2 pl-0 pr-3 md:pr-6">
         <Link href={`/${locale}`} className="relative block h-11 w-[190px] shrink-0 sm:w-[230px] lg:w-[270px]" aria-label={site.name}>
           <Image
-            src="/images/factory/hongdi-logo-header.png"
+            src={assetPath('/images/factory/hongdi-logo-header.png')}
             alt={site.name}
             fill
             className="object-contain object-left"

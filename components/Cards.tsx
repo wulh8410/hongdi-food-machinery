@@ -1,13 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { ContentItem, Locale } from '@/lib/types';
+import { assetPath } from '@/lib/asset';
 
 export function ProductCard({ locale, item }: { locale: Locale; item: ContentItem }) {
   const image = item.images?.[0];
   return (
     <article className="rounded border border-slate-200 bg-white p-5 shadow-soft">
       {image ? (
-        <Image src={image} alt={item.title} width={800} height={600} className="aspect-[4/3] w-full rounded bg-industrial-mist object-cover" />
+        <Image src={assetPath(image)} alt={item.title} width={800} height={600} className="aspect-[4/3] w-full rounded bg-industrial-mist object-cover" />
       ) : (
         <div className="aspect-[4/3] rounded bg-industrial-mist" />
       )}
