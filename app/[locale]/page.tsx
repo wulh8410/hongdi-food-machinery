@@ -35,10 +35,7 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
     '58-turbine-stainless-poultry-plucker',
     'double-lid-poultry-scalding-mixer',
     'pneumatic-discharge-scalding-dehairing-machine',
-    'rubber-rod-scalding-mixer',
-    'nine-roller-stainless-poultry-plucker',
-    'six-roller-stainless-poultry-plucker',
-    '430-stainless-mobile-poultry-plucker'
+    'rubber-rod-scalding-mixer'
   ];
   const featuredProducts = featuredProductSlugs
     .map((slug) => products.find((item) => item.slug === slug))
