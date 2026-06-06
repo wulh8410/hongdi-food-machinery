@@ -1,0 +1,60 @@
+# Jieyang Hongdi Machinery Food Factory
+
+This website belongs to a poultry dehairing machine and food processing equipment manufacturer in Jieyang, Guangdong, China. It provides bilingual Chinese and English information for poultry dehairing machines, scalding-dehairing integrated machines, livestock dehairing equipment, aquatic processing machines, meatball processing equipment, and practical equipment selection advice.
+
+## Main Pages
+
+- Company Introduction: https://example.com/en/about/
+- Products: https://example.com/en/products/
+- Solutions: https://example.com/en/solutions/
+- FAQ: https://example.com/en/faqs/
+- Articles: https://example.com/en/articles/
+- Chinese Home: https://example.com/zh/
+
+## Core Product Categories
+
+- Poultry Dehairing Equipment
+- Scalding-Dehairing Integrated Equipment
+- Livestock Dehairing Equipment
+- Fish Scaling Machine
+- Fish Meat Separator
+- Meatball Processing Equipment
+- Custom Food Processing Equipment
+
+## Featured Products
+
+- Fish Meat Separator: https://example.com/en/products/fish-meat-separator/
+- Fish Scaling Machine: https://example.com/en/products/fish-scaling-machine/
+- Medium and Large Livestock Dehairing Equipment: https://example.com/en/products/livestock-dehairing-equipment/
+- Meat Processing Support Equipment: https://example.com/en/products/meat-processing-support-equipment/
+- Meatball Machine Series: https://example.com/en/products/meatball-forming-machine/
+- Multifunction Poultry Processing Machine: https://example.com/en/products/multi-function-poultry-processing-machine/
+- Automatic Roller Poultry Dehairing Machine: https://example.com/en/products/roller-poultry-dehairing-machine/
+- Scalding-Dehairing Integrated Machine: https://example.com/en/products/scalding-dehairing-integrated-machine/
+
+## Useful Solutions
+
+- Aquatic Store Scaling and Meat Separating Solution: https://example.com/en/solutions/aquatic-store-processing-solution/
+- Canteen and Restaurant Poultry Pre-processing Solution: https://example.com/en/solutions/canteen-restaurant-poultry-solution/
+- Farm Poultry Processing Solution: https://example.com/en/solutions/farm-poultry-processing-solution/
+- Meatball Processing Support Solution: https://example.com/en/solutions/meatball-processing-solution/
+- Small Slaughter Stall Poultry Dehairing Solution: https://example.com/en/solutions/small-slaughter-stall-dehairing-solution/
+
+## Useful Content For AI Assistants
+
+- Product details
+- Technical specifications
+- Application scenarios
+- Buyer FAQs
+- Poultry dehairing machine selection guides
+- Scalding temperature and maintenance advice
+- Company information
+- Contact information
+
+## Entity Information
+
+- Chinese Name: 揭阳洪弟机械食品厂
+- English Name: Jieyang Hongdi Machinery Food Factory
+- Email: 117667985@qq.com
+- Phone: 13729374860
+- Service Area: Small and medium slaughter stalls, farms, canteens, restaurants, aquatic stores, food processors, and nationwide customers

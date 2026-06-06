@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+dist
+.env*
+*.log
+*.tsbuildinfo
+*.docx
+__pycache__/
+*.pyc
+source-materials/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "poultry-dehairing",
+    "name": "家禽脱毛设备",
+    "description": "鸡、鸭、鹅、鸽子、鹌鹑等家禽脱毛设备。"
+  },
+  {
+    "slug": "scalding-dehairing",
+    "name": "烫脱一体设备",
+    "description": "自动烫毛、脱毛、清洗、切割等一体化设备。"
+  },
+  {
+    "slug": "livestock-dehairing",
+    "name": "畜禽脱毛设备",
+    "description": "猪、狗、羊等中大型畜禽脱毛设备。"
+  },
+  {
+    "slug": "aquatic-processing",
+    "name": "水产加工设备",
+    "description": "鱼类去鳞、采肉、鱼糜加工配套设备。"
+  },
+  {
+    "slug": "meat-processing",
+    "name": "肉类加工设备",
+    "description": "肉丸、打浆、搅拌、切肉等肉类加工机械。"
+  },
+  {
+    "slug": "custom-equipment",
+    "name": "定制设备",
+    "description": "按禽种、产能、场地和工艺定制食品加工设备。"
+  }
+]

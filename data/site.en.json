@@ -1,0 +1,31 @@
+{
+  "name": "Jieyang Hongdi Machinery Food Factory",
+  "shortName": "Hongdi Machinery",
+  "baseUrl": "https://example.com",
+  "locale": "en",
+  "alternateLocale": "zh",
+  "companyPositioning": "A direct manufacturer of poultry dehairing machines, scalding-dehairing integrated machines, aquatic processing equipment, and meat processing support machines.",
+  "description": "Jieyang Hongdi Machinery has focused on poultry dehairing and food processing equipment for more than ten years, supplying roller poultry dehairing machines, scalding-dehairing machines, livestock dehairing equipment, fish scaling and meat separating machines, and meatball processing equipment.",
+  "keywords": [
+    "poultry dehairing machine",
+    "chicken duck plucker",
+    "scalding dehairing machine",
+    "food processing equipment",
+    "Jieyang food machinery manufacturer",
+    "slaughter dehairing equipment"
+  ],
+  "phone": "13729374860",
+  "wechat": "Add the phone number on WeChat",
+  "email": "117667985@qq.com",
+  "address": "Beside National Road 206, Gangmei Village, Quxi, Jiedong District, Jieyang, Guangdong, China",
+  "serviceArea": "Small and medium slaughter stalls, farms, canteens, restaurants, aquatic stores, food processors, and nationwide customers",
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "solutions": "Solutions",
+    "faqs": "FAQ",
+    "articles": "Articles",
+    "about": "About",
+    "contact": "Contact"
+  }
+}

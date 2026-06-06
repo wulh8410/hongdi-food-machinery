@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f9fb;
+  color: #182333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.content h2 {
+  margin-top: 2rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f2742;
+}
+
+.content h3 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f5f9f;
+}
+
+.content p {
+  margin-top: 0.85rem;
+  line-height: 1.8;
+  color: #344255;
+}
+
+.content ul {
+  margin-top: 0.85rem;
+  padding-left: 1.25rem;
+  color: #344255;
+}
+
+.content li {
+  margin-top: 0.35rem;
+}

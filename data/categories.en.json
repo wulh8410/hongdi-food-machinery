@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "poultry-dehairing",
+    "name": "Poultry Dehairing Equipment",
+    "description": "Dehairing equipment for chickens, ducks, geese, pigeons, quails, and other poultry."
+  },
+  {
+    "slug": "scalding-dehairing",
+    "name": "Scalding-Dehairing Equipment",
+    "description": "Integrated machines for scalding, dehairing, washing, and cutting."
+  },
+  {
+    "slug": "livestock-dehairing",
+    "name": "Livestock Dehairing Equipment",
+    "description": "Dehairing equipment for pigs, dogs, sheep, and larger livestock."
+  },
+  {
+    "slug": "aquatic-processing",
+    "name": "Aquatic Processing Equipment",
+    "description": "Fish scaling, fish meat separating, and fish paste processing equipment."
+  },
+  {
+    "slug": "meat-processing",
+    "name": "Meat Processing Equipment",
+    "description": "Meatball forming, beating, mixing, cutting, and support machines."
+  },
+  {
+    "slug": "custom-equipment",
+    "name": "Custom Equipment",
+    "description": "Custom food processing equipment by species, capacity, site, and process."
+  }
+]
