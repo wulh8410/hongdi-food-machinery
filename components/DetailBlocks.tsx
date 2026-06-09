@@ -103,7 +103,9 @@ export function ContactBlock({
           <p className="text-sm font-semibold uppercase tracking-[0.16em] text-industrial-orange">
             {isZh ? '设备选型咨询' : 'Equipment Consultation'}
           </p>
-          <h2 className="mt-3 text-2xl font-bold md:text-3xl">{isZh ? '需要家禽脱毛、水产加工或配套设备建议？' : 'Need advice for poultry or aquatic processing equipment?'}</h2>
+          <h2 className="mt-3 text-2xl font-bold md:text-3xl">
+            {isZh ? '需要家禽脱毛、水产加工或配套设备建议？' : 'Need advice for poultry or aquatic processing equipment?'}
+          </h2>
           <p className="mt-3 text-sm leading-7 text-slate-200 md:text-base">
             {isZh
               ? '提供加工物料、单日产量、现场电压、场地尺寸和前后工序信息，我们可以先给出适合的设备型号与配置建议。'
@@ -123,6 +125,48 @@ export function ContactBlock({
             <p className="text-slate-300">{isZh ? '微信' : 'WeChat'}</p>
             <p className="font-bold">{wechat}</p>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function BrandConsultation({
+  locale,
+  phone,
+  wechat,
+  address
+}: {
+  locale: Locale;
+  phone: string;
+  wechat: string;
+  address: string;
+}) {
+  const isZh = locale === 'zh';
+
+  return (
+    <section className="mt-8 rounded border border-industrial-blue/20 bg-slate-50 p-6">
+      <p className="text-sm font-semibold text-industrial-orange">{isZh ? '厂家选型咨询' : 'Factory Consultation'}</p>
+      <h2 className="mt-2 text-xl font-bold text-industrial-navy">
+        {isZh ? '联系洪弟机械食品厂获取设备选型建议' : 'Contact Hongdi Machinery for equipment selection advice'}
+      </h2>
+      <p className="mt-3 leading-8 text-slate-700">
+        {isZh
+          ? '如果你正在判断家禽脱毛机、泡水机、搅拌机或泡水脱毛一体机的型号配置，可以提供禽种、单日产量、场地尺寸、电压和现有工序，由厂家结合实际工况给出初步建议。'
+          : 'Share material type, daily capacity, site size, voltage, and process requirements for an initial equipment recommendation.'}
+      </p>
+      <div className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-3">
+        <div className="rounded bg-white p-4 ring-1 ring-slate-200">
+          <p className="text-slate-500">{isZh ? '电话' : 'Phone'}</p>
+          <p className="mt-1 font-bold text-industrial-navy">{phone}</p>
+        </div>
+        <div className="rounded bg-white p-4 ring-1 ring-slate-200">
+          <p className="text-slate-500">{isZh ? '微信' : 'WeChat'}</p>
+          <p className="mt-1 font-bold text-industrial-navy">{wechat}</p>
+        </div>
+        <div className="rounded bg-white p-4 ring-1 ring-slate-200">
+          <p className="text-slate-500">{isZh ? '地址' : 'Address'}</p>
+          <p className="mt-1 font-bold text-industrial-navy">{address}</p>
         </div>
       </div>
     </section>

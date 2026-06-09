@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { RelatedLinks, Section } from '@/components/DetailBlocks';
+import { BrandConsultation, RelatedLinks, Section } from '@/components/DetailBlocks';
 import { PageShell } from '@/components/PageShell';
 import { SchemaJsonLd } from '@/components/SchemaJsonLd';
 import { getContentItem, getContentItems, getContentSlugs, getSiteConfig } from '@/lib/content';
@@ -21,8 +21,10 @@ export async function generateMetadata({ params }: { params: { locale: Locale; s
 export default async function ArticlePage({ params }: { params: { locale: Locale; slug: string } }) {
   const item = await getContentItem(params.locale, 'articles', params.slug).catch(() => null);
   if (!item) notFound();
+
   const site = getSiteConfig(params.locale);
   const [products, faqs] = await Promise.all([getContentItems(params.locale, 'products'), getContentItems(params.locale, 'faqs')]);
+
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/articles/${params.slug}`}>
       <SchemaJsonLd data={articleSchema(params.locale, item)} />
@@ -35,7 +37,14 @@ export default async function ArticlePage({ params }: { params: { locale: Locale
         <div className="content mt-8 rounded border border-slate-200 bg-white p-6" dangerouslySetInnerHTML={{ __html: item.bodyHtml }} />
         <RelatedLinks locale={params.locale} title={params.locale === 'zh' ? '关联产品' : 'Related Products'} section="products" slugs={item.relatedProducts} items={products} />
         <RelatedLinks locale={params.locale} title={params.locale === 'zh' ? '关联 FAQ' : 'Related FAQ'} section="faqs" slugs={item.relatedFaqs} items={faqs} />
-        <Section title={params.locale === 'zh' ? '推荐阅读' : 'Recommended Reading'}><p className="text-sm text-slate-600">{params.locale === 'zh' ? '可继续浏览产品详情、FAQ 和解决方案页面，形成完整采购判断。' : 'Continue with product details, FAQ, and solution pages for complete buying context.'}</p></Section>
+        <Section title={params.locale === 'zh' ? '推荐阅读' : 'Recommended Reading'}>
+          <p className="text-sm text-slate-600">
+            {params.locale === 'zh'
+              ? '可继续浏览产品详情、FAQ 和解决方案页面，形成完整采购判断。'
+              : 'Continue with product details, FAQ, and solution pages for complete buying context.'}
+          </p>
+        </Section>
+        <BrandConsultation locale={params.locale} phone={site.phone} wechat={site.wechat} address={site.address} />
       </article>
     </PageShell>
   );
