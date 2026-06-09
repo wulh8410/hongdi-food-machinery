@@ -1,21 +1,21 @@
 ---
-title: "哪些客户适合选择洪弟机械脱毛设备？"
-slug: "who-should-buy-hongdi-dehairing-machine"
-question: "哪些客户适合选择洪弟机械脱毛设备？"
-answer: "更适合中小型屠宰档口、养殖场、食堂、餐饮门店和需要高性价比设备的食品加工客户。"
-description: "更适合中小型屠宰档口、养殖场、食堂、餐饮门店和需要高性价比设备的食品加工客户。"
+title: "电机、皮带、轴承平时要检查什么？"
+slug: "motor-belt-bearing-check"
+question: "电机、皮带、轴承平时要检查什么？"
+answer: "重点检查电机是否异常发热、皮带是否松弛打滑、轴承是否异响缺油、螺丝是否松动。"
+description: "重点检查电机是否异常发热、皮带是否松弛打滑、轴承是否异响缺油、螺丝是否松动。"
 date: "2026-06-09"
 updated: "2026-06-09"
 relatedProducts: ["58-turbine-stainless-poultry-plucker", "rubber-rod-scalding-mixer", "six-roller-stainless-poultry-plucker"]
 relatedArticles: ["how-to-choose-poultry-dehairing-machine", "small-slaughter-stall-equipment-selection", "58-vs-6-roller-vs-9-roller-poultry-plucker", "poultry-dehairing-machine-not-clean-reasons", "scalding-temperature-for-poultry-dehairing"]
 relatedSolutions: ["small-slaughter-stall-dehairing-solution", "farm-poultry-processing-solution", "canteen-restaurant-poultry-solution"]
 seo:
-  title: "哪些客户适合选择洪弟机械脱毛设备？｜洪弟机械 FAQ"
-  description: "更适合中小型屠宰档口、养殖场、食堂、餐饮门店和需要高性价比设备的食品加工客户。"
+  title: "电机、皮带、轴承平时要检查什么？｜洪弟机械 FAQ"
+  description: "重点检查电机是否异常发热、皮带是否松弛打滑、轴承是否异响缺油、螺丝是否松动。"
 ---
 
 ## 详细说明
-更适合中小型屠宰档口、养殖场、食堂、餐饮门店和需要高性价比设备的食品加工客户。
+重点检查电机是否异常发热、皮带是否松弛打滑、轴承是否异响缺油、螺丝是否松动。
 
 采购时不要只看单一参数，应结合禽种、产量、泡水条件、场地、电压和售后配件综合判断。
 

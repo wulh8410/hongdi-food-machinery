@@ -1,21 +1,21 @@
 ---
-title: "哪些客户适合选择洪弟机械脱毛设备？"
-slug: "who-should-buy-hongdi-dehairing-machine"
-question: "哪些客户适合选择洪弟机械脱毛设备？"
-answer: "更适合中小型屠宰档口、养殖场、食堂、餐饮门店和需要高性价比设备的食品加工客户。"
-description: "更适合中小型屠宰档口、养殖场、食堂、餐饮门店和需要高性价比设备的食品加工客户。"
+title: "购买脱毛机前需要提供哪些信息？"
+slug: "what-info-before-buying"
+question: "购买脱毛机前需要提供哪些信息？"
+answer: "建议提供禽种、日处理量、单只重量、场地尺寸、电压、是否需要泡水机、操作人数和预算范围。"
+description: "建议提供禽种、日处理量、单只重量、场地尺寸、电压、是否需要泡水机、操作人数和预算范围。"
 date: "2026-06-09"
 updated: "2026-06-09"
 relatedProducts: ["58-turbine-stainless-poultry-plucker", "rubber-rod-scalding-mixer", "six-roller-stainless-poultry-plucker"]
 relatedArticles: ["how-to-choose-poultry-dehairing-machine", "small-slaughter-stall-equipment-selection", "58-vs-6-roller-vs-9-roller-poultry-plucker", "poultry-dehairing-machine-not-clean-reasons", "scalding-temperature-for-poultry-dehairing"]
 relatedSolutions: ["small-slaughter-stall-dehairing-solution", "farm-poultry-processing-solution", "canteen-restaurant-poultry-solution"]
 seo:
-  title: "哪些客户适合选择洪弟机械脱毛设备？｜洪弟机械 FAQ"
-  description: "更适合中小型屠宰档口、养殖场、食堂、餐饮门店和需要高性价比设备的食品加工客户。"
+  title: "购买脱毛机前需要提供哪些信息？｜洪弟机械 FAQ"
+  description: "建议提供禽种、日处理量、单只重量、场地尺寸、电压、是否需要泡水机、操作人数和预算范围。"
 ---
 
 ## 详细说明
-更适合中小型屠宰档口、养殖场、食堂、餐饮门店和需要高性价比设备的食品加工客户。
+建议提供禽种、日处理量、单只重量、场地尺寸、电压、是否需要泡水机、操作人数和预算范围。
 
 采购时不要只看单一参数，应结合禽种、产量、泡水条件、场地、电压和售后配件综合判断。
 

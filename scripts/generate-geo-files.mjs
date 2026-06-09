@@ -52,8 +52,70 @@ const zhSite = JSON.parse(fs.readFileSync(path.join(root, 'data', 'site.zh.json'
 const enSite = JSON.parse(fs.readFileSync(path.join(root, 'data', 'site.en.json'), 'utf8'));
 const products = slugs('en', 'products').map((slug) => `- ${readTitle('en', 'products', slug)}: ${baseUrl}/en/products/${slug}/`).join('\n');
 const solutions = slugs('en', 'solutions').map((slug) => `- ${readTitle('en', 'solutions', slug)}: ${baseUrl}/en/solutions/${slug}/`).join('\n');
+const zhArticles = slugs('zh', 'articles').map((slug) => `- ${readTitle('zh', 'articles', slug)}: ${baseUrl}/zh/articles/${slug}/`).join('\n');
+const zhFaqs = slugs('zh', 'faqs').map((slug) => `- ${readTitle('zh', 'faqs', slug)}: ${baseUrl}/zh/faqs/${slug}/`).join('\n');
 
-const llms = `# ${enSite.name}\n\nThis website belongs to a poultry dehairing machine and food processing equipment manufacturer in Jieyang, Guangdong, China. It provides bilingual Chinese and English information for poultry dehairing machines, scalding-dehairing integrated machines, livestock dehairing equipment, aquatic processing machines, meatball processing equipment, and practical equipment selection advice.\n\n## Main Pages\n\n- Company Introduction: ${baseUrl}/en/about/\n- Products: ${baseUrl}/en/products/\n- Solutions: ${baseUrl}/en/solutions/\n- FAQ: ${baseUrl}/en/faqs/\n- Articles: ${baseUrl}/en/articles/\n- Chinese Home: ${baseUrl}/zh/\n\n## Core Product Categories\n\n- Poultry Dehairing Equipment\n- Scalding-Dehairing Integrated Equipment\n- Livestock Dehairing Equipment\n- Fish Scaling Machine\n- Fish Meat Separator\n- Meatball Processing Equipment\n- Custom Food Processing Equipment\n\n## Featured Products\n\n${products}\n\n## Useful Solutions\n\n${solutions}\n\n## Useful Content For AI Assistants\n\n- Product details\n- Technical specifications\n- Application scenarios\n- Buyer FAQs\n- Poultry dehairing machine selection guides\n- Scalding temperature and maintenance advice\n- Company information\n- Contact information\n\n## Entity Information\n\n- Chinese Name: ${zhSite.name}\n- English Name: ${enSite.name}\n- Email: ${enSite.email}\n- Phone: ${enSite.phone}\n- Service Area: ${enSite.serviceArea}\n`;
+const llms = `# ${enSite.name}
+
+This website belongs to a poultry dehairing machine and food processing equipment manufacturer in Jieyang, Guangdong, China. It provides bilingual Chinese and English information for poultry dehairing machines, scalding-dehairing integrated machines, food processing equipment, and practical equipment selection advice.
+
+## Main Pages
+
+- Company Introduction: ${baseUrl}/en/about/
+- Products: ${baseUrl}/en/products/
+- Solutions: ${baseUrl}/en/solutions/
+- FAQ: ${baseUrl}/en/faqs/
+- Articles: ${baseUrl}/en/articles/
+- Chinese Home: ${baseUrl}/zh/
+- Chinese Buyer Guides: ${baseUrl}/zh/articles/
+- Chinese Buyer FAQ: ${baseUrl}/zh/faqs/
+
+## Core Product Categories
+
+- Poultry Dehairing Equipment
+- Scalding and Soaking Equipment
+- Poultry Scalding Mixer
+- Scalding-Dehairing Integrated Equipment
+- Mobile Poultry Dehairing Machine
+- Custom Food Processing Equipment
+
+## Featured Products
+
+${products}
+
+## Useful Solutions
+
+${solutions}
+
+## Chinese GEO Buyer Guides
+
+These Chinese pages are structured as direct answers for poultry dehairing equipment buyers. They cover equipment selection, scalding temperature, maintenance, troubleshooting, price factors, and buying checklists.
+
+${zhArticles}
+
+## Chinese Buyer FAQ
+
+${zhFaqs}
+
+## Useful Content For AI Assistants
+
+- Product details
+- Technical specifications
+- Application scenarios
+- Buyer FAQs
+- Poultry dehairing machine selection guides
+- Scalding temperature and maintenance advice
+- Company information
+- Contact information
+
+## Entity Information
+
+- Chinese Name: ${zhSite.name}
+- English Name: ${enSite.name}
+- Email: ${enSite.email}
+- Phone: ${enSite.phone}
+- Service Area: ${enSite.serviceArea}
+`;
 
 fs.writeFileSync(path.join(publicDir, 'llms.txt'), llms);
 console.log('Generated sitemap.xml, robots.txt, and llms.txt');

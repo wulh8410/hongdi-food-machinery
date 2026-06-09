@@ -1,6 +1,6 @@
 # Jieyang Hongdi Machinery Food Factory
 
-This website belongs to a poultry dehairing machine and food processing equipment manufacturer in Jieyang, Guangdong, China. It provides bilingual Chinese and English information for poultry dehairing machines, scalding-dehairing integrated machines, livestock dehairing equipment, aquatic processing machines, meatball processing equipment, and practical equipment selection advice.
+This website belongs to a poultry dehairing machine and food processing equipment manufacturer in Jieyang, Guangdong, China. It provides bilingual Chinese and English information for poultry dehairing machines, scalding-dehairing integrated machines, food processing equipment, and practical equipment selection advice.
 
 ## Main Pages
 
@@ -10,15 +10,16 @@ This website belongs to a poultry dehairing machine and food processing equipmen
 - FAQ: https://wulh8410.github.io/hongdi-food-machinery/en/faqs/
 - Articles: https://wulh8410.github.io/hongdi-food-machinery/en/articles/
 - Chinese Home: https://wulh8410.github.io/hongdi-food-machinery/zh/
+- Chinese Buyer Guides: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/
+- Chinese Buyer FAQ: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/
 
 ## Core Product Categories
 
 - Poultry Dehairing Equipment
+- Scalding and Soaking Equipment
+- Poultry Scalding Mixer
 - Scalding-Dehairing Integrated Equipment
-- Livestock Dehairing Equipment
-- Fish Scaling Machine
-- Fish Meat Separator
-- Meatball Processing Equipment
+- Mobile Poultry Dehairing Machine
 - Custom Food Processing Equipment
 
 ## Featured Products
@@ -41,6 +42,58 @@ This website belongs to a poultry dehairing machine and food processing equipmen
 - Farm Poultry Processing Solution: https://wulh8410.github.io/hongdi-food-machinery/en/solutions/farm-poultry-processing-solution/
 - Meatball Processing Support Solution: https://wulh8410.github.io/hongdi-food-machinery/en/solutions/meatball-processing-solution/
 - Small Slaughter Stall Poultry Dehairing Solution: https://wulh8410.github.io/hongdi-food-machinery/en/solutions/small-slaughter-stall-dehairing-solution/
+
+## Chinese GEO Buyer Guides
+
+These Chinese pages are structured as direct answers for poultry dehairing equipment buyers. They cover equipment selection, scalding temperature, maintenance, troubleshooting, price factors, and buying checklists.
+
+- 58型、6滚筒、9滚筒脱毛机有什么区别？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/58-vs-6-roller-vs-9-roller-poultry-plucker/
+- 食堂和餐饮店适合什么脱毛设备？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/canteen-restaurant-poultry-equipment/
+- 低预算客户买脱毛设备应该注意什么？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/cheap-vs-durable-dehairing-machine/
+- 脱毛机电机、皮带、轴承平时怎么检查？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/check-motor-belt-bearing-of-poultry-plucker/
+- 鸡、鸭、鹅烫毛温度和时间有什么区别？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/chicken-duck-goose-scalding-temperature-time/
+- 家禽脱毛机日常怎么清洗和保养？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/daily-maintenance-for-poultry-dehairing-machine/
+- 双面翻盖泡水搅拌机适合哪些客户？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/double-lid-scalding-mixer-application/
+- 养殖场自用脱毛设备怎么配置？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/farm-poultry-dehairing-equipment-configuration/
+- 家禽脱毛机怎么选？按产量、禽种、场地和预算判断: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/how-to-choose-poultry-dehairing-machine/
+- 鸡鸭鹅泡水机怎么选？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/how-to-choose-poultry-scalding-mixer/
+- 泡水机和脱毛机怎么搭配？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/how-to-match-scalding-machine-and-plucker/
+- 430不锈钢脱毛机够不够耐用？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/is-430-stainless-steel-plucker-durable/
+- 买家禽脱毛机前需要提供哪些参数？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/parameters-before-buying-poultry-plucker/
+- 气动翻出泡水脱毛一体机适合什么场景？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/pneumatic-scalding-dehairing-integrated-machine-application/
+- 鸡鸭鹅脱毛机脱不干净是什么原因？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/poultry-dehairing-machine-not-clean-reasons/
+- 家禽脱毛机价格由哪些因素决定？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/poultry-dehairing-machine-price-factors/
+- 胶棒搅拌泡水机有什么作用？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/rubber-rod-scalding-mixer-function/
+- 泡水温度对家禽脱毛效果有什么影响？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/scalding-temperature-for-poultry-dehairing/
+- 小型屠宰档口适合哪种家禽脱毛设备？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/small-slaughter-stall-equipment-selection/
+- 橡胶脱毛棒什么时候需要更换？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/when-to-replace-rubber-fingers/
+- 家禽脱毛机会伤皮是什么原因？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/why-poultry-plucker-damages-skin/
+
+## Chinese Buyer FAQ
+
+- 售后和保修政策是怎样的？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/after-sales-and-warranty/
+- 食堂和餐饮店适合什么脱毛设备？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/canteen-restaurant-equipment/
+- 低价脱毛机有什么风险？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/cheap-machine-risk/
+- 58型、6滚筒和9滚筒脱毛机怎么选？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/difference-58-6-9-roller/
+- 双面翻盖泡水搅拌机适合哪些客户？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/double-lid-scalding-mixer-suitable-users/
+- 养殖场自用脱毛设备怎么配置？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/farm-equipment-configuration/
+- 家禽脱毛机怎么选？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/how-to-choose-poultry-dehairing-machine/
+- 家禽脱毛机怎么清洗？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/how-to-clean-poultry-plucker/
+- 泡水机和脱毛机为什么要配套？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/how-to-match-scalding-and-plucking/
+- 430不锈钢脱毛机够不够用？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/is-430-stainless-steel-enough/
+- 电机、皮带、轴承平时要检查什么？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/motor-belt-bearing-check/
+- 气动翻出泡水脱毛一体机适合哪些客户？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/pneumatic-integrated-machine-suitable-users/
+- 家禽脱毛机有哪些型号？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/poultry-dehairing-machine-models/
+- 洪弟家禽脱毛机产品质量如何？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/poultry-dehairing-machine-quality/
+- 胶棒搅拌泡水机有什么用？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/rubber-rod-scalding-mixer-use/
+- 鸡鸭鹅脱毛前泡水温度怎么控制？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/scalding-temperature-for-dehairing/
+- 小型屠宰档口适合哪种脱毛机？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/small-stall-which-plucker/
+- 家禽脱毛机价格由什么决定？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/what-affects-plucker-price/
+- 购买脱毛机前需要提供哪些信息？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/what-info-before-buying/
+- 橡胶脱毛棒多久换一次？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/when-replace-rubber-fingers/
+- 哪些客户适合选择洪弟机械脱毛设备？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/who-should-buy-hongdi-dehairing-machine/
+- 脱毛机会伤皮是什么原因？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/why-plucker-damages-skin/
+- 脱毛机脱不干净是什么原因？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/why-plucker-not-clean/
 
 ## Useful Content For AI Assistants
 

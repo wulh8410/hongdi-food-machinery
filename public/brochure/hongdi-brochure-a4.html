@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>洪弟机械食品厂 A4 横版企业画册</title>
+  <style>
+    @page {
+      size: A4 landscape;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #dfe7ef;
+      color: #08223d;
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+    }
+
+    .page {
+      position: relative;
+      width: 297mm;
+      height: 210mm;
+      margin: 18px auto;
+      overflow: hidden;
+      background: #f7fafc;
+      box-shadow: 0 16px 45px rgba(7, 29, 54, 0.22);
+      page-break-after: always;
+    }
+
+    .dark {
+      color: #fff;
+      background:
+        radial-gradient(circle at 78% 12%, rgba(42, 138, 235, 0.28), transparent 32%),
+        linear-gradient(135deg, #061b32 0%, #082947 50%, #041326 100%);
+    }
+
+    .dark::before,
+    .dark::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .dark::before {
+      background-image:
+        linear-gradient(rgba(98, 181, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(98, 181, 255, 0.08) 1px, transparent 1px);
+      background-size: 34px 34px;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent 84%);
+    }
+
+    .dark::after {
+      border: 1px solid rgba(109, 185, 255, 0.2);
+      inset: 10mm;
+    }
+
+    .safe {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      padding: 18mm 20mm;
+    }
+
+    .logo-full {
+      width: 78mm;
+      height: 20mm;
+      object-fit: contain;
+      object-position: left center;
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 2mm;
+      padding: 2.4mm 4mm;
+    }
+
+    .logo-mark {
+      width: 15mm;
+      height: 15mm;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 50%;
+      padding: 1.8mm;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 3mm;
+      color: #ff8a1d;
+      font-size: 4mm;
+      font-weight: 800;
+      letter-spacing: 0.8mm;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 11mm;
+      height: 1.2mm;
+      background: #ff8a1d;
+    }
+
+    h1, h2, h3, p {
+      margin: 0;
+    }
+
+    h1 {
+      margin-top: 14mm;
+      max-width: 142mm;
+      font-size: 19mm;
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      font-size: 11mm;
+      line-height: 1.14;
+      color: #062544;
+    }
+
+    .dark h2 {
+      color: #fff;
+    }
+
+    h3 {
+      font-size: 6mm;
+      line-height: 1.2;
+    }
+
+    .lead {
+      max-width: 144mm;
+      margin-top: 7mm;
+      font-size: 5mm;
+      line-height: 1.85;
+      font-weight: 650;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3mm;
+      margin-top: 8mm;
+    }
+
+    .tag {
+      min-width: 24mm;
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2.4mm 4mm;
+      color: #fff;
+      font-size: 3.7mm;
+      font-weight: 800;
+      text-align: center;
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 4mm;
+      margin-top: 11mm;
+    }
+
+    .btn {
+      padding: 3.8mm 7mm;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: #fff;
+      font-size: 4mm;
+      font-weight: 900;
+    }
+
+    .btn.primary {
+      border-color: #ff8a1d;
+      background: #ff8a1d;
+    }
+
+    .cover-hero {
+      position: absolute;
+      right: -18mm;
+      bottom: 6mm;
+      width: 176mm;
+      height: 118mm;
+      object-fit: cover;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+      opacity: 0.94;
+    }
+
+    .cover-hero-mask {
+      position: absolute;
+      right: -18mm;
+      bottom: 6mm;
+      width: 176mm;
+      height: 118mm;
+      background: linear-gradient(90deg, #061b32 0%, rgba(6, 27, 50, 0.58) 22%, rgba(6, 27, 50, 0) 46%);
+      z-index: 1;
+    }
+
+    .page-no {
+      position: absolute;
+      right: 18mm;
+      bottom: 12mm;
+      color: rgba(255, 255, 255, 0.42);
+      font-size: 3.2mm;
+      z-index: 3;
+    }
+
+    .light .page-no {
+      color: rgba(8, 34, 61, 0.36);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10mm;
+    }
+
+    .section-title {
+      display: grid;
+      gap: 3mm;
+    }
+
+    .section-title .eyebrow {
+      color: #ff8a1d;
+      font-size: 3.8mm;
+      font-weight: 900;
+      letter-spacing: 0.7mm;
+    }
+
+    .muted {
+      color: #54708a;
+      line-height: 1.75;
+      font-size: 4.4mm;
+    }
+
+    .dark .muted {
+      color: rgba(255, 255, 255, 0.76);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8mm;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5mm;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4.5mm;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #d8e2ec;
+      padding: 7mm;
+      min-height: 34mm;
+    }
+
+    .dark .card {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(135, 200, 255, 0.24);
+      backdrop-filter: blur(10px);
+    }
+
+    .card h3 {
+      margin-bottom: 3mm;
+      color: #052947;
+    }
+
+    .dark .card h3 {
+      color: #fff;
+    }
+
+    .card p, .card li {
+      font-size: 4mm;
+      line-height: 1.7;
+      color: #4b657e;
+    }
+
+    .dark .card p, .dark .card li {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .number {
+      color: #ff8a1d;
+      font-size: 8mm;
+      font-weight: 950;
+      margin-bottom: 3mm;
+    }
+
+    .product-card {
+      display: grid;
+      grid-template-rows: 38mm auto;
+      gap: 4mm;
+      min-height: 70mm;
+      padding: 4.2mm;
+      background: #fff;
+      border: 1px solid #d8e2ec;
+      box-shadow: 0 12px 28px rgba(8, 34, 61, 0.08);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 38mm;
+      object-fit: cover;
+      border-radius: 1mm;
+      background: #eaf0f6;
+    }
+
+    .product-card h3 {
+      font-size: 4.4mm;
+      margin-bottom: 2mm;
+    }
+
+    .product-card p {
+      font-size: 3.3mm;
+      line-height: 1.55;
+      color: #4b657e;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2mm;
+      margin-top: 3mm;
+    }
+
+    .chip {
+      padding: 1.2mm 2.3mm;
+      background: #eaf2fb;
+      color: #244c73;
+      font-size: 3mm;
+      font-weight: 800;
+      border-radius: 1mm;
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 5mm;
+      margin-top: 14mm;
+    }
+
+    .step {
+      position: relative;
+      min-height: 78mm;
+      padding: 7mm 5mm;
+      background: #fff;
+      border: 1px solid #d8e2ec;
+    }
+
+    .step:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 30mm;
+      right: -5.8mm;
+      width: 6mm;
+      height: 6mm;
+      border-top: 1.4mm solid #ff8a1d;
+      border-right: 1.4mm solid #ff8a1d;
+      transform: rotate(45deg);
+    }
+
+    .step .icon {
+      display: grid;
+      place-items: center;
+      width: 15mm;
+      height: 15mm;
+      margin-bottom: 6mm;
+      border: 1px solid #ff8a1d;
+      color: #ff8a1d;
+      font-size: 7mm;
+      font-weight: 950;
+    }
+
+    .product-page {
+      display: grid;
+      grid-template-columns: 132mm 1fr;
+      gap: 10mm;
+      height: 100%;
+    }
+
+    .product-visual {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 120mm;
+      background:
+        radial-gradient(circle at 50% 62%, rgba(71, 171, 255, 0.22), transparent 36%),
+        rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(135, 200, 255, 0.25);
+      overflow: hidden;
+    }
+
+    .product-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 4mm;
+      filter: drop-shadow(0 28px 35px rgba(0, 0, 0, 0.35));
+    }
+
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+
+    .product-info h2 {
+      font-size: 10.5mm;
+      margin-bottom: 5mm;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 3mm;
+      margin-top: 5mm;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: 14mm 1fr;
+      gap: 4mm;
+      align-items: start;
+      padding: 4mm;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(135, 200, 255, 0.25);
+    }
+
+    .feature strong {
+      display: grid;
+      place-items: center;
+      width: 11mm;
+      height: 11mm;
+      color: #fff;
+      background: #0f73c9;
+      border-radius: 50%;
+      font-size: 4mm;
+    }
+
+    .feature h3 {
+      font-size: 4.6mm;
+      margin-bottom: 1.6mm;
+    }
+
+    .feature p {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 3.5mm;
+      line-height: 1.55;
+    }
+
+    .spec-box {
+      margin-top: auto;
+      padding: 4mm;
+      background: rgba(3, 18, 35, 0.72);
+      border: 1px solid rgba(135, 200, 255, 0.3);
+    }
+
+    .spec-box h3 {
+      margin-bottom: 3mm;
+      color: #fff;
+      font-size: 5mm;
+    }
+
+    .spec-table {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.6mm 4mm;
+    }
+
+    .spec-table div {
+      padding: 1.8mm 2mm;
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 3.3mm;
+      line-height: 1.35;
+    }
+
+    .product-page .page-no {
+      bottom: 8mm;
+    }
+
+    .back-layout {
+      display: grid;
+      grid-template-columns: 1fr 68mm;
+      gap: 16mm;
+      align-items: center;
+      height: 100%;
+    }
+
+    .contact-panel {
+      padding: 8mm;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(135, 200, 255, 0.28);
+    }
+
+    .qr {
+      width: 42mm;
+      height: 42mm;
+      object-fit: contain;
+      padding: 2mm;
+      background: #fff;
+    }
+
+    .contact-line {
+      margin-top: 5mm;
+      font-size: 5mm;
+      font-weight: 850;
+      line-height: 1.6;
+    }
+
+    .address {
+      margin-top: 4mm;
+      font-size: 4.2mm;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="page dark">
+    <img class="cover-hero" src="../images/hero/hongdi-factory-equipment-banner.png" alt="洪弟机械设备与工厂" />
+    <div class="cover-hero-mask"></div>
+    <div class="safe">
+      <img class="logo-full" src="./logo-full.png" alt="洪弟机械食品厂 Logo" />
+      <div style="margin-top:16mm" class="kicker">洪弟机械食品厂</div>
+      <h1>专注食品机械设备制造</h1>
+      <p class="lead">家禽脱毛、泡水、搅拌及配套加工设备解决方案</p>
+      <div class="tags">
+        <span class="tag">源头厂家</span>
+        <span class="tag">稳定耐用</span>
+        <span class="tag">支持配套</span>
+        <span class="tag">售后无忧</span>
+      </div>
+      <div class="btn-row">
+        <span class="btn primary">设备选型</span>
+        <span class="btn">配套方案</span>
+      </div>
+    </div>
+    <div class="page-no">01 / 12</div>
+  </section>
+
+  <section class="page light">
+    <div class="safe">
+      <div class="section-head">
+        <div class="section-title">
+          <div class="eyebrow">COMPANY POSITIONING</div>
+          <h2>围绕真实加工场景提供设备选型与配套建议</h2>
+        </div>
+        <img class="logo-mark" src="./logo-mark.png" alt="洪弟机械标识" />
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="number">01</div>
+          <h3>企业定位</h3>
+          <p>洪弟机械食品厂面向家禽脱毛、泡水、搅拌等食品加工前处理场景，提供实用型不锈钢设备与配套方案。</p>
+        </div>
+        <div class="card">
+          <div class="number">02</div>
+          <h3>服务对象</h3>
+          <p>适用于屠宰档口、养殖场、食堂、餐饮门店、食品加工客户等需要稳定处理鸡、鸭、鹅等禽类的场景。</p>
+        </div>
+        <div class="card">
+          <div class="number">03</div>
+          <h3>设备方向</h3>
+          <p>以脱毛机、泡水机、搅拌机、泡水脱毛一体机为核心，满足不同产能、场地和操作习惯的设备组合需求。</p>
+        </div>
+        <div class="card">
+          <div class="number">04</div>
+          <h3>合作方式</h3>
+          <p>客户提供物料类型、单日产量、场地尺寸、电压条件和操作人数后，可获得更适合现场的设备配置建议。</p>
+        </div>
+      </div>
+    </div>
+    <div class="page-no">02 / 12</div>
+  </section>
+
+  <section class="page light">
+    <div class="safe" style="padding-bottom:14mm">
+      <div class="section-head" style="margin-bottom:6mm">
+        <div class="section-title">
+          <div class="eyebrow">PRODUCT SYSTEM</div>
+          <h2>产品系统总览</h2>
+          <p class="muted">围绕家禽脱毛与泡水配套场景，提供多类型设备选择。</p>
+        </div>
+        <img class="logo-mark" src="./logo-mark.png" alt="洪弟机械标识" />
+      </div>
+      <div class="grid-4">
+        <div class="product-card">
+          <img src="../images/products/58-turbine-stainless-poultry-plucker.png" alt="58型涡轮不锈钢脱毛机" />
+          <div>
+            <h3>58型涡轮不锈钢脱毛机</h3>
+            <p>适合鸡、鸭、鹅等常规脱毛作业。</p>
+            <div class="chip-row"><span class="chip">脱毛</span><span class="chip">中小产能</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/products/double-lid-poultry-scalding-mixer.png" alt="双面翻盖不锈钢鸡鹅鸭搅拌机" />
+          <div>
+            <h3>双面翻盖不锈钢鸡鹅鸭搅拌机</h3>
+            <p>用于泡水、烫毛与自动搅拌。</p>
+            <div class="chip-row"><span class="chip">泡水</span><span class="chip">搅拌</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/products/pneumatic-discharge-scalding-dehairing-machine.png" alt="气动翻出泡水脱毛一体机" />
+          <div>
+            <h3>气动翻出泡水脱毛一体机</h3>
+            <p>集泡水、脱毛、气动翻出于一体。</p>
+            <div class="chip-row"><span class="chip">一体机</span><span class="chip">省人工</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/products/rubber-rod-scalding-mixer.png" alt="胶棒搅拌不锈钢鸡鹅鸭泡水机" />
+          <div>
+            <h3>胶棒搅拌不锈钢鸡鹅鸭泡水机</h3>
+            <p>适合脱毛前泡水与均匀翻动物料。</p>
+            <div class="chip-row"><span class="chip">泡水</span><span class="chip">胶棒搅拌</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-3" style="margin-top:5mm">
+        <div class="product-card">
+          <img src="../images/products/nine-roller-stainless-poultry-plucker.png" alt="9滚筒不锈钢脱毛机" />
+          <div>
+            <h3>9滚筒不锈钢脱毛机</h3>
+            <p>适合较大处理量的集中脱毛场景。</p>
+            <div class="chip-row"><span class="chip">大产能</span><span class="chip">多滚筒</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/products/six-roller-stainless-poultry-plucker.png" alt="6滚筒不锈钢脱毛机" />
+          <div>
+            <h3>6滚筒不锈钢脱毛机</h3>
+            <p>兼顾效率、占地与移动便利性。</p>
+            <div class="chip-row"><span class="chip">中等产能</span><span class="chip">移动</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/products/430-stainless-mobile-poultry-plucker.png" alt="430不锈钢移动式脱毛机" />
+          <div>
+            <h3>430不锈钢移动式脱毛机</h3>
+            <p>透明视窗结构，适合灵活移动作业。</p>
+            <div class="chip-row"><span class="chip">移动式</span><span class="chip">可视化</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-no">03 / 12</div>
+  </section>
+
+  <section class="page light">
+    <div class="safe">
+      <div class="section-head">
+        <div class="section-title">
+          <div class="eyebrow">PROCESS SOLUTION</div>
+          <h2>家禽前处理流程配置建议</h2>
+          <p class="muted">根据物料、产量、场地、电压和人工配置，组合泡水、搅拌、脱毛与清洗整理环节。</p>
+        </div>
+        <img class="logo-mark" src="./logo-mark.png" alt="洪弟机械标识" />
+      </div>
+      <div class="process">
+        <div class="step">
+          <div class="icon">1</div>
+          <h3>泡水预处理</h3>
+          <p>根据禽类类型与现场工艺，先完成泡水或烫毛前处理。</p>
+        </div>
+        <div class="step">
+          <div class="icon">2</div>
+          <h3>搅拌均温</h3>
+          <p>通过翻盖搅拌或胶棒搅拌，让物料受热更均匀。</p>
+        </div>
+        <div class="step">
+          <div class="icon">3</div>
+          <h3>脱毛处理</h3>
+          <p>按产量选择 58 型、6 滚筒、9 滚筒或移动式脱毛设备。</p>
+        </div>
+        <div class="step">
+          <div class="icon">4</div>
+          <h3>清洗整理</h3>
+          <p>完成脱毛后进行冲洗、检查与后续加工前整理。</p>
+        </div>
+        <div class="step">
+          <div class="icon">5</div>
+          <h3>配套建议</h3>
+          <p>结合场地尺寸、排水、电压和操作人数，确定设备组合。</p>
+        </div>
+      </div>
+    </div>
+    <div class="page-no">04 / 12</div>
+  </section>
+
+  <section class="page dark product-page">
+    <div class="safe product-page">
+      <div class="product-visual"><img src="../images/products/58-turbine-stainless-poultry-plucker.png" alt="58型涡轮不锈钢脱毛机" /></div>
+      <div class="product-info">
+        <div class="kicker">核心产品 01</div>
+        <h2>58型涡轮不锈钢脱毛机</h2>
+        <p class="muted">面向中小型屠宰档口、养殖场和餐饮前处理场景，用于鸡、鸭、鹅等家禽脱毛。</p>
+        <div class="feature-list">
+          <div class="feature"><strong>01</strong><div><h3>430不锈钢机身</h3><p>机身耐用，便于日常冲洗与维护。</p></div></div>
+          <div class="feature"><strong>02</strong><div><h3>橡胶脱毛棒</h3><p>用于提升脱毛效率，减少人工拔毛强度。</p></div></div>
+          <div class="feature"><strong>03</strong><div><h3>出毛口设计</h3><p>方便集中清理毛屑，提升现场整洁度。</p></div></div>
+        </div>
+        <div class="spec-box">
+          <h3>产品参数</h3>
+          <div class="spec-table">
+            <div>规格：长80cm × 宽62cm × 高90cm</div><div>功率：1500W</div>
+            <div>电压：220V / 380V</div><div>重量：70KG</div>
+            <div>产量：约200只/小时</div><div>适用：鸡、鸭、鹅脱毛</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-no">05 / 12</div>
+  </section>
+
+  <section class="page dark product-page">
+    <div class="safe product-page">
+      <div class="product-visual"><img src="../images/products/double-lid-poultry-scalding-mixer.png" alt="双面翻盖不锈钢鸡鹅鸭搅拌机" /></div>
+      <div class="product-info">
+        <div class="kicker">核心产品 02</div>
+        <h2>双面翻盖不锈钢鸡鹅鸭搅拌机</h2>
+        <p class="muted">用于家禽脱毛前泡水、烫毛和自动搅拌，减少人工翻动物料。</p>
+        <div class="feature-list">
+          <div class="feature"><strong>01</strong><div><h3>双面翻盖设计</h3><p>投料和取料更方便，适合批量前处理。</p></div></div>
+          <div class="feature"><strong>02</strong><div><h3>自动搅拌</h3><p>让物料受热更均匀，为后续脱毛提供条件。</p></div></div>
+          <div class="feature"><strong>03</strong><div><h3>控制箱配置</h3><p>操作清晰，适合固定加工点连续使用。</p></div></div>
+        </div>
+        <div class="spec-box">
+          <h3>产品参数</h3>
+          <div class="spec-table">
+            <div>规格：长1700mm × 宽1200mm × 高1000mm</div><div>功率：1500W</div>
+            <div>电压：220V / 380V</div><div>重量：250KG</div>
+            <div>产量：约500只/小时</div><div>适用：鸡、鸭、鹅等泡水</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-no">06 / 12</div>
+  </section>
+
+  <section class="page dark product-page">
+    <div class="safe product-page">
+      <div class="product-visual"><img src="../images/products/pneumatic-discharge-scalding-dehairing-machine.png" alt="气动翻出泡水脱毛一体机" /></div>
+      <div class="product-info">
+        <div class="kicker">核心产品 03</div>
+        <h2>气动翻出泡水脱毛一体机</h2>
+        <p class="muted">集泡水、脱毛和气动翻出于一体，适合希望减少搬运环节的加工现场。</p>
+        <div class="feature-list">
+          <div class="feature"><strong>01</strong><div><h3>流程集成</h3><p>泡水、脱毛、出料在同一设备内衔接。</p></div></div>
+          <div class="feature"><strong>02</strong><div><h3>气动翻出</h3><p>减少人工捞取和搬运，提高现场作业效率。</p></div></div>
+          <div class="feature"><strong>03</strong><div><h3>430材质不锈钢</h3><p>适合食品加工与屠宰前处理设备场景。</p></div></div>
+        </div>
+        <div class="spec-box">
+          <h3>产品参数</h3>
+          <div class="spec-table">
+            <div>材质：430材质不锈钢</div><div>结构：工业级结构</div>
+            <div>功能：气动翻出、泡水、脱毛一体</div><div>配置：控制电箱</div>
+            <div>适用：食品加工与屠宰设备场景</div><div>特点：减少人工转运</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-no">07 / 12</div>
+  </section>
+
+  <section class="page dark product-page">
+    <div class="safe product-page">
+      <div class="product-visual"><img src="../images/products/rubber-rod-scalding-mixer.png" alt="胶棒搅拌不锈钢鸡鹅鸭泡水机" /></div>
+      <div class="product-info">
+        <div class="kicker">核心产品 04</div>
+        <h2>胶棒搅拌不锈钢鸡鹅鸭泡水机</h2>
+        <p class="muted">用于鸡、鸭、鹅等脱毛前泡水烫毛，通过胶棒搅拌提升均匀度。</p>
+        <div class="feature-list">
+          <div class="feature"><strong>01</strong><div><h3>胶棒搅拌</h3><p>帮助物料翻动，减少人工搅拌。</p></div></div>
+          <div class="feature"><strong>02</strong><div><h3>蒸汽入气口</h3><p>适合需要加热辅助的泡水前处理场景。</p></div></div>
+          <div class="feature"><strong>03</strong><div><h3>出水口设计</h3><p>排水和清洗更省心，适合日常高频使用。</p></div></div>
+        </div>
+        <div class="spec-box">
+          <h3>产品参数</h3>
+          <div class="spec-table">
+            <div>规格：长1100mm × 宽860mm × 高900mm</div><div>功率：1500W</div>
+            <div>电压：220V / 380V</div><div>重量：120KG</div>
+            <div>产量：约200只/小时</div><div>适用：脱毛前泡水</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-no">08 / 12</div>
+  </section>
+
+  <section class="page dark product-page">
+    <div class="safe product-page">
+      <div class="product-visual"><img src="../images/products/nine-roller-stainless-poultry-plucker.png" alt="9滚筒不锈钢脱毛机" /></div>
+      <div class="product-info">
+        <div class="kicker">核心产品 05</div>
+        <h2>9滚筒不锈钢脱毛机</h2>
+        <p class="muted">面向较大处理量客户，适合集中脱毛、批量加工和高频作业场景。</p>
+        <div class="feature-list">
+          <div class="feature"><strong>01</strong><div><h3>九滚筒结构</h3><p>适合较大产能需求，提升集中处理能力。</p></div></div>
+          <div class="feature"><strong>02</strong><div><h3>透明PVC板</h3><p>运行状态清晰可见，便于观察脱毛过程。</p></div></div>
+          <div class="feature"><strong>03</strong><div><h3>滑轮移动设计</h3><p>方便根据现场布局调整设备位置。</p></div></div>
+        </div>
+        <div class="spec-box">
+          <h3>产品参数</h3>
+          <div class="spec-table">
+            <div>规格：长145cm × 宽150cm × 高148cm</div><div>功率：4000W</div>
+            <div>电压：380V</div><div>重量：400KG</div>
+            <div>产量：约600只/小时</div><div>适用：鸡、鸭、鹅等脱毛</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-no">09 / 12</div>
+  </section>
+
+  <section class="page dark product-page">
+    <div class="safe product-page">
+      <div class="product-visual"><img src="../images/products/six-roller-stainless-poultry-plucker.png" alt="6滚筒不锈钢脱毛机" /></div>
+      <div class="product-info">
+        <div class="kicker">核心产品 06</div>
+        <h2>6滚筒不锈钢脱毛机</h2>
+        <p class="muted">适合中等处理量客户，兼顾效率、占地和移动便利性。</p>
+        <div class="feature-list">
+          <div class="feature"><strong>01</strong><div><h3>六滚筒设计</h3><p>适合中等产能脱毛作业，效率稳定。</p></div></div>
+          <div class="feature"><strong>02</strong><div><h3>透明PVC板</h3><p>便于观察内部运行状态和处理效果。</p></div></div>
+          <div class="feature"><strong>03</strong><div><h3>脚踏板与滑轮</h3><p>方便操作与移动，适应不同场地布局。</p></div></div>
+        </div>
+        <div class="spec-box">
+          <h3>产品参数</h3>
+          <div class="spec-table">
+            <div>型号：1050#</div><div>功率：2200W</div>
+            <div>规格：长150cm × 宽135cm × 高148cm</div><div>电压：220V / 380V</div>
+            <div>重量：350KG</div><div>产量：约600只/小时</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-no">10 / 12</div>
+  </section>
+
+  <section class="page dark product-page">
+    <div class="safe product-page">
+      <div class="product-visual"><img src="../images/products/430-stainless-mobile-poultry-plucker.png" alt="430不锈钢移动式脱毛机" /></div>
+      <div class="product-info">
+        <div class="kicker">核心产品 07</div>
+        <h2>430不锈钢移动式脱毛机</h2>
+        <p class="muted">透明机身视窗与滑轮移动设计，适合需要灵活调整设备位置的加工现场。</p>
+        <div class="feature-list">
+          <div class="feature"><strong>01</strong><div><h3>430不锈钢机身</h3><p>机身耐用，适合食品加工前处理环境。</p></div></div>
+          <div class="feature"><strong>02</strong><div><h3>透明视窗结构</h3><p>设备运行状态清晰可见，便于操作判断。</p></div></div>
+          <div class="feature"><strong>03</strong><div><h3>滑轮移动设计</h3><p>移动方便，适合多工位或临时调整场景。</p></div></div>
+        </div>
+        <div class="spec-box">
+          <h3>产品参数</h3>
+          <div class="spec-table">
+            <div>材质：430不锈钢机身</div><div>结构：透明机身视窗</div>
+            <div>移动：滑轮移动设计</div><div>特点：脱毛高效、运行稳定</div>
+            <div>适用：家禽脱毛作业</div><div>场景：档口、养殖场、餐饮前处理</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-no">11 / 12</div>
+  </section>
+
+  <section class="page dark">
+    <div class="safe">
+      <div class="back-layout">
+        <div>
+          <img class="logo-full" src="./logo-full.png" alt="洪弟机械食品厂 Logo" />
+          <div style="margin-top:18mm" class="kicker">CONTACT</div>
+          <h1 style="max-width:170mm">需要设备选型或配套建议？</h1>
+          <p class="lead">提供物料类型、单日产量、现场电压、场地尺寸和前后工序信息，可先给出适合的设备型号与配置建议。</p>
+          <div class="tags">
+            <span class="tag">家禽脱毛设备</span>
+            <span class="tag">泡水搅拌设备</span>
+            <span class="tag">一体化设备</span>
+            <span class="tag">现场配套建议</span>
+          </div>
+          <p class="address">地址：广东省揭阳市揭东区曲溪港美村206国道旁</p>
+        </div>
+        <div class="contact-panel">
+          <img class="qr" src="./wechat-qr.png" alt="微信二维码" />
+          <div class="contact-line">电话 / 微信<br />13729374860</div>
+          <p class="address">扫码添加微信，发送物料、产量和现场信息，获取设备选型建议。</p>
+        </div>
+      </div>
+    </div>
+    <div class="page-no">12 / 12</div>
+  </section>
+</body>
+</html>
