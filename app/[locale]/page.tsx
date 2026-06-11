@@ -68,11 +68,11 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
       <SectionHeader locale={locale} title={locale === 'zh' ? '主推产品' : 'Featured Products'} href={`/${locale}/products`} />
       <CardGrid>{featuredProducts.map((item) => <ProductCard key={item.slug} locale={locale} item={item} />)}</CardGrid>
       <SectionHeader locale={locale} title={locale === 'zh' ? '解决方案入口' : 'Solutions'} href={`/${locale}/solutions`} />
-      <CardGrid>{solutions.slice(0, 3).map((item) => <SolutionCard key={item.slug} locale={locale} item={item} />)}</CardGrid>
+      <CardGrid>{solutions.slice(0, 4).map((item) => <SolutionCard key={item.slug} locale={locale} item={item} />)}</CardGrid>
       <SectionHeader locale={locale} title={locale === 'zh' ? '热门 FAQ' : 'Popular FAQ'} href={`/${locale}/faqs`} />
-      <CardGrid>{faqs.slice(0, 3).map((item) => <FAQCard key={item.slug} locale={locale} item={item} />)}</CardGrid>
+      <CardGrid>{faqs.slice(0, 4).map((item) => <FAQCard key={item.slug} locale={locale} item={item} />)}</CardGrid>
       <SectionHeader locale={locale} title={locale === 'zh' ? '最新文章' : 'Latest Articles'} href={`/${locale}/articles`} />
-      <CardGrid>{articles.slice(0, 3).map((item) => <ArticleCard key={item.slug} locale={locale} item={item} />)}</CardGrid>
+      <CardGrid>{articles.slice(0, 4).map((item) => <ArticleCard key={item.slug} locale={locale} item={item} />)}</CardGrid>
       <section className="mx-auto max-w-7xl px-4 py-10 md:px-6">
         <div className="grid gap-4 md:grid-cols-4">
           {strengths.map((item) => (
@@ -101,5 +101,5 @@ function SectionHeader({ locale, title, href }: { locale: Locale; title: string;
 }
 
 function CardGrid({ children }: { children: React.ReactNode }) {
-  return <section className="mx-auto grid max-w-7xl gap-5 px-4 py-5 md:grid-cols-3 lg:grid-cols-4 md:px-6">{children}</section>;
+  return <section className="mx-auto grid max-w-7xl gap-5 px-4 py-5 md:grid-cols-2 lg:grid-cols-4 md:px-6">{children}</section>;
 }
