@@ -440,8 +440,11 @@ https://wulh8410.github.io/hongdi-food-machinery/
 
 ```txt
 npx tsc --noEmit
+npm run lint
 GITHUB_PAGES=true npm run build
 ```
+
+最新静态构建共生成 134 个页面，中英文产品、文章、FAQ、解决方案及基础页面均可静态导出。
 
 ## 15. 后续建议
 
@@ -515,6 +518,28 @@ GITHUB_PAGES=true npm run build
 - 设备额定参数仅引用已有产品资料，无法确认的效果和产能明确标注需根据原料、操作和现场试机复核。
 - 新增 `scripts/generate-solution-content.mjs` 与 `npm run generate:solutions`，支持重复生成并自动校验产品、文章和 FAQ 引用。
 - `llms.txt` 增加中文解决方案导航，方便 AI 工具理解生产场景、配置逻辑和采购边界。
+- 构建验证通过：GitHub Pages 模式静态生成 134 个页面。
+- 部署提交：`9f8e3b0 Expand equipment solution center`。
+- GitHub Actions 部署状态：成功。
+
+### 2026-06-11：首页内容区块统一
+
+- 首页主推产品、解决方案入口、热门 FAQ、最新文章统一展示 4 张内容卡片，解决三卡片与四卡片区块视觉不协调的问题。
+- 响应式网格调整为手机 1 列、平板 2 列、桌面 4 列，避免平板端出现“3 + 1”的不完整排列。
+- 中文首页线上验证四个区块均准确输出 4 张卡片，页面无横向溢出。
+- 部署提交：`9db9116 Balance homepage content grids`。
+- GitHub Actions 部署状态：成功。
+
+### 2026-06-11：英文产品内容修复
+
+- 修复 Automatic Roller Poultry Dehairing Machine、Fish Scaling Machine、Fish Meat Separator 三个英文产品页残留中文的问题。
+- 将规格字段、规格内容、FAQ 问题和答案完整翻译为英文。
+- 修正鱼类脱鳞机和鱼类采肉机错误套用的家禽关键词、应用场景、关联产品和正文描述。
+- 三个英文产品 Markdown 和导出页面均完成中文字符扫描，网页可索引文本不再包含中文。
+- 保留原始产品宣传图片中的中文印刷内容，不修改用户提供的产品图片素材。
+- TypeScript、ESLint 和 GitHub Pages 静态构建验证通过。
+- 部署提交：`def38ab Fix English product translations`。
+- GitHub Actions 部署状态：成功。
 
 ## 17. 当前运营与内容优化重点
 
