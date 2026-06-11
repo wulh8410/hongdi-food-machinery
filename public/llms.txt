@@ -81,6 +81,23 @@ These Chinese pages are structured as direct answers for poultry dehairing equip
 - 家禽脱毛机会伤皮是什么原因？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/why-poultry-plucker-damages-skin/
 - 鱼类脱鳞机会不会伤鱼身？使用时要注意什么？: https://wulh8410.github.io/hongdi-food-machinery/zh/articles/will-fish-scaler-damage-fish/
 
+## Chinese Equipment Solutions
+
+These pages connect real production scenarios with recommended equipment, process flow, capacity options, site requirements, commissioning checks, maintenance advice, related products, and buyer questions.
+
+- 水产门店去鳞采肉解决方案: https://wulh8410.github.io/hongdi-food-machinery/zh/solutions/aquatic-store-processing-solution/
+- 鱼类批量脱鳞加工解决方案: https://wulh8410.github.io/hongdi-food-machinery/zh/solutions/batch-fish-scaling-solution/
+- 食堂餐饮家禽前处理解决方案: https://wulh8410.github.io/hongdi-food-machinery/zh/solutions/canteen-restaurant-poultry-solution/
+- 养殖场家禽批量处理解决方案: https://wulh8410.github.io/hongdi-food-machinery/zh/solutions/farm-poultry-processing-solution/
+- 鱼肉采集与鱼糜原料加工解决方案: https://wulh8410.github.io/hongdi-food-machinery/zh/solutions/fish-meat-surimi-processing-solution/
+- 食品机械场地改造与安装解决方案: https://wulh8410.github.io/hongdi-food-machinery/zh/solutions/food-machinery-site-installation-solution/
+- 家禽泡水脱毛一体化解决方案: https://wulh8410.github.io/hongdi-food-machinery/zh/solutions/integrated-scalding-dehairing-solution/
+- 大批量家禽脱毛加工解决方案: https://wulh8410.github.io/hongdi-food-machinery/zh/solutions/large-volume-poultry-processing-solution/
+- 鱼丸鱼糜加工配套解决方案: https://wulh8410.github.io/hongdi-food-machinery/zh/solutions/meatball-processing-solution/
+- 中等产量家禽烫脱配套解决方案: https://wulh8410.github.io/hongdi-food-machinery/zh/solutions/medium-capacity-poultry-scalding-plucking-solution/
+- 小型家禽加工点220V设备解决方案: https://wulh8410.github.io/hongdi-food-machinery/zh/solutions/small-poultry-220v-equipment-solution/
+- 中小型屠宰档口家禽脱毛解决方案: https://wulh8410.github.io/hongdi-food-machinery/zh/solutions/small-slaughter-stall-dehairing-solution/
+
 ## Chinese Buyer FAQ
 
 - 家禽脱毛机选220V还是380V？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/220v-or-380v-poultry-plucker/
@@ -124,6 +141,8 @@ These Chinese pages are structured as direct answers for poultry dehairing equip
 - Product details
 - Technical specifications
 - Application scenarios
+- Equipment configuration by production scenario
+- Site preparation, installation, and acceptance guidance
 - Buyer FAQs
 - Poultry dehairing machine selection guides
 - Scalding temperature and maintenance advice

@@ -72,6 +72,26 @@ export function articleSchema(locale: Locale, article: ContentItem) {
   };
 }
 
+export function solutionSchema(locale: Locale, solution: ContentItem) {
+  const site = getSiteConfig(locale);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: solution.title,
+    description: solution.description,
+    provider: {
+      '@type': 'Organization',
+      name: site.name,
+      telephone: site.phone,
+      address: site.address
+    },
+    areaServed: site.serviceArea,
+    serviceType: solution.solutionCategory ?? (locale === 'zh' ? '食品机械设备解决方案' : 'Food machinery solution'),
+    audience: solution.suitableFor?.map((name) => ({ '@type': 'Audience', audienceType: name })),
+    url: absoluteUrl(locale, `/solutions/${solution.slug}`)
+  };
+}
+
 export function breadcrumbSchema(locale: Locale, items: { name: string; path: string }[]) {
   return {
     '@context': 'https://schema.org',

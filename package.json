@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "generate:solutions": "node scripts/generate-solution-content.mjs",
     "prebuild": "node scripts/generate-geo-files.mjs",
     "build": "next build",
     "lint": "next lint"

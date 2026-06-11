@@ -1,18 +1,40 @@
 ---
 title: "食堂餐饮家禽前处理解决方案"
 slug: "canteen-restaurant-poultry-solution"
-description: "适合学校食堂、酒楼餐厅和餐饮门店集中处理鸡鸭鹅。"
-painPoints: ["人工处理慢", "卫生清洗要求高", "场地有限"]
-recommendedProducts: ["double-lid-poultry-scalding-mixer", "rubber-rod-scalding-mixer", "58-turbine-stainless-poultry-plucker"]
-process: ["确认产品和日处理量", "选择主机型号", "配置烫毛/清洗/切割配套", "现场安装调试", "日常清洗维护"]
-configuration: ["按禽种和重量选型", "确认220V或380V电源", "预留排水和清洗空间", "下单前确认保修和配件"]
-capacity: "适合中小型商用场景，可按实际产能定制。"
-relatedProducts: ["double-lid-poultry-scalding-mixer", "rubber-rod-scalding-mixer", "58-turbine-stainless-poultry-plucker"]
-relatedFaqs: ["how-to-choose-poultry-dehairing-machine", "after-sales-and-warranty"]
+solutionCategory: "家禽加工"
+description: "适合学校食堂、酒楼餐厅、中央厨房和餐饮门店的小批量家禽前处理，强调卫生、易清洗和操作节奏。"
+geoSummary: "餐饮场景通常不追求最大额定产量，更应关注220V适配、占地、噪声、清洗时间和与备餐节奏的匹配；常规小批量可优先评估58型或移动式脱毛机。"
+keywords: ["食堂餐饮家禽前处理","家禽加工","食品机械解决方案","洪弟机械食品厂"]
+suitableFor: ["学校与企业食堂","酒楼餐厅","中央厨房前处理间","有固定家禽加工需求的餐饮门店"]
+decisionSummary: "餐饮场景通常不追求最大额定产量，更应关注220V适配、占地、噪声、清洗时间和与备餐节奏的匹配；常规小批量可优先评估58型或移动式脱毛机。"
+painPoints: ["人工处理占用后厨人员","加工时间集中在备餐前，设备需快速启停","后厨空间有限且卫生要求高","设备过大、清洗复杂会降低实际使用率"]
+recommendedProducts: ["58-turbine-stainless-poultry-plucker","430-stainless-mobile-poultry-plucker","rubber-rod-scalding-mixer"]
+equipmentRoles: [{"product":"58型涡轮不锈钢脱毛机","role":"完成常规小批量脱毛","selection":"220V/380V可选，适合固定工位"},{"product":"430不锈钢移动式脱毛机","role":"在不同工位之间灵活移动","selection":"适合需要观察运行状态和调整位置的后厨"},{"product":"胶棒搅拌泡水机","role":"提高批量泡水均匀性","selection":"当处理量增加或人工泡水不稳定时配置"}]
+process: ["按当天菜单和数量分批备料","泡水烫毛并控制时间","小批量投入脱毛机","人工检查和局部修整","清洗后进入厨房分割工序","设备拆洗、场地消毒和干燥"]
+configuration: ["确认现场使用220V还是380V电源，并按设备功率配置独立线路和保护开关","地面应平整、防滑并便于冲洗，脱毛和泡水区域预留排水沟或集水点","按设备外形、开盖或翻料动作预留操作空间、检修空间和物料周转通道","泡水工序需要确认热水或蒸汽来源，设备附近避免堆放怕水物品"]
+capacity: "轻量配置 / 固定备餐配置 / 效率提升配置"
+capacityOptions: [{"level":"轻量配置","suitableFor":"偶尔处理、单批数量较少","configuration":"58型或430移动式脱毛机","note":"优先确认220V、电源位置和清洗空间"},{"level":"固定备餐配置","suitableFor":"每天稳定处理且人工泡水可控","configuration":"58型脱毛机 + 固定泡水容器","note":"需建立标准泡水时间和单批投料量"},{"level":"效率提升配置","suitableFor":"高峰备餐量增加","configuration":"胶棒泡水机 + 脱毛机","note":"确认后厨通风、热源、排水与设备动线"}]
+siteRequirements: ["确认现场使用220V还是380V电源，并按设备功率配置独立线路和保护开关","地面应平整、防滑并便于冲洗，脱毛和泡水区域预留排水沟或集水点","按设备外形、开盖或翻料动作预留操作空间、检修空间和物料周转通道","泡水工序需要确认热水或蒸汽来源，设备附近避免堆放怕水物品"]
+requiredInfo: ["计划处理的禽种及单只重量范围","每日、每小时平均处理量和高峰处理量","现有泡水、脱毛、清洗等前后工序","现场长宽高、出入口尺寸、楼层和搬运条件","可用电压、给排水和热源条件","操作人数、预算范围以及希望解决的主要问题"]
+acceptancePoints: ["空载检查电机、传动、控制和紧固件是否正常","带少量原料试机，观察进出料、脱毛效果、禽体完整度和设备振动","核对泡水温度与时间是否适合当前禽种，不能只用脱毛机结果判断设备","确认清洗、排毛、排水和易损件更换是否方便","由操作人员完成一次启停、投料、出料和清洗流程后再验收"]
+maintenanceTips: ["每班结束后断电清除羽毛、油脂和残留物，保持排毛与排水通畅","定期检查橡胶脱毛棒、链条、皮带、轴承和紧固件的磨损与松动","控制箱、电机和线路避免直接高压冲水","长期停机前清洁干燥，易锈部位按说明进行保养"]
+faqs: [{"question":"餐饮门店一定需要泡水机吗？","answer":"不一定。处理量较小时可先使用现有泡水容器，但需要稳定控制温度和时间；处理量增加后再评估搅拌泡水设备。"},{"question":"后厨更适合220V还是380V？","answer":"取决于现有供电、设备功率和持续作业时间。不能为了接线方便忽略线路负载，应由电工核实。"}]
+relatedProducts: ["58-turbine-stainless-poultry-plucker","430-stainless-mobile-poultry-plucker","rubber-rod-scalding-mixer"]
+relatedArticles: ["canteen-restaurant-poultry-equipment","220v-vs-380v-poultry-plucker","58-vs-430-mobile-poultry-plucker","daily-maintenance-for-poultry-dehairing-machine"]
+relatedFaqs: ["canteen-restaurant-equipment","220v-or-380v-poultry-plucker","58-vs-430-mobile-plucker","how-to-clean-poultry-plucker"]
+date: "2026-06-11"
+updated: "2026-06-11"
+sourceNote: "页面中的设备额定参数来自现有产品资料；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置应在下单前由厂家复核。"
 seo:
-  title: "食堂餐饮家禽前处理解决方案｜洪弟机械解决方案"
-  description: "适合学校食堂、酒楼餐厅和餐饮门店集中处理鸡鸭鹅。"
+  title: "食堂餐饮家禽前处理解决方案｜洪弟机械食品厂"
+  description: "适合学校食堂、酒楼餐厅、中央厨房和餐饮门店的小批量家禽前处理，强调卫生、易清洗和操作节奏。"
+  keywords: ["食堂餐饮家禽前处理","家禽加工","食品机械解决方案","洪弟机械食品厂"]
 ---
 
-## 方案说明
-该方案围绕洪弟机械现有设备组合设计，重点解决人工成本、脱毛效率、清洗维护和场地适配问题。
+### 场景说明
+餐饮客户的目标通常是减少备餐前处理时间，而不是建设完整屠宰线。因此方案应保持紧凑，避免配置超过实际需求的大型设备。
+
+设备使用频率和清洗便利性同样重要。洪弟机械建议把设备放置、冲洗、排水、收纳和人员通行一起纳入方案，确保采购后能够持续使用。
+
+### 洪弟机械如何协助选型
+洪弟机械食品厂，电话/微信：13729374860，地址：广东省揭阳市揭东区曲溪港美村206国道旁。提供主要原料、处理量、现场尺寸、电压和前后工序后，可先进行设备方向与配置核对。

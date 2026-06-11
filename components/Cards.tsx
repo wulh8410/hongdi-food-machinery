@@ -55,11 +55,12 @@ export function FAQCard({ locale, item }: { locale: Locale; item: ContentItem })
 
 export function SolutionCard({ locale, item }: { locale: Locale; item: ContentItem }) {
   return (
-    <article className="rounded border border-slate-200 bg-white p-5 shadow-soft">
-      <h3 className="text-lg font-bold text-industrial-navy">{item.title}</h3>
+    <article className="flex h-full flex-col rounded border border-slate-200 bg-white p-5 shadow-soft">
+      {item.solutionCategory ? <p className="text-xs font-bold text-industrial-orange">{item.solutionCategory}</p> : null}
+      <h3 className={item.solutionCategory ? 'mt-2 text-lg font-bold text-industrial-navy' : 'text-lg font-bold text-industrial-navy'}>{item.title}</h3>
       <p className="mt-2 text-sm leading-6 text-slate-600">{item.description}</p>
-      <p className="mt-3 text-sm font-semibold text-industrial-orange">{item.capacity}</p>
-      <Link href={`/${locale}/solutions/${item.slug}`} className="mt-4 inline-block text-sm font-bold text-industrial-blue">
+      <p className="mt-3 text-sm font-semibold text-slate-700">{item.capacity}</p>
+      <Link href={`/${locale}/solutions/${item.slug}`} className="mt-auto inline-block pt-4 text-sm font-bold text-industrial-blue">
         {locale === 'zh' ? '查看方案' : 'View Solution'}
       </Link>
     </article>

@@ -25,6 +25,19 @@ export type Category = {
 
 export type ContentKind = 'products' | 'articles' | 'faqs' | 'solutions';
 
+export type SolutionEquipmentRole = {
+  product: string;
+  role: string;
+  selection: string;
+};
+
+export type SolutionCapacityOption = {
+  level: string;
+  suitableFor: string;
+  configuration: string;
+  note: string;
+};
+
 export type ContentItem = {
   slug: string;
   title: string;
@@ -40,10 +53,20 @@ export type ContentItem = {
   question?: string;
   answer?: string;
   painPoints?: string[];
+  solutionCategory?: string;
+  suitableFor?: string[];
+  decisionSummary?: string;
   recommendedProducts?: string[];
+  equipmentRoles?: SolutionEquipmentRole[];
   process?: string[];
   configuration?: string[];
   capacity?: string;
+  capacityOptions?: SolutionCapacityOption[];
+  siteRequirements?: string[];
+  requiredInfo?: string[];
+  acceptancePoints?: string[];
+  maintenanceTips?: string[];
+  sourceNote?: string;
   relatedProducts?: string[];
   relatedArticles?: string[];
   relatedFaqs?: string[];

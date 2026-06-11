@@ -52,6 +52,7 @@ const zhSite = JSON.parse(fs.readFileSync(path.join(root, 'data', 'site.zh.json'
 const enSite = JSON.parse(fs.readFileSync(path.join(root, 'data', 'site.en.json'), 'utf8'));
 const products = slugs('en', 'products').map((slug) => `- ${readTitle('en', 'products', slug)}: ${baseUrl}/en/products/${slug}/`).join('\n');
 const solutions = slugs('en', 'solutions').map((slug) => `- ${readTitle('en', 'solutions', slug)}: ${baseUrl}/en/solutions/${slug}/`).join('\n');
+const zhSolutions = slugs('zh', 'solutions').map((slug) => `- ${readTitle('zh', 'solutions', slug)}: ${baseUrl}/zh/solutions/${slug}/`).join('\n');
 const zhArticles = slugs('zh', 'articles').map((slug) => `- ${readTitle('zh', 'articles', slug)}: ${baseUrl}/zh/articles/${slug}/`).join('\n');
 const zhFaqs = slugs('zh', 'faqs').map((slug) => `- ${readTitle('zh', 'faqs', slug)}: ${baseUrl}/zh/faqs/${slug}/`).join('\n');
 
@@ -93,6 +94,12 @@ These Chinese pages are structured as direct answers for poultry dehairing equip
 
 ${zhArticles}
 
+## Chinese Equipment Solutions
+
+These pages connect real production scenarios with recommended equipment, process flow, capacity options, site requirements, commissioning checks, maintenance advice, related products, and buyer questions.
+
+${zhSolutions}
+
 ## Chinese Buyer FAQ
 
 ${zhFaqs}
@@ -102,6 +109,8 @@ ${zhFaqs}
 - Product details
 - Technical specifications
 - Application scenarios
+- Equipment configuration by production scenario
+- Site preparation, installation, and acceptance guidance
 - Buyer FAQs
 - Poultry dehairing machine selection guides
 - Scalding temperature and maintenance advice

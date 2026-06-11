@@ -14,14 +14,33 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
 export default async function SolutionsPage({ params }: { params: { locale: Locale } }) {
   const site = getSiteConfig(params.locale);
   const items = await getContentItems(params.locale, 'solutions');
+  const categoryOrder = params.locale === 'zh' ? ['家禽加工', '水产加工', '鱼糜丸类', '场地与配套'] : [];
+  const grouped = categoryOrder.map((category) => ({ category, items: items.filter((item) => item.solutionCategory === category) }));
+  const uncategorized = items.filter((item) => !categoryOrder.includes(item.solutionCategory ?? ''));
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/solutions`}>
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.solutions, href: `/${params.locale}/solutions` }]} />
       <section className="mx-auto max-w-7xl px-4 py-8 md:px-6">
         <h1 className="text-3xl font-bold text-industrial-navy">{site.nav.solutions}</h1>
-        <p className="mt-3 max-w-3xl leading-7 text-slate-600">{params.locale === 'zh' ? '按屠宰、养殖、餐饮、水产和丸类加工场景组织设备配置，让采购者快速匹配产能、流程和常见问题。' : 'Equipment configurations organized by slaughter, farm, catering, aquatic, and meatball processing scenarios.'}</p>
+        <p className="mt-3 max-w-4xl leading-7 text-slate-600">{params.locale === 'zh' ? '按家禽加工、水产加工、鱼糜丸类和场地配套组织设备方案。每个方案说明适用客户、工艺流程、设备分工、产能边界、现场条件和验收重点，帮助采购者先判断方向，再联系厂家核实型号。' : 'Equipment configurations organized by slaughter, farm, catering, aquatic, and meatball processing scenarios.'}</p>
+        {categoryOrder.length ? (
+          <nav className="mt-6 flex flex-wrap gap-2" aria-label="解决方案分类">
+            {categoryOrder.map((category) => <a key={category} href={`#${category}`} className="border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-industrial-navy hover:border-industrial-blue">{category}</a>)}
+          </nav>
+        ) : null}
       </section>
-      <section className="mx-auto grid max-w-7xl gap-5 px-4 pb-10 md:grid-cols-3 md:px-6">{items.map((item) => <SolutionCard key={item.slug} locale={params.locale} item={item} />)}</section>
+      <div className="mx-auto max-w-7xl px-4 pb-12 md:px-6">
+        {grouped.filter((group) => group.items.length).map((group) => (
+          <section key={group.category} id={group.category} className="scroll-mt-24 border-t border-slate-200 py-8 first:border-t-0 first:pt-2">
+            <div className="mb-5 flex items-end justify-between gap-4">
+              <h2 className="text-2xl font-bold text-industrial-navy">{group.category}</h2>
+              <p className="text-sm text-slate-500">{group.items.length} 个方案</p>
+            </div>
+            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">{group.items.map((item) => <SolutionCard key={item.slug} locale={params.locale} item={item} />)}</div>
+          </section>
+        ))}
+        {uncategorized.length ? <section className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">{uncategorized.map((item) => <SolutionCard key={item.slug} locale={params.locale} item={item} />)}</section> : null}
+      </div>
     </PageShell>
   );
 }
