@@ -24,6 +24,7 @@ export default async function ArticlePage({ params }: { params: { locale: Locale
 
   const site = getSiteConfig(params.locale);
   const [products, faqs] = await Promise.all([getContentItems(params.locale, 'products'), getContentItems(params.locale, 'faqs')]);
+  const topic = item.relatedProducts?.some((slug) => slug === 'fish-scaling-machine' || slug === 'fish-meat-separator') ? 'aquatic' : 'poultry';
 
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/articles/${params.slug}`}>
@@ -44,7 +45,7 @@ export default async function ArticlePage({ params }: { params: { locale: Locale
               : 'Continue with product details, FAQ, and solution pages for complete buying context.'}
           </p>
         </Section>
-        <BrandConsultation locale={params.locale} phone={site.phone} wechat={site.wechat} address={site.address} />
+        <BrandConsultation locale={params.locale} phone={site.phone} wechat={site.wechat} address={site.address} topic={topic} />
       </article>
     </PageShell>
   );

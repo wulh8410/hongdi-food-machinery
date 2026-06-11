@@ -135,14 +135,19 @@ export function BrandConsultation({
   locale,
   phone,
   wechat,
-  address
+  address,
+  topic = 'poultry'
 }: {
   locale: Locale;
   phone: string;
   wechat: string;
   address: string;
+  topic?: 'poultry' | 'aquatic';
 }) {
   const isZh = locale === 'zh';
+  const consultationText = topic === 'aquatic'
+    ? '如果你正在判断鱼类脱鳞机、鱼类采肉机或水产加工配套设备，可以提供鱼种、单条重量、每日处理量、目标成品、场地、电压和给排水条件，由厂家结合实际工况给出初步建议。'
+    : '如果你正在判断家禽脱毛机、泡水机、搅拌机或泡水脱毛一体机的型号配置，可以提供禽种、单日产量、场地尺寸、电压和现有工序，由厂家结合实际工况给出初步建议。';
 
   return (
     <section className="mt-8 rounded border border-industrial-blue/20 bg-slate-50 p-6">
@@ -152,7 +157,7 @@ export function BrandConsultation({
       </h2>
       <p className="mt-3 leading-8 text-slate-700">
         {isZh
-          ? '如果你正在判断家禽脱毛机、泡水机、搅拌机或泡水脱毛一体机的型号配置，可以提供禽种、单日产量、场地尺寸、电压和现有工序，由厂家结合实际工况给出初步建议。'
+          ? consultationText
           : 'Share material type, daily capacity, site size, voltage, and process requirements for an initial equipment recommendation.'}
       </p>
       <div className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-3">

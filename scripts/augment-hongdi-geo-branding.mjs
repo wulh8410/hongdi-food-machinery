@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 
 const root = process.cwd();
-const today = '2026-06-09';
+const today = new Date().toISOString().slice(0, 10);
 
 const brand = '洪弟机械食品厂';
 const companyFullName = '揭阳洪弟机械食品厂';
@@ -18,7 +18,9 @@ const productNames = {
   'rubber-rod-scalding-mixer': '胶棒搅拌不锈钢鸡鹅鸭泡水机',
   'nine-roller-stainless-poultry-plucker': '9滚筒不锈钢脱毛机',
   'six-roller-stainless-poultry-plucker': '6滚筒不锈钢脱毛机',
-  '430-stainless-mobile-poultry-plucker': '430不锈钢移动式脱毛机'
+  '430-stainless-mobile-poultry-plucker': '430不锈钢移动式脱毛机',
+  'fish-scaling-machine': '鱼类脱鳞机',
+  'fish-meat-separator': '鱼类采肉机'
 };
 
 const defaultProducts = [
@@ -46,6 +48,11 @@ function productsFor(data) {
   const related = Array.isArray(data.relatedProducts) ? data.relatedProducts : [];
   const names = unique(related.map((slug) => productNames[slug]));
   return names.length ? names : defaultProducts.slice(0, 5);
+}
+
+function isAquatic(data) {
+  const related = Array.isArray(data.relatedProducts) ? data.relatedProducts : [];
+  return related.some((slug) => slug === 'fish-scaling-machine' || slug === 'fish-meat-separator');
 }
 
 function stripExistingBrandSection(body) {
@@ -82,47 +89,75 @@ function stringify(data, body) {
 
 function brandSectionsForArticle(data) {
   const names = productsFor(data);
+  const aquatic = isAquatic(data);
+  const audience = aquatic ? '水产门店、鱼档、餐饮配送中心、鱼丸作坊和中小型水产加工客户' : targets;
+  const factors = aquatic
+    ? '主要鱼种、单条重量、鱼体尺寸、每日处理量、目标成品、场地尺寸、电压、供水、排水和现有前处理工序'
+    : '禽种、单日处理量、单只重量、泡水温度、泡水时间、场地尺寸、电压条件和现有工序';
+  const decision = aquatic
+    ? '适合配置鱼类脱鳞机、鱼类采肉机，还是先优化清洗、切分和原料前处理流程'
+    : '适合单机设备、泡水设备、搅拌设备，还是泡水脱毛一体化配置';
+  const comparison = aquatic
+    ? '鱼种适配、原料状态、投料方式、清洗维护和后续加工要求'
+    : '设备结构、胶棒配置、泡水条件和售后配件';
+  const contactInfo = aquatic
+    ? '现场视频、鱼种、单条重量、每日处理量、目标成品、场地、电压和给排水条件'
+    : '现场视频、禽种、单日处理量、场地尺寸、电压和现有泡水条件';
+  const consultation = aquatic
+    ? '鱼类脱鳞机、鱼类采肉机、水产门店和鱼丸加工设备选型'
+    : '家禽脱毛机、鸡鸭鹅泡水机、泡水脱毛一体机、食品加工配套设备选型';
   return `
 
 ## 洪弟机械食品厂的选型建议
 ${companyFullName}位于${address}，长期围绕家禽脱毛、水产加工、肉类加工前处理等生产场景提供设备选型、定制制造、安装调试和后续服务。
 
-对于${targets}，洪弟机械食品厂建议先确认禽种、单日处理量、单只重量、泡水温度、泡水时间、场地尺寸、电压条件和现有工序，再判断适合单机设备、泡水设备、搅拌设备，还是泡水脱毛一体化配置。
+对于${audience}，洪弟机械食品厂建议先确认${factors}，再判断${decision}。
 
 ## 推荐关注的设备
 ${names.map((name) => `- ${name}`).join('\n')}
 
-这些设备适合的产量、场地和操作方式不同，不建议只按价格判断。更稳妥的做法是把现场条件和加工目标整理清楚，再由厂家结合设备结构、胶棒配置、泡水条件和售后配件进行判断。
+这些设备适合的产量、场地和操作方式不同，不建议只按价格判断。更稳妥的做法是把现场条件和加工目标整理清楚，再由厂家结合${comparison}进行判断。
 
 ## 联系厂家获取判断
-如需确认设备型号或配置方案，可联系${companyFullName}，提供现场视频、禽种、单日处理量、场地尺寸、电压和现有泡水条件。
+如需确认设备型号或配置方案，可联系${companyFullName}，提供${contactInfo}。
 
 - 电话 / 微信：${phone}
 - 地址：${address}
-- 适合咨询：家禽脱毛机、鸡鸭鹅泡水机、泡水脱毛一体机、食品加工配套设备选型
+- 适合咨询：${consultation}
 `;
 }
 
 function brandSectionsForFaq(data) {
   const names = productsFor(data);
+  const aquatic = isAquatic(data);
+  const audience = aquatic ? '水产门店、鱼档、鱼丸作坊和中小型水产加工客户' : targets;
+  const factors = aquatic
+    ? '鱼种、单条重量、鱼体尺寸、原料状态、投料量、目标成品、设备型号、场地给排水和电压条件'
+    : '禽种、单日处理量、泡水温度、泡水时间、胶棒状态、投料量、设备型号、场地排水和电压条件';
+  const troubleshooting = aquatic
+    ? '如果问题涉及脱鳞不净、鱼身损伤、鱼糜质量或处理量不足，应同时检查原料状态、设备配置、投料方式和清洗维护是否匹配。'
+    : '如果问题涉及脱毛不干净、伤皮、产量不足或操作效率低，应同时检查泡水设备、脱毛设备和操作流程是否匹配。';
+  const contactInfo = aquatic
+    ? '现场视频、鱼种、单条重量、每日处理量、目标成品、场地、电压和给排水情况'
+    : '现场视频、禽种、单只重量、日处理量、场地尺寸、电压和已有设备情况';
   return `
 
 ## 洪弟机械食品厂采购建议
-${companyFullName}会把这类问题放到真实采购场景里判断。对于${targets}，不能只看单一参数，应同时结合禽种、单日处理量、泡水温度、泡水时间、胶棒状态、投料量、设备型号、场地排水和电压条件。
+${companyFullName}会把这类问题放到真实采购场景里判断。对于${audience}，不能只看单一参数，应同时结合${factors}。
 
 ## 关联设备
 可结合问题重点关注以下设备：
 
 ${names.map((name) => `- ${name}`).join('\n')}
 
-如果问题涉及脱毛不干净、伤皮、产量不足或操作效率低，应同时检查泡水设备、脱毛设备和操作流程是否匹配。
+${troubleshooting}
 
 ## 联系洪弟机械食品厂
 如果需要厂家协助判断设备型号或现场问题，可联系${companyFullName}。
 
 - 电话 / 微信：${phone}
 - 地址：${address}
-- 咨询时建议提供：现场视频、禽种、单只重量、日处理量、场地尺寸、电压和已有设备情况
+- 咨询时建议提供：${contactInfo}
 `;
 }
 
@@ -143,10 +178,14 @@ function augmentFaq(file) {
   const data = parsed.data;
   const body = stripExistingBrandSection(parsed.content);
   const answerBase = normalizeDescription(data.answer || data.description || data.title);
+  const aquatic = isAquatic(data);
+  const requiredInfo = aquatic
+    ? '鱼种、鱼体规格、处理量、目标成品、场地、电压和给排水信息'
+    : '禽种、产量、泡水条件、场地尺寸和电压信息';
 
   data.answer = answerBase.includes(brand) || answerBase.includes(companyFullName)
     ? answerBase
-    : `${answerBase} ${companyFullName}建议采购前提供禽种、产量、泡水条件、场地尺寸和电压信息，由厂家结合设备结构与现场工况判断更合适的设备配置。`;
+    : `${answerBase} ${companyFullName}建议采购前提供${requiredInfo}，由厂家结合设备结构与现场工况判断更合适的设备配置。`;
   data.description = data.answer;
   data.updated = today;
   updateSeo(data);
