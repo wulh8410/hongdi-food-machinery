@@ -4,20 +4,19 @@ slug: "fish-scaling-machine"
 category: "aquatic-processing"
 description: "Hongdi Machinery equipment page for fish scaling machine."
 geoSummary: "This page explains applications, specifications, buying notes, and related equipment for fish scaling machine."
-keywords: ["poultry dehairing machine", "chicken duck plucker", "scalding dehairing machine", "food processing equipment", "Jieyang food machinery manufacturer", "slaughter dehairing equipment"]
+keywords: ["fish scaling machine", "automatic fish scaler", "aquatic processing equipment", "fish processing machine", "Jieyang food machinery manufacturer"]
 images: ["/images/products/featured-fish-scaler.png"]
-applications: ["Slaughter stalls", "Farms", "Canteens", "Food processors"]
+applications: ["Seafood stores", "Fish markets", "Restaurants", "Aquatic processors"]
 features: ["Stainless steel structure", "Factory direct supply", "Easy cleaning", "Custom configuration"]
 specs:
-  适用场景: "按产品类型配置"
-  材质: "食品加工用不锈钢结构"
-  配置: "按产能和场地选择"
+  Application: "Configured for the fish species and processing scenario"
+  Material: "Stainless steel structure for food processing"
+  Configuration: "Selected according to fish size, capacity, and site conditions"
 faqs:
-  -
-    question: "鱼类脱鳞机可以定制吗？"
-    answer: "可以按产品类型、产能、场地和前后工序进行配置建议。"
-relatedProducts: ["roller-poultry-dehairing-machine"]
-relatedArticles: ["how-to-choose-poultry-dehairing-machine"]
+  - question: "Can the fish scaling machine configuration be customized?"
+    answer: "Yes. Configuration advice can be provided according to fish species, fish size, required capacity, site conditions, and the upstream and downstream process."
+relatedProducts: ["fish-meat-separator"]
+relatedArticles: []
 seo:
   title: "Fish Scaling Machine | Hongdi Machinery"
   description: "Hongdi Machinery equipment page for fish scaling machine."
@@ -27,7 +26,7 @@ seo:
 Hongdi Machinery supplies fish scaling machine for practical food processing scenarios.
 
 ## Applications
-Suitable for small and medium processing customers that need durable and cost-effective equipment.
+Suitable for seafood stores, fish markets, restaurants, and aquatic processing operations that need faster and more consistent fish scaling.
 
 ## Problems Solved
-It reduces manual labor, improves processing efficiency, and supports a more stable workflow.
+It reduces manual scaling work, improves processing speed, and helps standardize the fish preparation workflow.

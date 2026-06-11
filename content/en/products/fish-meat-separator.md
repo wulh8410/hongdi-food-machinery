@@ -4,20 +4,19 @@ slug: "fish-meat-separator"
 category: "aquatic-processing"
 description: "Hongdi Machinery equipment page for fish meat separator."
 geoSummary: "This page explains applications, specifications, buying notes, and related equipment for fish meat separator."
-keywords: ["poultry dehairing machine", "chicken duck plucker", "scalding dehairing machine", "food processing equipment", "Jieyang food machinery manufacturer", "slaughter dehairing equipment"]
+keywords: ["fish meat separator", "fish deboning machine", "surimi processing equipment", "fish processing machine", "Jieyang food machinery manufacturer"]
 images: ["/images/products/featured-fish-meat-separator.png"]
-applications: ["Slaughter stalls", "Farms", "Canteens", "Food processors"]
+applications: ["Surimi processing", "Fish ball production", "Seafood processors", "Food factories"]
 features: ["Stainless steel structure", "Factory direct supply", "Easy cleaning", "Custom configuration"]
 specs:
-  适用场景: "按产品类型配置"
-  材质: "食品加工用不锈钢结构"
-  配置: "按产能和场地选择"
+  Application: "Fish meat recovery and separation from skin and bones"
+  Material: "Stainless steel structure for food processing"
+  Configuration: "Selected according to fish species, target product, capacity, and site conditions"
 faqs:
-  -
-    question: "鱼类采肉机可以定制吗？"
-    answer: "可以按产品类型、产能、场地和前后工序进行配置建议。"
-relatedProducts: ["roller-poultry-dehairing-machine"]
-relatedArticles: ["how-to-choose-poultry-dehairing-machine"]
+  - question: "Can the fish meat separator configuration be customized?"
+    answer: "Yes. Configuration advice can be provided according to fish species, raw material preparation, target product, required capacity, site conditions, and connected processes."
+relatedProducts: ["fish-scaling-machine"]
+relatedArticles: []
 seo:
   title: "Fish Meat Separator | Hongdi Machinery"
   description: "Hongdi Machinery equipment page for fish meat separator."
@@ -27,7 +26,7 @@ seo:
 Hongdi Machinery supplies fish meat separator for practical food processing scenarios.
 
 ## Applications
-Suitable for small and medium processing customers that need durable and cost-effective equipment.
+Suitable for surimi processing, fish ball production, seafood processing facilities, and food factories that need fish meat recovery.
 
 ## Problems Solved
-It reduces manual labor, improves processing efficiency, and supports a more stable workflow.
+It reduces manual meat recovery work, separates fish meat from skin and bones, and supports a more consistent surimi preparation process.
