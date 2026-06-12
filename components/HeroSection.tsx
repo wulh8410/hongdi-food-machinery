@@ -5,87 +5,72 @@ import { assetPath } from '@/lib/asset';
 
 export function HeroSection({ locale }: { locale: Locale; site: SiteConfig }) {
   const isZh = locale === 'zh';
-  const tags = isZh ? ['源头厂家', '稳定耐用', '支持配套', '售后无忧'] : ['Direct Factory', 'Stable & Durable', 'Configuration Support', 'Service Support'];
+  const proofPoints = isZh ? ['源头工厂', '稳定耐用', '支持配套', '售后配件'] : ['Direct Factory', 'Stable Build', 'Configured Support', 'Parts Support'];
   const metrics = isZh
     ? [
         ['20+', '行业生产经验'],
         ['30+', '设备方案品类'],
-        ['5000+', '现代化生产基地'],
+        ['5000㎡', '现代化生产基地'],
         ['全国', '客户服务范围']
       ]
     : [
         ['20+', 'Years Experience'],
         ['30+', 'Equipment Options'],
-        ['5000+', 'Production Base'],
+        ['5000㎡', 'Production Base'],
         ['China', 'Service Coverage']
       ];
 
   return (
-    <section className="relative overflow-hidden bg-[#061a31] text-white">
-      <div className="relative min-h-[610px] md:min-h-[690px]">
-        <Image
-          src={assetPath('/images/hero/hongdi-factory-showroom-hero.png')}
-          alt={isZh ? '洪弟机械食品厂门面与食品加工设备展示' : 'Hongdi Machinery factory and food processing equipment display'}
-          fill
-          className="object-cover object-[58%_center]"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#061a31]/92 via-[#061a31]/36 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#061a31]/55 via-transparent to-[#061a31]/55" />
-        <div className="absolute left-0 top-0 h-full w-[58%] bg-[radial-gradient(circle_at_25%_18%,rgba(30,114,184,0.38),transparent_38%)]" />
-
-        <div
-          className="absolute inset-0 opacity-15"
-          style={{
-            backgroundImage:
-              'linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px)',
-            backgroundSize: '56px 56px'
-          }}
-        />
-
-        <div className="relative z-10 w-full px-0 pt-0">
-          <div className="ml-0 max-w-[560px] border-l-4 border-industrial-orange bg-[#061a31]/58 px-5 py-4 shadow-2xl shadow-black/25 backdrop-blur-sm md:px-6 md:py-5">
-            <p className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-industrial-orange md:text-sm">
-              <span className="h-2 w-7 bg-industrial-orange" />
+    <section className="bg-[#e8f0f5] px-4 pt-6 md:px-6 lg:pt-10">
+      <div className="mx-auto max-w-7xl">
+        <div className="relative min-h-[600px] overflow-hidden border border-[#08233d]/10 bg-[#08233d] shadow-soft lg:min-h-[640px]">
+          <Image
+            src={assetPath('/images/hero/hongdi-factory-showroom-hero.png')}
+            alt={isZh ? '洪弟机械食品厂门面与食品加工设备展示' : 'Hongdi Machinery factory and food processing equipment display'}
+            fill
+            className="object-cover object-center"
+            sizes="100vw"
+            priority
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,35,61,0.94)_0%,rgba(8,35,61,0.8)_40%,rgba(8,35,61,0.28)_72%,rgba(8,35,61,0.08)_100%)]" />
+          <div className="absolute inset-0 opacity-45 [background-image:linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:92px_92px]" />
+          <div className="relative z-10 max-w-2xl px-6 py-14 md:px-12 lg:px-14 lg:py-20">
+            <p className="flex items-center gap-3 text-sm font-black tracking-[0.08em] text-industrial-orange before:h-1 before:w-8 before:bg-industrial-orange">
               {isZh ? '洪弟机械食品厂' : 'Hongdi Machinery Food Factory'}
             </p>
-            <h1 className="mt-3 text-3xl font-black leading-tight md:text-4xl lg:text-5xl">
-              {isZh ? '专注食品机械设备制造' : 'Food Machinery Equipment Manufacturing'}
-              <span className="mt-1 block text-2xl text-slate-100 md:text-3xl lg:text-4xl">
-                {isZh ? '一站式加工设备解决方案' : 'Integrated Processing Equipment Solutions'}
-              </span>
+            <h1 className="mt-6 text-4xl font-black leading-[1.08] text-white md:text-6xl lg:text-7xl">
+              {isZh ? '食品加工设备制造与选型服务' : 'Food Processing Equipment Manufacturing'}
             </h1>
-            <p className="mt-4 max-w-xl text-sm leading-7 text-slate-100">
-              {isZh
-                ? '围绕家禽脱毛、水产加工、肉类加工等生产场景，提供设备选型、产能配置和配套方案建议，帮助客户提升加工效率与现场稳定性。'
-                : 'Equipment selection and configuration for poultry dehairing, aquatic processing, meat processing, and practical food production workflows.'}
+            <p className="mt-6 text-xl font-black text-industrial-orange md:text-2xl">
+              {isZh ? '家禽脱毛 · 水产加工 · 肉类前处理 · 配套交付' : 'Poultry · Aquatic · Meat Prep · Configured Delivery'}
             </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {tags.map((tag) => (
-                <span key={tag} className="border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold text-white md:text-sm">
-                  {tag}
-                </span>
+            <p className="mt-7 max-w-xl text-base font-semibold leading-8 text-slate-200 md:text-lg">
+              {isZh
+                ? '围绕真实加工场景，提供设备选型、产能配置、安装调试和后续配件支持，帮助屠宰档口、养殖场、食堂与食品加工客户更稳定地完成生产配置。'
+                : 'Equipment selection, capacity configuration, commissioning, and parts support for practical food processing scenarios.'}
+            </p>
+            <div className="mt-8 grid gap-3 sm:grid-cols-4">
+              {proofPoints.map((item) => (
+                <div key={item} className="border border-white/15 border-l-4 border-l-industrial-orange bg-white/10 px-3 py-3 text-sm font-black text-white">
+                  {item}
+                </div>
               ))}
             </div>
-            <div className="mt-5 flex flex-wrap gap-3">
-              <Link href={`/${locale}/products`} className="bg-industrial-orange px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-black/25">
-                {isZh ? '查看设备产品' : 'View Products'}
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Link href={`/${locale}/products`} className="bg-industrial-orange px-7 py-4 text-sm font-black text-white shadow-soft">
+                {isZh ? '查看核心设备' : 'View Equipment'}
               </Link>
-              <Link href={`/${locale}/solutions`} className="border border-white/25 bg-white/10 px-5 py-2.5 text-sm font-bold text-white hover:bg-white/15">
-                {isZh ? '查看解决方案' : 'View Solutions'}
+              <Link href={`/${locale}/solutions`} className="border border-white/40 px-7 py-4 text-sm font-black text-white hover:bg-white/10">
+                {isZh ? '获取选型建议' : 'Get Selection Advice'}
               </Link>
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="relative border-t border-white/10 bg-[#062442]">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px px-4 py-5 md:grid-cols-4 md:px-6">
-          {metrics.map(([value, label]) => (
-            <div key={label} className="border-l border-white/10 px-4 py-2 first:border-l-0">
-              <p className="text-3xl font-black text-white md:text-4xl">{value}</p>
-              <p className="mt-1 text-xs font-semibold text-slate-300 md:text-sm">{label}</p>
+        <div className="grid border border-t-0 border-white/10 bg-[#123452] text-white md:grid-cols-4">
+          {metrics.map(([value, label], index) => (
+            <div key={label} className={`px-8 py-7 ${index ? 'border-t border-white/10 md:border-l md:border-t-0' : ''}`}>
+              <p className="text-4xl font-black text-industrial-orange">{value}</p>
+              <p className="mt-2 text-sm font-bold text-white">{label}</p>
             </div>
           ))}
         </div>

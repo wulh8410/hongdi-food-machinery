@@ -6,10 +6,7 @@ export function LanguageSwitcher({ locale, path }: { locale: Locale; path: strin
   const cleanPath = path.replace(/^\/(zh|en)/, '');
 
   return (
-    <Link
-      href={`/${targetLocale}${cleanPath}`}
-      className="rounded border border-industrial-blue/25 px-3 py-2 text-sm font-semibold text-industrial-blue"
-    >
+    <Link href={`/${targetLocale}${cleanPath}`} className="border border-current/30 px-3 py-2 text-sm font-semibold">
       {locale === 'zh' ? 'English' : '中文'}
     </Link>
   );
