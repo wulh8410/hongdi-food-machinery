@@ -23,7 +23,7 @@ relatedArticles: ["small-slaughter-stall-equipment-selection"]
 date: "2026-06-06"
 updated: "2026-06-06"
 seo:
-  title: "Pneumatic Discharge Scalding-Dehairing Machine | Hongdi Machinery"
+  title: "Pneumatic Discharge Scalding-Dehairing Machine | Hongdi Food Machinery"
   description: "Integrated poultry machine for soaking, scalding, dehairing, and pneumatic discharge with 430 stainless steel body."
 ---
 

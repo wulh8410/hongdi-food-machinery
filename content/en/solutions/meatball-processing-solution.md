@@ -1,7 +1,7 @@
 ---
 title: "Meatball Processing Support Solution"
 slug: "meatball-processing-solution"
-description: "A practical equipment configuration based on Hongdi Machinery products."
+description: "A practical equipment configuration based on Hongdi Food Machinery products."
 painPoints: ["Labor cost", "Processing efficiency", "Site adaptation"]
 recommendedProducts: ["fish-meat-separator", "fish-scaling-machine"]
 process: ["Confirm products and output", "Select main machine", "Configure supporting equipment", "Install and test", "Clean and maintain daily"]
@@ -10,8 +10,8 @@ capacity: "Suitable for small and medium commercial processing scenarios."
 relatedProducts: ["fish-meat-separator", "fish-scaling-machine"]
 relatedFaqs: ["how-to-choose-poultry-dehairing-machine", "after-sales-and-warranty"]
 seo:
-  title: "Meatball Processing Support Solution | Hongdi Machinery"
-  description: "A practical equipment configuration based on Hongdi Machinery products."
+  title: "Meatball Processing Support Solution | Hongdi Food Machinery"
+  description: "A practical equipment configuration based on Hongdi Food Machinery products."
 ---
 
 ## Solution Notes

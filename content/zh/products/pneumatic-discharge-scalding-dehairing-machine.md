@@ -33,7 +33,7 @@ relatedArticles: ["small-slaughter-stall-equipment-selection", "pneumatic-scaldi
 date: "2026-06-09"
 updated: "2026-06-09"
 seo:
-  title: "气动翻出泡水脱毛一体机｜洪弟机械食品厂"
+  title: "气动翻出泡水脱毛一体机｜洪弟食品机械"
   description: "气动翻出泡水脱毛一体机集泡水、脱毛和气动翻出于一体，适合需要减少搬运环节的加工现场。"
 ---
 

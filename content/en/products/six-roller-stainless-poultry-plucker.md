@@ -28,7 +28,7 @@ relatedArticles: ["how-to-choose-poultry-dehairing-machine", "daily-maintenance-
 date: "2026-06-06"
 updated: "2026-06-06"
 seo:
-  title: "6-Roller Stainless Poultry Plucker | Hongdi Machinery"
+  title: "6-Roller Stainless Poultry Plucker | Hongdi Food Machinery"
   description: "6-roller stainless poultry plucker with transparent PVC panel, stainless bearings, foot pedal structure, and caster wheel design."
 ---
 

@@ -36,7 +36,7 @@ relatedArticles: ["poultry-dehairing-machine-not-clean-reasons", "scalding-tempe
 date: "2026-06-09"
 updated: "2026-06-09"
 seo:
-  title: "胶棒搅拌不锈钢鸡鹅鸭泡水机｜洪弟机械食品厂"
+  title: "胶棒搅拌不锈钢鸡鹅鸭泡水机｜洪弟食品机械"
   description: "胶棒搅拌不锈钢鸡鹅鸭泡水机用于家禽脱毛前泡水烫毛，通过胶棒搅拌提升受热均匀度。"
 ---
 

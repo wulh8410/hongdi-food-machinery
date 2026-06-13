@@ -27,7 +27,7 @@ date: "2026-06-06"
 updated: "2026-06-06"
 seo:
   title: "9-Roller Stainless Poultry Plucker | High-Capacity Dehairing Machine"
-  description: "Hongdi Machinery 9-roller stainless poultry plucker with transparent PVC panel for higher-capacity chicken, duck, and goose dehairing."
+  description: "Hongdi Food Machinery 9-roller stainless poultry plucker with transparent PVC panel for higher-capacity chicken, duck, and goose dehairing."
 ---
 
 ## Product Introduction

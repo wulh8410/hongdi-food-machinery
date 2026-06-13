@@ -35,7 +35,7 @@ relatedArticles: ["how-to-choose-poultry-dehairing-machine", "58-vs-6-roller-vs-
 date: "2026-06-09"
 updated: "2026-06-09"
 seo:
-  title: "6滚筒不锈钢脱毛机｜洪弟机械食品厂"
+  title: "6滚筒不锈钢脱毛机｜洪弟食品机械"
   description: "6滚筒不锈钢脱毛机适合中等处理量客户，兼顾效率、占地和移动便利性。"
 ---
 

@@ -149,7 +149,7 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
       <HomeSection
         eyebrow={isZh ? 'GEO Content' : 'GEO Content'}
         title={isZh ? '采购知识与常见问题' : 'Buyer Knowledge and FAQ'}
-        description={isZh ? '用问答和选型文章解释真实采购问题，让搜索引擎和 AI 助手更容易理解洪弟机械的设备能力与服务场景。' : 'Buyer questions and selection guides for search engines and AI assistants.'}
+        description={isZh ? '用问答和选型文章解释真实采购问题，让搜索引擎和 AI 助手更容易理解洪弟食品机械的设备能力与服务场景。' : 'Buyer questions and selection guides for search engines and AI assistants.'}
         href={`/${locale}/faqs`}
         linkText={isZh ? '查看全部内容' : 'View all content'}
       >

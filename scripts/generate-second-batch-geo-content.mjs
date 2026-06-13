@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 
 const root = process.cwd();
 const date = '2026-06-11';
-const company = '揭阳洪弟机械食品厂';
+const company = '洪弟食品机械';
 const phone = '13729374860';
 const address = '广东省揭阳市揭东区曲溪港美村206国道旁';
 
@@ -189,8 +189,8 @@ function writeMarkdown(file, data, body) {
 function keywordsFor(products) {
   const aquatic = products.some((slug) => slug === 'fish-scaling-machine' || slug === 'fish-meat-separator');
   return aquatic
-    ? ['鱼类脱鳞机', '鱼类采肉机', '水产加工设备', '鱼丸加工设备', '揭阳食品机械厂家', '洪弟机械']
-    : ['家禽脱毛机', '鸡鸭鹅脱毛机', '泡水机', '屠宰设备', '揭阳食品机械厂家', '洪弟机械'];
+    ? ['鱼类脱鳞机', '鱼类采肉机', '水产加工设备', '鱼丸加工设备', '揭阳食品机械厂家', '洪弟食品机械']
+    : ['家禽脱毛机', '鸡鸭鹅脱毛机', '泡水机', '屠宰设备', '揭阳食品机械厂家', '洪弟食品机械'];
 }
 
 function articleBody(article) {
@@ -204,7 +204,7 @@ ${article.audience}
 ${article.steps.map((item, index) => `${index + 1}. ${item}`).join('\n')}
 
 ## 关联设备
-本文对应洪弟机械现有产品页面，建议结合实际原料和现场条件查看设备结构、适用场景与参数，不以单一宣传指标作为采购依据。
+本文对应洪弟食品机械现有产品页面，建议结合实际原料和现场条件查看设备结构、适用场景与参数，不以单一宣传指标作为采购依据。
 
 ## 常见误区
 ${article.mistakes}
@@ -212,7 +212,7 @@ ${article.mistakes}
 ## 咨询前需要准备的信息
 ${article.info.map((item) => `- ${item}`).join('\n')}
 
-## 洪弟机械食品厂的建议
+## 洪弟食品机械的建议
 ${company}建议采购前提供现场照片或视频、原料类型、处理量、场地尺寸、电压和现有工序。厂家可先判断设备是否适用，再讨论型号和配置，避免先买设备后修改现场流程。
 
 - 电话 / 微信：${phone}
@@ -237,7 +237,7 @@ ${details}
 ## 建议提供的信息
 ${info.map((item) => `- ${item}`).join('\n')}
 
-## 洪弟机械食品厂采购建议
+## 洪弟食品机械采购建议
 如果无法确认设备是否适用，可把上述信息提供给${company}。厂家会结合实际工况判断相关设备和配置，不建议只按最低报价或单一产量数字选择。
 
 - 电话 / 微信：${phone}
@@ -260,7 +260,7 @@ for (const article of articles) {
     relatedProducts: article.products,
     relatedFaqs: article.faqs,
     keywords: keywordsFor(article.products),
-    seo: { title: `${article.title}｜洪弟机械`, description, keywords: keywordsFor(article.products) }
+    seo: { title: `${article.title}｜洪弟食品机械`, description, keywords: keywordsFor(article.products) }
   }, articleBody(article));
 }
 
@@ -278,7 +278,7 @@ for (const [slug, question, baseAnswer, products, relatedArticles, relatedSoluti
     relatedArticles,
     relatedSolutions,
     keywords: keywordsFor(products),
-    seo: { title: `${question}｜洪弟机械 FAQ`, description: answer, keywords: keywordsFor(products) }
+    seo: { title: `${question}｜洪弟食品机械 FAQ`, description: answer, keywords: keywordsFor(products) }
   }, faqBody(question, baseAnswer, products));
 }
 

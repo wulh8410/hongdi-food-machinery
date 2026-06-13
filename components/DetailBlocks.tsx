@@ -173,7 +173,7 @@ export function BrandConsultation({
     <section className="mt-8 rounded border border-industrial-blue/20 bg-slate-50 p-6">
       <p className="text-sm font-semibold text-industrial-orange">{isZh ? '厂家选型咨询' : 'Factory Consultation'}</p>
       <h2 className="mt-2 text-xl font-bold text-industrial-navy">
-        {isZh ? '联系洪弟机械食品厂获取设备选型建议' : 'Contact Hongdi Machinery for equipment selection advice'}
+        {isZh ? '联系洪弟食品机械获取设备选型建议' : 'Contact Hongdi Food Machinery for equipment selection advice'}
       </h2>
       <p className="mt-3 leading-8 text-slate-700">
         {isZh

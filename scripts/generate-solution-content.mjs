@@ -5,7 +5,7 @@ import matter from 'gray-matter';
 const root = process.cwd();
 const outputDir = path.join(root, 'content', 'zh', 'solutions');
 const date = '2026-06-11';
-const contact = '洪弟机械食品厂，电话/微信：13729374860，地址：广东省揭阳市揭东区曲溪港美村206国道旁。';
+const contact = '洪弟食品机械，电话/微信：13729374860，地址：广东省揭阳市揭东区曲溪港美村206国道旁。';
 const boundary = '页面中的设备额定参数来自现有产品资料；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置应在下单前由厂家复核。';
 
 const poultrySite = ['确认现场使用220V还是380V电源，并按设备功率配置独立线路和保护开关', '地面应平整、防滑并便于冲洗，脱毛和泡水区域预留排水沟或集水点', '按设备外形、开盖或翻料动作预留操作空间、检修空间和物料周转通道', '泡水工序需要确认热水或蒸汽来源，设备附近避免堆放怕水物品'];
@@ -32,7 +32,7 @@ const solutions = [
     articles: ['small-slaughter-stall-equipment-selection', 'how-to-choose-poultry-dehairing-machine', 'poultry-dehairing-machine-not-clean-reasons', 'site-preparation-for-poultry-plucker'],
     faqs: ['small-stall-which-plucker', 'why-plucker-not-clean', 'why-plucker-damages-skin', 'what-info-before-buying'],
     pageFaqs: [['小档口应该先买泡水机还是脱毛机？', '如果现有人工泡水能够稳定控制温度和时间，可以先配置脱毛机；如果脱毛效果长期波动且人工翻料费力，应同步考虑泡水搅拌设备。'], ['鸡鸭鹅可以用同一台脱毛机吗？', '部分机型可以处理多种家禽，但投料量、泡水条件和操作时间需要分别调整，选型前应提供主要禽种和重量范围。']],
-    body: '档口设备配置的核心不是把设备数量堆多，而是让泡水、脱毛、修整和清洗节拍一致。洪弟机械建议先记录一天内的平均量和高峰量，再判断选择单机、泡水配套或一体化设备。\n\n如果出现脱不净或伤皮，不能直接归因于机器。泡水温度、泡水时间、单次投料量、橡胶棒磨损和禽种差异都会影响结果，因此交付时应使用客户常用原料进行试机。'
+    body: '档口设备配置的核心不是把设备数量堆多，而是让泡水、脱毛、修整和清洗节拍一致。洪弟食品机械建议先记录一天内的平均量和高峰量，再判断选择单机、泡水配套或一体化设备。\n\n如果出现脱不净或伤皮，不能直接归因于机器。泡水温度、泡水时间、单次投料量、橡胶棒磨损和禽种差异都会影响结果，因此交付时应使用客户常用原料进行试机。'
   },
   {
     slug: 'farm-poultry-processing-solution', title: '养殖场家禽批量处理解决方案', category: '家禽加工',
@@ -47,7 +47,7 @@ const solutions = [
     articles: ['farm-poultry-dehairing-equipment-configuration', 'large-volume-poultry-processing-equipment', '58-vs-6-roller-vs-9-roller-poultry-plucker', 'daily-maintenance-for-poultry-dehairing-machine'],
     faqs: ['farm-equipment-configuration', 'large-volume-poultry-line-configuration', 'difference-58-6-9-roller', 'motor-belt-bearing-check'],
     pageFaqs: [['养殖场应该按日处理量还是小时处理量选型？', '应重点看集中出栏期间的小时高峰量，同时考虑泡水、脱毛、修整和清洗能否同步完成。'], ['6滚筒和9滚筒如何选择？', '需要结合禽种、峰值处理量、380V电源、场地和预算判断，不能只依据滚筒数量。']],
-    body: '养殖场的生产通常具有明显峰谷，设备配置应以集中出栏时段为依据。除了脱毛主机，还要检查泡水能力、人工上料、出料检查和场地排水是否形成瓶颈。\n\n洪弟机械在确认方案时会要求客户提供主要禽种、重量范围、出栏节奏和现场条件，再判断6滚筒、9滚筒以及泡水设备的组合。额定参数用于初筛，最终仍需按常用原料试机。'
+    body: '养殖场的生产通常具有明显峰谷，设备配置应以集中出栏时段为依据。除了脱毛主机，还要检查泡水能力、人工上料、出料检查和场地排水是否形成瓶颈。\n\n洪弟食品机械在确认方案时会要求客户提供主要禽种、重量范围、出栏节奏和现场条件，再判断6滚筒、9滚筒以及泡水设备的组合。额定参数用于初筛，最终仍需按常用原料试机。'
   },
   {
     slug: 'canteen-restaurant-poultry-solution', title: '食堂餐饮家禽前处理解决方案', category: '家禽加工',
@@ -62,7 +62,7 @@ const solutions = [
     articles: ['canteen-restaurant-poultry-equipment', '220v-vs-380v-poultry-plucker', '58-vs-430-mobile-poultry-plucker', 'daily-maintenance-for-poultry-dehairing-machine'],
     faqs: ['canteen-restaurant-equipment', '220v-or-380v-poultry-plucker', '58-vs-430-mobile-plucker', 'how-to-clean-poultry-plucker'],
     pageFaqs: [['餐饮门店一定需要泡水机吗？', '不一定。处理量较小时可先使用现有泡水容器，但需要稳定控制温度和时间；处理量增加后再评估搅拌泡水设备。'], ['后厨更适合220V还是380V？', '取决于现有供电、设备功率和持续作业时间。不能为了接线方便忽略线路负载，应由电工核实。']],
-    body: '餐饮客户的目标通常是减少备餐前处理时间，而不是建设完整屠宰线。因此方案应保持紧凑，避免配置超过实际需求的大型设备。\n\n设备使用频率和清洗便利性同样重要。洪弟机械建议把设备放置、冲洗、排水、收纳和人员通行一起纳入方案，确保采购后能够持续使用。'
+    body: '餐饮客户的目标通常是减少备餐前处理时间，而不是建设完整屠宰线。因此方案应保持紧凑，避免配置超过实际需求的大型设备。\n\n设备使用频率和清洗便利性同样重要。洪弟食品机械建议把设备放置、冲洗、排水、收纳和人员通行一起纳入方案，确保采购后能够持续使用。'
   },
   {
     slug: 'aquatic-store-processing-solution', title: '水产门店去鳞采肉解决方案', category: '水产加工',
@@ -77,7 +77,7 @@ const solutions = [
     articles: ['aquatic-store-processing-equipment-configuration', 'how-to-choose-fish-scaling-machine', 'how-to-choose-fish-meat-separator', 'what-affects-fish-meat-separator-yield'],
     faqs: ['aquatic-store-needed-equipment', 'how-to-choose-fish-scaling-machine', 'how-to-choose-fish-meat-separator', 'what-affects-fish-meat-yield'],
     pageFaqs: [['水产门店需要同时购买脱鳞机和采肉机吗？', '不需要。主要销售整鱼或净鱼时优先考虑脱鳞机；只有制作鱼糜、鱼丸原料或需要骨肉分离时才需要采肉机。'], ['鱼类设备能否用统一参数适配所有鱼种？', '不能。鱼鳞类型、鱼体尺寸、原料状态和目标成品不同，必须用常用鱼种确认配置和操作方式。']],
-    body: '水产门店最重要的是让设备服务营业高峰，而不是追求复杂生产线。去鳞设备应放在清洗和接料方便的位置，采肉设备则需要衔接前处理、成品接料和冷藏。\n\n洪弟机械会根据鱼种、单条重量、每日与高峰处理量、目标成品和场地给排水条件提供初步建议。对于无法确认的处理效果，建议先进行原料测试。'
+    body: '水产门店最重要的是让设备服务营业高峰，而不是追求复杂生产线。去鳞设备应放在清洗和接料方便的位置，采肉设备则需要衔接前处理、成品接料和冷藏。\n\n洪弟食品机械会根据鱼种、单条重量、每日与高峰处理量、目标成品和场地给排水条件提供初步建议。对于无法确认的处理效果，建议先进行原料测试。'
   },
   {
     slug: 'meatball-processing-solution', title: '鱼丸鱼糜加工配套解决方案', category: '鱼糜丸类',
@@ -92,7 +92,7 @@ const solutions = [
     articles: ['how-to-choose-fish-meat-separator', 'what-affects-fish-meat-separator-yield', 'how-to-choose-fish-scaling-machine'],
     faqs: ['how-to-choose-fish-meat-separator', 'what-affects-fish-meat-yield', 'how-to-choose-fish-scaling-machine'],
     pageFaqs: [['鱼类采肉机能直接生产鱼丸吗？', '不能。采肉机负责鱼肉与鱼骨鱼皮分离，后续还需要打浆、调味、成型和熟化等工序。'], ['采肉效果主要受什么影响？', '鱼种、原料新鲜度、前处理、设备调整和操作方式都会影响鱼肉状态与分离效果。']],
-    body: '鱼丸和鱼糜方案必须先明确成品工艺。洪弟机械当前重点提供去鳞和采肉环节的设备建议，后续打浆、成型等设备需要结合配方和生产方式配套。\n\n采购前建议准备常用鱼种、原料照片或样品、目标成品、日处理量和现有设备信息，以便判断采肉环节是否能够与后续工序衔接。'
+    body: '鱼丸和鱼糜方案必须先明确成品工艺。洪弟食品机械当前重点提供去鳞和采肉环节的设备建议，后续打浆、成型等设备需要结合配方和生产方式配套。\n\n采购前建议准备常用鱼种、原料照片或样品、目标成品、日处理量和现有设备信息，以便判断采肉环节是否能够与后续工序衔接。'
   },
   {
     slug: 'small-poultry-220v-equipment-solution', title: '小型家禽加工点220V设备解决方案', category: '家禽加工',
@@ -107,7 +107,7 @@ const solutions = [
     articles: ['220v-vs-380v-poultry-plucker', '58-vs-430-mobile-poultry-plucker', 'parameters-before-buying-poultry-plucker'],
     faqs: ['220v-or-380v-poultry-plucker', '58-vs-430-mobile-plucker', 'what-info-before-buying'],
     pageFaqs: [['220V脱毛机可以直接插普通插座吗？', '不能一概而论。应根据设备功率、线路线径、开关容量、接地和持续作业时间，由合格电工确认。'], ['未来扩产是否应该直接买大设备？', '应先判断现有场地、电源和泡水环节能否支持。设备过大但前后工序跟不上，也无法形成有效产能。']],
-    body: '小型加工点选220V设备，首先解决的是安全供电和实际作业节奏。电压相同不代表线路一定合适，尤其是老旧门店或临时加工点。\n\n洪弟机械建议客户提供配电箱、插座位置、线路条件和预计连续工作时间，再结合禽种与处理量选择设备。'
+    body: '小型加工点选220V设备，首先解决的是安全供电和实际作业节奏。电压相同不代表线路一定合适，尤其是老旧门店或临时加工点。\n\n洪弟食品机械建议客户提供配电箱、插座位置、线路条件和预计连续工作时间，再结合禽种与处理量选择设备。'
   },
   {
     slug: 'medium-capacity-poultry-scalding-plucking-solution', title: '中等产量家禽烫脱配套解决方案', category: '家禽加工',
@@ -137,7 +137,7 @@ const solutions = [
     articles: ['large-volume-poultry-processing-equipment', '58-vs-6-roller-vs-9-roller-poultry-plucker', 'how-to-match-scalding-machine-and-plucker', 'poultry-machine-installation-commissioning-acceptance'],
     faqs: ['large-volume-poultry-line-configuration', 'difference-58-6-9-roller', 'how-to-match-scalding-and-plucking', 'poultry-machine-installation-acceptance'],
     pageFaqs: [['9滚筒一定比6滚筒产量高吗？', '不能只看滚筒数量。现有资料中两者额定值均约600只/小时，实际差异还要结合结构、禽种、投料和现场节拍判断。'], ['大批量方案最容易忽略什么？', '常被忽略的是泡水能力、出料修整、排毛排水、清洗停机和人员动线，这些都可能成为整线瓶颈。']],
-    body: '大批量加工方案需要从原料进入到成品离开完整核算。只提升脱毛主机能力，前端泡水和后端修整不变，通常不会得到同等比例的产量提升。\n\n洪弟机械建议先提供连续三天或典型高峰日的数据，再进行设备和人员节拍匹配。'
+    body: '大批量加工方案需要从原料进入到成品离开完整核算。只提升脱毛主机能力，前端泡水和后端修整不变，通常不会得到同等比例的产量提升。\n\n洪弟食品机械建议先提供连续三天或典型高峰日的数据，再进行设备和人员节拍匹配。'
   },
   {
     slug: 'integrated-scalding-dehairing-solution', title: '家禽泡水脱毛一体化解决方案', category: '家禽加工',
@@ -182,7 +182,7 @@ const solutions = [
     articles: ['how-to-choose-fish-meat-separator', 'what-affects-fish-meat-separator-yield', 'how-to-choose-fish-scaling-machine'],
     faqs: ['how-to-choose-fish-meat-separator', 'what-affects-fish-meat-yield', 'how-to-choose-fish-scaling-machine'],
     pageFaqs: [['采肉率可以只看设备参数吗？', '不可以。鱼种、原料新鲜度、前处理、操作和目标成品都会影响采肉结果。'], ['采肉后的鱼肉应该怎样衔接？', '应及时接料并保持低温，根据产品工艺进入打浆、调味或其他加工，避免长时间常温停留。']],
-    body: '鱼肉采集方案的重点是保持原料与后续工序连续。采肉前处理不充分、接料不及时或后段设备能力不足，都会影响实际生产。\n\n洪弟机械建议客户提供原料样品或清晰资料，通过试机观察鱼肉状态和骨皮分离情况，再确定设备与操作方式。'
+    body: '鱼肉采集方案的重点是保持原料与后续工序连续。采肉前处理不充分、接料不及时或后段设备能力不足，都会影响实际生产。\n\n洪弟食品机械建议客户提供原料样品或清晰资料，通过试机观察鱼肉状态和骨皮分离情况，再确定设备与操作方式。'
   },
   {
     slug: 'food-machinery-site-installation-solution', title: '食品机械场地改造与安装解决方案', category: '场地与配套',
@@ -197,7 +197,7 @@ const solutions = [
     articles: ['site-preparation-for-poultry-plucker', 'poultry-machine-installation-commissioning-acceptance', 'how-to-evaluate-food-machinery-manufacturer', 'parameters-before-buying-poultry-plucker'],
     faqs: ['site-preparation-before-installation', 'poultry-machine-installation-acceptance', 'how-to-evaluate-food-machinery-manufacturer', 'what-info-before-buying'],
     pageFaqs: [['设备下单前最少需要提供哪些现场资料？', '建议提供场地长宽高、门洞和通道尺寸、配电箱与电压、给排水位置、设备摆放照片或视频，以及前后工序信息。'], ['验收只看机器能否启动可以吗？', '不够。还应使用真实原料检查效果、节拍、振动、出料、清洗和人员操作，并记录需要调整的问题。']],
-    body: '场地准备是设备方案的一部分。对家禽设备，要重点考虑羽毛、热水、排水和地面防滑；对水产设备，要重点考虑鱼鳞、油脂、污水和低温周转。\n\n洪弟机械可根据客户提供的现场资料给出初步摆放和配置建议，但电气、建筑、消防、环保和食品生产合规事项应由当地具备资质的专业人员确认。'
+    body: '场地准备是设备方案的一部分。对家禽设备，要重点考虑羽毛、热水、排水和地面防滑；对水产设备，要重点考虑鱼鳞、油脂、污水和低温周转。\n\n洪弟食品机械可根据客户提供的现场资料给出初步摆放和配置建议，但电气、建筑、消防、环保和食品生产合规事项应由当地具备资质的专业人员确认。'
   }
 ];
 
@@ -211,7 +211,7 @@ function render(solution) {
   const requiredInfo = isAquatic ? aquaticInfo : poultryInfo;
   const acceptancePoints = isAquatic ? aquaticAcceptance : poultryAcceptance;
   const maintenanceTips = isAquatic ? aquaticMaintenance : poultryMaintenance;
-  const keywords = [solution.title.replace('解决方案', ''), solution.category, '食品机械解决方案', '洪弟机械食品厂'];
+  const keywords = [solution.title.replace('解决方案', ''), solution.category, '食品机械解决方案', '洪弟食品机械'];
   const frontmatter = [
     '---',
     `title: ${q(solution.title)}`,
@@ -241,7 +241,7 @@ function render(solution) {
     `updated: ${q(date)}`,
     `sourceNote: ${q(boundary)}`,
     'seo:',
-    `  title: ${q(`${solution.title}｜洪弟机械食品厂`)}`,
+    `  title: ${q(`${solution.title}｜洪弟食品机械`)}`,
     `  description: ${q(solution.description)}`,
     `  keywords: ${q(keywords)}`,
     '---',
@@ -249,7 +249,7 @@ function render(solution) {
     '### 场景说明',
     solution.body,
     '',
-    '### 洪弟机械如何协助选型',
+    '### 洪弟食品机械如何协助选型',
     `${contact}提供主要原料、处理量、现场尺寸、电压和前后工序后，可先进行设备方向与配置核对。`,
     ''
   ];

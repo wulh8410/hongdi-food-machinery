@@ -33,7 +33,7 @@ relatedArticles: ["is-430-stainless-steel-plucker-durable", "farm-poultry-dehair
 date: "2026-06-09"
 updated: "2026-06-09"
 seo:
-  title: "430不锈钢移动式脱毛机｜洪弟机械食品厂"
+  title: "430不锈钢移动式脱毛机｜洪弟食品机械"
   description: "430不锈钢移动式脱毛机采用透明机身视窗、橡胶脱毛棒和滑轮移动设计，适合灵活移动作业场景。"
 ---
 

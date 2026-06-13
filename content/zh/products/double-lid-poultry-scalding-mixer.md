@@ -36,7 +36,7 @@ relatedArticles: ["scalding-temperature-for-poultry-dehairing", "chicken-duck-go
 date: "2026-06-09"
 updated: "2026-06-09"
 seo:
-  title: "双面翻盖不锈钢鸡鹅鸭搅拌机｜洪弟机械食品厂"
+  title: "双面翻盖不锈钢鸡鹅鸭搅拌机｜洪弟食品机械"
   description: "双面翻盖不锈钢鸡鹅鸭搅拌机用于家禽脱毛前泡水、烫毛和自动搅拌，适合批量前处理场景。"
 ---
 

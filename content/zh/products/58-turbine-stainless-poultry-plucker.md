@@ -36,7 +36,7 @@ relatedArticles: ["how-to-choose-poultry-dehairing-machine", "small-slaughter-st
 date: "2026-06-09"
 updated: "2026-06-09"
 seo:
-  title: "58型涡轮不锈钢脱毛机｜洪弟机械食品厂"
+  title: "58型涡轮不锈钢脱毛机｜洪弟食品机械"
   description: "58型涡轮不锈钢脱毛机适合中小型屠宰档口、养殖场、食堂和餐饮门店，用于鸡、鸭、鹅等常规家禽脱毛。"
 ---
 

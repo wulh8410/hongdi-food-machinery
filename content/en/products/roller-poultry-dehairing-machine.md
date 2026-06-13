@@ -2,7 +2,7 @@
 title: "Automatic Roller Poultry Dehairing Machine"
 slug: "roller-poultry-dehairing-machine"
 category: "poultry-dehairing"
-description: "Hongdi Machinery equipment page for automatic roller poultry dehairing machine."
+description: "Hongdi Food Machinery equipment page for automatic roller poultry dehairing machine."
 geoSummary: "This page explains applications, specifications, buying notes, and related equipment for automatic roller poultry dehairing machine."
 keywords: ["poultry dehairing machine", "chicken duck plucker", "scalding dehairing machine", "food processing equipment", "Jieyang food machinery manufacturer", "slaughter dehairing equipment"]
 images: ["/images/products/featured-poultry-plucker.png"]
@@ -20,12 +20,12 @@ faqs:
 relatedProducts: ["58-turbine-stainless-poultry-plucker", "six-roller-stainless-poultry-plucker", "nine-roller-stainless-poultry-plucker"]
 relatedArticles: ["how-to-choose-poultry-dehairing-machine"]
 seo:
-  title: "Automatic Roller Poultry Dehairing Machine | Hongdi Machinery"
-  description: "Hongdi Machinery equipment page for automatic roller poultry dehairing machine."
+  title: "Automatic Roller Poultry Dehairing Machine | Hongdi Food Machinery"
+  description: "Hongdi Food Machinery equipment page for automatic roller poultry dehairing machine."
 ---
 
 ## Product Introduction
-Hongdi Machinery supplies automatic roller poultry dehairing machine for practical food processing scenarios.
+Hongdi Food Machinery supplies automatic roller poultry dehairing machine for practical food processing scenarios.
 
 ## Applications
 Suitable for slaughter stalls, poultry farms, canteens, restaurants, and small or medium poultry processing operations.

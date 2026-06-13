@@ -26,7 +26,7 @@ relatedArticles: ["how-to-choose-poultry-dehairing-machine"]
 date: "2026-06-06"
 updated: "2026-06-06"
 seo:
-  title: "58-Type Turbine Stainless Poultry Plucker | Hongdi Machinery"
+  title: "58-Type Turbine Stainless Poultry Plucker | Hongdi Food Machinery"
   description: "58-type turbine stainless poultry plucker with 430 stainless body for chicken, duck, and goose dehairing."
 ---
 

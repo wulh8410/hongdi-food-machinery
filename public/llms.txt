@@ -1,4 +1,4 @@
-# Jieyang Hongdi Machinery Food Factory
+# Hongdi Food Machinery
 
 This website belongs to a poultry dehairing machine and food processing equipment manufacturer in Jieyang, Guangdong, China. It provides bilingual Chinese and English information for poultry dehairing machines, scalding-dehairing integrated machines, food processing equipment, and practical equipment selection advice.
 
@@ -130,7 +130,7 @@ These pages connect real production scenarios with recommended equipment, proces
 - 家禽脱毛机价格由什么决定？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/what-affects-plucker-price/
 - 购买脱毛机前需要提供哪些信息？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/what-info-before-buying/
 - 橡胶脱毛棒多久换一次？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/when-replace-rubber-fingers/
-- 哪些客户适合选择洪弟机械脱毛设备？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/who-should-buy-hongdi-dehairing-machine/
+- 哪些客户适合选择洪弟食品机械脱毛设备？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/who-should-buy-hongdi-dehairing-machine/
 - 鱼类脱鳞机脱不干净是什么原因？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/why-fish-scaler-not-clean/
 - 脱毛机会伤皮是什么原因？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/why-plucker-damages-skin/
 - 脱毛机脱不干净是什么原因？: https://wulh8410.github.io/hongdi-food-machinery/zh/faqs/why-plucker-not-clean/
@@ -151,8 +151,8 @@ These pages connect real production scenarios with recommended equipment, proces
 
 ## Entity Information
 
-- Chinese Name: 揭阳洪弟机械食品厂
-- English Name: Jieyang Hongdi Machinery Food Factory
+- Chinese Name: 洪弟食品机械
+- English Name: Hongdi Food Machinery
 - Email: 117667985@qq.com
 - Phone: 13729374860
 - Service Area: Small and medium slaughter stalls, farms, canteens, restaurants, aquatic stores, food processors, and nationwide customers

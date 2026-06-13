@@ -19,7 +19,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
       ? [
           {
             title: '公司简介',
-            body: '洪弟机械专注家禽脱毛、水产加工和肉类加工配套设备，主要服务屠宰档口、养殖场、食堂餐厅、水产门店和食品加工厂。'
+            body: '洪弟食品机械专注家禽脱毛、水产加工和肉类加工配套设备，主要服务屠宰档口、养殖场、食堂餐厅、水产门店和食品加工厂。'
           },
           {
             title: '主营设备',
@@ -49,7 +49,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
       : [
           {
             title: 'Company Profile',
-            body: 'Hongdi Machinery focuses on poultry dehairing, aquatic processing, and meat processing support equipment for slaughter stalls, farms, restaurants, aquatic stores, and food processors.'
+            body: 'Hongdi Food Machinery focuses on poultry dehairing, aquatic processing, and meat processing support equipment for slaughter stalls, farms, restaurants, aquatic stores, and food processors.'
           },
           {
             title: 'Main Equipment',

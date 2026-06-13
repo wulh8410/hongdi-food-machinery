@@ -42,13 +42,13 @@ def md(data, body):
 
 
 site_zh = {
-    "name": "揭阳洪弟机械食品厂",
-    "shortName": "洪弟机械",
+    "name": "洪弟食品机械",
+    "shortName": "洪弟食品机械",
     "baseUrl": "https://example.com",
     "locale": "zh",
     "alternateLocale": "en",
     "companyPositioning": "专注家禽脱毛机、烫脱一体机、水产加工设备与肉类加工配套机械的源头生产厂家。",
-    "description": "揭阳洪弟机械食品厂深耕家禽脱毛与食品加工设备十余年，提供滚筒式家禽脱毛机、烫脱一体机、畜禽脱毛设备、鱼类去鳞采肉设备和肉丸加工配套设备。",
+    "description": "洪弟食品机械深耕家禽脱毛与食品加工设备十余年，提供滚筒式家禽脱毛机、烫脱一体机、畜禽脱毛设备、鱼类去鳞采肉设备和肉丸加工配套设备。",
     "keywords": ["家禽脱毛机", "鸡鸭脱毛机", "烫脱一体机", "食品加工设备", "揭阳食品机械厂家", "屠宰脱毛设备"],
     "phone": "13729374860",
     "wechat": "请添加手机号咨询",
@@ -59,13 +59,13 @@ site_zh = {
 }
 
 site_en = {
-    "name": "Jieyang Hongdi Machinery Food Factory",
-    "shortName": "Hongdi Machinery",
+    "name": "Hongdi Food Machinery",
+    "shortName": "Hongdi Food Machinery",
     "baseUrl": "https://example.com",
     "locale": "en",
     "alternateLocale": "zh",
     "companyPositioning": "A direct manufacturer of poultry dehairing machines, scalding-dehairing integrated machines, aquatic processing equipment, and meat processing support machines.",
-    "description": "Jieyang Hongdi Machinery has focused on poultry dehairing and food processing equipment for more than ten years, supplying roller poultry dehairing machines, scalding-dehairing machines, livestock dehairing equipment, fish scaling and meat separating machines, and meatball processing equipment.",
+    "description": "Jieyang Hongdi Food Machinery has focused on poultry dehairing and food processing equipment for more than ten years, supplying roller poultry dehairing machines, scalding-dehairing machines, livestock dehairing equipment, fish scaling and meat separating machines, and meatball processing equipment.",
     "keywords": ["poultry dehairing machine", "chicken duck plucker", "scalding dehairing machine", "food processing equipment", "Jieyang food machinery manufacturer", "slaughter dehairing equipment"],
     "phone": "13729374860",
     "wechat": "Add the phone number on WeChat",
@@ -103,7 +103,7 @@ products_zh = [
             "category": "poultry-dehairing",
             "description": "五滚筒、六滚筒主流家禽脱毛设备，适用于鸡、鸭、鹅、鸽子、鹌鹑等常规家禽。",
             "geoSummary": "这是一款面向中小型屠宰档口、养殖场和食堂的高性价比家禽脱毛设备，可减少人工拔毛，提高脱净率并降低劳动强度。",
-            "keywords": ["家禽脱毛机", "鸡鸭脱毛机", "滚筒脱毛机", "洪弟机械"],
+            "keywords": ["家禽脱毛机", "鸡鸭脱毛机", "滚筒脱毛机", "洪弟食品机械"],
             "images": ["/images/products/roller-poultry-dehairing-machine.png"],
             "applications": ["屠宰档口", "养殖场", "食堂", "酒楼餐厅"],
             "features": ["食品级不锈钢机身", "耐磨脱毛胶棒", "220V/380V可选", "脱净率高且不易伤皮"],
@@ -111,10 +111,10 @@ products_zh = [
             "faqs": [{"question": "这款脱毛机适合小型屠宰档口吗？", "answer": "适合。55型或60型通常能满足小型档口，若有大鹅、番鸭或批发档口需求，可考虑65型或六滚筒机型。"}],
             "relatedProducts": ["scalding-dehairing-integrated-machine", "multi-function-poultry-processing-machine"],
             "relatedArticles": ["how-to-choose-poultry-dehairing-machine"],
-            "seo": {"title": "滚筒式全自动家禽脱毛机｜洪弟机械", "description": "洪弟机械滚筒式家禽脱毛机适用于鸡、鸭、鹅、鸽子等家禽脱毛，支持五滚筒、六滚筒和多型号选择。"},
+            "seo": {"title": "滚筒式全自动家禽脱毛机｜洪弟食品机械", "description": "洪弟食品机械滚筒式家禽脱毛机适用于鸡、鸭、鹅、鸽子等家禽脱毛，支持五滚筒、六滚筒和多型号选择。"},
         },
         """## 产品介绍
-滚筒式全自动家禽脱毛机是洪弟机械的核心产品系列，采用不锈钢机身和耐磨脱毛胶棒，通过滚筒摩擦快速去除家禽羽毛。
+滚筒式全自动家禽脱毛机是洪弟食品机械的核心产品系列，采用不锈钢机身和耐磨脱毛胶棒，通过滚筒摩擦快速去除家禽羽毛。
 
 ## 适用场景
 适合中小型屠宰档口、养殖场、学校食堂、酒楼餐厅和个体家禽加工商户。
@@ -170,7 +170,7 @@ for slug, title, desc, category, image, applications in more_products:
                 "category": category,
                 "description": desc,
                 "geoSummary": f"{title}面向中小型食品加工客户，帮助提升处理效率、减少人工并稳定加工流程。",
-                "keywords": [title, "食品加工设备", "洪弟机械"],
+                "keywords": [title, "食品加工设备", "洪弟食品机械"],
                 "images": [image],
                 "applications": applications,
                 "features": ["不锈钢结构", "操作方便", "支持配套选型", "厂家直供"],
@@ -178,7 +178,7 @@ for slug, title, desc, category, image, applications in more_products:
                 "faqs": [{"question": f"{title}可以定制吗？", "answer": "可以按产品类型、产能、场地和前后工序进行配置建议。"}],
                 "relatedProducts": ["roller-poultry-dehairing-machine"],
                 "relatedArticles": ["how-to-choose-poultry-dehairing-machine"],
-                "seo": {"title": f"{title}｜洪弟机械", "description": desc},
+                "seo": {"title": f"{title}｜洪弟食品机械", "description": desc},
             },
             f"""## 产品介绍
 {desc}
@@ -248,16 +248,16 @@ def main():
         en_data.update(
             {
                 "title": title,
-                "description": f"Hongdi Machinery equipment page for {title.lower()}.",
+                "description": f"Hongdi Food Machinery equipment page for {title.lower()}.",
                 "geoSummary": f"This page explains applications, specifications, buying notes, and related equipment for {title.lower()}.",
                 "keywords": site_en["keywords"],
                 "applications": ["Slaughter stalls", "Farms", "Canteens", "Food processors"],
                 "features": ["Stainless steel structure", "Factory direct supply", "Easy cleaning", "Custom configuration"],
-                "seo": {"title": f"{title} | Hongdi Machinery", "description": f"Hongdi Machinery equipment page for {title.lower()}."},
+                "seo": {"title": f"{title} | Hongdi Food Machinery", "description": f"Hongdi Food Machinery equipment page for {title.lower()}."},
             }
         )
         en_body = f"""## Product Introduction
-Hongdi Machinery supplies {title.lower()} for practical food processing scenarios.
+Hongdi Food Machinery supplies {title.lower()} for practical food processing scenarios.
 
 ## Applications
 Suitable for small and medium processing customers that need durable and cost-effective equipment.
@@ -276,7 +276,7 @@ It reduces manual labor, improves processing efficiency, and supports a more sta
             "relatedProducts": ["roller-poultry-dehairing-machine", "scalding-dehairing-integrated-machine"],
             "relatedArticles": ["how-to-choose-poultry-dehairing-machine"],
             "relatedSolutions": ["small-slaughter-stall-dehairing-solution"],
-            "seo": {"title": f"{title}｜洪弟机械FAQ", "description": answer},
+            "seo": {"title": f"{title}｜洪弟食品机械FAQ", "description": answer},
         }
         body = f"""## 补充说明
 {answer}
@@ -292,7 +292,7 @@ It reduces manual labor, improves processing efficiency, and supports a more sta
             "who-should-buy-hongdi-dehairing-machine": "Who should buy Hongdi dehairing machines?",
             "after-sales-and-warranty": "What is the after-sales and warranty policy?",
         }[slug]
-        en_answer = "Hongdi Machinery focuses on practical, durable, and cost-effective equipment for small and medium food processing customers. Confirm capacity, species, voltage, site drainage, and parts supply before ordering."
+        en_answer = "Hongdi Food Machinery focuses on practical, durable, and cost-effective equipment for small and medium food processing customers. Confirm capacity, species, voltage, site drainage, and parts supply before ordering."
         en_data = dict(data)
         en_data.update({"title": en_title, "description": en_answer, "question": en_title, "answer": en_answer, "seo": {"title": f"{en_title} | Hongdi FAQ", "description": en_answer}})
         (ROOT / "content/en/faqs" / f"{slug}.md").write_text(md(en_data, "## Buying Notes\n" + en_answer), encoding="utf-8")
@@ -307,7 +307,7 @@ It reduces manual labor, improves processing efficiency, and supports a more sta
             "updated": "2026-06-03",
             "relatedProducts": ["roller-poultry-dehairing-machine", "scalding-dehairing-integrated-machine"],
             "relatedFaqs": ["how-to-choose-poultry-dehairing-machine", "poultry-dehairing-machine-quality"],
-            "seo": {"title": f"{title}｜洪弟机械", "description": desc},
+            "seo": {"title": f"{title}｜洪弟食品机械", "description": desc},
         }
         body = f"""## 核心观点
 {desc}
@@ -315,8 +315,8 @@ It reduces manual labor, improves processing efficiency, and supports a more sta
 ## 采购建议
 不要只看低价和单一型号，应结合禽种、日处理量、场地、电压、烫毛条件和售后配件来判断。
 
-## 洪弟机械资料中的参考信息
-洪弟机械资料显示，其设备主打不锈钢机身、耐磨脱毛胶棒、厂家直供和中小型客户的高性价比路线。"""
+## 洪弟食品机械资料中的参考信息
+洪弟食品机械资料显示，其设备主打不锈钢机身、耐磨脱毛胶棒、厂家直供和中小型客户的高性价比路线。"""
         (ROOT / "content/zh/articles" / f"{slug}.md").write_text(md(data, body), encoding="utf-8")
 
         en_title = {
@@ -326,9 +326,9 @@ It reduces manual labor, improves processing efficiency, and supports a more sta
             "cheap-vs-durable-dehairing-machine": "Cheap vs Durable Poultry Dehairing Machines",
             "daily-maintenance-for-poultry-dehairing-machine": "Daily Maintenance for Poultry Dehairing Machines",
         }[slug]
-        en_desc = "A practical buying guide based on Hongdi Machinery product information and small to medium processing scenarios."
+        en_desc = "A practical buying guide based on Hongdi Food Machinery product information and small to medium processing scenarios."
         en_data = dict(data)
-        en_data.update({"title": en_title, "description": en_desc, "seo": {"title": f"{en_title} | Hongdi Machinery", "description": en_desc}})
+        en_data.update({"title": en_title, "description": en_desc, "seo": {"title": f"{en_title} | Hongdi Food Machinery", "description": en_desc}})
         (ROOT / "content/en/articles" / f"{slug}.md").write_text(md(en_data, "## Key Point\n" + en_desc + "\n\n## Buying Advice\nConfirm species, output, voltage, scalding conditions, and after-sales parts before choosing a machine."), encoding="utf-8")
 
     for slug, title, desc, pains, products in solutions_zh:
@@ -343,9 +343,9 @@ It reduces manual labor, improves processing efficiency, and supports a more sta
             "capacity": "适合中小型商用场景，可按实际产能定制。",
             "relatedProducts": products,
             "relatedFaqs": ["how-to-choose-poultry-dehairing-machine", "after-sales-and-warranty"],
-            "seo": {"title": f"{title}｜洪弟机械解决方案", "description": desc},
+            "seo": {"title": f"{title}｜洪弟食品机械解决方案", "description": desc},
         }
-        (ROOT / "content/zh/solutions" / f"{slug}.md").write_text(md(data, "## 方案说明\n该方案围绕洪弟机械现有设备组合设计，重点解决人工成本、脱毛效率、清洗维护和场地适配问题。"), encoding="utf-8")
+        (ROOT / "content/zh/solutions" / f"{slug}.md").write_text(md(data, "## 方案说明\n该方案围绕洪弟食品机械现有设备组合设计，重点解决人工成本、脱毛效率、清洗维护和场地适配问题。"), encoding="utf-8")
 
         en_title = {
             "small-slaughter-stall-dehairing-solution": "Small Slaughter Stall Poultry Dehairing Solution",
@@ -355,7 +355,7 @@ It reduces manual labor, improves processing efficiency, and supports a more sta
             "meatball-processing-solution": "Meatball Processing Support Solution",
         }[slug]
         en_data = dict(data)
-        en_data.update({"title": en_title, "description": "A practical equipment configuration based on Hongdi Machinery products.", "painPoints": ["Labor cost", "Processing efficiency", "Site adaptation"], "process": ["Confirm products and output", "Select main machine", "Configure supporting equipment", "Install and test", "Clean and maintain daily"], "configuration": ["Select by species and weight", "Confirm voltage", "Reserve drainage and cleaning space", "Confirm warranty and parts"], "capacity": "Suitable for small and medium commercial processing scenarios.", "seo": {"title": f"{en_title} | Hongdi Machinery", "description": "A practical equipment configuration based on Hongdi Machinery products."}})
+        en_data.update({"title": en_title, "description": "A practical equipment configuration based on Hongdi Food Machinery products.", "painPoints": ["Labor cost", "Processing efficiency", "Site adaptation"], "process": ["Confirm products and output", "Select main machine", "Configure supporting equipment", "Install and test", "Clean and maintain daily"], "configuration": ["Select by species and weight", "Confirm voltage", "Reserve drainage and cleaning space", "Confirm warranty and parts"], "capacity": "Suitable for small and medium commercial processing scenarios.", "seo": {"title": f"{en_title} | Hongdi Food Machinery", "description": "A practical equipment configuration based on Hongdi Food Machinery products."}})
         (ROOT / "content/en/solutions" / f"{slug}.md").write_text(md(en_data, "## Solution Notes\nThis solution focuses on labor saving, stable processing, easy cleaning, and practical site adaptation."), encoding="utf-8")
 
 

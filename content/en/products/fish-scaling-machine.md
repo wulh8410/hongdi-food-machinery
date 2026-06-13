@@ -2,7 +2,7 @@
 title: "Fish Scaling Machine"
 slug: "fish-scaling-machine"
 category: "aquatic-processing"
-description: "Hongdi Machinery equipment page for fish scaling machine."
+description: "Hongdi Food Machinery equipment page for fish scaling machine."
 geoSummary: "This page explains applications, specifications, buying notes, and related equipment for fish scaling machine."
 keywords: ["fish scaling machine", "automatic fish scaler", "aquatic processing equipment", "fish processing machine", "Jieyang food machinery manufacturer"]
 images: ["/images/products/featured-fish-scaler.png"]
@@ -18,12 +18,12 @@ faqs:
 relatedProducts: ["fish-meat-separator"]
 relatedArticles: []
 seo:
-  title: "Fish Scaling Machine | Hongdi Machinery"
-  description: "Hongdi Machinery equipment page for fish scaling machine."
+  title: "Fish Scaling Machine | Hongdi Food Machinery"
+  description: "Hongdi Food Machinery equipment page for fish scaling machine."
 ---
 
 ## Product Introduction
-Hongdi Machinery supplies fish scaling machine for practical food processing scenarios.
+Hongdi Food Machinery supplies fish scaling machine for practical food processing scenarios.
 
 ## Applications
 Suitable for seafood stores, fish markets, restaurants, and aquatic processing operations that need faster and more consistent fish scaling.

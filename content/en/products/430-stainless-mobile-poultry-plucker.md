@@ -23,7 +23,7 @@ relatedArticles: ["daily-maintenance-for-poultry-dehairing-machine"]
 date: "2026-06-06"
 updated: "2026-06-06"
 seo:
-  title: "430 Stainless Mobile Poultry Plucker | Hongdi Machinery"
+  title: "430 Stainless Mobile Poultry Plucker | Hongdi Food Machinery"
   description: "430 stainless mobile poultry plucker with transparent viewing window, rubber dehairing fingers, and caster wheel design."
 ---
 

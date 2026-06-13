@@ -4,7 +4,7 @@ slug: "fish-meat-separator"
 category: "aquatic-processing"
 description: "用于鱼肉与鱼骨、鱼皮分离的采肉设备，适合鱼丸、鱼糜加工。"
 geoSummary: "鱼类采肉机面向中小型食品加工客户，帮助提升处理效率、减少人工并稳定加工流程。"
-keywords: ["鱼类采肉机", "食品加工设备", "洪弟机械"]
+keywords: ["鱼类采肉机", "食品加工设备", "洪弟食品机械"]
 images: ["/images/products/featured-fish-meat-separator.png"]
 applications: ["鱼丸加工", "鱼糜加工", "食品厂"]
 features: ["不锈钢结构", "操作方便", "支持配套选型", "厂家直供"]
@@ -19,7 +19,7 @@ faqs:
 relatedProducts: ["roller-poultry-dehairing-machine"]
 relatedArticles: ["how-to-choose-poultry-dehairing-machine"]
 seo:
-  title: "鱼类采肉机｜洪弟机械"
+  title: "鱼类采肉机｜洪弟食品机械"
   description: "用于鱼肉与鱼骨、鱼皮分离的采肉设备，适合鱼丸、鱼糜加工。"
 ---
 

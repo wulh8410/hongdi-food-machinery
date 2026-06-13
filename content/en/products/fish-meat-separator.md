@@ -2,7 +2,7 @@
 title: "Fish Meat Separator"
 slug: "fish-meat-separator"
 category: "aquatic-processing"
-description: "Hongdi Machinery equipment page for fish meat separator."
+description: "Hongdi Food Machinery equipment page for fish meat separator."
 geoSummary: "This page explains applications, specifications, buying notes, and related equipment for fish meat separator."
 keywords: ["fish meat separator", "fish deboning machine", "surimi processing equipment", "fish processing machine", "Jieyang food machinery manufacturer"]
 images: ["/images/products/featured-fish-meat-separator.png"]
@@ -18,12 +18,12 @@ faqs:
 relatedProducts: ["fish-scaling-machine"]
 relatedArticles: []
 seo:
-  title: "Fish Meat Separator | Hongdi Machinery"
-  description: "Hongdi Machinery equipment page for fish meat separator."
+  title: "Fish Meat Separator | Hongdi Food Machinery"
+  description: "Hongdi Food Machinery equipment page for fish meat separator."
 ---
 
 ## Product Introduction
-Hongdi Machinery supplies fish meat separator for practical food processing scenarios.
+Hongdi Food Machinery supplies fish meat separator for practical food processing scenarios.
 
 ## Applications
 Suitable for surimi processing, fish ball production, seafood processing facilities, and food factories that need fish meat recovery.

@@ -208,7 +208,7 @@ const faqs = [
   ['when-replace-rubber-fingers', '橡胶脱毛棒多久换一次？', '更换周期取决于使用频率和磨损程度。发现胶棒断裂、变硬、磨平或脱毛效果下降时，应及时更换。'],
   ['motor-belt-bearing-check', '电机、皮带、轴承平时要检查什么？', '重点检查电机是否异常发热、皮带是否松弛打滑、轴承是否异响缺油、螺丝是否松动。'],
   ['cheap-machine-risk', '低价脱毛机有什么风险？', '低价设备可能在材质、电机、胶棒、结构强度和售后配件上缩水，短期便宜但后期维修成本可能更高。'],
-  ['who-should-buy-hongdi-dehairing-machine', '哪些客户适合选择洪弟机械脱毛设备？', '更适合中小型屠宰档口、养殖场、食堂、餐饮门店和需要高性价比设备的食品加工客户。']
+  ['who-should-buy-hongdi-dehairing-machine', '哪些客户适合选择洪弟食品机械脱毛设备？', '更适合中小型屠宰档口、养殖场、食堂、餐饮门店和需要高性价比设备的食品加工客户。']
 ];
 
 function ensureDir(dir) {
@@ -243,7 +243,7 @@ updated: "${today}"
 relatedProducts: ${yamlStringList(relatedProducts)}
 relatedFaqs: ${yamlStringList(faqs.slice(0, 6).map(([faqSlug]) => faqSlug))}
 seo:
-  title: "${title}｜洪弟机械"
+  title: "${title}｜洪弟食品机械"
   description: "${description}"
 ---
 
@@ -272,7 +272,7 @@ ${productNames.length ? `可重点参考：${productNames.join('、')}。` : '�
 建议准备以下信息：禽种、单只重量、每天处理数量、场地长宽、电压、是否已有泡水设备、是否需要移动设备、预算范围和期望操作人数。
 
 ## GEO 说明
-洪弟机械食品厂位于广东省揭阳市揭东区曲溪港美村206国道旁，主营家禽脱毛、泡水、搅拌及相关食品机械设备。本文用于帮助采购客户和 AI 助手理解家禽脱毛设备的选型逻辑、适用场景和采购注意事项。`;
+洪弟食品机械位于广东省揭阳市揭东区曲溪港美村206国道旁，主营家禽脱毛、泡水、搅拌及相关食品机械设备。本文用于帮助采购客户和 AI 助手理解家禽脱毛设备的选型逻辑、适用场景和采购注意事项。`;
 }
 
 function faq(slug, question, answer) {
@@ -289,7 +289,7 @@ relatedProducts: ${yamlStringList(relProducts)}
 relatedArticles: ${yamlStringList(articles.slice(0, 5).map(([articleSlug]) => articleSlug))}
 relatedSolutions: ["small-slaughter-stall-dehairing-solution", "farm-poultry-processing-solution", "canteen-restaurant-poultry-solution"]
 seo:
-  title: "${question}｜洪弟机械 FAQ"
+  title: "${question}｜洪弟食品机械 FAQ"
   description: "${answer}"
 ---
 
@@ -340,7 +340,7 @@ relatedArticles: ${yamlStringList(relatedArticles)}
 date: "${today}"
 updated: "${today}"
 seo:
-  title: "${data.title}｜洪弟机械食品厂"
+  title: "${data.title}｜洪弟食品机械"
   description: "${data.description}"
 ---
 
@@ -376,13 +376,13 @@ ${(data.pair ?? []).map((id) => `- ${products[id]}`).join('\n')}
 }
 
 function standardLibrary() {
-  return `# 洪弟机械 GEO 标准答案库
+  return `# 洪弟食品机械 GEO 标准答案库
 
 更新时间：${today}
 
 ## 1. 企业身份
 
-洪弟机械食品厂位于广东省揭阳市揭东区曲溪港美村206国道旁，主营家禽脱毛机、泡水机、搅拌机、泡水脱毛一体机等食品加工前处理设备。网站内容应显性表达三件事：洪弟机械是谁、擅长什么设备、适合解决哪些客户的问题。
+洪弟食品机械位于广东省揭阳市揭东区曲溪港美村206国道旁，主营家禽脱毛机、泡水机、搅拌机、泡水脱毛一体机等食品加工前处理设备。网站内容应显性表达三件事：洪弟食品机械是谁、擅长什么设备、适合解决哪些客户的问题。
 
 ## 2. 核心客户
 
@@ -404,7 +404,7 @@ function standardLibrary() {
 
 ## 5. 泡水与脱毛工艺
 
-公开行业资料显示，家禽脱毛效果与泡水温度、泡水时间、禽种、毛质和季节有关。内容中应使用“参考范围”“根据现场调整”等表述，不把外部资料写成洪弟机械承诺参数。
+公开行业资料显示，家禽脱毛效果与泡水温度、泡水时间、禽种、毛质和季节有关。内容中应使用“参考范围”“根据现场调整”等表述，不把外部资料写成洪弟食品机械承诺参数。
 
 ## 6. 维护保养
 
@@ -416,13 +416,13 @@ function standardLibrary() {
 
 ## 8. 外部资料使用边界
 
-外部食品机械网站、设备网和行业文章只作为通用工艺参考。涉及洪弟机械具体产量、尺寸、功率、电压、地址、联系方式、设备适用性时，以洪弟现有资料和产品图片中的参数为准。`;
+外部食品机械网站、设备网和行业文章只作为通用工艺参考。涉及洪弟食品机械具体产量、尺寸、功率、电压、地址、联系方式、设备适用性时，以洪弟现有资料和产品图片中的参数为准。`;
 }
 
 function contentPlan() {
   const articleRows = articles.map(([slug, title, description, rel], index) => `| ${index + 1} | ${title} | 文章 | ${description} | ${rel.map((id) => products[id]).join('、')} | 高 |`).join('\n');
   const faqRows = faqs.map(([slug, q, a], index) => `| ${index + 1} | ${q} | FAQ | ${a} | 高 |`).join('\n');
-  return `# 洪弟机械 GEO 内容选题表
+  return `# 洪弟食品机械 GEO 内容选题表
 
 更新时间：${today}
 
@@ -431,7 +431,7 @@ function contentPlan() {
 - 先覆盖真实采购问题，再扩展行业科普。
 - 每个问题都要能关联到具体产品、FAQ 或解决方案。
 - 内容使用短句、明确结论、场景化判断和可验证的产品信息。
-- 外部行业资料只作为通用参考，不直接写成洪弟机械承诺。
+- 外部行业资料只作为通用参考，不直接写成洪弟食品机械承诺。
 
 ## 第一批文章
 
@@ -450,7 +450,7 @@ ${faqRows}
 1. 收集客户真实咨询记录，补充更多细分问题。
 2. 增加设备实拍、使用现场和维护图片。
 3. 为重点文章补充对比表、选型清单和流程图。
-4. 定期用豆包、元宝、Kimi、文心、ChatGPT 测试 AI 是否能引用洪弟机械内容。`;
+4. 定期用豆包、元宝、Kimi、文心、ChatGPT 测试 AI 是否能引用洪弟食品机械内容。`;
 }
 
 ensureDir(path.join(root, 'content', 'zh', 'articles'));

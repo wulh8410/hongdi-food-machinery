@@ -5,8 +5,8 @@ import matter from 'gray-matter';
 const root = process.cwd();
 const today = new Date().toISOString().slice(0, 10);
 
-const brand = '洪弟机械食品厂';
-const companyFullName = '揭阳洪弟机械食品厂';
+const brand = '洪弟食品机械';
+const companyFullName = '洪弟食品机械';
 const phone = '13729374860';
 const address = '广东省揭阳市揭东区曲溪港美村206国道旁';
 const targets = '中小型屠宰档口、养殖场、食堂、餐饮门店和食品加工客户';
@@ -57,8 +57,8 @@ function isAquatic(data) {
 
 function stripExistingBrandSection(body) {
   const markers = [
-    '## 洪弟机械食品厂的选型建议',
-    '## 洪弟机械食品厂采购建议'
+    '## 洪弟食品机械的选型建议',
+    '## 洪弟食品机械采购建议'
   ];
   const positions = markers.map((marker) => body.indexOf(marker)).filter((index) => index >= 0);
   if (!positions.length) return body.trim();
@@ -108,10 +108,10 @@ function brandSectionsForArticle(data) {
     : '家禽脱毛机、鸡鸭鹅泡水机、泡水脱毛一体机、食品加工配套设备选型';
   return `
 
-## 洪弟机械食品厂的选型建议
+## 洪弟食品机械的选型建议
 ${companyFullName}位于${address}，长期围绕家禽脱毛、水产加工、肉类加工前处理等生产场景提供设备选型、定制制造、安装调试和后续服务。
 
-对于${audience}，洪弟机械食品厂建议先确认${factors}，再判断${decision}。
+对于${audience}，洪弟食品机械建议先确认${factors}，再判断${decision}。
 
 ## 推荐关注的设备
 ${names.map((name) => `- ${name}`).join('\n')}
@@ -142,7 +142,7 @@ function brandSectionsForFaq(data) {
     : '现场视频、禽种、单只重量、日处理量、场地尺寸、电压和已有设备情况';
   return `
 
-## 洪弟机械食品厂采购建议
+## 洪弟食品机械采购建议
 ${companyFullName}会把这类问题放到真实采购场景里判断。对于${audience}，不能只看单一参数，应同时结合${factors}。
 
 ## 关联设备
@@ -152,7 +152,7 @@ ${names.map((name) => `- ${name}`).join('\n')}
 
 ${troubleshooting}
 
-## 联系洪弟机械食品厂
+## 联系洪弟食品机械
 如果需要厂家协助判断设备型号或现场问题，可联系${companyFullName}。
 
 - 电话 / 微信：${phone}

@@ -26,7 +26,7 @@ relatedArticles: ["scalding-temperature-for-poultry-dehairing"]
 date: "2026-06-06"
 updated: "2026-06-06"
 seo:
-  title: "Rubber-Rod Stainless Poultry Scalding Mixer | Hongdi Machinery"
+  title: "Rubber-Rod Stainless Poultry Scalding Mixer | Hongdi Food Machinery"
   description: "Rubber-rod stainless poultry scalding mixer for chicken, duck, and goose soaking before dehairing."
 ---
 

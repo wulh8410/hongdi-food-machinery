@@ -7,7 +7,7 @@ import type { Locale } from '@/lib/types';
 
 export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
   const site = getSiteConfig(params.locale);
-  return localizedMetadata({ locale: params.locale, path: `/${params.locale}/contact`, title: `${site.nav.contact} | ${site.name}`, description: params.locale === 'zh' ? '联系洪弟机械，获取家禽脱毛机、烫脱一体机和配套食品加工设备选型建议。' : 'Contact Hongdi Machinery for poultry dehairing, scalding-dehairing, and food processing equipment selection advice.', keywords: site.keywords });
+  return localizedMetadata({ locale: params.locale, path: `/${params.locale}/contact`, title: `${site.nav.contact} | ${site.name}`, description: params.locale === 'zh' ? '联系洪弟食品机械，获取家禽脱毛机、烫脱一体机和配套食品加工设备选型建议。' : 'Contact Hongdi Food Machinery for poultry dehairing, scalding-dehairing, and food processing equipment selection advice.', keywords: site.keywords });
 }
 
 export default function ContactPage({ params }: { params: { locale: Locale } }) {

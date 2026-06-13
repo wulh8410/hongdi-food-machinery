@@ -26,7 +26,7 @@ export function HeroSection({ locale }: { locale: Locale; site: SiteConfig }) {
         <div className="relative min-h-[600px] overflow-hidden border border-[#08233d]/10 bg-[#08233d] shadow-soft lg:min-h-[640px]">
           <Image
             src={assetPath('/images/hero/hongdi-factory-showroom-hero.png')}
-            alt={isZh ? '洪弟机械食品厂门面与食品加工设备展示' : 'Hongdi Machinery factory and food processing equipment display'}
+            alt={isZh ? '洪弟食品机械门面与食品加工设备展示' : 'Hongdi Food Machinery factory and food processing equipment display'}
             fill
             className="object-cover object-center"
             sizes="100vw"
@@ -36,7 +36,7 @@ export function HeroSection({ locale }: { locale: Locale; site: SiteConfig }) {
           <div className="absolute inset-0 opacity-45 [background-image:linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:92px_92px]" />
           <div className="relative z-10 max-w-2xl px-6 py-14 md:px-12 lg:px-14 lg:py-20">
             <p className="flex items-center gap-3 text-sm font-black tracking-[0.08em] text-industrial-orange before:h-1 before:w-8 before:bg-industrial-orange">
-              {isZh ? '洪弟机械食品厂' : 'Hongdi Machinery Food Factory'}
+              {isZh ? '洪弟食品机械' : 'Hongdi Food Machinery'}
             </p>
             <h1 className="mt-6 text-4xl font-black leading-[1.08] text-white md:text-6xl lg:text-7xl">
               {isZh ? '食品加工设备制造与选型服务' : 'Food Processing Equipment Manufacturing'}
