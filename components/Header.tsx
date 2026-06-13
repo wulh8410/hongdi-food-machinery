@@ -13,12 +13,12 @@ export function Header({ locale, site, path }: { locale: Locale; site: SiteConfi
     <header className="sticky top-0 z-20 border-b border-white/10 bg-[#08233d]/95 text-white backdrop-blur">
       <div className="flex w-full flex-nowrap items-center justify-between gap-3 px-3 py-2 md:px-6">
         <Link href={`/${locale}`} className="flex min-w-[250px] shrink-0 items-center gap-3 sm:min-w-[330px]" aria-label={site.name}>
-          <span className="relative block h-12 w-12 shrink-0 overflow-hidden rounded-lg border border-white/35 bg-white shadow-[0_12px_24px_rgba(0,0,0,0.16)]">
+          <span className="relative block h-12 w-12 shrink-0 overflow-hidden">
             <Image
               src={assetPath('/images/factory/hongdi-logo-icon.png')}
               alt={site.name}
               fill
-              className="scale-[1.42] object-cover"
+              className="object-contain"
               sizes="48px"
               priority
             />
