@@ -11,6 +11,8 @@ export type SiteConfig = {
   keywords: string[];
   phone: string;
   wechat: string;
+  douyinAccounts?: string[];
+  videoAccounts?: string[];
   email: string;
   address: string;
   serviceArea: string;

@@ -87,12 +87,16 @@ export function ContactBlock({
   locale,
   phone,
   email,
-  wechat
+  wechat,
+  douyinAccounts = [],
+  videoAccounts = []
 }: {
   locale: Locale;
   phone: string;
   email: string;
   wechat: string;
+  douyinAccounts?: string[];
+  videoAccounts?: string[];
 }) {
   const isZh = locale === 'zh';
 
@@ -125,6 +129,18 @@ export function ContactBlock({
             <p className="text-slate-300">{isZh ? '微信' : 'WeChat'}</p>
             <p className="font-bold">{wechat}</p>
           </div>
+          {douyinAccounts.length ? (
+            <div className="grid grid-cols-[4em_1fr] gap-3">
+              <p className="text-slate-300">{isZh ? '抖音' : 'Douyin'}</p>
+              <p className="font-bold">{douyinAccounts.join('、')}</p>
+            </div>
+          ) : null}
+          {videoAccounts.length ? (
+            <div className="grid grid-cols-[4em_1fr] gap-3">
+              <p className="text-slate-300">{isZh ? '视频号' : 'WeChat Channels'}</p>
+              <p className="font-bold">{videoAccounts.join('、')}</p>
+            </div>
+          ) : null}
         </div>
       </div>
     </section>
@@ -136,12 +152,16 @@ export function BrandConsultation({
   phone,
   wechat,
   address,
+  douyinAccounts = [],
+  videoAccounts = [],
   topic = 'poultry'
 }: {
   locale: Locale;
   phone: string;
   wechat: string;
   address: string;
+  douyinAccounts?: string[];
+  videoAccounts?: string[];
   topic?: 'poultry' | 'aquatic';
 }) {
   const isZh = locale === 'zh';
@@ -173,6 +193,18 @@ export function BrandConsultation({
           <p className="text-slate-500">{isZh ? '地址' : 'Address'}</p>
           <p className="mt-1 font-bold text-industrial-navy">{address}</p>
         </div>
+        {douyinAccounts.length ? (
+          <div className="rounded bg-white p-4 ring-1 ring-slate-200">
+            <p className="text-slate-500">{isZh ? '抖音' : 'Douyin'}</p>
+            <p className="mt-1 font-bold text-industrial-navy">{douyinAccounts.join('、')}</p>
+          </div>
+        ) : null}
+        {videoAccounts.length ? (
+          <div className="rounded bg-white p-4 ring-1 ring-slate-200">
+            <p className="text-slate-500">{isZh ? '视频号' : 'WeChat Channels'}</p>
+            <p className="mt-1 font-bold text-industrial-navy">{videoAccounts.join('、')}</p>
+          </div>
+        ) : null}
       </div>
     </section>
   );

@@ -49,7 +49,14 @@ export default async function ProductDetailPage({ params }: { params: { locale: 
         <RelatedLinks locale={locale} title={locale === 'zh' ? '相关产品' : 'Related Products'} section="products" slugs={product.relatedProducts} items={products} />
         <RelatedLinks locale={locale} title={locale === 'zh' ? '相关文章' : 'Related Articles'} section="articles" slugs={product.relatedArticles} items={articles} />
       </article>
-      <ContactBlock locale={locale} phone={site.phone} email={site.email} wechat={site.wechat} />
+      <ContactBlock
+        locale={locale}
+        phone={site.phone}
+        email={site.email}
+        wechat={site.wechat}
+        douyinAccounts={site.douyinAccounts}
+        videoAccounts={site.videoAccounts}
+      />
     </PageShell>
   );
 }

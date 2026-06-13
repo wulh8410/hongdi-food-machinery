@@ -48,7 +48,15 @@ export default async function FAQDetailPage({ params }: { params: { locale: Loca
         <RelatedLinks locale={params.locale} title={params.locale === 'zh' ? '关联产品' : 'Related Products'} section="products" slugs={item.relatedProducts} items={products} />
         <RelatedLinks locale={params.locale} title={params.locale === 'zh' ? '关联文章' : 'Related Articles'} section="articles" slugs={item.relatedArticles} items={articles} />
         <RelatedLinks locale={params.locale} title={params.locale === 'zh' ? '推荐解决方案' : 'Recommended Solutions'} section="solutions" slugs={item.relatedSolutions} items={solutions} />
-        <BrandConsultation locale={params.locale} phone={site.phone} wechat={site.wechat} address={site.address} topic={topic} />
+        <BrandConsultation
+          locale={params.locale}
+          phone={site.phone}
+          wechat={site.wechat}
+          address={site.address}
+          douyinAccounts={site.douyinAccounts}
+          videoAccounts={site.videoAccounts}
+          topic={topic}
+        />
       </article>
     </PageShell>
   );

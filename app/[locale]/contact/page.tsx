@@ -16,6 +16,8 @@ export default function ContactPage({ params }: { params: { locale: Locale } }) 
     [params.locale === 'zh' ? '公司名称' : 'Company', site.name],
     [params.locale === 'zh' ? '电话' : 'Phone', site.phone],
     ['WeChat', site.wechat],
+    [params.locale === 'zh' ? '抖音' : 'Douyin', site.douyinAccounts?.join('、') ?? ''],
+    [params.locale === 'zh' ? '视频号' : 'WeChat Channels', site.videoAccounts?.join('、') ?? ''],
     [params.locale === 'zh' ? '邮箱' : 'Email', site.email],
     [params.locale === 'zh' ? '地址' : 'Address', site.address],
     [params.locale === 'zh' ? '服务范围' : 'Service Area', site.serviceArea]

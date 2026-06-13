@@ -35,7 +35,13 @@ export function Footer({ locale, site }: { locale: Locale; site: SiteConfig }) {
             </span>
           </div>
           <p className="mt-5 max-w-xl text-sm leading-7 text-slate-200">{site.companyPositioning}</p>
-          <p className="mt-4 text-xs leading-6 text-slate-400">{site.address}</p>
+          <div className="mt-4 grid gap-2 text-xs leading-6 text-slate-400">
+            <p>{isZh ? '电话：' : 'Phone: '}{site.phone}</p>
+            <p>{isZh ? '微信：' : 'WeChat: '}{site.wechat}</p>
+            {site.douyinAccounts?.length ? <p>{isZh ? '抖音：' : 'Douyin: '}{site.douyinAccounts.join('、')}</p> : null}
+            {site.videoAccounts?.length ? <p>{isZh ? '视频号：' : 'WeChat Channels: '}{site.videoAccounts.join('、')}</p> : null}
+            <p>{site.address}</p>
+          </div>
         </div>
 
         <div>

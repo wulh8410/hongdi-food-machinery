@@ -45,7 +45,15 @@ export default async function ArticlePage({ params }: { params: { locale: Locale
               : 'Continue with product details, FAQ, and solution pages for complete buying context.'}
           </p>
         </Section>
-        <BrandConsultation locale={params.locale} phone={site.phone} wechat={site.wechat} address={site.address} topic={topic} />
+        <BrandConsultation
+          locale={params.locale}
+          phone={site.phone}
+          wechat={site.wechat}
+          address={site.address}
+          douyinAccounts={site.douyinAccounts}
+          videoAccounts={site.videoAccounts}
+          topic={topic}
+        />
       </article>
     </PageShell>
   );

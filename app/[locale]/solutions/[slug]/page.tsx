@@ -60,7 +60,15 @@ export default async function SolutionDetailPage({ params }: { params: { locale:
         <RelatedLinks locale={params.locale} title={isZh ? '相关产品' : 'Related Products'} section="products" slugs={item.relatedProducts ?? item.recommendedProducts} items={products} />
         <RelatedLinks locale={params.locale} title={isZh ? '延伸阅读' : 'Related Articles'} section="articles" slugs={item.relatedArticles} items={articles} />
         <RelatedLinks locale={params.locale} title={isZh ? '相关采购问答' : 'FAQ'} section="faqs" slugs={item.relatedFaqs} items={faqs} />
-        <BrandConsultation locale={params.locale} phone={site.phone} wechat={site.wechat} address={site.address} topic={topic} />
+        <BrandConsultation
+          locale={params.locale}
+          phone={site.phone}
+          wechat={site.wechat}
+          address={site.address}
+          douyinAccounts={site.douyinAccounts}
+          videoAccounts={site.videoAccounts}
+          topic={topic}
+        />
       </article>
     </PageShell>
   );

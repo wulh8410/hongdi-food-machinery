@@ -177,7 +177,13 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
         </div>
       </HomeSection>
 
-      <HomeContact locale={locale} phone={site.phone} wechat={site.wechat} />
+      <HomeContact
+        locale={locale}
+        phone={site.phone}
+        wechat={site.wechat}
+        douyinAccounts={site.douyinAccounts}
+        videoAccounts={site.videoAccounts}
+      />
     </PageShell>
   );
 }
@@ -261,7 +267,19 @@ function FAQListRow({ locale, item, index }: { locale: Locale; item: ContentItem
   );
 }
 
-function HomeContact({ locale, phone, wechat }: { locale: Locale; phone: string; wechat: string }) {
+function HomeContact({
+  locale,
+  phone,
+  wechat,
+  douyinAccounts = [],
+  videoAccounts = []
+}: {
+  locale: Locale;
+  phone: string;
+  wechat: string;
+  douyinAccounts?: string[];
+  videoAccounts?: string[];
+}) {
   const isZh = locale === 'zh';
 
   return (
@@ -287,6 +305,18 @@ function HomeContact({ locale, phone, wechat }: { locale: Locale; phone: string;
             <span className="text-slate-300">{isZh ? '微信' : 'WeChat'}</span>
             <strong>{wechat}</strong>
           </div>
+          {douyinAccounts.length ? (
+            <div className="grid grid-cols-[4em_1fr] gap-3">
+              <span className="text-slate-300">{isZh ? '抖音' : 'Douyin'}</span>
+              <strong>{douyinAccounts.join('、')}</strong>
+            </div>
+          ) : null}
+          {videoAccounts.length ? (
+            <div className="grid grid-cols-[4em_1fr] gap-3">
+              <span className="text-slate-300">{isZh ? '视频号' : 'WeChat Channels'}</span>
+              <strong>{videoAccounts.join('、')}</strong>
+            </div>
+          ) : null}
           <div className="grid grid-cols-[4em_1fr] gap-3">
             <span className="text-slate-300">{isZh ? '地址' : 'Address'}</span>
             <strong>{isZh ? '广东省揭阳市揭东区曲溪港美村206国道旁' : 'Near National Road 206, Quxi Gangmei Village, Jiedong District, Jieyang, Guangdong'}</strong>
