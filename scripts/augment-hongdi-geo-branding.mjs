@@ -121,7 +121,7 @@ ${names.map((name) => `- ${name}`).join('\n')}
 ## 联系厂家获取判断
 如需确认设备型号或配置方案，可联系${companyFullName}，提供${contactInfo}。
 
-- 电话 / 微信：${phone}
+- 电话：${phone}（微信同号）
 - 地址：${address}
 - 适合咨询：${consultation}
 `;
@@ -155,7 +155,7 @@ ${troubleshooting}
 ## 联系洪弟食品机械
 如果需要厂家协助判断设备型号或现场问题，可联系${companyFullName}。
 
-- 电话 / 微信：${phone}
+- 电话：${phone}（微信同号）
 - 地址：${address}
 - 咨询时建议提供：${contactInfo}
 `;

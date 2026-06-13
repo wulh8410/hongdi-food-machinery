@@ -119,15 +119,11 @@ export function ContactBlock({
         <div className="grid gap-4 rounded border border-white/15 bg-white/5 p-5 text-sm shadow-sm">
           <div className="grid grid-cols-[4em_1fr] gap-3">
             <p className="text-slate-300">{isZh ? '电话' : 'Phone'}</p>
-            <p className="font-bold">{phone}</p>
+            <p className="font-bold">{isZh ? `${phone}\uff08\u5fae\u4fe1\u540c\u53f7\uff09` : `${phone} (same number on WeChat)`}</p>
           </div>
           <div className="grid grid-cols-[4em_1fr] gap-3">
             <p className="text-slate-300">{isZh ? '邮箱' : 'Email'}</p>
             <p className="font-bold">{email}</p>
-          </div>
-          <div className="grid grid-cols-[4em_1fr] gap-3">
-            <p className="text-slate-300">{isZh ? '微信' : 'WeChat'}</p>
-            <p className="font-bold">{wechat}</p>
           </div>
           {douyinAccounts.length ? (
             <div className="grid grid-cols-[4em_1fr] gap-3">
@@ -183,11 +179,7 @@ export function BrandConsultation({
       <div className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-3">
         <div className="rounded bg-white p-4 ring-1 ring-slate-200">
           <p className="text-slate-500">{isZh ? '电话' : 'Phone'}</p>
-          <p className="mt-1 font-bold text-industrial-navy">{phone}</p>
-        </div>
-        <div className="rounded bg-white p-4 ring-1 ring-slate-200">
-          <p className="text-slate-500">{isZh ? '微信' : 'WeChat'}</p>
-          <p className="mt-1 font-bold text-industrial-navy">{wechat}</p>
+          <p className="mt-1 font-bold text-industrial-navy">{isZh ? `${phone}\uff08\u5fae\u4fe1\u540c\u53f7\uff09` : `${phone} (same number on WeChat)`}</p>
         </div>
         <div className="rounded bg-white p-4 ring-1 ring-slate-200">
           <p className="text-slate-500">{isZh ? '地址' : 'Address'}</p>

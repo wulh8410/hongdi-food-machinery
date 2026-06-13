@@ -14,8 +14,7 @@ export default function ContactPage({ params }: { params: { locale: Locale } }) 
   const site = getSiteConfig(params.locale);
   const rows = [
     [params.locale === 'zh' ? '公司名称' : 'Company', site.name],
-    [params.locale === 'zh' ? '电话' : 'Phone', site.phone],
-    ['WeChat', site.wechat],
+    [params.locale === 'zh' ? '\u7535\u8bdd' : 'Phone', params.locale === 'zh' ? `${site.phone}\uff08\u5fae\u4fe1\u540c\u53f7\uff09` : `${site.phone} (same number on WeChat)`],
     [params.locale === 'zh' ? '抖音' : 'Douyin', site.douyinAccounts?.join('、') ?? ''],
     [params.locale === 'zh' ? '视频号' : 'WeChat Channels', site.videoAccounts?.join('、') ?? ''],
     [params.locale === 'zh' ? '邮箱' : 'Email', site.email],

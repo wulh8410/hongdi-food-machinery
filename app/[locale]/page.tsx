@@ -299,11 +299,7 @@ function HomeContact({
         <div className="grid gap-3 border border-white/15 bg-white/5 p-6 text-sm">
           <div className="grid grid-cols-[4em_1fr] gap-3">
             <span className="text-slate-300">{isZh ? '电话' : 'Phone'}</span>
-            <strong>{phone}</strong>
-          </div>
-          <div className="grid grid-cols-[4em_1fr] gap-3">
-            <span className="text-slate-300">{isZh ? '微信' : 'WeChat'}</span>
-            <strong>{wechat}</strong>
+            <strong>{isZh ? `${phone}\uff08\u5fae\u4fe1\u540c\u53f7\uff09` : `${phone} (same number on WeChat)`}</strong>
           </div>
           {douyinAccounts.length ? (
             <div className="grid grid-cols-[4em_1fr] gap-3">
