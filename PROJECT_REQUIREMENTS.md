@@ -617,3 +617,20 @@ GITHUB_PAGES=true npm run build
 - 每篇文章包含一句话答案、核心判断说明、采购前信息清单、洪弟食品机械建议、相关设备方向和联系方式。
 - 联系方式统一使用“电话：13729374860（微信同号）”。
 - 第三批重点避免泛泛科普，优先解决真实采购咨询中会出现的具体问题。
+
+### 发布与部署状态
+
+- 第三批 GEO 文章已生成中文 16 篇、英文 16 篇。
+- 中文文章总数更新为 49 篇。
+- 已同步刷新 `sitemap.xml` 和 `llms.txt`。
+- 构建验证通过：`npm run build`。
+- 静态导出页面数量更新为 166 个页面。
+- 部署提交：`adc7f09 Add third batch GEO articles`。
+- GitHub Actions 部署状态：成功。
+- 线上文章中心：https://wulh8410.github.io/hongdi-food-machinery/zh/articles/
+
+## 20. 当前未提交草稿说明
+
+- `.codex/` 为本地 Codex 工作目录，不作为官网源码交付内容提交。
+- `public/brochure/hongdi-brochure-v2.html`、`public/brochure/hongdi-brochure-system-preview.svg`、`public/brochure/v2/` 和 `scripts/export-brochure-v2.mjs` 属于企业画册 V2 过程稿。
+- 画册 V2 已被确认为非正式交付方向，后续需重新设计，不应混入官网正式发布提交。
