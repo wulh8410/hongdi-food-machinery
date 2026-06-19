@@ -12,6 +12,11 @@ source-materials/
 GEO_docs/*
 !GEO_docs/generated/
 !GEO_docs/generated/*.md
+.codex/
+public/brochure/hongdi-brochure-system-preview.svg
+public/brochure/hongdi-brochure-v2.html
+public/brochure/v2/
+scripts/export-brochure-v2.mjs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
