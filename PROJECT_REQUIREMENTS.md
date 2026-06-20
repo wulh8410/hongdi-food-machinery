@@ -643,3 +643,40 @@ GITHUB_PAGES=true npm run build
 - 已重新生成 `sitemap.xml`、`robots.txt` 和 `llms.txt`，使 canonical、站点地图和 LLM 导航指向 Vercel 域名。
 - Vercel 部署不需要设置 `GITHUB_PAGES=true`，否则会错误启用 `/hongdi-food-machinery` 二级路径。
 - GitHub Pages 旧地址可暂时保留作为历史访问入口，后续接入正式域名后，应以正式域名为唯一 SEO 主入口。
+
+## 22. 2026-06-20 当前项目最新情况
+
+### 当前线上入口
+
+- Vercel 中文首页：`https://hongdi-food-machinery.vercel.app/zh/`
+- Vercel 英文首页：`https://hongdi-food-machinery.vercel.app/en/`
+- Sitemap：`https://hongdi-food-machinery.vercel.app/sitemap.xml`
+- Robots：`https://hongdi-food-machinery.vercel.app/robots.txt`
+- LLM 导航：`https://hongdi-food-machinery.vercel.app/llms.txt`
+
+### 当前发布状态
+
+- 当前正式部署平台已从 GitHub Pages 迁移到 Vercel。
+- GitHub Pages 仍可作为历史访问入口保留，但不再作为 SEO 主入口。
+- 最近一次 Vercel 迁移配置提交：`dc50505 Switch site base URL to Vercel`。
+- 最近一次 GitHub Actions 构建状态：成功。
+- 本地构建验证：`npm run build` 通过，静态页面数量为 166 个。
+
+### 当前内容规模
+
+- 中文文章中心已完成三批 GEO 内容扩展，中文文章总数为 49 篇。
+- FAQ、产品中心、解决方案中心均已形成中英文静态页面结构。
+- `sitemap.xml`、`robots.txt` 和 `llms.txt` 已指向 Vercel 域名，便于搜索引擎和 AI 工具抓取。
+
+### 当前维护规则
+
+- Vercel 部署环境不要配置 `GITHUB_PAGES=true`。
+- GitHub Pages 专用二级路径逻辑仅在 `GITHUB_PAGES=true` 时启用。
+- 企业画册相关文件默认不提交，除非后续明确说明“提交画册”。
+- `.codex/` 和画册 V2 过程稿已通过 `.gitignore` 排除。
+
+### 下一步建议
+
+- 买正式域名后，将 Vercel 项目绑定正式域名，并再次更新 `baseUrl`、`sitemap.xml`、`robots.txt` 和 `llms.txt`。
+- 正式域名启用后，建议把 Vercel 默认域名作为备用入口，SEO 主入口改为正式域名。
+- 后续继续扩展内容时，优先补充真实客户案例、现场图片、安装调试记录、设备维护经验和采购问答。
