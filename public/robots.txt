@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wulh8410.github.io/hongdi-food-machinery/sitemap.xml
+Sitemap: https://hongdi-food-machinery.vercel.app/sitemap.xml

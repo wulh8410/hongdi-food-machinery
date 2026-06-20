@@ -10,8 +10,8 @@
 
 线上地址：
 
-- 中文首页：https://wulh8410.github.io/hongdi-food-machinery/zh/
-- 英文首页：https://wulh8410.github.io/hongdi-food-machinery/en/
+- 中文首页：https://hongdi-food-machinery.vercel.app/zh/
+- 英文首页：https://hongdi-food-machinery.vercel.app/en/
 - GitHub 仓库：https://github.com/wulh8410/hongdi-food-machinery
 
 ## 2. 技术栈
@@ -299,9 +299,9 @@ public/
 
 当前可访问：
 
-- https://wulh8410.github.io/hongdi-food-machinery/sitemap.xml
-- https://wulh8410.github.io/hongdi-food-machinery/robots.txt
-- https://wulh8410.github.io/hongdi-food-machinery/llms.txt
+- https://hongdi-food-machinery.vercel.app/sitemap.xml
+- https://hongdi-food-machinery.vercel.app/robots.txt
+- https://hongdi-food-machinery.vercel.app/llms.txt
 
 ## 9. Schema 结构化数据
 
@@ -334,7 +334,7 @@ https://github.com/wulh8410/hongdi-food-machinery
 由于部署在 GitHub Pages 二级路径：
 
 ```txt
-https://wulh8410.github.io/hongdi-food-machinery/
+https://hongdi-food-machinery.vercel.app/
 ```
 
 项目已配置：
@@ -627,10 +627,19 @@ GITHUB_PAGES=true npm run build
 - 静态导出页面数量更新为 166 个页面。
 - 部署提交：`adc7f09 Add third batch GEO articles`。
 - GitHub Actions 部署状态：成功。
-- 线上文章中心：https://wulh8410.github.io/hongdi-food-machinery/zh/articles/
+- 线上文章中心：https://hongdi-food-machinery.vercel.app/zh/articles/
 
 ## 20. 当前未提交草稿说明
 
 - `.codex/` 为本地 Codex 工作目录，不作为官网源码交付内容提交。
 - `public/brochure/hongdi-brochure-v2.html`、`public/brochure/hongdi-brochure-system-preview.svg`、`public/brochure/v2/` 和 `scripts/export-brochure-v2.mjs` 属于企业画册 V2 过程稿。
 - 画册 V2 已被确认为非正式交付方向，后续需重新设计，不应混入官网正式发布提交。
+
+## 21. 2026-06-20 Vercel 迁移记录
+
+- Vercel 项目地址已创建：`https://hongdi-food-machinery.vercel.app/`。
+- 官网正式基准 URL 从 GitHub Pages 二级路径更新为 Vercel 根域名。
+- `data/site.zh.json` 和 `data/site.en.json` 的 `baseUrl` 已更新为 `https://hongdi-food-machinery.vercel.app`。
+- 已重新生成 `sitemap.xml`、`robots.txt` 和 `llms.txt`，使 canonical、站点地图和 LLM 导航指向 Vercel 域名。
+- Vercel 部署不需要设置 `GITHUB_PAGES=true`，否则会错误启用 `/hongdi-food-machinery` 二级路径。
+- GitHub Pages 旧地址可暂时保留作为历史访问入口，后续接入正式域名后，应以正式域名为唯一 SEO 主入口。
