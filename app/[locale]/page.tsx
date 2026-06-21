@@ -40,150 +40,97 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
   const featuredProducts = featuredProductSlugs
     .map((slug) => products.find((item) => item.slug === slug))
     .filter((item): item is ContentItem => item !== undefined);
-  const processSteps = isZh
-    ? ['需求确认', '原料预处理', '浸烫清洗', '脱毛脱鳞', '分离加工', '检验交付']
-    : ['Requirement', 'Pre-processing', 'Scalding & Washing', 'Dehairing & Scaling', 'Separation', 'Delivery'];
-  const strengths = isZh
-    ? [
-        ['先进设备', '围绕家禽、水产和肉类加工场景配置设备。'],
-        ['严格质控', '关注材料结构、装配稳定性和出厂调试。'],
-        ['研发创新', '根据真实生产痛点持续优化设备结构。'],
-        ['快速交付', '按物料、产能、场地和电压条件确认配置。']
-      ]
-    : [
-        ['Equipment', 'Equipment configured for poultry, aquatic, and meat processing workflows.'],
-        ['Quality Control', 'Material structure, assembly stability, and commissioning checks.'],
-        ['Improvement', 'Equipment structure optimized around practical production pain points.'],
-        ['Delivery', 'Configuration based on material, capacity, site size, and voltage.']
-      ];
 
   return (
     <PageShell locale={locale} path={`/${locale}`}>
       <SchemaJsonLd data={organizationSchema(locale)} />
       <HeroSection locale={locale} site={site} />
 
-      <section className="bg-[#e8f0f5]">
-        <div className="mx-auto max-w-7xl px-4 py-12 md:px-6">
-          <p className="max-w-4xl text-2xl font-black leading-10 text-industrial-navy">{site.companyPositioning}</p>
-          <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
-            {categories.slice(0, 6).map((category) => (
-              <div key={category.slug} className="border border-[#08233d]/10 bg-white/45 px-4 py-3 text-sm font-bold text-industrial-navy">
-                {category.name}
-              </div>
-            ))}
+      <section className="bg-[#f4f8fa]">
+        <div className="mx-auto grid max-w-[1440px] gap-10 bg-[linear-gradient(90deg,rgba(244,248,250,0.98),rgba(244,248,250,0.92))] px-4 py-12 md:grid-cols-[minmax(0,520px)_minmax(0,1fr)] md:px-8 md:py-16 lg:px-16">
+          <h2 className="text-3xl font-black leading-tight text-industrial-navy md:text-4xl">
+            {isZh ? '让采购者在首页快速判断：设备是否适配自己的产量、场地和工序。' : 'Help buyers judge fit by capacity, site conditions, and workflow.'}
+          </h2>
+          <div>
+            <p className="text-base font-semibold leading-8 text-slate-600 md:text-lg">
+              {isZh
+                ? '新版首页不以装饰为主，而是把工厂能力、主推设备、解决方案和采购问题放进同一套工业视觉系统里。深色区域承载品牌气势，浅色区域承载清晰阅读，避免页面割裂。'
+                : 'The homepage groups factory capability, core equipment, solutions, and buyer questions into one industrial visual system.'}
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              {categories.slice(0, 6).map((category) => (
+                <span key={category.slug} className="border border-[#ccd9e2] bg-white px-4 py-2 text-sm font-black text-[#143854]">
+                  {category.name}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       <HomeSection
-        eyebrow={isZh ? 'Core Equipment' : 'Core Equipment'}
+        eyebrow="Core Products"
         title={isZh ? '主推设备矩阵' : 'Featured Equipment Matrix'}
-        description={isZh ? '围绕家禽脱毛、泡水浸烫、水产处理和前处理配套，突出可采购、可对比、可落地的核心设备。' : 'Core equipment for poultry dehairing, scalding, aquatic processing, and pre-processing workflows.'}
+        description={isZh ? '优先展示前 4 款高价值设备，卡片统一规格、图片完整呈现，方便采购者横向对比。' : 'Four core machines with consistent cards for quick comparison.'}
         href={`/${locale}/products`}
-        linkText={isZh ? '查看全部产品' : 'View all products'}
+        linkText={isZh ? '查看全部' : 'View all'}
       >
-        <div className="border border-[#08233d]/10 bg-white/45 p-4 md:p-7">
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {featuredProducts.map((item) => (
-              <ProductCard key={item.slug} locale={locale} item={item} />
-            ))}
-          </div>
-        </div>
-      </HomeSection>
-
-      <section className="bg-[#e8f0f5] px-4 md:px-6">
-        <div className="mx-auto max-w-7xl bg-[linear-gradient(135deg,rgba(8,35,61,0.98),rgba(18,52,82,0.94))] px-6 py-14 text-white md:px-10">
-          <p className="text-sm font-black uppercase tracking-[0.18em] text-industrial-orange">{isZh ? 'Process' : 'Process'}</p>
-          <h2 className="mt-3 text-3xl font-black md:text-4xl">{isZh ? '加工流程与解决方案' : 'Processing Workflow'}</h2>
-          <p className="mt-3 text-sm leading-7 text-slate-300 md:text-base">
-            {isZh ? '从物料、产能、场地、电压到交付的完整路径，让采购判断更清晰。' : 'A clear path from material and capacity to site conditions and delivery.'}
-          </p>
-          <div className="mt-10 grid gap-4 md:grid-cols-6">
-            {processSteps.map((step, index) => (
-              <div key={step} className="border-t border-white/20 pt-5">
-                <p className="text-2xl font-black text-industrial-orange">{String(index + 1).padStart(2, '0')}</p>
-                <p className="mt-3 text-sm font-black md:text-base">{step}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <HomeSection
-        eyebrow={isZh ? 'Solutions' : 'Solutions'}
-        title={isZh ? '按真实生产场景配置设备' : 'Configure Equipment by Production Scenario'}
-        description={isZh ? '不是堆产品，而是按客户的物料、产量、场地和前后工序，形成可执行的设备组合。' : 'Equipment combinations based on materials, capacity, site size, and workflow.'}
-        href={`/${locale}/solutions`}
-        linkText={isZh ? '查看全部方案' : 'View all solutions'}
-        panel="dark"
-      >
-        <div className="grid border-y border-white/15 md:grid-cols-2 lg:grid-cols-4">
-          {solutions.slice(0, 4).map((item, index) => (
-            <HomeSolutionCell key={item.slug} locale={locale} item={item} index={index} />
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {featuredProducts.map((item) => (
+            <ProductCard key={item.slug} locale={locale} item={item} />
           ))}
         </div>
       </HomeSection>
 
-      <section className="bg-[#e8f0f5]">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 py-16 md:grid-cols-[0.9fr_1.1fr] md:px-6">
-          <div>
-            <p className="text-sm font-black uppercase tracking-[0.18em] text-industrial-orange">{isZh ? 'Factory Capability' : 'Factory Capability'}</p>
-            <h2 className="mt-3 text-3xl font-black text-industrial-navy md:text-4xl">{isZh ? '工厂实力' : 'Manufacturing Capability'}</h2>
-            <p className="mt-4 text-base leading-8 text-slate-600">
-              {isZh
-                ? '以真实加工场景为依据，围绕设备结构、产能配置、安装调试和后续维护提供配套支持。'
-                : 'Support based on real processing scenarios, equipment structure, capacity configuration, commissioning, and maintenance.'}
-            </p>
-          </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {strengths.map(([title, description]) => (
-              <div key={title} className="border border-[#08233d]/10 bg-white/55 p-5">
-                <h3 className="text-lg font-black text-industrial-navy">{title}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-600">{description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <HomeSection
-        eyebrow={isZh ? 'GEO Content' : 'GEO Content'}
-        title={isZh ? '采购知识与常见问题' : 'Buyer Knowledge and FAQ'}
-        description={isZh ? '用问答和选型文章解释真实采购问题，让搜索引擎和 AI 助手更容易理解洪弟食品机械的设备能力与服务场景。' : 'Buyer questions and selection guides for search engines and AI assistants.'}
-        href={`/${locale}/faqs`}
-        linkText={isZh ? '查看全部内容' : 'View all content'}
+        eyebrow="Scenario Solutions"
+        title={isZh ? '按真实生产场景配置方案' : 'Configure by Production Scenario'}
+        description={isZh ? '从物料、产量、场地、电压和前后工序判断设备组合，让页面像采购顾问一样回答问题。' : 'Equipment combinations based on material, output, site, voltage, and workflow.'}
+        href={`/${locale}/solutions`}
+        linkText={isZh ? '查看全部' : 'View all'}
+        dark
       >
-        <div className="grid gap-7 border border-[#08233d]/10 bg-white/45 p-4 md:grid-cols-[0.9fr_1.1fr] md:p-7">
-          {faqs[0] ? <FAQFeatureCard locale={locale} item={faqs[0]} /> : null}
-          <div className="border border-slate-200 bg-white">
-            {faqs.slice(1, 4).map((item, index) => (
-              <FAQListRow key={item.slug} locale={locale} item={item} index={index} />
-            ))}
-          </div>
+        <div className="grid border border-white/15 md:grid-cols-2 lg:grid-cols-4">
+          {solutions.slice(0, 4).map((item, index) => (
+            <SolutionCell key={item.slug} locale={locale} item={item} index={index} />
+          ))}
         </div>
       </HomeSection>
 
       <HomeSection
-        eyebrow={isZh ? 'Articles' : 'Articles'}
-        title={isZh ? '最新文章' : 'Latest Articles'}
-        description={isZh ? '围绕选型、维护、场景和采购问题持续补充内容。' : 'Selection, maintenance, scenario, and procurement content.'}
+        eyebrow="GEO Content"
+        title={isZh ? '采购知识与常见问题' : 'Buyer Knowledge and FAQ'}
+        description={isZh ? 'FAQ 和文章区采用同一套信息面板语言，减少零散感，同时保留 GEO 内容入口。' : 'FAQ and articles use one consistent information panel for GEO-focused content.'}
+        href={`/${locale}/faqs`}
+        linkText={isZh ? '查看全部内容' : 'View all content'}
+      >
+        <div className="grid gap-6 lg:grid-cols-2">
+          <KnowledgePanel title={isZh ? '热门 FAQ' : 'Popular FAQ'} linkText={isZh ? '查看全部' : 'View all'} href={`/${locale}/faqs`}>
+            {faqs.slice(0, 4).map((item, index) => (
+              <KnowledgeRow key={item.slug} label={`FAQ ${String(index + 1).padStart(2, '0')}`} title={item.title} description={item.description} href={`/${locale}/faqs/${item.slug}`} />
+            ))}
+          </KnowledgePanel>
+          <KnowledgePanel title={isZh ? '最新文章' : 'Latest Articles'} linkText={isZh ? '查看全部' : 'View all'} href={`/${locale}/articles`}>
+            {articles.slice(0, 4).map((item) => (
+              <KnowledgeRow key={item.slug} label="ARTICLE" title={item.title} description={item.description} href={`/${locale}/articles/${item.slug}`} />
+            ))}
+          </KnowledgePanel>
+        </div>
+      </HomeSection>
+
+      <HomeSection
+        eyebrow="Articles"
+        title={isZh ? '最新选型文章' : 'Latest Selection Articles'}
+        description={isZh ? '围绕选型、维护、场景和采购问题持续补充内容，增强 AI 搜索和传统搜索可理解性。' : 'Selection, maintenance, scenario, and procurement content for search and AI assistants.'}
         href={`/${locale}/articles`}
         linkText={isZh ? '查看全部文章' : 'View all articles'}
       >
-        <div className="grid gap-6 border border-[#08233d]/10 bg-white/45 p-4 md:grid-cols-2 md:p-7 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {articles.slice(0, 4).map((item) => (
             <ArticleCard key={item.slug} locale={locale} item={item} />
           ))}
         </div>
       </HomeSection>
-
-      <HomeContact
-        locale={locale}
-        phone={site.phone}
-        wechat={site.wechat}
-        douyinAccounts={site.douyinAccounts}
-        videoAccounts={site.videoAccounts}
-      />
     </PageShell>
   );
 }
@@ -195,7 +142,6 @@ function HomeSection({
   href,
   linkText,
   dark = false,
-  panel = 'light',
   children
 }: {
   eyebrow: string;
@@ -204,21 +150,25 @@ function HomeSection({
   href: string;
   linkText: string;
   dark?: boolean;
-  panel?: 'light' | 'dark';
   children: React.ReactNode;
 }) {
-  const isDarkPanel = dark || panel === 'dark';
   return (
-    <section className="bg-[#e8f0f5] px-4 py-8 md:px-6">
-      <div className={`mx-auto max-w-7xl ${isDarkPanel ? 'bg-[linear-gradient(135deg,rgba(8,35,61,0.98),rgba(18,52,82,0.94))] px-6 py-14 text-white md:px-10' : 'py-8'}`}>
-        <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+    <section className={dark ? 'bg-[#061725] text-white' : 'bg-[#e7eef3] text-industrial-navy'}>
+      <div
+        className={
+          dark
+            ? 'mx-auto max-w-[1440px] bg-[linear-gradient(90deg,rgba(6,23,37,0.96),rgba(8,32,56,0.9))] px-4 py-14 md:px-8 lg:px-16'
+            : 'mx-auto max-w-[1440px] px-4 py-14 md:px-8 lg:px-16'
+        }
+      >
+        <div className={`mb-8 grid gap-5 md:grid-cols-[1fr_auto] md:items-end ${dark ? 'border-b border-white/15 pb-8' : ''}`}>
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.18em] text-industrial-orange">{eyebrow}</p>
-            <h2 className={`mt-3 text-3xl font-black md:text-4xl ${isDarkPanel ? 'text-white' : 'text-industrial-navy'}`}>{title}</h2>
-            <p className={`mt-3 max-w-3xl text-sm leading-7 md:text-base ${isDarkPanel ? 'text-slate-300' : 'text-slate-600'}`}>{description}</p>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-industrial-orange">{eyebrow}</p>
+            <h2 className="mt-2 text-3xl font-black leading-tight md:text-4xl">{title}</h2>
+            <p className={`mt-3 max-w-3xl text-sm font-semibold leading-7 md:text-base ${dark ? 'text-white/75' : 'text-slate-600'}`}>{description}</p>
           </div>
-          <Link href={href} className={`text-sm font-black ${isDarkPanel ? 'text-industrial-orange' : 'text-industrial-blue'}`}>
-            {linkText} →
+          <Link href={href} className={`inline-flex border px-4 py-3 text-sm font-black ${dark ? 'border-white/25 text-white hover:bg-white/10' : 'border-[#b9cad7] text-industrial-blue hover:bg-white'}`}>
+            {linkText}
           </Link>
         </div>
         {children}
@@ -227,24 +177,12 @@ function HomeSection({
   );
 }
 
-function FAQFeatureCard({ locale, item }: { locale: Locale; item: ContentItem }) {
+function SolutionCell({ locale, item, index }: { locale: Locale; item: ContentItem; index: number }) {
   return (
-    <article className="border-l-4 border-industrial-orange bg-white p-7">
-      <h3 className="text-2xl font-black leading-tight text-industrial-navy">{item.title}</h3>
-      <p className="mt-5 line-clamp-6 text-base leading-8 text-slate-600">{item.description}</p>
-      <Link href={`/${locale}/faqs/${item.slug}`} className="mt-6 inline-block text-sm font-black text-industrial-blue">
-        {locale === 'zh' ? '查看答案 →' : 'View Answer →'}
-      </Link>
-    </article>
-  );
-}
-
-function HomeSolutionCell({ locale, item, index }: { locale: Locale; item: ContentItem; index: number }) {
-  return (
-    <article className="border-t border-white/15 p-6 first:border-t-0 md:border-l md:border-t-0 md:first:border-l-0">
-      <p className="text-3xl font-black text-industrial-orange">{String(index + 1).padStart(2, '0')}</p>
-      <h3 className="mt-5 text-xl font-black text-white">{item.title}</h3>
-      <p className="mt-3 line-clamp-4 text-sm leading-7 text-slate-300">{item.description}</p>
+    <article className="min-h-[250px] border-t border-white/15 bg-[#082038]/70 p-6 first:border-t-0 md:border-l md:border-t-0 md:first:border-l-0">
+      <p className="text-4xl font-black text-industrial-orange">{String(index + 1).padStart(2, '0')}</p>
+      <h3 className="mt-5 text-xl font-black leading-snug text-white">{item.title}</h3>
+      <p className="mt-3 line-clamp-4 text-sm font-semibold leading-7 text-white/75">{item.description}</p>
       <Link href={`/${locale}/solutions/${item.slug}`} className="mt-5 inline-block text-sm font-black text-industrial-orange">
         {locale === 'zh' ? '查看方案 →' : 'View Solution →'}
       </Link>
@@ -252,73 +190,28 @@ function HomeSolutionCell({ locale, item, index }: { locale: Locale; item: Conte
   );
 }
 
-function FAQListRow({ locale, item, index }: { locale: Locale; item: ContentItem; index: number }) {
+function KnowledgePanel({ title, href, linkText, children }: { title: string; href: string; linkText: string; children: React.ReactNode }) {
   return (
-    <article className="grid gap-4 border-t border-slate-200 p-5 first:border-t-0 md:grid-cols-[7rem_1fr]">
-      <p className="text-xs font-black uppercase tracking-[0.08em] text-industrial-orange">{index === 2 ? 'Article' : `FAQ ${String(index + 1).padStart(2, '0')}`}</p>
-      <div>
-        <h3 className="line-clamp-2 text-lg font-black text-industrial-navy">{item.title}</h3>
-        <p className="mt-2 line-clamp-2 text-sm leading-6 text-slate-600">{item.description}</p>
-        <Link href={`/${locale}/faqs/${item.slug}`} className="mt-3 inline-block text-sm font-black text-industrial-blue">
-          {locale === 'zh' ? '查看答案 →' : 'View Answer →'}
+    <article className="border border-[#cfdae2] bg-white shadow-soft">
+      <header className="flex items-center justify-between border-b border-[#e1e8ee] px-6 py-5">
+        <h3 className="text-2xl font-black text-industrial-navy">{title}</h3>
+        <Link href={href} className="text-sm font-black text-industrial-orange">
+          {linkText}
         </Link>
-      </div>
+      </header>
+      <div>{children}</div>
     </article>
   );
 }
 
-function HomeContact({
-  locale,
-  phone,
-  wechat,
-  douyinAccounts = [],
-  videoAccounts = []
-}: {
-  locale: Locale;
-  phone: string;
-  wechat: string;
-  douyinAccounts?: string[];
-  videoAccounts?: string[];
-}) {
-  const isZh = locale === 'zh';
-
+function KnowledgeRow({ label, title, description, href }: { label: string; title: string; description: string; href: string }) {
   return (
-    <section className="bg-[#e8f0f5] px-4 pb-12 pt-8 md:px-6">
-      <div className="mx-auto grid max-w-7xl gap-8 bg-[#123452] px-6 py-11 text-white md:grid-cols-[1.1fr_0.9fr] md:px-10">
-        <div>
-          <p className="text-sm font-black uppercase tracking-[0.18em] text-industrial-orange">{isZh ? '设备选型咨询' : 'Equipment Consultation'}</p>
-          <h2 className="mt-3 text-3xl font-black md:text-4xl">
-            {isZh ? '提交加工需求，获取设备配置建议' : 'Share requirements and get equipment advice'}
-          </h2>
-          <p className="mt-4 max-w-3xl text-sm leading-7 text-white/90 md:text-base">
-            {isZh
-              ? '提供加工物料、单日产量、现场电压、场地尺寸和前后工序信息，我们可以先给出适合的设备型号与配置建议。'
-              : 'Share material type, daily capacity, voltage, site size, and workflow requirements for an initial equipment recommendation.'}
-          </p>
-        </div>
-        <div className="grid gap-3 border border-white/15 bg-white/5 p-6 text-sm">
-          <div className="grid grid-cols-[4em_1fr] gap-3">
-            <span className="text-slate-300">{isZh ? '电话' : 'Phone'}</span>
-            <strong>{isZh ? `${phone}\uff08\u5fae\u4fe1\u540c\u53f7\uff09` : `${phone} (same number on WeChat)`}</strong>
-          </div>
-          {douyinAccounts.length ? (
-            <div className="grid grid-cols-[4em_1fr] gap-3">
-              <span className="text-slate-300">{isZh ? '抖音' : 'Douyin'}</span>
-              <strong>{douyinAccounts.join('、')}</strong>
-            </div>
-          ) : null}
-          {videoAccounts.length ? (
-            <div className="grid grid-cols-[4em_1fr] gap-3">
-              <span className="text-slate-300">{isZh ? '视频号' : 'WeChat Channels'}</span>
-              <strong>{videoAccounts.join('、')}</strong>
-            </div>
-          ) : null}
-          <div className="grid grid-cols-[4em_1fr] gap-3">
-            <span className="text-slate-300">{isZh ? '地址' : 'Address'}</span>
-            <strong>{isZh ? '广东省揭阳市揭东区曲溪港美村206国道旁' : 'Near National Road 206, Quxi Gangmei Village, Jiedong District, Jieyang, Guangdong'}</strong>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Link href={href} className="grid gap-4 border-b border-[#e1e8ee] px-6 py-5 last:border-b-0 md:grid-cols-[84px_1fr]">
+      <span className="text-xs font-black uppercase tracking-[0.08em] text-slate-400">{label}</span>
+      <span>
+        <span className="block text-lg font-black leading-snug text-industrial-navy">{title}</span>
+        <span className="mt-2 line-clamp-2 block text-sm font-semibold leading-6 text-slate-600">{description}</span>
+      </span>
+    </Link>
   );
 }

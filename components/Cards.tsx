@@ -16,17 +16,20 @@ export function ProductCard({ locale, item }: { locale: Locale; item: ContentIte
   const categoryLabel = categoryLabels[categoryKey]?.[locale] ?? (locale === 'zh' ? '食品加工设备' : 'Food Processing Equipment');
 
   return (
-    <article className="group overflow-hidden border border-slate-200 bg-white">
-      {image ? (
-        <Image src={assetPath(image)} alt={item.title} width={800} height={600} className="aspect-[4/3] w-full bg-industrial-mist object-cover transition duration-300 group-hover:scale-[1.02]" />
-      ) : (
-        <div className="aspect-[4/3] bg-industrial-mist" />
-      )}
-      <div className="min-h-[220px] p-5">
+    <article className="group flex h-full flex-col overflow-hidden border border-[#cfdae2] bg-white shadow-soft">
+      <div className="relative overflow-hidden bg-[#0b2238]">
+        {image ? (
+          <Image src={assetPath(image)} alt={item.title} width={800} height={600} className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-[1.02]" />
+        ) : (
+          <div className="aspect-[4/3] bg-industrial-mist" />
+        )}
+        <span className="absolute left-3 top-3 bg-[#061725]/85 px-3 py-2 text-xs font-black text-industrial-orange ring-1 ring-white/20">{categoryLabel}</span>
+      </div>
+      <div className="flex min-h-[230px] flex-1 flex-col p-5">
         <p className="text-xs font-black text-industrial-orange">{categoryLabel}</p>
         <h3 className="mt-2 text-lg font-black leading-snug text-industrial-navy">{item.title}</h3>
         <p className="mt-2 line-clamp-3 text-sm leading-6 text-slate-600">{item.description}</p>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-auto flex flex-wrap gap-2 pt-4">
           {item.applications?.slice(0, 3).map((app) => (
             <span key={app} className="bg-[#edf3f7] px-2 py-1 text-xs font-bold text-slate-600">
               {app}
