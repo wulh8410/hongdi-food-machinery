@@ -10,33 +10,35 @@ export function Header({ locale, site, path }: { locale: Locale; site: SiteConfi
   const tagline = locale === 'zh' ? '专业食品机械设备制造' : 'Professional Food Machinery Manufacturing';
 
   return (
-    <header className="sticky top-0 z-30 border-b border-[#d7e2e9] bg-[#f6fafc]/95 text-industrial-navy backdrop-blur">
-      <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-6 px-4 py-3 md:px-8 lg:px-16">
-        <Link href={`/${locale}`} className="flex shrink-0 items-center gap-4" aria-label={site.name}>
-          <span className="relative block h-14 w-[260px] overflow-hidden border border-[#d8e1e7] bg-white shadow-soft sm:w-[280px]">
+    <header className="sticky top-0 z-20 border-b border-white/10 bg-[#08233d]/95 text-white backdrop-blur">
+      <div className="flex w-full flex-nowrap items-center justify-between gap-3 px-3 py-2 md:px-6">
+        <Link href={`/${locale}`} className="flex min-w-[250px] shrink-0 items-center gap-3 sm:min-w-[330px]" aria-label={site.name}>
+          <span className="relative block h-12 w-12 shrink-0 overflow-hidden">
             <Image
-              src={assetPath('/images/factory/hongdi-logo-header.png')}
+              src={assetPath('/images/factory/hongdi-logo-icon.png')}
               alt={site.name}
               fill
-              className="object-contain px-3 py-1.5"
-              sizes="280px"
+              className="object-contain"
+              sizes="48px"
               priority
             />
           </span>
-          <span className="hidden border-l-4 border-industrial-orange pl-4 text-sm font-black text-[#29445a] lg:block">
-            {tagline}
+          <span className="min-w-0 leading-none">
+            <span className="block text-lg font-black tracking-[0.03em] text-white sm:text-xl">{site.shortName}</span>
+            <span className="mt-1.5 hidden items-center gap-2 text-[11px] font-black tracking-[0.12em] text-industrial-orange sm:flex">
+              <span className="h-0.5 w-5 bg-industrial-orange" />
+              {tagline}
+              <span className="h-0.5 w-5 bg-industrial-orange" />
+            </span>
           </span>
         </Link>
-
-        <nav className="flex min-w-0 items-center justify-end gap-1 overflow-x-auto whitespace-nowrap text-xs font-black text-[#193249] md:gap-2 md:text-sm">
+        <nav className="flex min-w-0 flex-nowrap items-center justify-end gap-1 overflow-x-auto whitespace-nowrap text-xs font-semibold text-white sm:text-sm">
           {navKeys.map((key) => (
-            <Link key={key} href={`/${locale}/${key}`} className="px-2.5 py-2 hover:text-industrial-orange lg:px-3">
+            <Link key={key} href={`/${locale}/${key}`} className="px-2.5 py-2 hover:bg-white/10 lg:px-3">
               {site.nav[key]}
             </Link>
           ))}
-          <span className="ml-2 text-industrial-blue">
-            <LanguageSwitcher locale={locale} path={path} />
-          </span>
+          <LanguageSwitcher locale={locale} path={path} />
         </nav>
       </div>
     </header>
