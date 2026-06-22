@@ -1,4 +1,4 @@
----
+﻿---
 title: "中小型屠宰档口家禽脱毛解决方案"
 slug: "small-slaughter-stall-dehairing-solution"
 solutionCategory: "家禽加工"
@@ -24,7 +24,7 @@ relatedArticles: ["small-slaughter-stall-equipment-selection","how-to-choose-pou
 relatedFaqs: ["small-stall-which-plucker","why-plucker-not-clean","why-plucker-damages-skin","what-info-before-buying"]
 date: "2026-06-11"
 updated: "2026-06-11"
-sourceNote: "页面中的设备额定参数来自现有产品资料；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置应在下单前由厂家复核。"
+sourceNote: "以上设备参数可作为初步选型参考；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置建议在下单前与厂家确认。"
 seo:
   title: "中小型屠宰档口家禽脱毛解决方案｜洪弟食品机械"
   description: "面向鸡鸭鹅屠宰档口和个体加工点，按禽种、峰值处理量和场地条件组合泡水与脱毛设备。"

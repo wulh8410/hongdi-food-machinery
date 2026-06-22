@@ -1,4 +1,4 @@
----
+﻿---
 title: 安装家禽脱毛机前场地要准备什么？
 slug: site-preparation-before-installation
 question: 安装家禽脱毛机前场地要准备什么？

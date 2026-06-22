@@ -1,4 +1,4 @@
----
+﻿---
 title: "家禽脱毛机一天能处理多少只？怎么按产量选型号？"
 slug: "daily-capacity-for-poultry-plucker"
 category: "buyer-guide"

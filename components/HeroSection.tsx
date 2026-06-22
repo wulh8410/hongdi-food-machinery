@@ -21,9 +21,9 @@ export function HeroSection({ locale }: { locale: Locale; site: SiteConfig }) {
       ];
 
   return (
-    <section className="bg-[#e8f0f5] px-4 pt-6 md:px-6 lg:pt-10">
-      <div className="mx-auto max-w-7xl">
-        <div className="relative min-h-[600px] overflow-hidden border border-[#08233d]/10 bg-[#08233d] shadow-soft lg:min-h-[640px]">
+    <section className="relative overflow-hidden bg-[#e9f1f6]">
+      <div className="relative">
+        <div className="relative min-h-[560px] overflow-hidden bg-[#08233d] lg:min-h-[620px]">
           <Image
             src={assetPath('/images/hero/hongdi-factory-showroom-hero.png')}
             alt={isZh ? '洪弟食品机械门面与食品加工设备展示' : 'Hongdi Food Machinery factory and food processing equipment display'}
@@ -34,7 +34,8 @@ export function HeroSection({ locale }: { locale: Locale; site: SiteConfig }) {
           />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,35,61,0.94)_0%,rgba(8,35,61,0.8)_40%,rgba(8,35,61,0.28)_72%,rgba(8,35,61,0.08)_100%)]" />
           <div className="absolute inset-0 opacity-45 [background-image:linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:92px_92px]" />
-          <div className="relative z-10 max-w-2xl px-6 py-14 md:px-12 lg:px-14 lg:py-20">
+          <div className="relative z-10 mx-auto max-w-7xl px-4 py-14 md:px-6 lg:py-20">
+            <div className="max-w-2xl">
             <p className="flex items-center gap-3 text-sm font-black tracking-[0.08em] text-industrial-orange before:h-1 before:w-8 before:bg-industrial-orange">
               {isZh ? '洪弟食品机械' : 'Hongdi Food Machinery'}
             </p>
@@ -64,9 +65,10 @@ export function HeroSection({ locale }: { locale: Locale; site: SiteConfig }) {
                 {isZh ? '获取选型建议' : 'Get Selection Advice'}
               </Link>
             </div>
+            </div>
           </div>
         </div>
-        <div className="grid border border-t-0 border-white/10 bg-[#123452] text-white md:grid-cols-4">
+        <div className="mx-auto grid max-w-7xl translate-y-[-36px] border border-white/10 bg-[#123452] text-white shadow-soft md:grid-cols-4">
           {metrics.map(([value, label], index) => (
             <div key={label} className={`px-8 py-7 ${index ? 'border-t border-white/10 md:border-l md:border-t-0' : ''}`}>
               <p className="text-4xl font-black text-industrial-orange">{value}</p>

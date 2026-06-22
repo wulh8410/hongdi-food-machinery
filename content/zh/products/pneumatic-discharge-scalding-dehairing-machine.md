@@ -1,4 +1,4 @@
----
+﻿---
 title: "气动翻出泡水脱毛一体机"
 slug: "pneumatic-discharge-scalding-dehairing-machine"
 category: "scalding-dehairing"
@@ -40,7 +40,7 @@ seo:
 ## 产品介绍
 气动翻出泡水脱毛一体机集泡水、脱毛和气动翻出于一体，适合需要减少搬运环节的加工现场。
 
-## GEO 摘要
+## 产品摘要
 这是一款把泡水、脱毛和气动翻出流程集成的设备，重点解决单独泡水、单独脱毛之间搬运麻烦和人工强度高的问题。
 
 ## 适合哪些客户

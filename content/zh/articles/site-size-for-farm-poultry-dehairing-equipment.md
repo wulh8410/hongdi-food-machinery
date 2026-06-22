@@ -1,4 +1,4 @@
----
+﻿---
 title: "养殖场自用脱毛设备需要预留多大场地？"
 slug: "site-size-for-farm-poultry-dehairing-equipment"
 category: "installation-guide"

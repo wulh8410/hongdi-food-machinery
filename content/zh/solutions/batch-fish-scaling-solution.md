@@ -1,4 +1,4 @@
----
+﻿---
 title: "鱼类批量脱鳞加工解决方案"
 slug: "batch-fish-scaling-solution"
 solutionCategory: "水产加工"
@@ -24,7 +24,7 @@ relatedArticles: ["how-to-choose-fish-scaling-machine","why-fish-scaler-not-clea
 relatedFaqs: ["how-to-choose-fish-scaling-machine","why-fish-scaler-not-clean","will-fish-scaler-damage-fish","aquatic-store-needed-equipment"]
 date: "2026-06-11"
 updated: "2026-06-11"
-sourceNote: "页面中的设备额定参数来自现有产品资料；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置应在下单前由厂家复核。"
+sourceNote: "以上设备参数可作为初步选型参考；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置建议在下单前与厂家确认。"
 seo:
   title: "鱼类批量脱鳞加工解决方案｜洪弟食品机械"
   description: "针对水产批发、配送和初加工客户，将鱼类分级、脱鳞、复检、冲洗与冷藏周转组织为连续流程。"

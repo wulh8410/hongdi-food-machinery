@@ -62,12 +62,13 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
       <SchemaJsonLd data={organizationSchema(locale)} />
       <HeroSection locale={locale} site={site} />
 
-      <section className="bg-[#e8f0f5]">
-        <div className="mx-auto max-w-7xl px-4 py-12 md:px-6">
-          <p className="max-w-4xl text-2xl font-black leading-10 text-industrial-navy">{site.companyPositioning}</p>
+      <div className="-mt-6 bg-[linear-gradient(180deg,#e9f1f6_0%,#f5f8fb_42%,#e9f1f6_100%)]">
+      <section className="px-4 pb-10 pt-8 md:px-6">
+        <div className="mx-auto max-w-7xl border-l-4 border-industrial-orange bg-white/60 px-6 py-8 shadow-soft backdrop-blur md:px-8">
+          <p className="max-w-5xl text-2xl font-black leading-10 text-industrial-navy md:text-3xl">{site.companyPositioning}</p>
           <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
             {categories.slice(0, 6).map((category) => (
-              <div key={category.slug} className="border border-[#08233d]/10 bg-white/45 px-4 py-3 text-sm font-bold text-industrial-navy">
+              <div key={category.slug} className="border border-[#08233d]/10 bg-white px-4 py-3 text-sm font-bold text-industrial-navy shadow-[0_10px_22px_rgba(15,39,66,0.04)]">
                 {category.name}
               </div>
             ))}
@@ -76,13 +77,13 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
       </section>
 
       <HomeSection
-        eyebrow={isZh ? 'Core Equipment' : 'Core Equipment'}
-        title={isZh ? '主推设备矩阵' : 'Featured Equipment Matrix'}
-        description={isZh ? '围绕家禽脱毛、泡水浸烫、水产处理和前处理配套，突出可采购、可对比、可落地的核心设备。' : 'Core equipment for poultry dehairing, scalding, aquatic processing, and pre-processing workflows.'}
+        eyebrow={isZh ? '核心设备' : 'Core Equipment'}
+        title={isZh ? '主推食品机械设备' : 'Featured Food Machinery'}
+        description={isZh ? '提供家禽脱毛、泡水浸烫、水产处理和食品前处理设备，适合屠宰档口、养殖场、食堂和食品加工客户选用。' : 'Equipment for poultry dehairing, scalding, aquatic processing, and food pre-processing applications.'}
         href={`/${locale}/products`}
         linkText={isZh ? '查看全部产品' : 'View all products'}
       >
-        <div className="border border-[#08233d]/10 bg-white/45 p-4 md:p-7">
+        <div className="p-0">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {featuredProducts.map((item) => (
               <ProductCard key={item.slug} locale={locale} item={item} />
@@ -91,12 +92,12 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
         </div>
       </HomeSection>
 
-      <section className="bg-[#e8f0f5] px-4 md:px-6">
-        <div className="mx-auto max-w-7xl bg-[linear-gradient(135deg,rgba(8,35,61,0.98),rgba(18,52,82,0.94))] px-6 py-14 text-white md:px-10">
-          <p className="text-sm font-black uppercase tracking-[0.18em] text-industrial-orange">{isZh ? 'Process' : 'Process'}</p>
+      <section className="px-4 py-6 md:px-6">
+        <div className="mx-auto max-w-7xl rounded-sm bg-[linear-gradient(135deg,rgba(8,35,61,0.98),rgba(18,52,82,0.94))] px-6 py-14 text-white shadow-soft md:px-10">
+          <p className="text-sm font-black tracking-[0.18em] text-industrial-orange">{isZh ? '加工流程' : 'Process'}</p>
           <h2 className="mt-3 text-3xl font-black md:text-4xl">{isZh ? '加工流程与解决方案' : 'Processing Workflow'}</h2>
           <p className="mt-3 text-sm leading-7 text-slate-300 md:text-base">
-            {isZh ? '从物料、产能、场地、电压到交付的完整路径，让采购判断更清晰。' : 'A clear path from material and capacity to site conditions and delivery.'}
+            {isZh ? '从原料处理、浸烫清洗到脱毛脱鳞和交付调试，帮助客户了解设备在生产中的使用流程。' : 'From material preparation and scalding to dehairing, scaling, commissioning, and delivery.'}
           </p>
           <div className="mt-10 grid gap-4 md:grid-cols-6">
             {processSteps.map((step, index) => (
@@ -110,9 +111,9 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
       </section>
 
       <HomeSection
-        eyebrow={isZh ? 'Solutions' : 'Solutions'}
+        eyebrow={isZh ? '解决方案' : 'Solutions'}
         title={isZh ? '按真实生产场景配置设备' : 'Configure Equipment by Production Scenario'}
-        description={isZh ? '不是堆产品，而是按客户的物料、产量、场地和前后工序，形成可执行的设备组合。' : 'Equipment combinations based on materials, capacity, site size, and workflow.'}
+        description={isZh ? '根据客户加工物料、单日产量、场地尺寸和前后工序，推荐适合的单机设备或配套组合。' : 'Equipment recommendations based on materials, daily capacity, site size, and workflow.'}
         href={`/${locale}/solutions`}
         linkText={isZh ? '查看全部方案' : 'View all solutions'}
         panel="dark"
@@ -124,10 +125,10 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
         </div>
       </HomeSection>
 
-      <section className="bg-[#e8f0f5]">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 py-16 md:grid-cols-[0.9fr_1.1fr] md:px-6">
+      <section className="px-4 py-8 md:px-6">
+        <div className="mx-auto grid max-w-7xl gap-8 border border-[#08233d]/10 bg-white/70 p-6 shadow-soft md:grid-cols-[0.9fr_1.1fr] md:p-8">
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.18em] text-industrial-orange">{isZh ? 'Factory Capability' : 'Factory Capability'}</p>
+            <p className="text-sm font-black tracking-[0.18em] text-industrial-orange">{isZh ? '工厂能力' : 'Factory Capability'}</p>
             <h2 className="mt-3 text-3xl font-black text-industrial-navy md:text-4xl">{isZh ? '工厂实力' : 'Manufacturing Capability'}</h2>
             <p className="mt-4 text-base leading-8 text-slate-600">
               {isZh
@@ -137,7 +138,7 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {strengths.map(([title, description]) => (
-              <div key={title} className="border border-[#08233d]/10 bg-white/55 p-5">
+              <div key={title} className="border border-[#08233d]/10 bg-white p-5 shadow-[0_10px_22px_rgba(15,39,66,0.04)]">
                 <h3 className="text-lg font-black text-industrial-navy">{title}</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{description}</p>
               </div>
@@ -147,15 +148,15 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
       </section>
 
       <HomeSection
-        eyebrow={isZh ? 'GEO Content' : 'GEO Content'}
+        eyebrow={isZh ? '采购知识' : 'Buyer Knowledge'}
         title={isZh ? '采购知识与常见问题' : 'Buyer Knowledge and FAQ'}
-        description={isZh ? '用问答和选型文章解释真实采购问题，让搜索引擎和 AI 助手更容易理解洪弟食品机械的设备能力与服务场景。' : 'Buyer questions and selection guides for search engines and AI assistants.'}
+        description={isZh ? '整理客户在选设备前常问的问题，包括型号选择、用电条件、清洗维护、价格因素和售后服务。' : 'Common questions about model selection, voltage, cleaning, maintenance, pricing, and after-sales support.'}
         href={`/${locale}/faqs`}
         linkText={isZh ? '查看全部内容' : 'View all content'}
       >
-        <div className="grid gap-7 border border-[#08233d]/10 bg-white/45 p-4 md:grid-cols-[0.9fr_1.1fr] md:p-7">
+        <div className="grid gap-7 md:grid-cols-[0.9fr_1.1fr]">
           {faqs[0] ? <FAQFeatureCard locale={locale} item={faqs[0]} /> : null}
-          <div className="border border-slate-200 bg-white">
+          <div className="overflow-hidden rounded-sm border border-[#08233d]/10 bg-white shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
             {faqs.slice(1, 4).map((item, index) => (
               <FAQListRow key={item.slug} locale={locale} item={item} index={index} />
             ))}
@@ -164,13 +165,13 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
       </HomeSection>
 
       <HomeSection
-        eyebrow={isZh ? 'Articles' : 'Articles'}
+        eyebrow={isZh ? '选型文章' : 'Articles'}
         title={isZh ? '最新文章' : 'Latest Articles'}
-        description={isZh ? '围绕选型、维护、场景和采购问题持续补充内容。' : 'Selection, maintenance, scenario, and procurement content.'}
+        description={isZh ? '提供食品机械选型、设备维护、使用场景和加工配置方面的实用参考。' : 'Practical references for equipment selection, maintenance, applications, and processing configuration.'}
         href={`/${locale}/articles`}
         linkText={isZh ? '查看全部文章' : 'View all articles'}
       >
-        <div className="grid gap-6 border border-[#08233d]/10 bg-white/45 p-4 md:grid-cols-2 md:p-7 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {articles.slice(0, 4).map((item) => (
             <ArticleCard key={item.slug} locale={locale} item={item} />
           ))}
@@ -184,6 +185,7 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
         douyinAccounts={site.douyinAccounts}
         videoAccounts={site.videoAccounts}
       />
+      </div>
     </PageShell>
   );
 }
@@ -209,15 +211,21 @@ function HomeSection({
 }) {
   const isDarkPanel = dark || panel === 'dark';
   return (
-    <section className="bg-[#e8f0f5] px-4 py-8 md:px-6">
-      <div className={`mx-auto max-w-7xl ${isDarkPanel ? 'bg-[linear-gradient(135deg,rgba(8,35,61,0.98),rgba(18,52,82,0.94))] px-6 py-14 text-white md:px-10' : 'py-8'}`}>
-        <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+    <section className="px-4 py-8 md:px-6">
+      <div
+        className={`mx-auto max-w-7xl ${
+          isDarkPanel
+            ? 'rounded-sm bg-[linear-gradient(135deg,rgba(8,35,61,0.98),rgba(18,52,82,0.94))] px-6 py-14 text-white shadow-soft md:px-10'
+            : 'rounded-sm border border-[#08233d]/10 bg-white/70 p-6 shadow-soft backdrop-blur md:p-8'
+        }`}
+      >
+        <div className={`mb-8 flex flex-col gap-4 border-b pb-7 md:flex-row md:items-end md:justify-between ${isDarkPanel ? 'border-white/15' : 'border-[#08233d]/10'}`}>
           <div>
             <p className="text-sm font-black uppercase tracking-[0.18em] text-industrial-orange">{eyebrow}</p>
             <h2 className={`mt-3 text-3xl font-black md:text-4xl ${isDarkPanel ? 'text-white' : 'text-industrial-navy'}`}>{title}</h2>
             <p className={`mt-3 max-w-3xl text-sm leading-7 md:text-base ${isDarkPanel ? 'text-slate-300' : 'text-slate-600'}`}>{description}</p>
           </div>
-          <Link href={href} className={`text-sm font-black ${isDarkPanel ? 'text-industrial-orange' : 'text-industrial-blue'}`}>
+          <Link href={href} className={`shrink-0 text-sm font-black ${isDarkPanel ? 'text-industrial-orange' : 'text-industrial-blue'}`}>
             {linkText} →
           </Link>
         </div>
@@ -229,7 +237,7 @@ function HomeSection({
 
 function FAQFeatureCard({ locale, item }: { locale: Locale; item: ContentItem }) {
   return (
-    <article className="border-l-4 border-industrial-orange bg-white p-7">
+    <article className="h-full rounded-sm border border-[#08233d]/10 border-l-4 border-l-industrial-orange bg-white p-7 shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
       <h3 className="text-2xl font-black leading-tight text-industrial-navy">{item.title}</h3>
       <p className="mt-5 line-clamp-6 text-base leading-8 text-slate-600">{item.description}</p>
       <Link href={`/${locale}/faqs/${item.slug}`} className="mt-6 inline-block text-sm font-black text-industrial-blue">
@@ -254,7 +262,7 @@ function HomeSolutionCell({ locale, item, index }: { locale: Locale; item: Conte
 
 function FAQListRow({ locale, item, index }: { locale: Locale; item: ContentItem; index: number }) {
   return (
-    <article className="grid gap-4 border-t border-slate-200 p-5 first:border-t-0 md:grid-cols-[7rem_1fr]">
+    <article className="grid gap-4 border-t border-[#08233d]/10 p-5 first:border-t-0 md:grid-cols-[7rem_1fr]">
       <p className="text-xs font-black uppercase tracking-[0.08em] text-industrial-orange">{index === 2 ? 'Article' : `FAQ ${String(index + 1).padStart(2, '0')}`}</p>
       <div>
         <h3 className="line-clamp-2 text-lg font-black text-industrial-navy">{item.title}</h3>
@@ -283,8 +291,8 @@ function HomeContact({
   const isZh = locale === 'zh';
 
   return (
-    <section className="bg-[#e8f0f5] px-4 pb-12 pt-8 md:px-6">
-      <div className="mx-auto grid max-w-7xl gap-8 bg-[#123452] px-6 py-11 text-white md:grid-cols-[1.1fr_0.9fr] md:px-10">
+    <section className="px-4 pb-14 pt-8 md:px-6">
+      <div className="mx-auto grid max-w-7xl gap-8 rounded-sm bg-[#123452] px-6 py-11 text-white shadow-soft md:grid-cols-[1.1fr_0.9fr] md:px-10">
         <div>
           <p className="text-sm font-black uppercase tracking-[0.18em] text-industrial-orange">{isZh ? '设备选型咨询' : 'Equipment Consultation'}</p>
           <h2 className="mt-3 text-3xl font-black md:text-4xl">

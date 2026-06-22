@@ -1,4 +1,4 @@
----
+﻿---
 title: 家禽脱毛机到货后怎么验收？
 slug: poultry-machine-installation-acceptance
 question: 家禽脱毛机到货后怎么验收？

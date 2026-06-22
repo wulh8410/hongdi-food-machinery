@@ -1,4 +1,4 @@
----
+﻿---
 title: "家禽泡水脱毛一体化解决方案"
 slug: "integrated-scalding-dehairing-solution"
 solutionCategory: "家禽加工"
@@ -24,7 +24,7 @@ relatedArticles: ["pneumatic-scalding-dehairing-integrated-machine-application",
 relatedFaqs: ["pneumatic-integrated-machine-suitable-users","site-preparation-before-installation","poultry-machine-installation-acceptance"]
 date: "2026-06-11"
 updated: "2026-06-11"
-sourceNote: "页面中的设备额定参数来自现有产品资料；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置应在下单前由厂家复核。"
+sourceNote: "以上设备参数可作为初步选型参考；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置建议在下单前与厂家确认。"
 seo:
   title: "家禽泡水脱毛一体化解决方案｜洪弟食品机械"
   description: "采用气动翻出泡水脱毛一体机整合泡水、脱毛和出料环节，减少设备间转运和重复搬运。"

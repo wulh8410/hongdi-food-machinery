@@ -1,4 +1,4 @@
----
+﻿---
 title: "滚筒式全自动家禽脱毛机"
 slug: "roller-poultry-dehairing-machine"
 category: "poultry-dehairing"

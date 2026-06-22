@@ -1,4 +1,4 @@
----
+﻿---
 title: "大批量家禽脱毛加工解决方案"
 slug: "large-volume-poultry-processing-solution"
 solutionCategory: "家禽加工"
@@ -24,7 +24,7 @@ relatedArticles: ["large-volume-poultry-processing-equipment","58-vs-6-roller-vs
 relatedFaqs: ["large-volume-poultry-line-configuration","difference-58-6-9-roller","how-to-match-scalding-and-plucking","poultry-machine-installation-acceptance"]
 date: "2026-06-11"
 updated: "2026-06-11"
-sourceNote: "页面中的设备额定参数来自现有产品资料；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置应在下单前由厂家复核。"
+sourceNote: "以上设备参数可作为初步选型参考；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置建议在下单前与厂家确认。"
 seo:
   title: "大批量家禽脱毛加工解决方案｜洪弟食品机械"
   description: "面向集中屠宰、养殖基地和食品加工客户，围绕高峰处理量配置双面翻盖泡水机、6滚筒或9滚筒脱毛机。"

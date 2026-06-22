@@ -1,4 +1,4 @@
----
+﻿---
 title: "食品机械场地改造与安装解决方案"
 slug: "food-machinery-site-installation-solution"
 solutionCategory: "场地与配套"
@@ -24,7 +24,7 @@ relatedArticles: ["site-preparation-for-poultry-plucker","poultry-machine-instal
 relatedFaqs: ["site-preparation-before-installation","poultry-machine-installation-acceptance","how-to-evaluate-food-machinery-manufacturer","what-info-before-buying"]
 date: "2026-06-11"
 updated: "2026-06-11"
-sourceNote: "页面中的设备额定参数来自现有产品资料；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置应在下单前由厂家复核。"
+sourceNote: "以上设备参数可作为初步选型参考；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置建议在下单前与厂家确认。"
 seo:
   title: "食品机械场地改造与安装解决方案｜洪弟食品机械"
   description: "适用于购买家禽脱毛、泡水、水产去鳞和采肉设备前的场地核查，覆盖电源、给排水、动线、搬运和验收。"

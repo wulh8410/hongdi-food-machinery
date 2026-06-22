@@ -1,4 +1,4 @@
----
+﻿---
 title: "家禽脱毛机用久了脱毛效果变差，应该先检查哪里？"
 slug: "why-plucker-performance-decreases-after-use"
 category: "maintenance"

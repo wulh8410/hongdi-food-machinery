@@ -16,7 +16,7 @@ export function ProductCard({ locale, item }: { locale: Locale; item: ContentIte
   const categoryLabel = categoryLabels[categoryKey]?.[locale] ?? (locale === 'zh' ? '食品加工设备' : 'Food Processing Equipment');
 
   return (
-    <article className="group overflow-hidden border border-slate-200 bg-white">
+    <article className="group h-full overflow-hidden rounded-sm border border-[#08233d]/10 bg-white shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
       {image ? (
         <Image src={assetPath(image)} alt={item.title} width={800} height={600} className="aspect-[4/3] w-full bg-industrial-mist object-cover transition duration-300 group-hover:scale-[1.02]" />
       ) : (
@@ -28,7 +28,7 @@ export function ProductCard({ locale, item }: { locale: Locale; item: ContentIte
         <p className="mt-2 line-clamp-3 text-sm leading-6 text-slate-600">{item.description}</p>
         <div className="mt-4 flex flex-wrap gap-2">
           {item.applications?.slice(0, 3).map((app) => (
-            <span key={app} className="bg-[#edf3f7] px-2 py-1 text-xs font-bold text-slate-600">
+        <span key={app} className="rounded-sm bg-[#edf3f7] px-2 py-1 text-xs font-bold text-slate-600">
               {app}
             </span>
           ))}
@@ -43,7 +43,7 @@ export function ProductCard({ locale, item }: { locale: Locale; item: ContentIte
 
 export function ArticleCard({ locale, item }: { locale: Locale; item: ContentItem }) {
   return (
-    <article className="border border-slate-200 bg-white p-5">
+    <article className="h-full rounded-sm border border-[#08233d]/10 bg-white p-5 shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
       <p className="text-xs font-bold text-industrial-steel">{item.updated ?? item.date}</p>
       <h3 className="mt-3 line-clamp-2 text-lg font-black text-industrial-navy">{item.title}</h3>
       <p className="mt-2 line-clamp-4 text-sm leading-6 text-slate-600">{item.description}</p>
@@ -56,7 +56,7 @@ export function ArticleCard({ locale, item }: { locale: Locale; item: ContentIte
 
 export function FAQCard({ locale, item }: { locale: Locale; item: ContentItem }) {
   return (
-    <article className="border border-slate-200 bg-white p-5">
+    <article className="h-full rounded-sm border border-[#08233d]/10 bg-white p-5 shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
       <h3 className="line-clamp-2 text-lg font-black text-industrial-navy">{item.title}</h3>
       <p className="mt-3 line-clamp-5 text-sm leading-6 text-slate-600">{item.description}</p>
       <Link href={`/${locale}/faqs/${item.slug}`} className="mt-4 inline-block text-sm font-black text-industrial-blue">
@@ -68,7 +68,7 @@ export function FAQCard({ locale, item }: { locale: Locale; item: ContentItem })
 
 export function SolutionCard({ locale, item }: { locale: Locale; item: ContentItem }) {
   return (
-    <article className="flex h-full flex-col border border-slate-200 bg-white p-6">
+    <article className="flex h-full flex-col rounded-sm border border-[#08233d]/10 bg-white p-6 shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
       {item.solutionCategory ? <p className="text-xs font-black text-industrial-orange">{item.solutionCategory}</p> : null}
       <h3 className={item.solutionCategory ? 'mt-3 text-xl font-black text-industrial-navy' : 'text-xl font-black text-industrial-navy'}>{item.title}</h3>
       <p className="mt-3 line-clamp-4 text-sm leading-6 text-slate-600">{item.description}</p>

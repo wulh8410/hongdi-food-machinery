@@ -1,4 +1,4 @@
----
+﻿---
 title: "鱼类脱鳞机"
 slug: "fish-scaling-machine"
 category: "aquatic-processing"

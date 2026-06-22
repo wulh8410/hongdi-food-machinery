@@ -1,4 +1,4 @@
----
+﻿---
 title: "家禽脱毛机到货后如何试机？验收标准有哪些？"
 slug: "poultry-machine-test-run-and-acceptance"
 category: "installation-guide"

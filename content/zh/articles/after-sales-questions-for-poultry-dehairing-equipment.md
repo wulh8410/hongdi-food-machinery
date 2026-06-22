@@ -1,4 +1,4 @@
----
+﻿---
 title: "脱毛机售后常见问题有哪些？厂家一般怎么处理？"
 slug: "after-sales-questions-for-poultry-dehairing-equipment"
 category: "buyer-guide"

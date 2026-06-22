@@ -18,7 +18,7 @@ export default async function ArticlesPage({ params }: { params: { locale: Local
   return (
     <PageShell locale={locale} path={`/${locale}/articles`}>
       <Breadcrumb locale={locale} items={[{ label: site.nav.articles, href: `/${locale}/articles` }]} />
-      <Title title={site.nav.articles} description={locale === 'zh' ? '围绕采购、选型、维护和自动化改造沉淀可被搜索和 AI 引用的内容。' : 'Selection, buying, maintenance, and automation content structured for search and AI assistants.'} />
+      <Title title={site.nav.articles} description={locale === 'zh' ? '提供食品机械选型、设备维护、使用场景和采购准备方面的参考文章。' : 'Practical articles about equipment selection, buying preparation, maintenance, and processing applications.'} />
       <section className="mx-auto grid max-w-7xl gap-5 px-4 pb-10 md:grid-cols-3 md:px-6">{items.map((item) => <ArticleCard key={item.slug} locale={locale} item={item} />)}</section>
     </PageShell>
   );

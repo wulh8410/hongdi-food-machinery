@@ -1,4 +1,4 @@
----
+﻿---
 title: "食堂餐饮家禽前处理解决方案"
 slug: "canteen-restaurant-poultry-solution"
 solutionCategory: "家禽加工"
@@ -24,7 +24,7 @@ relatedArticles: ["canteen-restaurant-poultry-equipment","220v-vs-380v-poultry-p
 relatedFaqs: ["canteen-restaurant-equipment","220v-or-380v-poultry-plucker","58-vs-430-mobile-plucker","how-to-clean-poultry-plucker"]
 date: "2026-06-11"
 updated: "2026-06-11"
-sourceNote: "页面中的设备额定参数来自现有产品资料；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置应在下单前由厂家复核。"
+sourceNote: "以上设备参数可作为初步选型参考；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置建议在下单前与厂家确认。"
 seo:
   title: "食堂餐饮家禽前处理解决方案｜洪弟食品机械"
   description: "适合学校食堂、酒楼餐厅、中央厨房和餐饮门店的小批量家禽前处理，强调卫生、易清洗和操作节奏。"

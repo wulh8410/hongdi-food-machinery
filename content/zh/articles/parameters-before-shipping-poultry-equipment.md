@@ -1,4 +1,4 @@
----
+﻿---
 title: "家禽脱毛设备发货前需要确认哪些参数？"
 slug: "parameters-before-shipping-poultry-equipment"
 category: "buyer-guide"

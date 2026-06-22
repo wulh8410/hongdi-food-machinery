@@ -1,4 +1,4 @@
----
+﻿---
 title: "食品加工店如何配置一套鸡鸭鹅前处理设备？"
 slug: "poultry-preprocessing-equipment-for-food-shop"
 category: "solution-guide"

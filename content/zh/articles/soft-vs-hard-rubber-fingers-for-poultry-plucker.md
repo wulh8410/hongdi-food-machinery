@@ -1,4 +1,4 @@
----
+﻿---
 title: "脱毛机脱毛棒怎么选？软棒和硬棒有什么区别？"
 slug: "soft-vs-hard-rubber-fingers-for-poultry-plucker"
 category: "product-knowledge"

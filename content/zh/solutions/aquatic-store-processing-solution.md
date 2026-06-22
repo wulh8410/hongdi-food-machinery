@@ -1,4 +1,4 @@
----
+﻿---
 title: "水产门店去鳞采肉解决方案"
 slug: "aquatic-store-processing-solution"
 solutionCategory: "水产加工"
@@ -24,7 +24,7 @@ relatedArticles: ["aquatic-store-processing-equipment-configuration","how-to-cho
 relatedFaqs: ["aquatic-store-needed-equipment","how-to-choose-fish-scaling-machine","how-to-choose-fish-meat-separator","what-affects-fish-meat-yield"]
 date: "2026-06-11"
 updated: "2026-06-11"
-sourceNote: "页面中的设备额定参数来自现有产品资料；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置应在下单前由厂家复核。"
+sourceNote: "以上设备参数可作为初步选型参考；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置建议在下单前与厂家确认。"
 seo:
   title: "水产门店去鳞采肉解决方案｜洪弟食品机械"
   description: "适合水产店、农贸市场档口和初加工点，将鱼类去鳞、清洗、采肉与接料流程按营业节奏组织。"

@@ -1,4 +1,4 @@
----
+﻿---
 title: 鱼类脱鳞机会伤鱼身吗？
 slug: will-fish-scaler-damage-fish
 question: 鱼类脱鳞机会伤鱼身吗？

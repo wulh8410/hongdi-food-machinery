@@ -17,7 +17,7 @@ export default async function FAQsPage({ params }: { params: { locale: Locale } 
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/faqs`}>
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.faqs, href: `/${params.locale}/faqs` }]} />
-      <Title title={site.nav.faqs} description={params.locale === 'zh' ? '每个问题都对应真实采购场景，并关联产品、文章和方案。' : 'Each question maps to a real buying scenario with related products, articles, and solutions.'} />
+      <Title title={site.nav.faqs} description={params.locale === 'zh' ? '整理客户在选购食品机械前常问的问题，帮助提前了解设备配置、价格、定制和售后。' : 'Common questions about equipment configuration, pricing, customization, and after-sales support.'} />
       <section className="mx-auto grid max-w-7xl gap-5 px-4 pb-10 md:grid-cols-3 md:px-6">{items.map((item) => <FAQCard key={item.slug} locale={params.locale} item={item} />)}</section>
     </PageShell>
   );

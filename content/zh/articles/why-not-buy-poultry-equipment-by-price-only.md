@@ -1,4 +1,4 @@
----
+﻿---
 title: "买脱毛设备为什么不能只看价格？"
 slug: "why-not-buy-poultry-equipment-by-price-only"
 category: "buyer-guide"

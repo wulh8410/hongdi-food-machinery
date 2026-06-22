@@ -1,4 +1,4 @@
----
+﻿---
 title: "泡水机温控不稳定会影响脱毛效果吗？"
 slug: "unstable-scalding-temperature-affects-dehairing"
 category: "product-knowledge"

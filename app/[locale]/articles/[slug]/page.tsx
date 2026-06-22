@@ -41,8 +41,8 @@ export default async function ArticlePage({ params }: { params: { locale: Locale
         <Section title={params.locale === 'zh' ? '推荐阅读' : 'Recommended Reading'}>
           <p className="text-sm text-slate-600">
             {params.locale === 'zh'
-              ? '可继续浏览产品详情、FAQ 和解决方案页面，形成完整采购判断。'
-              : 'Continue with product details, FAQ, and solution pages for complete buying context.'}
+              ? '可继续查看相关产品、常见问题和解决方案，了解更适合自己的设备配置。'
+              : 'Continue with related products, FAQ, and solution pages to compare suitable equipment options.'}
           </p>
         </Section>
         <BrandConsultation

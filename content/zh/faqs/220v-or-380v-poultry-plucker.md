@@ -1,4 +1,4 @@
----
+﻿---
 title: 家禽脱毛机选220V还是380V？
 slug: 220v-or-380v-poultry-plucker
 question: 家禽脱毛机选220V还是380V？

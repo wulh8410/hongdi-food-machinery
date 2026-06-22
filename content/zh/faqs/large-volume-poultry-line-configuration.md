@@ -1,4 +1,4 @@
----
+﻿---
 title: 大批量鸡鸭鹅脱毛设备怎么配套？
 slug: large-volume-poultry-line-configuration
 question: 大批量鸡鸭鹅脱毛设备怎么配套？

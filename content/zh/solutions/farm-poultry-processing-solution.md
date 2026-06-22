@@ -1,4 +1,4 @@
----
+﻿---
 title: "养殖场家禽批量处理解决方案"
 slug: "farm-poultry-processing-solution"
 solutionCategory: "家禽加工"
@@ -24,7 +24,7 @@ relatedArticles: ["farm-poultry-dehairing-equipment-configuration","large-volume
 relatedFaqs: ["farm-equipment-configuration","large-volume-poultry-line-configuration","difference-58-6-9-roller","motor-belt-bearing-check"]
 date: "2026-06-11"
 updated: "2026-06-11"
-sourceNote: "页面中的设备额定参数来自现有产品资料；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置应在下单前由厂家复核。"
+sourceNote: "以上设备参数可作为初步选型参考；实际处理效果会受原料规格、前处理、操作方式和现场条件影响，最终型号与配置建议在下单前与厂家确认。"
 seo:
   title: "养殖场家禽批量处理解决方案｜洪弟食品机械"
   description: "面向养鸡、养鸭、养鹅基地的自用处理与集中出货，重点解决批量作业、设备耐用和高峰产能匹配。"

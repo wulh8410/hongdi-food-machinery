@@ -1,4 +1,4 @@
----
+﻿---
 title: "小型屠宰点买脱毛机，是买单机还是泡水脱毛一体机？"
 slug: "single-plucker-or-integrated-scalding-dehairing-machine"
 category: "buyer-guide"
