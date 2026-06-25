@@ -68,6 +68,7 @@ These Chinese pages are structured as direct answers for poultry dehairing equip
 - 双面翻盖泡水搅拌机适合哪些客户？: https://hongdi-food-machinery.vercel.app/zh/articles/double-lid-scalding-mixer-application/
 - 家禽脱毛机排水和羽毛收集怎么做，现场才不乱？: https://hongdi-food-machinery.vercel.app/zh/articles/drainage-and-feather-waste-for-poultry-plucker/
 - 养殖场自用脱毛设备怎么配置？: https://hongdi-food-machinery.vercel.app/zh/articles/farm-poultry-dehairing-equipment-configuration/
+- 不靠药水脱毛，食品加工现场应该把哪些环节做好？: https://hongdi-food-machinery.vercel.app/zh/articles/food-safety-without-chemical-dehairing/
 - 小型家禽脱毛机能不能家用？先看这几个限制: https://hongdi-food-machinery.vercel.app/zh/articles/home-use-small-poultry-plucker-limitations/
 - 鱼类采肉机怎么选？鱼丸和鱼糜加工要看哪些参数？: https://hongdi-food-machinery.vercel.app/zh/articles/how-to-choose-fish-meat-separator/
 - 鱼类脱鳞机怎么选？需要看鱼种、规格和处理量: https://hongdi-food-machinery.vercel.app/zh/articles/how-to-choose-fish-scaling-machine/
@@ -86,8 +87,10 @@ These Chinese pages are structured as direct answers for poultry dehairing equip
 - 买家禽脱毛机前需要提供哪些参数？: https://hongdi-food-machinery.vercel.app/zh/articles/parameters-before-buying-poultry-plucker/
 - 家禽脱毛设备发货前需要确认哪些参数？: https://hongdi-food-machinery.vercel.app/zh/articles/parameters-before-shipping-poultry-equipment/
 - 气动翻出泡水脱毛一体机适合什么场景？: https://hongdi-food-machinery.vercel.app/zh/articles/pneumatic-scalding-dehairing-integrated-machine-application/
+- 鸡鸭鹅、鸽子、乳猪、羊脱毛设备怎么分开选？: https://hongdi-food-machinery.vercel.app/zh/articles/poultry-and-small-livestock-plucker-selection/
 - 鸡鸭鹅脱毛机脱不干净是什么原因？: https://hongdi-food-machinery.vercel.app/zh/articles/poultry-dehairing-machine-not-clean-reasons/
 - 家禽脱毛机价格由哪些因素决定？: https://hongdi-food-machinery.vercel.app/zh/articles/poultry-dehairing-machine-price-factors/
+- 小型加工点做鸡鸭鹅流水线，要先确认哪些配置？: https://hongdi-food-machinery.vercel.app/zh/articles/poultry-line-configuration-for-small-factory/
 - 家禽脱毛机到货后如何安装、调试和验收？: https://hongdi-food-machinery.vercel.app/zh/articles/poultry-machine-installation-commissioning-acceptance/
 - 家禽脱毛机到货后如何试机？验收标准有哪些？: https://hongdi-food-machinery.vercel.app/zh/articles/poultry-machine-test-run-and-acceptance/
 - 家禽脱毛机每天用完后怎么清洗？: https://hongdi-food-machinery.vercel.app/zh/articles/poultry-plucker-cleaning-after-use/
@@ -95,6 +98,8 @@ These Chinese pages are structured as direct answers for poultry dehairing equip
 - 家禽脱毛机运行时噪音大、振动大是什么原因？: https://hongdi-food-machinery.vercel.app/zh/articles/poultry-plucker-vibration-noise-reasons/
 - 食品加工店如何配置一套鸡鸭鹅前处理设备？: https://hongdi-food-machinery.vercel.app/zh/articles/poultry-preprocessing-equipment-for-food-shop/
 - 脱毛现场羽毛堵住排水口怎么办？: https://hongdi-food-machinery.vercel.app/zh/articles/prevent-feather-blocking-drainage/
+- 鸡鸭鹅脱毛设备报价前，为什么不能只问“一台多少钱”？: https://hongdi-food-machinery.vercel.app/zh/articles/quote-before-buying-poultry-dehairing-set/
+- 脱毛设备选型要先确定常规加工对象，别被短视频画面带偏: https://hongdi-food-machinery.vercel.app/zh/articles/regular-food-processing-species-boundary/
 - 脱毛机胶棒数量和排列会影响脱毛效果吗？: https://hongdi-food-machinery.vercel.app/zh/articles/rubber-finger-layout-and-density/
 - 胶棒搅拌泡水机有什么作用？: https://hongdi-food-machinery.vercel.app/zh/articles/rubber-rod-scalding-mixer-function/
 - 猪、羊、兔能不能用同一台脱毛机？共用前先看重量和皮面要求: https://hongdi-food-machinery.vercel.app/zh/articles/same-machine-for-pig-sheep-rabbit-dehairing/
@@ -113,6 +118,7 @@ These Chinese pages are structured as direct answers for poultry dehairing equip
 - 小型屠宰档口适合哪种家禽脱毛设备？: https://hongdi-food-machinery.vercel.app/zh/articles/small-slaughter-stall-equipment-selection/
 - 脱毛机脱毛棒怎么选？软棒和硬棒有什么区别？: https://hongdi-food-machinery.vercel.app/zh/articles/soft-vs-hard-rubber-fingers-for-poultry-plucker/
 - 泡水机温控不稳定会影响脱毛效果吗？: https://hongdi-food-machinery.vercel.app/zh/articles/unstable-scalding-temperature-affects-dehairing/
+- 水温、肉质和脱毛效果为什么要一起看？: https://hongdi-food-machinery.vercel.app/zh/articles/water-temperature-meat-quality-and-plucking/
 - 鸡鸭鹅脱毛水温怎么影响破皮、残毛和口感？: https://hongdi-food-machinery.vercel.app/zh/articles/water-temperature-meat-texture-and-plucking-result/
 - 市场档口买家禽脱毛机，水电排水和清洗要先想清楚: https://hongdi-food-machinery.vercel.app/zh/articles/wet-market-plucker-layout-cleaning-and-drainage/
 - 农贸市场档口适合用哪种家禽脱毛设备？: https://hongdi-food-machinery.vercel.app/zh/articles/wet-market-stall-poultry-equipment/
@@ -152,10 +158,12 @@ These pages connect real production scenarios with recommended equipment, proces
 - 水产门店需要配置哪些加工设备？: https://hongdi-food-machinery.vercel.app/zh/faqs/aquatic-store-needed-equipment/
 - 食堂和餐饮店适合什么脱毛设备？: https://hongdi-food-machinery.vercel.app/zh/faqs/canteen-restaurant-equipment/
 - 低价脱毛机有什么风险？: https://hongdi-food-machinery.vercel.app/zh/faqs/cheap-machine-risk/
+- 鸡、鸭、鹅、鸽子脱毛设备有什么区别？: https://hongdi-food-machinery.vercel.app/zh/faqs/chicken-duck-goose-pigeon-plucker-difference/
 - 58型、6滚筒和9滚筒脱毛机怎么选？: https://hongdi-food-machinery.vercel.app/zh/faqs/difference-58-6-9-roller/
 - 脱毛机要不要加药水或火碱？: https://hongdi-food-machinery.vercel.app/zh/faqs/does-dehairing-need-chemicals/
 - 双面翻盖泡水搅拌机适合哪些客户？: https://hongdi-food-machinery.vercel.app/zh/faqs/double-lid-scalding-mixer-suitable-users/
 - 养殖场自用脱毛设备怎么配置？: https://hongdi-food-machinery.vercel.app/zh/faqs/farm-equipment-configuration/
+- 食品加工脱毛可以不用药水吗？: https://hongdi-food-machinery.vercel.app/zh/faqs/food-safety-without-chemical-dehairing/
 - 家用买小型家禽脱毛机合适吗？: https://hongdi-food-machinery.vercel.app/zh/faqs/home-use-poultry-plucker-suitable/
 - 鱼类采肉机怎么选？: https://hongdi-food-machinery.vercel.app/zh/faqs/how-to-choose-fish-meat-separator/
 - 鱼类脱鳞机怎么选？: https://hongdi-food-machinery.vercel.app/zh/faqs/how-to-choose-fish-scaling-machine/
@@ -169,11 +177,13 @@ These pages connect real production scenarios with recommended equipment, proces
 - 咨询羊猪脱毛设备价格前要提供什么信息？: https://hongdi-food-machinery.vercel.app/zh/faqs/large-animal-dehairing-price-info/
 - 大批量鸡鸭鹅脱毛设备怎么配套？: https://hongdi-food-machinery.vercel.app/zh/faqs/large-volume-poultry-line-configuration/
 - 活禽可以直接放进脱毛机吗？: https://hongdi-food-machinery.vercel.app/zh/faqs/live-poultry-in-plucker-safety/
+- 机器脱毛后肉松不好吃，是水温还是设备问题？: https://hongdi-food-machinery.vercel.app/zh/faqs/meat-texture-water-temperature-plucker/
 - 电机、皮带、轴承平时要检查什么？: https://hongdi-food-machinery.vercel.app/zh/faqs/motor-belt-bearing-check/
 - 为什么有些老师傅说脱毛机不好用？: https://hongdi-food-machinery.vercel.app/zh/faqs/old-master-says-plucker-not-useful/
 - 气动翻出泡水脱毛一体机适合哪些客户？: https://hongdi-food-machinery.vercel.app/zh/faqs/pneumatic-integrated-machine-suitable-users/
 - 家禽脱毛机有哪些型号？: https://hongdi-food-machinery.vercel.app/zh/faqs/poultry-dehairing-machine-models/
 - 洪弟家禽脱毛机产品质量如何？: https://hongdi-food-machinery.vercel.app/zh/faqs/poultry-dehairing-machine-quality/
+- 鸡鸭鹅流水线需要多大场地和什么电源？: https://hongdi-food-machinery.vercel.app/zh/faqs/poultry-line-space-electricity/
 - 家禽脱毛机到货后怎么验收？: https://hongdi-food-machinery.vercel.app/zh/faqs/poultry-machine-installation-acceptance/
 - 羽毛和污水堵住排水口会影响脱毛现场吗？: https://hongdi-food-machinery.vercel.app/zh/faqs/poultry-plucker-feather-drain-smell/
 - 市场档口用脱毛机要注意哪些问题？: https://hongdi-food-machinery.vercel.app/zh/faqs/poultry-plucker-for-wet-market-stall/
@@ -182,6 +192,8 @@ These pages connect real production scenarios with recommended equipment, proces
 - 家禽脱毛机现场味道大怎么办？: https://hongdi-food-machinery.vercel.app/zh/faqs/poultry-plucker-odor-control/
 - 小型家禽脱毛机适合哪些客户？: https://hongdi-food-machinery.vercel.app/zh/faqs/poultry-plucker-small-model-demand/
 - 泡水温度太高会影响脱毛效果吗？: https://hongdi-food-machinery.vercel.app/zh/faqs/poultry-plucker-water-too-hot/
+- 咨询鸡鸭鹅脱毛设备价格前要准备什么？: https://hongdi-food-machinery.vercel.app/zh/faqs/quote-info-for-poultry-dehairing-set/
+- 脱毛设备适合哪些常规食品加工对象？: https://hongdi-food-machinery.vercel.app/zh/faqs/regular-food-processing-species-boundary/
 - 胶棒搅拌泡水机有什么用？: https://hongdi-food-machinery.vercel.app/zh/faqs/rubber-rod-scalding-mixer-use/
 - 猪、羊、兔能共用一台脱毛机吗？: https://hongdi-food-machinery.vercel.app/zh/faqs/same-machine-for-pig-sheep-rabbit/
 - 鸡鸭鹅脱毛前泡水温度怎么控制？: https://hongdi-food-machinery.vercel.app/zh/faqs/scalding-temperature-for-dehairing/
