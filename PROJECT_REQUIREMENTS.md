@@ -787,4 +787,6 @@ GITHUB_PAGES=true npm run build
 - 本地构建验证：`npm run build` 通过。
 - 静态生成页面数量更新为 226 个页面。
 - `public/sitemap.xml` 和 `public/llms.txt` 已随构建自动更新，新增中文 FAQ 和文章已进入索引文件。
-- 本轮更新将通过 Git 推送触发 Vercel 自动部署。
+- 内容发布提交：`4f0c3ef Add large animal dehairing content`。
+- GitHub Pages 工作流运行 `28144050278` 已成功。
+- Vercel Production 部署已成功，线上已验证新增文章页面和 `llms.txt` 可访问。
