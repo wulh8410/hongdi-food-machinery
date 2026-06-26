@@ -18,11 +18,19 @@ export function ProductCard({ locale, item }: { locale: Locale; item: ContentIte
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-sm border border-[#08233d]/10 bg-white shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
-      {image ? (
-        <Image src={assetPath(image)} alt={item.title} width={800} height={600} className="aspect-[4/3] w-full bg-industrial-mist object-cover transition duration-300 group-hover:scale-[1.02]" />
-      ) : (
-        <div className="aspect-[4/3] bg-industrial-mist" />
-      )}
+      <div className="border-b border-slate-100 bg-[#f4f8fb] p-3">
+        {image ? (
+          <Image
+            src={assetPath(image)}
+            alt={item.title}
+            width={900}
+            height={675}
+            className="aspect-[4/3] w-full rounded-sm bg-white object-contain transition duration-300 group-hover:scale-[1.015]"
+          />
+        ) : (
+          <div className="aspect-[4/3] rounded-sm bg-industrial-mist" />
+        )}
+      </div>
       <div className="flex flex-1 flex-col p-5">
         <p className="text-xs font-black text-industrial-orange">{categoryLabel}</p>
         <h3 className="mt-2 text-lg font-black leading-snug text-industrial-navy">{item.title}</h3>
@@ -31,7 +39,7 @@ export function ProductCard({ locale, item }: { locale: Locale; item: ContentIte
           <dl className="mt-4 grid gap-2 border-y border-slate-100 py-3 text-xs">
             {specEntries.map(([key, value]) => (
               <div key={key} className="grid grid-cols-[5.5em_1fr] gap-2">
-                <dt className="font-bold text-slate-500">{key}</dt>
+                <dt className="font-bold text-slate-500">{formatSpecKey(key, locale)}</dt>
                 <dd className="line-clamp-1 font-semibold text-industrial-navy">{value}</dd>
               </div>
             ))}
@@ -50,6 +58,21 @@ export function ProductCard({ locale, item }: { locale: Locale; item: ContentIte
       </div>
     </article>
   );
+}
+
+function formatSpecKey(key: string, locale: Locale) {
+  const labels: Record<string, { zh: string; en: string }> = {
+    voltage: { zh: '电压', en: 'Voltage' },
+    material: { zh: '材质', en: 'Material' },
+    use: { zh: '用途', en: 'Use' },
+    model: { zh: '型号', en: 'Model' },
+    capacity: { zh: '产能', en: 'Capacity' },
+    scale: { zh: '适合规模', en: 'Scale' },
+    power: { zh: '功率', en: 'Power' },
+    weight: { zh: '重量', en: 'Weight' },
+    size: { zh: '尺寸', en: 'Size' }
+  };
+  return labels[key]?.[locale] ?? key;
 }
 
 export function ArticleCard({ locale, item }: { locale: Locale; item: ContentItem }) {
@@ -80,8 +103,7 @@ export function FAQCard({ locale, item }: { locale: Locale; item: ContentItem })
 export function SolutionCard({ locale, item }: { locale: Locale; item: ContentItem }) {
   return (
     <article className="flex h-full flex-col rounded-sm border border-[#08233d]/10 bg-white p-6 shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
-      {item.solutionCategory ? <p className="text-xs font-black text-industrial-orange">{item.solutionCategory}</p> : null}
-      <h3 className={item.solutionCategory ? 'mt-3 text-xl font-black text-industrial-navy' : 'text-xl font-black text-industrial-navy'}>{item.title}</h3>
+      <h3 className="text-xl font-black text-industrial-navy">{item.title}</h3>
       <p className="mt-3 line-clamp-4 text-sm leading-6 text-slate-600">{item.description}</p>
       <p className="mt-4 text-sm font-bold text-slate-700">{item.capacity}</p>
       <Link href={`/${locale}/solutions/${item.slug}`} className="mt-auto inline-block pt-6 text-sm font-black text-industrial-blue">

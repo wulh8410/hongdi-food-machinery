@@ -21,11 +21,11 @@ export default async function ArticlesPage({ params }: { params: { locale: Local
       <Breadcrumb locale={locale} items={[{ label: site.nav.articles, href: `/${locale}/articles` }]} />
       <Title title={site.nav.articles} description={locale === 'zh' ? '提供食品机械选型、设备维护、使用场景和采购准备方面的参考文章。' : 'Practical articles about equipment selection, buying preparation, maintenance, and processing applications.'} />
       <section className="mx-auto max-w-7xl px-4 pb-4 md:px-6">
-        <div className="grid gap-3 md:grid-cols-3 lg:grid-cols-6">
+        <div className="flex flex-wrap gap-2 rounded-sm border border-[#08233d]/10 bg-white/80 p-3 shadow-soft">
           {groups.map((group) => (
-            <a key={group.key} href={`#${group.key}`} className="rounded-sm border border-[#08233d]/10 bg-white px-4 py-3 shadow-[0_10px_22px_rgba(15,39,66,0.04)]">
-              <p className="text-xs font-black text-industrial-orange">{group.items.length}</p>
-              <p className="mt-1 text-sm font-black text-industrial-navy">{group.label}</p>
+            <a key={group.key} href={`#${group.key}`} className="inline-flex items-center gap-2 rounded-sm border border-slate-200 bg-white px-4 py-2 text-sm font-black text-industrial-navy hover:border-industrial-orange hover:text-industrial-orange">
+              <span>{group.label}</span>
+              <span className="rounded-sm bg-[#edf3f7] px-2 py-0.5 text-xs text-slate-500">{group.items.length}</span>
             </a>
           ))}
         </div>
@@ -35,8 +35,7 @@ export default async function ArticlesPage({ params }: { params: { locale: Local
           <div key={group.key} id={group.key} className="scroll-mt-24 rounded-sm border border-[#08233d]/10 bg-white/70 p-5 shadow-soft md:p-6">
             <div className="mb-5 flex flex-col gap-2 border-b border-[#08233d]/10 pb-4 md:flex-row md:items-end md:justify-between">
               <div>
-                <p className="text-xs font-black uppercase tracking-[0.16em] text-industrial-orange">{locale === 'zh' ? '文章分类' : 'Article Category'}</p>
-                <h2 className="mt-2 text-2xl font-black text-industrial-navy">{group.label}</h2>
+                <h2 className="text-2xl font-black text-industrial-navy">{group.label}</h2>
               </div>
               <p className="text-sm font-bold text-slate-500">{group.items.length} {locale === 'zh' ? '篇' : 'articles'}</p>
             </div>

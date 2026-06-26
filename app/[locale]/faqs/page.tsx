@@ -20,11 +20,11 @@ export default async function FAQsPage({ params }: { params: { locale: Locale } 
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.faqs, href: `/${params.locale}/faqs` }]} />
       <Title title={site.nav.faqs} description={params.locale === 'zh' ? '整理客户在选购食品机械前常问的问题，帮助提前了解设备配置、价格、定制和售后。' : 'Common questions about equipment configuration, pricing, customization, and after-sales support.'} />
       <section className="mx-auto max-w-7xl px-4 pb-4 md:px-6">
-        <div className="grid gap-3 md:grid-cols-3 lg:grid-cols-6">
+        <div className="flex flex-wrap gap-2 rounded-sm border border-[#08233d]/10 bg-white/80 p-3 shadow-soft">
           {groups.map((group) => (
-            <a key={group.key} href={`#${group.key}`} className="rounded-sm border border-[#08233d]/10 bg-white px-4 py-3 shadow-[0_10px_22px_rgba(15,39,66,0.04)]">
-              <p className="text-xs font-black text-industrial-orange">{group.items.length}</p>
-              <p className="mt-1 text-sm font-black text-industrial-navy">{group.label}</p>
+            <a key={group.key} href={`#${group.key}`} className="inline-flex items-center gap-2 rounded-sm border border-slate-200 bg-white px-4 py-2 text-sm font-black text-industrial-navy hover:border-industrial-orange hover:text-industrial-orange">
+              <span>{group.label}</span>
+              <span className="rounded-sm bg-[#edf3f7] px-2 py-0.5 text-xs text-slate-500">{group.items.length}</span>
             </a>
           ))}
         </div>
@@ -34,8 +34,7 @@ export default async function FAQsPage({ params }: { params: { locale: Locale } 
           <div key={group.key} id={group.key} className="scroll-mt-24 rounded-sm border border-[#08233d]/10 bg-white/70 p-5 shadow-soft md:p-6">
             <div className="mb-5 flex flex-col gap-2 border-b border-[#08233d]/10 pb-4 md:flex-row md:items-end md:justify-between">
               <div>
-                <p className="text-xs font-black uppercase tracking-[0.16em] text-industrial-orange">{params.locale === 'zh' ? '问题分类' : 'FAQ Category'}</p>
-                <h2 className="mt-2 text-2xl font-black text-industrial-navy">{group.label}</h2>
+                <h2 className="text-2xl font-black text-industrial-navy">{group.label}</h2>
               </div>
               <p className="text-sm font-bold text-slate-500">{group.items.length} {params.locale === 'zh' ? '条' : 'questions'}</p>
             </div>

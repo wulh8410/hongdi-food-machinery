@@ -43,7 +43,7 @@ export default async function ProductDetailPage({ params }: { params: { locale: 
       </section>
       <article className="mx-auto max-w-7xl px-4 pb-8 md:px-6">
         <Section title={locale === 'zh' ? '适用场景' : 'Applications'}><div className="flex flex-wrap gap-2">{product.applications?.map((item) => <span key={item} className="rounded bg-slate-100 px-3 py-2 text-sm">{item}</span>)}</div></Section>
-        <Section title={locale === 'zh' ? '技术参数' : 'Specifications'}><SpecTable specs={product.specs} /></Section>
+        <Section title={locale === 'zh' ? '技术参数' : 'Specifications'}><SpecTable specs={product.specs} locale={locale} /></Section>
         <Section title={locale === 'zh' ? '详细介绍与解决的问题' : 'Details and Problems Solved'}><div className="content" dangerouslySetInnerHTML={{ __html: product.bodyHtml }} /></Section>
         <Section title="FAQ"><FAQBlock faqs={product.faqs} /></Section>
         <RelatedLinks locale={locale} title={locale === 'zh' ? '相关产品' : 'Related Products'} section="products" slugs={product.relatedProducts} items={products} />

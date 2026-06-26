@@ -13,46 +13,60 @@ export function Section({ title, children }: { title: string; children: React.Re
 }
 
 export function ProductGallery({ images = [], title = '' }: { images?: string[]; title?: string }) {
-  const image = images[0];
   return (
-    <div className="grid gap-3 rounded bg-white p-3 ring-1 ring-slate-200">
-      {image ? (
-        <Image src={assetPath(image)} alt={title} width={900} height={675} className="aspect-[4/3] w-full rounded bg-slate-50 object-contain" />
+    <div className="rounded-sm border border-slate-200 bg-white p-3 shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
+      {images.length ? (
+        <div className="flex snap-x gap-3 overflow-x-auto pb-2">
+          {images.map((item, index) => (
+            <div key={item} className="min-w-full snap-start sm:min-w-[calc(50%-0.375rem)]">
+              <Image
+                src={assetPath(item)}
+                alt={index === 0 ? title : `${title} 详情图`}
+                width={1000}
+                height={750}
+                priority={index === 0}
+                className="aspect-[4/3] w-full rounded-sm bg-[#f4f8fb] object-contain"
+              />
+            </div>
+          ))}
+        </div>
       ) : (
         <div className="aspect-[4/3] rounded bg-gradient-to-br from-slate-200 to-slate-100" aria-label="Product image placeholder" />
       )}
-      {images.length > 1 ? (
-        <div className="grid gap-3 sm:grid-cols-2">
-          {images.slice(1).map((item, index) => (
-            <Image
-              key={item}
-              src={assetPath(item)}
-              alt={`${title} ${index + 2}`}
-              width={700}
-              height={525}
-              className="aspect-[4/3] w-full rounded border border-slate-100 bg-slate-50 object-contain"
-            />
-          ))}
-        </div>
-      ) : null}
+      {images.length > 1 ? <p className="mt-2 text-xs text-slate-500">左右滑动查看产品图与详情图</p> : null}
     </div>
   );
 }
 
-export function SpecTable({ specs }: { specs?: Record<string, string> }) {
+export function SpecTable({ specs, locale = 'zh' }: { specs?: Record<string, string>; locale?: Locale }) {
   if (!specs) return null;
   return (
     <table className="w-full border-collapse text-sm">
       <tbody>
         {Object.entries(specs).map(([key, value]) => (
           <tr key={key} className="border-b border-slate-200 last:border-0">
-            <th className="w-1/3 bg-slate-50 px-3 py-3 text-left font-semibold text-slate-700">{key}</th>
+            <th className="w-1/3 bg-slate-50 px-3 py-3 text-left font-semibold text-slate-700">{formatSpecKey(key, locale)}</th>
             <td className="px-3 py-3 text-slate-600">{value}</td>
           </tr>
         ))}
       </tbody>
     </table>
   );
+}
+
+function formatSpecKey(key: string, locale: Locale) {
+  const labels: Record<string, { zh: string; en: string }> = {
+    voltage: { zh: '电压', en: 'Voltage' },
+    material: { zh: '材质', en: 'Material' },
+    use: { zh: '用途', en: 'Use' },
+    model: { zh: '型号', en: 'Model' },
+    capacity: { zh: '产能', en: 'Capacity' },
+    scale: { zh: '适合规模', en: 'Scale' },
+    power: { zh: '功率', en: 'Power' },
+    weight: { zh: '重量', en: 'Weight' },
+    size: { zh: '尺寸', en: 'Size' }
+  };
+  return labels[key]?.[locale] ?? key;
 }
 
 export function FAQBlock({ faqs }: { faqs?: { question: string; answer: string }[] }) {

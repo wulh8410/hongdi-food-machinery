@@ -15,8 +15,10 @@ export default async function SolutionsPage({ params }: { params: { locale: Loca
   const site = getSiteConfig(params.locale);
   const items = await getContentItems(params.locale, 'solutions');
   const categoryOrder = params.locale === 'zh' ? ['家禽加工', '水产加工', '鱼糜丸类', '场地与配套'] : [];
-  const grouped = categoryOrder.map((category) => ({ category, items: items.filter((item) => item.solutionCategory === category) }));
-  const uncategorized = items.filter((item) => !categoryOrder.includes(item.solutionCategory ?? ''));
+  const grouped = categoryOrder.map((category) => ({
+    category,
+    items: items.filter((item) => normalizeSolutionCategory(item.solutionCategory, item.slug, item.title) === category)
+  }));
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/solutions`}>
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.solutions, href: `/${params.locale}/solutions` }]} />
@@ -39,8 +41,31 @@ export default async function SolutionsPage({ params }: { params: { locale: Loca
             <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">{group.items.map((item) => <SolutionCard key={item.slug} locale={params.locale} item={item} />)}</div>
           </section>
         ))}
-        {uncategorized.length ? <section className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">{uncategorized.map((item) => <SolutionCard key={item.slug} locale={params.locale} item={item} />)}</section> : null}
       </div>
     </PageShell>
   );
+}
+
+function normalizeSolutionCategory(category = '', slug = '', title = '') {
+  const text = `${category} ${slug} ${title}`.toLowerCase();
+  if (text.includes('水产') || text.includes('aquatic') || text.includes('鱼类') || text.includes('fish')) return '水产加工';
+  if (text.includes('鱼糜') || text.includes('肉丸') || text.includes('丸') || text.includes('meatball')) return '鱼糜丸类';
+  if (
+    text.includes('场地') ||
+    text.includes('配套') ||
+    text.includes('维护') ||
+    text.includes('保养') ||
+    text.includes('安装') ||
+    text.includes('验收') ||
+    text.includes('咨询') ||
+    text.includes('效果') ||
+    text.includes('耗材') ||
+    text.includes('卫生') ||
+    text.includes('布置') ||
+    text.includes('后处理') ||
+    text.includes('site') ||
+    text.includes('maintenance') ||
+    text.includes('installation')
+  ) return '场地与配套';
+  return '家禽加工';
 }
