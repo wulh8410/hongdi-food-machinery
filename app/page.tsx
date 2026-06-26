@@ -10,6 +10,7 @@ export default function RootPage() {
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-[#08233d] px-6 text-white">
+      <meta httpEquiv="refresh" content="0;url=/zh/" />
       <div className="text-center">
         <p className="text-sm font-semibold text-orange-300">洪弟食品机械</p>
         <h1 className="mt-3 text-2xl font-black">正在进入中文首页</h1>
