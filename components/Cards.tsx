@@ -14,18 +14,29 @@ export function ProductCard({ locale, item }: { locale: Locale; item: ContentIte
   };
   const categoryKey = item.category ?? '';
   const categoryLabel = categoryLabels[categoryKey]?.[locale] ?? (locale === 'zh' ? '食品加工设备' : 'Food Processing Equipment');
+  const specEntries = item.specs ? Object.entries(item.specs).slice(0, 3) : [];
 
   return (
-    <article className="group h-full overflow-hidden rounded-sm border border-[#08233d]/10 bg-white shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
+    <article className="group flex h-full flex-col overflow-hidden rounded-sm border border-[#08233d]/10 bg-white shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
       {image ? (
         <Image src={assetPath(image)} alt={item.title} width={800} height={600} className="aspect-[4/3] w-full bg-industrial-mist object-cover transition duration-300 group-hover:scale-[1.02]" />
       ) : (
         <div className="aspect-[4/3] bg-industrial-mist" />
       )}
-      <div className="min-h-[220px] p-5">
+      <div className="flex flex-1 flex-col p-5">
         <p className="text-xs font-black text-industrial-orange">{categoryLabel}</p>
         <h3 className="mt-2 text-lg font-black leading-snug text-industrial-navy">{item.title}</h3>
         <p className="mt-2 line-clamp-3 text-sm leading-6 text-slate-600">{item.description}</p>
+        {specEntries.length ? (
+          <dl className="mt-4 grid gap-2 border-y border-slate-100 py-3 text-xs">
+            {specEntries.map(([key, value]) => (
+              <div key={key} className="grid grid-cols-[5.5em_1fr] gap-2">
+                <dt className="font-bold text-slate-500">{key}</dt>
+                <dd className="line-clamp-1 font-semibold text-industrial-navy">{value}</dd>
+              </div>
+            ))}
+          </dl>
+        ) : null}
         <div className="mt-4 flex flex-wrap gap-2">
           {item.applications?.slice(0, 3).map((app) => (
         <span key={app} className="rounded-sm bg-[#edf3f7] px-2 py-1 text-xs font-bold text-slate-600">
@@ -33,7 +44,7 @@ export function ProductCard({ locale, item }: { locale: Locale; item: ContentIte
             </span>
           ))}
         </div>
-        <Link href={`/${locale}/products/${item.slug}`} className="mt-4 inline-block text-sm font-black text-industrial-orange">
+        <Link href={`/${locale}/products/${item.slug}`} className="mt-auto inline-block pt-5 text-sm font-black text-industrial-orange">
           {locale === 'zh' ? '查看详情 →' : 'View Details →'}
         </Link>
       </div>

@@ -15,12 +15,26 @@ export function Section({ title, children }: { title: string; children: React.Re
 export function ProductGallery({ images = [], title = '' }: { images?: string[]; title?: string }) {
   const image = images[0];
   return (
-    <div className="rounded bg-white p-3 ring-1 ring-slate-200">
+    <div className="grid gap-3 rounded bg-white p-3 ring-1 ring-slate-200">
       {image ? (
-        <Image src={assetPath(image)} alt={title} width={900} height={675} className="aspect-[4/3] w-full rounded object-contain" />
+        <Image src={assetPath(image)} alt={title} width={900} height={675} className="aspect-[4/3] w-full rounded bg-slate-50 object-contain" />
       ) : (
         <div className="aspect-[4/3] rounded bg-gradient-to-br from-slate-200 to-slate-100" aria-label="Product image placeholder" />
       )}
+      {images.length > 1 ? (
+        <div className="grid gap-3 sm:grid-cols-2">
+          {images.slice(1).map((item, index) => (
+            <Image
+              key={item}
+              src={assetPath(item)}
+              alt={`${title} ${index + 2}`}
+              width={700}
+              height={525}
+              className="aspect-[4/3] w-full rounded border border-slate-100 bg-slate-50 object-contain"
+            />
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 }

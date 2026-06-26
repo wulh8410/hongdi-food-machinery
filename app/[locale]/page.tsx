@@ -32,10 +32,10 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
   ]);
   const categories = getCategories(locale);
   const featuredProductSlugs = [
-    '58-turbine-stainless-poultry-plucker',
-    'double-lid-poultry-scalding-mixer',
-    'pneumatic-discharge-scalding-dehairing-machine',
-    'rubber-rod-scalding-mixer'
+    '58-type-poultry-plucker',
+    'six-roller-stainless-poultry-plucker',
+    'new-generation-pneumatic-scalding-dehairing-machine',
+    'double-lid-poultry-scalding-mixer'
   ];
   const featuredProducts = featuredProductSlugs
     .map((slug) => products.find((item) => item.slug === slug))
@@ -236,10 +236,24 @@ function HomeSection({
 }
 
 function FAQFeatureCard({ locale, item }: { locale: Locale; item: ContentItem }) {
+  const points = locale === 'zh'
+    ? ['每天处理多少只，最高峰每小时多少只', '主要加工鸡、鸭、鹅、鸽子还是混合品类', '现场是 220V 还是 380V，排水和水源在哪里', '是否已有泡水设备，是否需要配套一体流程']
+    : ['Daily and peak hourly processing quantity', 'Main materials: chicken, duck, goose, pigeon, or mixed use', 'Available voltage, drainage, and water supply', 'Existing scalding equipment or integrated workflow needs'];
   return (
     <article className="h-full rounded-sm border border-[#08233d]/10 border-l-4 border-l-industrial-orange bg-white p-7 shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
       <h3 className="text-2xl font-black leading-tight text-industrial-navy">{item.title}</h3>
       <p className="mt-5 line-clamp-6 text-base leading-8 text-slate-600">{item.description}</p>
+      <div className="mt-6 rounded-sm bg-[#f1f6fa] p-4">
+        <p className="text-sm font-black text-industrial-navy">{locale === 'zh' ? '咨询前建议先准备' : 'Prepare before inquiry'}</p>
+        <ul className="mt-3 grid gap-2 text-sm leading-6 text-slate-700">
+          {points.map((point) => (
+            <li key={point} className="flex gap-2">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-industrial-orange" />
+              <span>{point}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
       <Link href={`/${locale}/faqs/${item.slug}`} className="mt-6 inline-block text-sm font-black text-industrial-blue">
         {locale === 'zh' ? '查看答案 →' : 'View Answer →'}
       </Link>
@@ -263,7 +277,7 @@ function HomeSolutionCell({ locale, item, index }: { locale: Locale; item: Conte
 function FAQListRow({ locale, item, index }: { locale: Locale; item: ContentItem; index: number }) {
   return (
     <article className="grid gap-4 border-t border-[#08233d]/10 p-5 first:border-t-0 md:grid-cols-[7rem_1fr]">
-      <p className="text-xs font-black uppercase tracking-[0.08em] text-industrial-orange">{index === 2 ? 'Article' : `FAQ ${String(index + 1).padStart(2, '0')}`}</p>
+      <p className="text-xs font-black uppercase tracking-[0.08em] text-industrial-orange">{`FAQ ${String(index + 1).padStart(2, '0')}`}</p>
       <div>
         <h3 className="line-clamp-2 text-lg font-black text-industrial-navy">{item.title}</h3>
         <p className="mt-2 line-clamp-2 text-sm leading-6 text-slate-600">{item.description}</p>
