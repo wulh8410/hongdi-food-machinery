@@ -1,7 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import type { ContentItem, Locale } from '@/lib/types';
-import { assetPath } from '@/lib/asset';
 
 export function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -9,32 +7,6 @@ export function Section({ title, children }: { title: string; children: React.Re
       <h2 className="text-xl font-bold text-industrial-navy">{title}</h2>
       <div className="mt-4">{children}</div>
     </section>
-  );
-}
-
-export function ProductGallery({ images = [], title = '' }: { images?: string[]; title?: string }) {
-  return (
-    <div className="rounded-sm border border-slate-200 bg-white p-3 shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
-      {images.length ? (
-        <div className="flex snap-x gap-3 overflow-x-auto pb-2">
-          {images.map((item, index) => (
-            <div key={item} className="min-w-full snap-start sm:min-w-[calc(50%-0.375rem)]">
-              <Image
-                src={assetPath(item)}
-                alt={index === 0 ? title : `${title} 详情图`}
-                width={1000}
-                height={750}
-                priority={index === 0}
-                className="aspect-[4/3] w-full rounded-sm bg-[#f4f8fb] object-contain"
-              />
-            </div>
-          ))}
-        </div>
-      ) : (
-        <div className="aspect-[4/3] rounded bg-gradient-to-br from-slate-200 to-slate-100" aria-label="Product image placeholder" />
-      )}
-      {images.length > 1 ? <p className="mt-2 text-xs text-slate-500">左右滑动查看产品图与详情图</p> : null}
-    </div>
   );
 }
 

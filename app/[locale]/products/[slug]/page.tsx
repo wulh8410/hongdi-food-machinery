@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { ContactBlock, FAQBlock, ProductGallery, RelatedLinks, Section, SpecTable } from '@/components/DetailBlocks';
+import { ContactBlock, FAQBlock, RelatedLinks, Section, SpecTable } from '@/components/DetailBlocks';
 import { PageShell } from '@/components/PageShell';
+import { ProductGallery } from '@/components/ProductGallery';
 import { SchemaJsonLd } from '@/components/SchemaJsonLd';
 import { getContentItem, getContentItems, getContentSlugs, getSiteConfig } from '@/lib/content';
 import { itemMetadata } from '@/lib/seo';
@@ -32,8 +33,8 @@ export default async function ProductDetailPage({ params }: { params: { locale: 
       <SchemaJsonLd data={breadcrumbSchema(locale, crumbs)} />
       {product.faqs?.length ? <SchemaJsonLd data={faqPageSchema(product.faqs)} /> : null}
       <Breadcrumb locale={locale} items={[{ label: site.nav.products, href: `/${locale}/products` }, { label: product.title, href: `/${locale}/products/${slug}` }]} />
-      <section className="mx-auto grid max-w-7xl gap-8 px-4 py-8 md:grid-cols-[0.9fr_1.1fr] md:px-6">
-        <ProductGallery images={product.images} title={product.title} />
+      <section className="mx-auto grid max-w-7xl items-start gap-8 px-4 py-8 md:grid-cols-[1.25fr_0.75fr] md:px-6 xl:grid-cols-[1.35fr_0.85fr]">
+        <ProductGallery images={product.images} title={product.title} locale={locale} />
         <div>
           <h1 className="text-3xl font-bold text-industrial-navy">{product.title}</h1>
           <p className="mt-4 text-lg leading-8 text-slate-700">{product.description}</p>

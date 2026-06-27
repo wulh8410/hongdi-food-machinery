@@ -18,14 +18,14 @@ export function ProductCard({ locale, item }: { locale: Locale; item: ContentIte
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-sm border border-[#08233d]/10 bg-white shadow-[0_14px_30px_rgba(15,39,66,0.06)]">
-      <div className="border-b border-slate-100 bg-[#f4f8fb] p-3">
+      <div className="border-b border-slate-100 bg-white">
         {image ? (
           <Image
             src={assetPath(image)}
             alt={item.title}
-            width={900}
-            height={675}
-            className="aspect-[4/3] w-full rounded-sm bg-white object-contain transition duration-300 group-hover:scale-[1.015]"
+            width={1200}
+            height={900}
+            className="block h-auto w-full object-contain"
           />
         ) : (
           <div className="aspect-[4/3] rounded-sm bg-industrial-mist" />
