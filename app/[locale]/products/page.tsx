@@ -41,20 +41,30 @@ export default async function ProductsPage({ params }: { params: { locale: Local
   return (
     <PageShell locale={locale} path={`/${locale}/products`}>
       <Breadcrumb locale={locale} items={[{ label: site.nav.products, href: `/${locale}/products` }]} />
-      <section className="bg-[linear-gradient(135deg,#08233d,#123452)] text-white">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-[1.25fr_0.75fr] md:px-6">
-          <div>
+      <section className="border-y border-[#08233d]/10 bg-[linear-gradient(135deg,#f8fafc_0%,#eef4f8_52%,#f8fafc_100%)]">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-[1.2fr_0.8fr] md:px-6">
+          <div className="relative border-l-4 border-industrial-orange bg-white/65 px-6 py-7 shadow-soft backdrop-blur">
             <p className="text-sm font-black tracking-[0.18em] text-industrial-orange">{isZh ? '产品中心' : 'Product Center'}</p>
-            <h1 className="mt-3 text-3xl font-black md:text-5xl">{site.nav.products}</h1>
-            <p className="mt-5 max-w-3xl text-base leading-8 text-slate-200">
+            <h1 className="mt-3 text-3xl font-black text-industrial-navy md:text-5xl">{site.nav.products}</h1>
+            <p className="mt-5 max-w-3xl text-base leading-8 text-slate-700">
               {isZh
                 ? '集中展示洪弟食品机械当前主推设备，覆盖家禽脱毛、泡水浸烫、泡水脱毛一体和小禽类处理。每款产品都提供清晰图片、核心参数、适用场景和配套建议，方便采购前对比。'
                 : 'Browse Hongdi Food Machinery equipment for poultry dehairing, scalding, integrated processing, and small bird processing with images, specifications, applications, and matching advice.'}
             </p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {(isZh
+                ? ['产品实拍', '参数清晰', '按场景选型', '支持配套']
+                : ['Real Product Photos', 'Clear Specifications', 'Scenario-Based Selection', 'Matching Support']
+              ).map((item) => (
+                <span key={item} className="border border-[#08233d]/10 bg-white px-3 py-2 text-xs font-black text-industrial-navy shadow-[0_8px_18px_rgba(15,39,66,0.04)]">
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
-          <div className="border border-white/15 bg-white/5 p-6">
+          <div className="border border-[#08233d]/10 bg-white p-6 shadow-soft">
             <p className="text-sm font-black text-industrial-orange">{isZh ? '选型时建议确认' : 'Before Selection'}</p>
-            <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-100">
+            <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-700">
               {(isZh
                 ? ['加工品类和单只重量', '单日处理量和高峰处理量', '现场电压、进水和排水条件', '是否需要泡水、脱毛、清洗配套']
                 : ['Material type and weight', 'Daily and peak capacity', 'Voltage, water supply, and drainage', 'Scalding, dehairing, and cleaning needs']
