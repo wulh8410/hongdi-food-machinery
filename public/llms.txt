@@ -41,7 +41,6 @@ This website belongs to a poultry dehairing machine and food processing equipmen
 - Aquatic Store Scaling and Meat Separating Solution: https://hongdi-food-machinery.vercel.app/en/solutions/aquatic-store-processing-solution/
 - Canteen and Restaurant Poultry Pre-processing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/canteen-restaurant-poultry-solution/
 - Farm Poultry Processing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/farm-poultry-processing-solution/
-- Meatball Processing Support Solution: https://hongdi-food-machinery.vercel.app/en/solutions/meatball-processing-solution/
 - Small Slaughter Stall Poultry Dehairing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/small-slaughter-stall-dehairing-solution/
 
 ## Chinese GEO Buyer Guides
@@ -200,14 +199,12 @@ These pages connect real production scenarios with recommended equipment, proces
 - 双面翻盖搅拌泡水方案: https://hongdi-food-machinery.vercel.app/zh/solutions/double-lid-mixer-pre-scalding-solution/
 - 养殖场家禽批量处理解决方案: https://hongdi-food-machinery.vercel.app/zh/solutions/farm-poultry-processing-solution/
 - 养殖场季节性鸭鹅集中处理方案: https://hongdi-food-machinery.vercel.app/zh/solutions/farm-seasonal-duck-processing-solution/
-- 鱼肉采集与鱼糜原料加工解决方案: https://hongdi-food-machinery.vercel.app/zh/solutions/fish-meat-surimi-processing-solution/
 - 食品机械场地改造与安装解决方案: https://hongdi-food-machinery.vercel.app/zh/solutions/food-machinery-site-installation-solution/
 - 鹅细毛处理与修毛方案: https://hongdi-food-machinery.vercel.app/zh/solutions/goose-fine-feather-touch-up-solution/
 - 小团队泡水脱毛一体机方案: https://hongdi-food-machinery.vercel.app/zh/solutions/integrated-machine-small-team-solution/
 - 家禽泡水脱毛一体化解决方案: https://hongdi-food-machinery.vercel.app/zh/solutions/integrated-scalding-dehairing-solution/
 - 大批量家禽脱毛加工解决方案: https://hongdi-food-machinery.vercel.app/zh/solutions/large-volume-poultry-processing-solution/
 - 农贸市场鸭鹅脱毛加工方案: https://hongdi-food-machinery.vercel.app/zh/solutions/market-duck-goose-processing-solution/
-- 鱼丸鱼糜加工配套解决方案: https://hongdi-food-machinery.vercel.app/zh/solutions/meatball-processing-solution/
 - 中等产量家禽烫脱配套解决方案: https://hongdi-food-machinery.vercel.app/zh/solutions/medium-capacity-poultry-scalding-plucking-solution/
 - 鸡鸭鹅鸽多品类共用设备方案: https://hongdi-food-machinery.vercel.app/zh/solutions/multi-species-poultry-processing-solution/
 - 夜市餐饮禽类预处理方案: https://hongdi-food-machinery.vercel.app/zh/solutions/night-market-food-stall-poultry-solution/

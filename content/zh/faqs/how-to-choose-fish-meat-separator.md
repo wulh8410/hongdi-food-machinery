@@ -10,8 +10,6 @@ relatedProducts:
   - fish-meat-separator
 relatedArticles:
   - how-to-choose-fish-meat-separator
-relatedSolutions:
-  - meatball-processing-solution
 keywords:
   - 鱼类脱鳞机
   - 鱼类采肉机

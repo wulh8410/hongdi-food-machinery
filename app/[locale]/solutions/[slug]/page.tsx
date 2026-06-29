@@ -28,7 +28,8 @@ export default async function SolutionDetailPage({ params }: { params: { locale:
     getContentItems(params.locale, 'faqs')
   ]);
   const isZh = params.locale === 'zh';
-  const topic = item.solutionCategory === '水产加工' || item.solutionCategory === '鱼糜丸类' ? 'aquatic' : 'poultry';
+  const productTitleMap = new Map(products.map((product) => [product.slug, product.title]));
+  const topic = item.solutionCategory === '水产加工' ? 'aquatic' : 'poultry';
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/solutions/${params.slug}`}>
       <SchemaJsonLd data={breadcrumbSchema(params.locale, [{ name: site.nav.solutions, path: '/solutions' }, { name: item.title, path: `/solutions/${item.slug}` }])} />
@@ -47,7 +48,7 @@ export default async function SolutionDetailPage({ params }: { params: { locale:
         ) : null}
         {item.suitableFor?.length ? <Section title={isZh ? '适用客户与生产场景' : 'Suitable Customers'}><List items={item.suitableFor} /></Section> : null}
         {item.painPoints?.length ? <Section title={isZh ? '客户痛点' : 'Customer Pain Points'}><List items={item.painPoints} /></Section> : null}
-        {item.equipmentRoles?.length ? <Section title={isZh ? '推荐设备与分工' : 'Equipment Roles'}><EquipmentTable items={item.equipmentRoles} isZh={isZh} /></Section> : null}
+        {item.equipmentRoles?.length ? <Section title={isZh ? '推荐设备与分工' : 'Equipment Roles'}><EquipmentTable items={item.equipmentRoles} isZh={isZh} productTitleMap={productTitleMap} /></Section> : null}
         {item.process?.length ? <Section title={isZh ? '工艺流程' : 'Process Flow'}><ProcessList items={item.process} /></Section> : null}
         {item.capacityOptions?.length ? <Section title={isZh ? '分档配置建议' : 'Configuration Options'}><CapacityTable items={item.capacityOptions} isZh={isZh} /></Section> : null}
         {(item.siteRequirements?.length || item.configuration?.length) ? <Section title={isZh ? '现场条件与配置要求' : 'Site Requirements'}><List items={item.siteRequirements ?? item.configuration} /></Section> : null}
@@ -84,8 +85,8 @@ function ProcessList({ items }: { items?: string[] }) {
   return <ol className="grid gap-3 md:grid-cols-2">{items.map((item, index) => <li key={item} className="flex gap-3 border-b border-slate-200 pb-3"><span className="font-bold text-industrial-orange">{String(index + 1).padStart(2, '0')}</span><span className="text-sm font-semibold leading-6 text-slate-700">{item}</span></li>)}</ol>;
 }
 
-function EquipmentTable({ items, isZh }: { items: SolutionEquipmentRole[]; isZh: boolean }) {
-  return <div className="overflow-x-auto"><table className="w-full min-w-[680px] border-collapse text-sm"><thead><tr className="bg-slate-100 text-left text-industrial-navy"><th className="px-4 py-3">{isZh ? '设备' : 'Equipment'}</th><th className="px-4 py-3">{isZh ? '流程作用' : 'Role'}</th><th className="px-4 py-3">{isZh ? '选型说明' : 'Selection'}</th></tr></thead><tbody>{items.map((item) => <tr key={`${item.product}-${item.role}`} className="border-b border-slate-200"><td className="px-4 py-3 font-bold text-industrial-navy">{item.product}</td><td className="px-4 py-3 text-slate-700">{item.role}</td><td className="px-4 py-3 text-slate-600">{item.selection}</td></tr>)}</tbody></table></div>;
+function EquipmentTable({ items, isZh, productTitleMap }: { items: SolutionEquipmentRole[]; isZh: boolean; productTitleMap: Map<string, string> }) {
+  return <div className="overflow-x-auto"><table className="w-full min-w-[680px] border-collapse text-sm"><thead><tr className="bg-slate-100 text-left text-industrial-navy"><th className="px-4 py-3">{isZh ? '设备' : 'Equipment'}</th><th className="px-4 py-3">{isZh ? '流程作用' : 'Role'}</th><th className="px-4 py-3">{isZh ? '选型说明' : 'Selection'}</th></tr></thead><tbody>{items.map((item) => <tr key={`${item.product}-${item.role}`} className="border-b border-slate-200"><td className="px-4 py-3 font-bold text-industrial-navy">{productTitleMap.get(item.product) ?? item.product}</td><td className="px-4 py-3 text-slate-700">{item.role}</td><td className="px-4 py-3 text-slate-600">{item.selection}</td></tr>)}</tbody></table></div>;
 }
 
 function CapacityTable({ items, isZh }: { items: SolutionCapacityOption[]; isZh: boolean }) {

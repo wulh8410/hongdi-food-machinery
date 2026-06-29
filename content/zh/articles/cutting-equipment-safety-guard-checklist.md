@@ -7,7 +7,6 @@ date: '2026-06-25'
 updated: '2026-06-25'
 relatedSolutions:
   - food-machinery-site-installation-solution
-  - meatball-processing-solution
 relatedFaqs:
   - cutting-equipment-safety-guard
   - how-to-evaluate-food-machinery-manufacturer

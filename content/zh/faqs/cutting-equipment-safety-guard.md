@@ -10,7 +10,6 @@ relatedArticles:
   - cutting-equipment-safety-guard-checklist
 relatedSolutions:
   - food-machinery-site-installation-solution
-  - meatball-processing-solution
 seo:
   title: 切块机和切肉设备要不要加防护罩？｜洪弟食品机械
   description: 切块机和切肉设备采购应关注防护罩、进料口、刀具区域、急停开关和清洗维护，不能只看速度。

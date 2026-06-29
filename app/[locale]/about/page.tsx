@@ -23,7 +23,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
           },
           {
             title: '主营设备',
-            body: '产品覆盖滚筒式家禽脱毛机、烫脱一体机、畜禽脱毛设备、鱼类脱鳞机、鱼类采肉机和肉丸加工配套设备。'
+            body: '产品覆盖滚筒式家禽脱毛机、不锈钢脱毛机、泡水浸烫机、烫脱一体机、鸡鸭鹅处理设备和现场配套设备。'
           },
           {
             title: '生产能力',
@@ -53,7 +53,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
           },
           {
             title: 'Main Equipment',
-            body: 'The product range includes roller poultry dehairing machines, scalding-dehairing machines, livestock dehairing equipment, fish scalers, fish meat separators, and meatball processing equipment.'
+            body: 'The product range includes roller poultry dehairing machines, stainless pluckers, scalding tanks, scalding-dehairing machines, poultry processing equipment, and site support equipment.'
           },
           {
             title: 'Production Capability',

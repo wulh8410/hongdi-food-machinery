@@ -40,11 +40,18 @@ export default async function ProductDetailPage({ params }: { params: { locale: 
           <p className="mt-4 text-lg leading-8 text-slate-700">{product.description}</p>
           <div className="mt-5 rounded border-l-4 border-industrial-orange bg-orange-50 p-4 text-sm leading-6 text-slate-700">{product.geoSummary}</div>
           <div className="mt-5 flex flex-wrap gap-2">{product.features?.map((feature) => <span key={feature} className="rounded bg-industrial-mist px-3 py-2 text-sm font-semibold text-industrial-navy">{feature}</span>)}</div>
+          {product.specs ? (
+            <div className="mt-6 rounded border border-slate-200 bg-white p-5 shadow-sm">
+              <h2 className="text-lg font-bold text-industrial-navy">{locale === 'zh' ? '技术参数' : 'Specifications'}</h2>
+              <div className="mt-3">
+                <SpecTable specs={product.specs} locale={locale} />
+              </div>
+            </div>
+          ) : null}
         </div>
       </section>
       <article className="mx-auto max-w-7xl px-4 pb-8 md:px-6">
         <Section title={locale === 'zh' ? '适用场景' : 'Applications'}><div className="flex flex-wrap gap-2">{product.applications?.map((item) => <span key={item} className="rounded bg-slate-100 px-3 py-2 text-sm">{item}</span>)}</div></Section>
-        <Section title={locale === 'zh' ? '技术参数' : 'Specifications'}><SpecTable specs={product.specs} locale={locale} /></Section>
         <Section title={locale === 'zh' ? '详细介绍与解决的问题' : 'Details and Problems Solved'}><div className="content" dangerouslySetInnerHTML={{ __html: product.bodyHtml }} /></Section>
         <Section title="FAQ"><FAQBlock faqs={product.faqs} /></Section>
         <RelatedLinks locale={locale} title={locale === 'zh' ? '相关产品' : 'Related Products'} section="products" slugs={product.relatedProducts} items={products} />

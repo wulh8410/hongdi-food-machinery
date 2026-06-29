@@ -10,8 +10,6 @@ relatedProducts:
   - fish-meat-separator
 relatedArticles:
   - what-affects-fish-meat-separator-yield
-relatedSolutions:
-  - meatball-processing-solution
 keywords:
   - 鱼类脱鳞机
   - 鱼类采肉机
