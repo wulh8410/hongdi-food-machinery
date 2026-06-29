@@ -27,7 +27,13 @@ export default async function ProductsPage({ params }: { params: { locale: Local
     ...category,
     count: products.filter((product) => product.category === category.slug).length
   })).filter((category) => category.count > 0);
-  const groupedProducts = categoryCounts.map((category) => ({
+  const categoryPriority = ['scalding-dehairing', 'poultry-dehairing'];
+  const orderedCategoryCounts = [...categoryCounts].sort((a, b) => {
+    const aIndex = categoryPriority.indexOf(a.slug);
+    const bIndex = categoryPriority.indexOf(b.slug);
+    return (aIndex === -1 ? 999 : aIndex) - (bIndex === -1 ? 999 : bIndex);
+  });
+  const groupedProducts = orderedCategoryCounts.map((category) => ({
     ...category,
     items: products.filter((product) => product.category === category.slug)
   })).filter((group) => group.items.length);

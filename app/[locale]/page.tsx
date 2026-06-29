@@ -32,10 +32,9 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
   ]);
   const categories = getCategories(locale);
   const featuredProductSlugs = [
-    '58-type-poultry-plucker',
-    'six-roller-stainless-poultry-plucker',
     'new-generation-pneumatic-scalding-dehairing-machine',
-    'double-lid-poultry-scalding-mixer'
+    'double-lid-poultry-scalding-mixer',
+    'rubber-rod-scalding-mixer'
   ];
   const featuredProducts = featuredProductSlugs
     .map((slug) => products.find((item) => item.slug === slug))
@@ -84,7 +83,7 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
         linkText={isZh ? '查看全部产品' : 'View all products'}
       >
         <div className="p-0">
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-7 md:grid-cols-3">
             {featuredProducts.map((item) => (
               <ProductCard key={item.slug} locale={locale} item={item} />
             ))}
