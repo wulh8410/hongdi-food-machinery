@@ -15,8 +15,8 @@ export function Footer({ locale, site }: { locale: Locale; site: SiteConfig }) {
     ['about', site.nav.about]
   ];
   const equipment = isZh
-    ? ['家禽脱毛机', '鱼类脱鳞机', '鱼类采肉机', '烫脱一体机']
-    : ['Poultry Plucker', 'Fish Scaler', 'Fish Meat Separator', 'Scalding-Dehairing Machine'];
+    ? ['不锈钢脱毛机', '泡水浸烫机', '烫脱一体机', '鸡鸭鹅处理设备']
+    : ['Stainless Pluckers', 'Scalding Tanks', 'Scalding-Dehairing Machines', 'Poultry Processing Equipment'];
 
   return (
     <footer className="border-t border-white/10 bg-[#08233d] text-white">
