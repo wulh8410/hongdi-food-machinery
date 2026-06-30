@@ -50,17 +50,18 @@ export default async function ProductsPage({ params }: { params: { locale: Local
         </p>
       </section>
       <section className="mx-auto max-w-7xl px-4 pb-4 md:px-6">
-        <div className="flex flex-wrap gap-2 rounded-sm border border-[#08233d]/10 bg-white/80 p-3 shadow-soft">
+        <nav className="flex flex-wrap gap-2" aria-label={isZh ? '产品分类' : 'Product categories'}>
           {groupedProducts.map((category) => (
             <a
               key={category.slug}
               href={`#${category.slug}`}
-              className="rounded-sm border border-slate-200 bg-white px-4 py-2 text-sm font-black text-industrial-navy hover:border-industrial-orange hover:text-industrial-orange"
+              className="inline-flex items-center gap-2 border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-industrial-navy hover:border-industrial-blue"
             >
-              {category.name}
+              <span>{category.name}</span>
+              <span className="text-xs text-slate-500">{category.items.length}</span>
             </a>
           ))}
-        </div>
+        </nav>
       </section>
       <div className="mx-auto max-w-7xl px-4 py-8 md:px-6">
         {groupedProducts.map((group) => (

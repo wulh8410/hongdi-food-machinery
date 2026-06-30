@@ -27,7 +27,12 @@ export default async function SolutionsPage({ params }: { params: { locale: Loca
         <p className="mt-3 max-w-4xl leading-7 text-slate-600">{params.locale === 'zh' ? '按家禽加工、水产加工和场地配套组织设备方案。每个方案说明适用客户、工艺流程、设备分工、产能边界、现场条件和验收重点，帮助采购者先判断方向，再联系厂家核实型号。' : 'Equipment configurations organized by slaughter, farm, catering, aquatic, and food processing scenarios.'}</p>
         {categoryOrder.length ? (
           <nav className="mt-6 flex flex-wrap gap-2" aria-label="解决方案分类">
-            {categoryOrder.map((category) => <a key={category} href={`#${category}`} className="border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-industrial-navy hover:border-industrial-blue">{category}</a>)}
+            {grouped.filter((group) => group.items.length).map((group) => (
+              <a key={group.category} href={`#${group.category}`} className="inline-flex items-center gap-2 border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-industrial-navy hover:border-industrial-blue">
+                <span>{group.category}</span>
+                <span className="text-xs text-slate-500">{group.items.length}</span>
+              </a>
+            ))}
           </nav>
         ) : null}
       </section>

@@ -21,14 +21,14 @@ export default async function ArticlesPage({ params }: { params: { locale: Local
       <Breadcrumb locale={locale} items={[{ label: site.nav.articles, href: `/${locale}/articles` }]} />
       <Title title={site.nav.articles} description={locale === 'zh' ? '提供食品机械选型、设备维护、使用场景和采购准备方面的参考文章。' : 'Practical articles about equipment selection, buying preparation, maintenance, and processing applications.'} />
       <section className="mx-auto max-w-7xl px-4 pb-4 md:px-6">
-        <div className="flex flex-wrap gap-2 rounded-sm border border-[#08233d]/10 bg-white/80 p-3 shadow-soft">
+        <nav className="flex flex-wrap gap-2" aria-label={locale === 'zh' ? '文章分类' : 'Article categories'}>
           {groups.map((group) => (
-            <a key={group.key} href={`#${group.key}`} className="inline-flex items-center gap-2 rounded-sm border border-slate-200 bg-white px-4 py-2 text-sm font-black text-industrial-navy hover:border-industrial-orange hover:text-industrial-orange">
+            <a key={group.key} href={`#${group.key}`} className="inline-flex items-center gap-2 border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-industrial-navy hover:border-industrial-blue">
               <span>{group.label}</span>
-              <span className="rounded-sm bg-[#edf3f7] px-2 py-0.5 text-xs text-slate-500">{group.items.length}</span>
+              <span className="text-xs text-slate-500">{group.items.length}</span>
             </a>
           ))}
-        </div>
+        </nav>
       </section>
       <section className="mx-auto grid max-w-7xl gap-8 px-4 pb-10 md:px-6">
         {groups.map((group) => (

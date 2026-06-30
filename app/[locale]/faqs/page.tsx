@@ -20,14 +20,14 @@ export default async function FAQsPage({ params }: { params: { locale: Locale } 
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.faqs, href: `/${params.locale}/faqs` }]} />
       <Title title={site.nav.faqs} description={params.locale === 'zh' ? '整理客户在选购食品机械前常问的问题，帮助提前了解设备配置、价格、定制和售后。' : 'Common questions about equipment configuration, pricing, customization, and after-sales support.'} />
       <section className="mx-auto max-w-7xl px-4 pb-4 md:px-6">
-        <div className="flex flex-wrap gap-2 rounded-sm border border-[#08233d]/10 bg-white/80 p-3 shadow-soft">
+        <nav className="flex flex-wrap gap-2" aria-label={params.locale === 'zh' ? '常见问题分类' : 'FAQ categories'}>
           {groups.map((group) => (
-            <a key={group.key} href={`#${group.key}`} className="inline-flex items-center gap-2 rounded-sm border border-slate-200 bg-white px-4 py-2 text-sm font-black text-industrial-navy hover:border-industrial-orange hover:text-industrial-orange">
+            <a key={group.key} href={`#${group.key}`} className="inline-flex items-center gap-2 border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-industrial-navy hover:border-industrial-blue">
               <span>{group.label}</span>
-              <span className="rounded-sm bg-[#edf3f7] px-2 py-0.5 text-xs text-slate-500">{group.items.length}</span>
+              <span className="text-xs text-slate-500">{group.items.length}</span>
             </a>
           ))}
-        </div>
+        </nav>
       </section>
       <section className="mx-auto grid max-w-7xl gap-8 px-4 pb-10 md:px-6">
         {groups.map((group) => (
