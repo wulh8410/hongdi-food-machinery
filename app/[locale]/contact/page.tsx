@@ -26,7 +26,7 @@ export default function ContactPage({ params }: { params: { locale: Locale } }) 
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.contact, href: `/${params.locale}/contact` }]} />
       <section className="mx-auto max-w-4xl px-4 py-8 md:px-6">
         <h1 className="text-3xl font-bold text-industrial-navy">{site.nav.contact}</h1>
-        <p className="mt-3 leading-7 text-slate-600">{params.locale === 'zh' ? '第一期不设置在线表单，你可以通过以下方式联系。' : 'No online form is included in phase one. Contact information is listed below.'}</p>
+        <p className="mt-3 leading-7 text-slate-600">{params.locale === 'zh' ? '如需咨询设备选型、现场配置或定制方案，可通过以下方式联系洪弟食品机械。' : 'For equipment selection, site configuration, or custom solutions, contact Hongdi Food Machinery below.'}</p>
         <div className="mt-8 rounded border border-slate-200 bg-white">
           {rows.map(([label, value]) => (
             <div key={label} className="grid border-b border-slate-200 last:border-0 md:grid-cols-[180px_1fr]">
