@@ -60,10 +60,9 @@ function groupFaqs(items: ContentItem[], locale: Locale) {
     effect: { zh: '加工效果', en: 'Processing Results' },
     site: { zh: '场地水电', en: 'Site and Utilities' },
     maintenance: { zh: '清洗维护', en: 'Cleaning and Maintenance' },
-    safety: { zh: '安全卫生', en: 'Safety and Sanitation' },
-    service: { zh: '售后服务', en: 'After-sales Service' }
+    safety: { zh: '安全卫生', en: 'Safety and Sanitation' }
   };
-  const order = ['buying', 'selection', 'application', 'effect', 'site', 'maintenance', 'safety', 'service'];
+  const order = ['buying', 'selection', 'application', 'effect', 'site', 'maintenance', 'safety'];
   const buckets = new Map<string, ContentItem[]>();
 
   for (const item of items) {
@@ -71,18 +70,16 @@ function groupFaqs(items: ContentItem[], locale: Locale) {
     buckets.set(key, [...(buckets.get(key) ?? []), item]);
   }
 
-  return order
-    .filter((key) => buckets.has(key))
-    .map((key) => ({ key, label: labels[key][locale], items: buckets.get(key) ?? [] }));
+  return order.map((key) => ({ key, label: labels[key][locale], items: buckets.get(key) ?? [] }));
 }
 
 function classifyFaq(item: ContentItem) {
   const text = `${item.slug} ${item.title} ${item.description}`.toLowerCase();
   if (text.includes('price') || text.includes('quote') || text.includes('cheap') || text.includes('报价') || text.includes('价格') || text.includes('多少钱')) return 'buying';
   if (text.includes('clean') || text.includes('water-change') || text.includes('rubber') || text.includes('maintenance') || text.includes('清洗') || text.includes('胶棒') || text.includes('维护') || text.includes('更换')) return 'maintenance';
-  if (text.includes('site') || text.includes('space') || text.includes('electric') || text.includes('220v') || text.includes('380v') || text.includes('drain') || text.includes('场地') || text.includes('电压') || text.includes('排水')) return 'site';
+  if (text.includes('site') || text.includes('space') || text.includes('electric') || text.includes('220v') || text.includes('380v') || text.includes('drain') || text.includes('delivery') || text.includes('install') || text.includes('acceptance') || text.includes('场地') || text.includes('电压') || text.includes('排水') || text.includes('安装') || text.includes('验收') || text.includes('到货') || text.includes('发货')) return 'site';
   if (text.includes('safe') || text.includes('chemical') || text.includes('alkali') || text.includes('live') || text.includes('安全') || text.includes('药水') || text.includes('火碱') || text.includes('活禽')) return 'safety';
-  if (text.includes('after-sales') || text.includes('warranty') || text.includes('安装') || text.includes('验收') || text.includes('售后')) return 'service';
+  if (text.includes('after-sales') || text.includes('warranty') || text.includes('parts') || text.includes('spare') || text.includes('售后') || text.includes('保修') || text.includes('配件')) return 'maintenance';
   if (text.includes('damage') || text.includes('not-clean') || text.includes('fine-feather') || text.includes('break') || text.includes('效果') || text.includes('破皮') || text.includes('脱不干净') || text.includes('细毛') || text.includes('肉质')) return 'effect';
   if (text.includes('stall') || text.includes('canteen') || text.includes('farm') || text.includes('restaurant') || text.includes('aquatic') || text.includes('档口') || text.includes('食堂') || text.includes('养殖') || text.includes('门店')) return 'application';
   return 'selection';

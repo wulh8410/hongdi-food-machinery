@@ -70,9 +70,7 @@ function groupArticles(items: ContentItem[], locale: Locale) {
     buckets.set(key, [...(buckets.get(key) ?? []), item]);
   }
 
-  return order
-    .filter((key) => buckets.has(key))
-    .map((key) => ({ key, label: labels[key][locale], items: buckets.get(key) ?? [] }));
+  return order.map((key) => ({ key, label: labels[key][locale], items: buckets.get(key) ?? [] }));
 }
 
 function normalizeArticleCategory(category = '', slug = '') {

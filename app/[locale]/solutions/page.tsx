@@ -42,8 +42,7 @@ export default async function SolutionsPage({ params }: { params: { locale: Loca
       key,
       category: labels[key],
       items: items.filter((item) => normalizeSolutionCategory(item.solutionCategory, item.slug, item.title) === key)
-    }))
-    .filter((group) => group.items.length);
+    }));
 
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/solutions`}>
