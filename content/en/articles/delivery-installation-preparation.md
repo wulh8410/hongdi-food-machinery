@@ -1,39 +1,33 @@
 ---
-title: "What Should Be Prepared Before Food Machinery Delivery?"
+title: "Delivery Installation Preparation"
 slug: "delivery-installation-preparation"
-category: "buyer-guide"
-description: "Site preparation before poultry pluckers, scalding machines, and food processing equipment arrive, including access, voltage, drainage, hot water, and test materials."
-date: "2026-06-24"
-updated: "2026-06-24"
-relatedProducts: ["58-turbine-stainless-poultry-plucker", "double-lid-poultry-scalding-mixer", "pneumatic-discharge-scalding-dehairing-machine", "rubber-rod-scalding-mixer"]
-relatedFaqs: ["site-preparation-before-installation", "poultry-machine-installation-acceptance", "what-info-before-buying"]
+category: "installation-guide"
+description: "Delivery Installation Preparation explained for buyers who need practical poultry processing, scalding, dehairing, cleaning, installation, or equipment matching advice from Hongdi Food Machinery."
+date: "2026-07-01"
+updated: "2026-07-01"
+relatedProducts: ["new-generation-pneumatic-scalding-dehairing-machine", "double-lid-poultry-scalding-mixer", "rubber-rod-scalding-mixer"]
+relatedFaqs: ["how-to-choose-poultry-dehairing-machine", "220v-or-380v-poultry-plucker", "after-sales-and-warranty"]
+recommended: ["how-to-choose-poultry-dehairing-machine", "arrange-scalding-plucking-workstation", "delivery-installation-preparation"]
 seo:
-  title: "What Should Be Prepared Before Food Machinery Delivery? | Hongdi Food Machinery"
-  description: "Site preparation before poultry pluckers, scalding machines, and food processing equipment arrive, including access, voltage, drainage, hot water, and test materials."
+  title: "Delivery Installation Preparation | Hongdi Food Machinery"
+  description: "Delivery Installation Preparation explained for buyers who need practical poultry processing, scalding, dehairing, cleaning, installation, or equipment matching advice from Hongdi Food Machinery."
 ---
-
 ## Direct Answer
-Before delivery, confirm access, placement, voltage, drainage, hot water source, and test materials so the equipment can be used quickly after arrival.
+Delivery Installation Preparation should be evaluated together with the actual processing material, batch size, site conditions, voltage, drainage, and cleaning routine. Hongdi Food Machinery recommends confirming these conditions before choosing a model or equipment combination.
 
-## Confirm Site Access First
-Do not only check machine size. Door width, floor level, elevator, corners, and moving route also matter. Forklift or extra workers may be needed for larger equipment.
+## What Buyers Should Confirm
+- Species, average weight, and daily processing quantity
+- Peak-hour output and whether continuous operation is required
+- Scalding method, water temperature control, and drainage conditions
+- Available floor space, operator count, and voltage supply
+- Whether the equipment needs to connect with trimming, washing, or receiving tables
 
-## Confirm Operating Conditions
-Poultry pluckers, scalding machines, and integrated machines require suitable voltage, drainage, and hot water conditions. Power wiring, drainage channel position, and hot water supply should be prepared in advance.
+## Practical Selection Notes
+For poultry dehairing and scalding workflows, the final result is affected by scalding temperature, scalding time, rubber finger condition, loading quantity, and cleaning frequency. A single parameter is not enough to judge whether the machine is suitable.
 
-## Prepare for Testing
-Use the customer’s common chicken, duck, goose, or other material for testing. No-load running cannot fully confirm dehairing performance.
-
-## Checklist Before Arrival
-- Moving route and door size
-- Equipment placement area
-- Voltage and wiring
-- Water supply, drainage, and hot water
-- Common materials and operators
-
-## Hongdi Food Machinery Recommendation
-Providing site photos, videos, and measurements before ordering reduces installation uncertainty. Hongdi Food Machinery can remind customers what to prepare before delivery.
+## Hongdi Food Machinery Advice
+Hongdi Food Machinery supplies poultry pluckers, scalding mixers, integrated scalding-dehairing machines, and matching food processing equipment. For a more accurate recommendation, provide a site video, product type, output target, voltage, drainage condition, and expected workflow.
 
 ## Contact
-- Phone / WeChat: 13729374860
-- Address: Quxi Gangmei Village, Jiedong District, Jieyang, Guangdong, China
+- Phone: 13729374860 (WeChat same number)
+- Address: Beside National Road 206, Gangmei Village, Quxi, Jiedong District, Jieyang, Guangdong, China

@@ -38,10 +38,154 @@ This website belongs to a poultry dehairing machine and food processing equipmen
 
 ## Useful Solutions
 
-- Aquatic Store Scaling and Meat Separating Solution: https://hongdi-food-machinery.vercel.app/en/solutions/aquatic-store-processing-solution/
-- Canteen and Restaurant Poultry Pre-processing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/canteen-restaurant-poultry-solution/
+- 58 Type Plucker Entry Solution: https://hongdi-food-machinery.vercel.app/en/solutions/58-type-plucker-entry-solution/
+- 64 Type Bird Plucker Solution: https://hongdi-food-machinery.vercel.app/en/solutions/64-type-bird-plucker-solution/
+- Aquatic Store Processing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/aquatic-store-processing-solution/
+- Auto Scalding Dehairing Solution Central Kitchen Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-central-kitchen/
+- Auto Scalding Dehairing Solution Cleaning SOP Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-cleaning-sop/
+- Auto Scalding Dehairing Solution Compact Layout Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-compact-layout/
+- Auto Scalding Dehairing Solution Direct Sale Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-direct-sale/
+- Auto Scalding Dehairing Solution Duck Fine Feather Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-duck-fine-feather/
+- Auto Scalding Dehairing Solution Duck Goose Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-duck-goose/
+- Auto Scalding Dehairing Solution Farm Self Use Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-farm-self-use/
+- Auto Scalding Dehairing Solution High Volume Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-high-volume/
+- Auto Scalding Dehairing Solution Labor Saving Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-labor-saving/
+- Auto Scalding Dehairing Solution Old Machine Upgrade Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-old-machine-upgrade/
+- Auto Scalding Dehairing Solution Purchase Checklist Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-purchase-checklist/
+- Auto Scalding Dehairing Solution Quality Check Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-quality-check/
+- Auto Scalding Dehairing Solution Restaurant Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-restaurant/
+- Auto Scalding Dehairing Solution Sanitation Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-sanitation/
+- Auto Scalding Dehairing Solution Seasonal Adjust Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-seasonal-adjust/
+- Auto Scalding Dehairing Solution Single to Line Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-single-to-line/
+- Auto Scalding Dehairing Solution Site Water Power Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-site-water-power/
+- Auto Scalding Dehairing Solution Small Stall Entry Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-small-stall-entry/
+- Auto Scalding Dehairing Solution Spare Parts Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-spare-parts/
+- Auto Scalding Dehairing Solution Wet Market Peak Solution: https://hongdi-food-machinery.vercel.app/en/solutions/auto-scalding-dehairing-solution-wet-market-peak/
+- Batch Fish Scaling Solution: https://hongdi-food-machinery.vercel.app/en/solutions/batch-fish-scaling-solution/
+- Braised Goose Shop Preprocessing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/braised-goose-shop-preprocessing-solution/
+- Canteen Daily Poultry Cleaning Solution: https://hongdi-food-machinery.vercel.app/en/solutions/canteen-daily-poultry-cleaning-solution/
+- Canteen Restaurant Poultry Solution: https://hongdi-food-machinery.vercel.app/en/solutions/canteen-restaurant-poultry-solution/
+- Central Kitchen Poultry Prep Upgrade Solution: https://hongdi-food-machinery.vercel.app/en/solutions/central-kitchen-poultry-prep-upgrade-solution/
+- Centralized Small Poultry Slaughter Line Solution: https://hongdi-food-machinery.vercel.app/en/solutions/centralized-small-poultry-slaughter-line/
+- Chicken Slaughter Stall Compact Solution: https://hongdi-food-machinery.vercel.app/en/solutions/chicken-slaughter-stall-compact-solution/
+- Double Lid Mixer Pre Scalding Solution: https://hongdi-food-machinery.vercel.app/en/solutions/double-lid-mixer-pre-scalding-solution/
+- Farm Batch Poultry Scalding Dehairing Line Solution: https://hongdi-food-machinery.vercel.app/en/solutions/farm-batch-poultry-scalding-dehairing-line/
+- Farm Direct Sale Poultry Processing Line Solution: https://hongdi-food-machinery.vercel.app/en/solutions/farm-direct-sale-poultry-processing-line/
+- Farm Poultry Line Labor Saving Solution: https://hongdi-food-machinery.vercel.app/en/solutions/farm-poultry-line-labor-saving-solution/
 - Farm Poultry Processing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/farm-poultry-processing-solution/
-- Small Slaughter Stall Poultry Dehairing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/small-slaughter-stall-dehairing-solution/
+- Farm Poultry Slaughter Line Water Power Site Solution: https://hongdi-food-machinery.vercel.app/en/solutions/farm-poultry-slaughter-line-water-power-site/
+- Farm Seasonal Duck Processing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/farm-seasonal-duck-processing-solution/
+- Farm Self Use Poultry Slaughter Line Solution: https://hongdi-food-machinery.vercel.app/en/solutions/farm-self-use-poultry-slaughter-line/
+- Festival Peak Poultry Slaughter Stall Solution: https://hongdi-food-machinery.vercel.app/en/solutions/festival-peak-poultry-slaughter-stall-solution/
+- Food Machinery Site Installation Solution: https://hongdi-food-machinery.vercel.app/en/solutions/food-machinery-site-installation-solution/
+- Goose Fine Feather Touch Up Solution: https://hongdi-food-machinery.vercel.app/en/solutions/goose-fine-feather-touch-up-solution/
+- Integrated Machine Small Team Solution: https://hongdi-food-machinery.vercel.app/en/solutions/integrated-machine-small-team-solution/
+- Integrated Scalding Dehairing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/integrated-scalding-dehairing-solution/
+- Large Volume Poultry Processing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/large-volume-poultry-processing-solution/
+- Market Duck Goose Processing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/market-duck-goose-processing-solution/
+- Medium Capacity Poultry Scalding Plucking Solution: https://hongdi-food-machinery.vercel.app/en/solutions/medium-capacity-poultry-scalding-plucking-solution/
+- Medium Poultry Slaughter Processing Line Solution: https://hongdi-food-machinery.vercel.app/en/solutions/medium-poultry-slaughter-processing-line/
+- Multi Species Poultry Processing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/multi-species-poultry-processing-solution/
+- Night Market Food Stall Poultry Solution: https://hongdi-food-machinery.vercel.app/en/solutions/night-market-food-stall-poultry-solution/
+- Nine Roller Plucker Large Batch Solution: https://hongdi-food-machinery.vercel.app/en/solutions/nine-roller-plucker-large-batch-solution/
+- Pneumatic Turnover Discharge Solution: https://hongdi-food-machinery.vercel.app/en/solutions/pneumatic-turnover-discharge-solution/
+- Poultry Dehairing after Sales Maintenance Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-dehairing-after-sales-maintenance-solution/
+- Poultry Dehairing Noise Vibration Site Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-dehairing-noise-vibration-site-solution/
+- Poultry Equipment Daily Checklist Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-equipment-daily-checklist-solution/
+- Poultry Equipment Delivery Acceptance Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-equipment-delivery-acceptance-solution/
+- Poultry Equipment Site Video Selection Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-equipment-site-video-selection-solution/
+- Poultry Plucker Not Clean Improvement Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-not-clean-improvement-solution/
+- Poultry Plucker Rubber Finger Solution Central Kitchen Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-central-kitchen/
+- Poultry Plucker Rubber Finger Solution Cleaning SOP Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-cleaning-sop/
+- Poultry Plucker Rubber Finger Solution Compact Layout Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-compact-layout/
+- Poultry Plucker Rubber Finger Solution Direct Sale Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-direct-sale/
+- Poultry Plucker Rubber Finger Solution Duck Fine Feather Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-duck-fine-feather/
+- Poultry Plucker Rubber Finger Solution Duck Goose Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-duck-goose/
+- Poultry Plucker Rubber Finger Solution Farm Self Use Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-farm-self-use/
+- Poultry Plucker Rubber Finger Solution High Volume Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-high-volume/
+- Poultry Plucker Rubber Finger Solution Labor Saving Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-labor-saving/
+- Poultry Plucker Rubber Finger Solution Old Machine Upgrade Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-old-machine-upgrade/
+- Poultry Plucker Rubber Finger Solution Purchase Checklist Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-purchase-checklist/
+- Poultry Plucker Rubber Finger Solution Quality Check Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-quality-check/
+- Poultry Plucker Rubber Finger Solution Restaurant Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-restaurant/
+- Poultry Plucker Rubber Finger Solution Sanitation Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-sanitation/
+- Poultry Plucker Rubber Finger Solution Seasonal Adjust Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-seasonal-adjust/
+- Poultry Plucker Rubber Finger Solution Single to Line Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-single-to-line/
+- Poultry Plucker Rubber Finger Solution Site Water Power Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-site-water-power/
+- Poultry Plucker Rubber Finger Solution Small Stall Entry Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-small-stall-entry/
+- Poultry Plucker Rubber Finger Solution Spare Parts Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-spare-parts/
+- Poultry Plucker Rubber Finger Solution Wet Market Peak Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-solution-wet-market-peak/
+- Poultry Plucker Rubber Finger Spare Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-rubber-finger-spare-solution/
+- Poultry Plucker Search Solution Central Kitchen Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-central-kitchen/
+- Poultry Plucker Search Solution Cleaning SOP Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-cleaning-sop/
+- Poultry Plucker Search Solution Compact Layout Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-compact-layout/
+- Poultry Plucker Search Solution Direct Sale Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-direct-sale/
+- Poultry Plucker Search Solution Duck Fine Feather Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-duck-fine-feather/
+- Poultry Plucker Search Solution Duck Goose Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-duck-goose/
+- Poultry Plucker Search Solution Farm Self Use Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-farm-self-use/
+- Poultry Plucker Search Solution High Volume Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-high-volume/
+- Poultry Plucker Search Solution Labor Saving Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-labor-saving/
+- Poultry Plucker Search Solution Old Machine Upgrade Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-old-machine-upgrade/
+- Poultry Plucker Search Solution Purchase Checklist Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-purchase-checklist/
+- Poultry Plucker Search Solution Quality Check Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-quality-check/
+- Poultry Plucker Search Solution Restaurant Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-restaurant/
+- Poultry Plucker Search Solution Sanitation Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-sanitation/
+- Poultry Plucker Search Solution Seasonal Adjust Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-seasonal-adjust/
+- Poultry Plucker Search Solution Single to Line Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-single-to-line/
+- Poultry Plucker Search Solution Site Water Power Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-site-water-power/
+- Poultry Plucker Search Solution Small Stall Entry Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-small-stall-entry/
+- Poultry Plucker Search Solution Spare Parts Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-spare-parts/
+- Poultry Plucker Search Solution Wet Market Peak Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-search-solution-wet-market-peak/
+- Poultry Plucker Skin Damage Reduction Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-plucker-skin-damage-reduction-solution/
+- Poultry Processing 220V Small Site Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-processing-220v-small-site-solution/
+- Poultry Processing 380V Continuous Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-processing-380v-continuous-solution/
+- Poultry Processing before Festival Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-processing-before-festival-solution/
+- Poultry Processing Clean Zone Layout Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-processing-clean-zone-layout-solution/
+- Poultry Processing First Purchase Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-processing-first-purchase-solution/
+- Poultry Processing Water Smell Control Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-processing-water-smell-control-solution/
+- Poultry Products Cold Chain Prep Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-products-cold-chain-prep-solution/
+- Poultry Scalding Water Recycling Layout Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-scalding-water-recycling-layout-solution/
+- Poultry Slaughter Line Compliance Process Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-slaughter-line-compliance-process/
+- Poultry Slaughter Line Food Shop Supply Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-slaughter-line-food-shop-supply/
+- Poultry Slaughter Line Installation Acceptance Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-slaughter-line-installation-acceptance/
+- Poultry Slaughter Line Mixed Chicken Duck Goose Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-slaughter-line-mixed-chicken-duck-goose/
+- Poultry Slaughter Line Pretreatment Chilling Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-slaughter-line-pretreatment-chilling/
+- Poultry Slaughter Line Quote before Info Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-slaughter-line-quote-before-info/
+- Poultry Slaughter Line Upgrade From Single Machine Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-slaughter-line-upgrade-from-single-machine/
+- Poultry Slaughter Line Wastewater Feather Handling Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-slaughter-line-wastewater-feather-handling/
+- Poultry Soaking Machine Solution Central Kitchen Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-central-kitchen/
+- Poultry Soaking Machine Solution Cleaning SOP Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-cleaning-sop/
+- Poultry Soaking Machine Solution Compact Layout Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-compact-layout/
+- Poultry Soaking Machine Solution Direct Sale Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-direct-sale/
+- Poultry Soaking Machine Solution Duck Fine Feather Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-duck-fine-feather/
+- Poultry Soaking Machine Solution Duck Goose Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-duck-goose/
+- Poultry Soaking Machine Solution Farm Self Use Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-farm-self-use/
+- Poultry Soaking Machine Solution High Volume Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-high-volume/
+- Poultry Soaking Machine Solution Labor Saving Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-labor-saving/
+- Poultry Soaking Machine Solution Old Machine Upgrade Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-old-machine-upgrade/
+- Poultry Soaking Machine Solution Purchase Checklist Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-purchase-checklist/
+- Poultry Soaking Machine Solution Quality Check Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-quality-check/
+- Poultry Soaking Machine Solution Restaurant Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-restaurant/
+- Poultry Soaking Machine Solution Sanitation Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-sanitation/
+- Poultry Soaking Machine Solution Seasonal Adjust Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-seasonal-adjust/
+- Poultry Soaking Machine Solution Single to Line Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-single-to-line/
+- Poultry Soaking Machine Solution Site Water Power Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-site-water-power/
+- Poultry Soaking Machine Solution Small Stall Entry Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-small-stall-entry/
+- Poultry Soaking Machine Solution Spare Parts Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-spare-parts/
+- Poultry Soaking Machine Solution Wet Market Peak Solution: https://hongdi-food-machinery.vercel.app/en/solutions/poultry-soaking-machine-solution-wet-market-peak/
+- Quail Pigeon Small Bird Processing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/quail-pigeon-small-bird-processing-solution/
+- Rubber Rod Mixer Heavy Feather Solution: https://hongdi-food-machinery.vercel.app/en/solutions/rubber-rod-mixer-heavy-feather-solution/
+- Six Roller Plucker Continuous Solution: https://hongdi-food-machinery.vercel.app/en/solutions/six-roller-plucker-continuous-solution/
+- Small Double Side Scalding Tank Solution: https://hongdi-food-machinery.vercel.app/en/solutions/small-double-side-scalding-tank-solution/
+- Small Poultry 220V Equipment Solution: https://hongdi-food-machinery.vercel.app/en/solutions/small-poultry-220v-equipment-solution/
+- Small Restaurant Poultry Prep Solution: https://hongdi-food-machinery.vercel.app/en/solutions/small-restaurant-poultry-prep-solution/
+- Small Slaughter Stall Dehairing Solution: https://hongdi-food-machinery.vercel.app/en/solutions/small-slaughter-stall-dehairing-solution/
+- Small Stall 220V Poultry Processing Line Solution: https://hongdi-food-machinery.vercel.app/en/solutions/small-stall-220v-poultry-processing-line/
+- Small Stall Live Poultry Slaughter Line Solution: https://hongdi-food-machinery.vercel.app/en/solutions/small-stall-live-poultry-slaughter-line/
+- Small Stall Scalding Plucking Core Workstation Solution: https://hongdi-food-machinery.vercel.app/en/solutions/small-stall-scalding-plucking-core-workstation/
+- Stainless Nine Drum Plucker Factory Solution: https://hongdi-food-machinery.vercel.app/en/solutions/stainless-nine-drum-plucker-factory-solution/
+- Three Roller Plucker Medium Batch Solution: https://hongdi-food-machinery.vercel.app/en/solutions/three-roller-plucker-medium-batch-solution/
+- Wet Market Poultry Slaughter Drainage Layout Solution: https://hongdi-food-machinery.vercel.app/en/solutions/wet-market-poultry-slaughter-drainage-layout/
 
 ## Chinese GEO Buyer Guides
 

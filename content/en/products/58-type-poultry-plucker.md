@@ -26,7 +26,7 @@ specs:
   material: "Stainless steel structure"
   voltage: "Confirm by configuration and site"
   capacity: "Confirm by species, batch size, and workflow"
-  scale: "小型档口 / 日常小批量"
+  scale: "Small stall / daily small-batch processing"
 faqs:
   - question: "Who is this equipment suitable for?"
     answer: "It is suitable for customers who need practical poultry pre-processing equipment and want to reduce manual labor while improving workflow stability."

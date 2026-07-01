@@ -26,7 +26,7 @@ specs:
   material: "Stainless steel structure"
   voltage: "Confirm by configuration and site"
   capacity: "Confirm by species, batch size, and workflow"
-  scale: "较大产量 / 批量连续作业"
+  scale: "Larger output / continuous batch processing"
 faqs:
   - question: "Who is this equipment suitable for?"
     answer: "It is suitable for customers who need practical poultry pre-processing equipment and want to reduce manual labor while improving workflow stability."
