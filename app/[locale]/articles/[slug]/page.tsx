@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { BrandConsultation, RelatedLinks, Section } from '@/components/DetailBlocks';
 import { PageShell } from '@/components/PageShell';
 import { SchemaJsonLd } from '@/components/SchemaJsonLd';
-import { getContentItem, getContentItems, getContentSlugs, getSiteConfig } from '@/lib/content';
+import { getContentItem, getContentItems, getContentSlugs, getSiteConfig, isCanonicalContent } from '@/lib/content';
 import { itemMetadata } from '@/lib/seo';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
 import type { Locale } from '@/lib/types';
@@ -28,12 +29,19 @@ export default async function ArticlePage({ params }: { params: { locale: Locale
 
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/articles/${params.slug}`}>
-      <SchemaJsonLd data={articleSchema(params.locale, item)} />
+      {isCanonicalContent(params.locale, 'articles', item.slug) ? <SchemaJsonLd data={articleSchema(params.locale, item)} /> : null}
       <SchemaJsonLd data={breadcrumbSchema(params.locale, [{ name: site.nav.articles, path: '/articles' }, { name: item.title, path: `/articles/${item.slug}` }])} />
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.articles, href: `/${params.locale}/articles` }, { label: item.title, href: `/${params.locale}/articles/${item.slug}` }]} />
       <article className="mx-auto max-w-4xl px-4 py-8 md:px-6">
         <h1 className="text-3xl font-bold text-industrial-navy">{item.title}</h1>
-        <p className="mt-3 text-sm text-industrial-steel">{item.date} / {item.updated}</p>
+        <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm text-industrial-steel">
+          <span>
+            {params.locale === 'zh' ? '内容发布：' : 'Published by: '}
+            <Link href={`/${params.locale}/about`} className="font-semibold text-industrial-blue underline decoration-industrial-blue/25 underline-offset-4">{site.name}</Link>
+          </span>
+          {item.date ? <span>{params.locale === 'zh' ? '发布日期：' : 'Published: '}<time dateTime={item.date}>{item.date}</time></span> : null}
+          {item.updated ? <span>{params.locale === 'zh' ? '更新日期：' : 'Updated: '}<time dateTime={item.updated}>{item.updated}</time></span> : null}
+        </div>
         <p className="mt-4 text-lg leading-8 text-slate-700">{item.description}</p>
         <div className="content mt-8 rounded border border-slate-200 bg-white p-6" dangerouslySetInnerHTML={{ __html: item.bodyHtml }} />
         <RelatedLinks locale={params.locale} title={params.locale === 'zh' ? '关联产品' : 'Related Products'} section="products" slugs={item.relatedProducts} items={products} />

@@ -4,7 +4,7 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 import { BrandConsultation, FAQBlock, RelatedLinks, Section } from '@/components/DetailBlocks';
 import { PageShell } from '@/components/PageShell';
 import { SchemaJsonLd } from '@/components/SchemaJsonLd';
-import { getContentItem, getContentItems, getContentSlugs, getSiteConfig } from '@/lib/content';
+import { getContentItem, getContentItems, getContentSlugs, getSiteConfig, isCanonicalContent } from '@/lib/content';
 import { itemMetadata } from '@/lib/seo';
 import { breadcrumbSchema, faqPageSchema, solutionSchema } from '@/lib/schema';
 import type { Locale, SolutionCapacityOption, SolutionEquipmentRole } from '@/lib/types';
@@ -33,8 +33,8 @@ export default async function SolutionDetailPage({ params }: { params: { locale:
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/solutions/${params.slug}`}>
       <SchemaJsonLd data={breadcrumbSchema(params.locale, [{ name: site.nav.solutions, path: '/solutions' }, { name: item.title, path: `/solutions/${item.slug}` }])} />
-      <SchemaJsonLd data={solutionSchema(params.locale, item)} />
-      {item.faqs?.length ? <SchemaJsonLd data={faqPageSchema(item.faqs)} /> : null}
+      {isCanonicalContent(params.locale, 'solutions', item.slug) ? <SchemaJsonLd data={solutionSchema(params.locale, item)} /> : null}
+      {isCanonicalContent(params.locale, 'solutions', item.slug) && item.faqs?.length ? <SchemaJsonLd data={faqPageSchema(item.faqs)} /> : null}
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.solutions, href: `/${params.locale}/solutions` }, { label: item.title, href: `/${params.locale}/solutions/${item.slug}` }]} />
       <article className="mx-auto max-w-5xl px-4 py-8 md:px-6">
         {item.solutionCategory ? <p className="text-sm font-bold text-industrial-orange">{item.solutionCategory}</p> : null}

@@ -58,7 +58,11 @@ export function Footer({ locale, site }: { locale: Locale; site: SiteConfig }) {
 
         <div className="flex flex-col gap-3 pt-6 text-xs font-semibold text-slate-500 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} {site.name}. {zh ? '食品机械设备制造与选型服务。' : 'Food machinery manufacturing and equipment selection service.'}</p>
-          <p className="tracking-[0.14em] text-slate-600">HONGDI FOOD MACHINERY</p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <Link href={`/${locale}/privacy`} className="transition hover:text-[#ff941f]">{zh ? '隐私政策' : 'Privacy Policy'}</Link>
+            <Link href={`/${locale}/terms`} className="transition hover:text-[#ff941f]">{zh ? '使用条款' : 'Terms of Use'}</Link>
+            <span className="tracking-[0.14em] text-slate-600">HONGDI FOOD MACHINERY</span>
+          </div>
         </div>
       </div>
     </footer>
@@ -76,10 +80,11 @@ function FooterGroup({ title, children }: { title: string; children: ReactNode }
 }
 
 function FooterContact({ label, value }: { label: string; value: string }) {
+  const isPhone = /^\d{11}/.test(value);
   return (
     <div className="grid grid-cols-[3.5rem_1fr] gap-3 border-b border-white/8 pb-3 last:border-b-0">
       <span className="font-black text-[#dca35f]">{label}</span>
-      <span>{value}</span>
+      {isPhone ? <a href={`tel:${value.slice(0, 11)}`} className="transition hover:text-[#ffb25e]">{value}</a> : <span>{value}</span>}
     </div>
   );
 }

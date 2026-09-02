@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hongdi-food-machinery.vercel.app/sitemap.xml
+Sitemap: https://hd.hong1234.com/sitemap.xml

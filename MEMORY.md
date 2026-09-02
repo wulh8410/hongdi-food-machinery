@@ -247,3 +247,32 @@
 - 升级前页面截图保存在 `docs/qa/third-round-baseline-20260825/`，使用统一桌面视口保存中英文各 11 种页面模板，共 22 张全页截图；后续第三轮视觉改版以此作为前后对照基线。
 - 当前双语内容规模为：产品各 11 个、文章各 306 篇、FAQ 各 451 个、解决方案各 148 个；产品清单以 `docs/洪弟食品机械产品列表资料.md` 为准。
 - 第三轮升级前 Git 备份备注为 `第三轮迭代升级前备份`。官网仓库只纳入源码、确认文档和对比截图，不把 `produce/`、`img2/`、历史备份、画册草稿或大体积抖音抓取原始数据提交到官网仓库。
+
+## 2026-08-27 本机网站开发环境基线
+
+- 当前电脑为 Windows 11 x64；系统生效的 Node.js 为 `v24.16.0` LTS（Krypton），npm 为 `11.13.0`，Git for Windows 为 `2.54.0.windows.1`。
+- pnpm 已通过 Node 自带 Corepack 固定为 `11.24.0`，用户级持久 shim 位于 `C:\Users\xiang\AppData\Local\Programs\Corepack\bin`，该目录已加入用户 PATH；不要依赖 Codex 内置临时运行时中的 pnpm。
+- 已用干净的机器 PATH + 用户 PATH 验证 Node.js、npm、pnpm、Git 均可调用；npm 仓库访问、pnpm 临时项目安装与依赖加载、Git 本地基础命令均通过。未安装或启用 nvm、fnm、Volta，未修改全局 Git 身份。
+
+## 2026-08-28 品牌深度访谈资料
+
+- 品牌深度访谈原始清单位于 `D:\CodxWork\FoodHomeGEO\洪弟食品机械品牌深度访谈清单.md`，共15个模块、300个问题；该清单用于提问，不是已确认事实来源。
+- 已生成 `D:\CodxWork\FoodHomeGEO\洪弟食品机械品牌深度访谈答复-初稿.md`，将信息分为“已确认、需复核、待确认”三档；后续官网、画册和GEO内容不得把“需复核”或“待确认”内容改写成确定事实。
+
+## 2026-09-02 线上 GEO 审计核验
+
+- 线上 `https://hd.hong1234.com/zh/` 返回的是完整静态 HTML：约 106 KB，去除标签和脚本后仍有约 2200 个可见中文字符；AITDK 报告中的“仅46词、正文依赖 JavaScript”属于中文分词或检测方式误判，不应据此重构渲染架构。
+- 当前真实高优先级问题是 `data/site.zh.json` 和 `data/site.en.json` 的 `baseUrl` 仍为旧 Vercel 域名，导致 canonical、hreflang、Open Graph、Organization/Product/Article/Service URL、sitemap、robots 和 llms.txt 继续指向 `hongdi-food-machinery.vercel.app`，应统一切换到 `https://hd.hong1234.com`。
+- 当前双语 hreflang 缺少 `x-default`；首页只有 Organization Schema，适合补 WebSite Schema，但不要为了审计分数在首页错误添加 Article Schema。文章详情页现有 Article Schema 已包含 Organization author、datePublished 和 dateModified。
+- `sameAs` 只能在取得抖音、视频号等账号的准确公开主页 URL 后添加，不能用账号名称或猜测链接代替；首页也不应为了通过“引用”检查堆放无关第三方引用。
+
+## 2026-09-03 GEO/SEO 审查修复
+
+- 正式官网域名统一为 `https://hd.hong1234.com`；canonical、hreflang、Open Graph、Schema、robots、sitemap 和 llms.txt 不再使用旧 Vercel 域。旧 Vercel Host 通过 Vercel 永久重定向回正式域，需部署后生效。
+- 双语根布局按页面输出 `lang=zh-CN` 或 `lang=en`，全站 hreflang 增加 `x-default` 指向中文首页；中文、英文隐私政策与使用条款已加入页脚。
+- 首页使用 Organization + WebSite Schema；文章使用 BlogPosting 并显示发布机构、发布日期和更新日期。`sameAs` 继续等待可核验的抖音/视频号公开主页 URL，不允许猜测。
+- 新增 `scripts/generate-content-quality-map.mjs` 和 `data/content-quality.json`：只合并标题相同或仅带“二次确认/现场判断”等后缀且内容相同的确定重复页；重复页保留访问但使用 `noindex, follow` 与 canonical，并从列表、sitemap、llms.txt 排除。
+- 本轮识别并排除索引的确定重复页为中文文章 92 个、中文 FAQ 118 个；英文内容仍有模板相似性，不能继续通过批量扩页增加数量，应按真实产品、现场和客户资料分批重写。
+- 完整修复与验证清单保存于 `docs/qa/geo-audit-remediation-20260903.md`。
+- 本轮 `tsc`、Lint、完整构建和全站导出扫描均通过，1854 个静态页面生成成功；当前仅完成本地代码与预览验证，尚未提交 Git、推送或部署。
+- 发布前可在完整构建后运行 `npm run verify:geo`，自动检查 canonical、hreflang、语言、重复页 noindex、JSON-LD 和索引文件，避免重复人工核验。

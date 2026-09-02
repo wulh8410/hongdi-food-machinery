@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import type { ContentItem, Locale } from './types';
-import { absoluteUrl, getSiteConfig, pagePath } from './content';
+import type { ContentItem, ContentKind, Locale } from './types';
+import { absoluteUrl, getCanonicalContentSlug, getSiteConfig, pagePath } from './content';
 
 export function localizedMetadata({
   locale,
@@ -27,7 +27,8 @@ export function localizedMetadata({
       canonical: absoluteUrl(locale, samePath),
       languages: {
         [locale === 'zh' ? 'zh-CN' : 'en']: absoluteUrl(locale, samePath),
-        [other === 'zh' ? 'zh-CN' : 'en']: absoluteUrl(other, samePath)
+        [other === 'zh' ? 'zh-CN' : 'en']: absoluteUrl(other, samePath),
+        'x-default': `${site.baseUrl}/zh/`
       }
     },
     openGraph: {
@@ -41,14 +42,19 @@ export function localizedMetadata({
   };
 }
 
-export function itemMetadata(locale: Locale, section: string, item: ContentItem): Metadata {
+export function itemMetadata(locale: Locale, section: ContentKind, item: ContentItem): Metadata {
   const site = getSiteConfig(locale);
-  const path = pagePath(locale, `/${section}/${item.slug}`);
-  return localizedMetadata({
+  const canonicalSlug = getCanonicalContentSlug(locale, section, item.slug);
+  const path = pagePath(locale, `/${section}/${canonicalSlug}`);
+  const metadata = localizedMetadata({
     locale,
     path,
     title: item.seo?.title ?? `${item.title} | ${site.name}`,
     description: item.seo?.description ?? item.description,
     keywords: item.seo?.keywords ?? item.keywords ?? site.keywords
   });
+
+  return canonicalSlug === item.slug
+    ? metadata
+    : { ...metadata, robots: { index: false, follow: true } };
 }

@@ -4,7 +4,7 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 import { BrandConsultation, RelatedLinks, Section } from '@/components/DetailBlocks';
 import { PageShell } from '@/components/PageShell';
 import { SchemaJsonLd } from '@/components/SchemaJsonLd';
-import { getContentItem, getContentItems, getContentSlugs, getSiteConfig } from '@/lib/content';
+import { getContentItem, getContentItems, getContentSlugs, getSiteConfig, isCanonicalContent } from '@/lib/content';
 import { itemMetadata } from '@/lib/seo';
 import { breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 import type { Locale } from '@/lib/types';
@@ -34,7 +34,7 @@ export default async function FAQDetailPage({ params }: { params: { locale: Loca
 
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/faqs/${params.slug}`}>
-      <SchemaJsonLd data={faqPageSchema([{ question: q, answer: a }])} />
+      {isCanonicalContent(params.locale, 'faqs', item.slug) ? <SchemaJsonLd data={faqPageSchema([{ question: q, answer: a }])} /> : null}
       <SchemaJsonLd data={breadcrumbSchema(params.locale, [{ name: site.nav.faqs, path: '/faqs' }, { name: item.title, path: `/faqs/${item.slug}` }])} />
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.faqs, href: `/${params.locale}/faqs` }, { label: item.title, href: `/${params.locale}/faqs/${item.slug}` }]} />
       <article className="mx-auto max-w-4xl px-4 py-8 md:px-6">

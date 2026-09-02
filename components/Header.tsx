@@ -16,7 +16,7 @@ export function Header({ locale, site, path }: { locale: Locale; site: SiteConfi
         <Link href={`/${locale}`} className="relative flex min-w-0 shrink items-center gap-3 bg-white px-3 py-2 text-[#08233d] sm:min-w-[292px] sm:px-5" aria-label={site.name}>
           <span className="absolute -right-7 inset-y-0 hidden w-8 bg-white [clip-path:polygon(0_0,100%_0,34%_100%,0_100%)] sm:block" />
           <span className="relative h-11 w-11 shrink-0 overflow-hidden">
-            <Image src={assetPath('/images/factory/hongdi-logo-icon.png')} alt="" fill priority className="object-contain" sizes="44px" />
+            <Image src={assetPath('/images/factory/hongdi-logo-icon.png')} alt={`${site.name} Logo`} fill priority className="object-contain" sizes="44px" />
           </span>
           <span className="min-w-0">
             <span className="block truncate text-lg font-black tracking-[0.02em] sm:text-xl">{site.shortName}</span>
@@ -43,9 +43,31 @@ export function Header({ locale, site, path }: { locale: Locale; site: SiteConfi
           <LanguageSwitcher locale={locale} path={path} />
         </div>
 
-        <Link href={`/${targetLocale}${cleanPath}`} className="shrink-0 border border-white/30 px-3 py-2 text-xs font-black text-white lg:hidden">
-          {locale === 'zh' ? 'English' : '中文'}
-        </Link>
+        <details className="group relative shrink-0 lg:hidden">
+          <summary className="flex h-11 w-11 cursor-pointer list-none items-center justify-center border border-white/30 text-white [&::-webkit-details-marker]:hidden" aria-label={locale === 'zh' ? '打开网站导航' : 'Open site navigation'}>
+            <span className="grid w-5 gap-1.5" aria-hidden="true">
+              <span className="h-0.5 bg-current" />
+              <span className="h-0.5 bg-current" />
+              <span className="h-0.5 bg-current" />
+            </span>
+          </summary>
+          <div className="absolute right-0 top-[calc(100%+0.75rem)] z-50 w-[min(19rem,calc(100vw-2rem))] border border-white/15 bg-[#071a2c] p-3 shadow-2xl">
+            <nav className="grid" aria-label={locale === 'zh' ? '移动端导航' : 'Mobile navigation'}>
+              <Link href={`/${locale}`} className="border-b border-white/10 px-4 py-3 text-sm font-bold text-white">{site.nav.home}</Link>
+              {navKeys.map((key) => (
+                <Link key={key} href={`/${locale}/${key}`} className="border-b border-white/10 px-4 py-3 text-sm font-bold text-slate-200 transition hover:bg-white/5 hover:text-[#ffb25e]">
+                  {site.nav[key]}
+                </Link>
+              ))}
+              <a href={`tel:${site.phone}`} className="mt-2 px-4 py-3 text-sm font-black text-[#ffb25e]">
+                {locale === 'zh' ? `电话咨询 ${site.phone}` : `Call ${site.phone}`}
+              </a>
+              <Link href={`/${targetLocale}${cleanPath}`} className="mx-4 mb-2 mt-1 border border-white/25 px-3 py-2 text-center text-xs font-black text-white">
+                {locale === 'zh' ? 'English' : '中文'}
+              </Link>
+            </nav>
+          </div>
+        </details>
       </div>
     </header>
   );

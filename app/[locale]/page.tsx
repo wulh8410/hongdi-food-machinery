@@ -5,7 +5,7 @@ import { PageShell } from '@/components/PageShell';
 import { SchemaJsonLd } from '@/components/SchemaJsonLd';
 import { assetPath } from '@/lib/asset';
 import { getContentItems, getSiteConfig } from '@/lib/content';
-import { organizationSchema } from '@/lib/schema';
+import { organizationSchema, websiteSchema } from '@/lib/schema';
 import { localizedMetadata } from '@/lib/seo';
 import type { ContentItem, Locale } from '@/lib/types';
 
@@ -61,6 +61,7 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
   return (
     <PageShell locale={locale} path={`/${locale}`}>
       <SchemaJsonLd data={organizationSchema(locale)} />
+      <SchemaJsonLd data={websiteSchema(locale)} />
       <div className="bg-[#f3f1ec] text-[#081d32]">
         <Hero locale={locale} />
         <TrustSection locale={locale} />
@@ -112,15 +113,15 @@ function Hero({ locale }: { locale: Locale }) {
           <h1 className="mt-7 text-[2.5rem] font-black leading-[1.04] tracking-[-0.02em] text-white sm:text-6xl lg:text-[5.4rem]">
             {zh ? (
               <>
-                食品机械设备
+                家禽脱毛机与
                 <br />
-                源头制造商
+                泡水浸烫设备厂家
               </>
             ) : (
               <>
-                Food Machinery
+                Poultry Dehairing
                 <br />
-                Direct Manufacturer
+                Equipment Manufacturer
               </>
             )}
           </h1>
@@ -196,10 +197,10 @@ function TrustSection({ locale }: { locale: Locale }) {
               {items.map(([title, description, image], index) => (
                 <article key={title} className="group relative overflow-hidden border-b border-r border-[#15324c]/15 bg-white/72 p-4 [&:nth-child(2n)]:border-r-0 xl:border-b-0 xl:[&:nth-child(2n)]:border-r xl:last:border-r-0 xl:p-5">
                   <span className="text-xs font-black tracking-[0.16em] text-[#ff7f00]">0{index + 1}</span>
-                  <h3 className="mt-3 text-base font-black text-[#081d32] md:text-xl">{title}</h3>
+                  <p className="mt-3 text-base font-black text-[#081d32] md:text-xl">{title}</p>
                   <p className="mt-2 min-h-[4.5rem] text-xs font-semibold leading-5 text-slate-600 md:min-h-12 md:text-sm md:leading-6">{description}</p>
                   <div className="relative mt-5 aspect-[16/9] overflow-hidden bg-[#d7d9d8]">
-                    <Image src={assetPath(image)} alt="" fill className="object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0" sizes="(max-width: 1280px) 50vw, 25vw" />
+                    <Image src={assetPath(image)} alt={`${title} - ${zh ? '洪弟食品机械设备制造细节' : 'Hongdi Food Machinery manufacturing detail'}`} fill className="object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0" sizes="(max-width: 1280px) 50vw, 25vw" />
                   </div>
                 </article>
               ))}
@@ -232,7 +233,7 @@ function ProductSection({ locale, products }: { locale: Locale; products: Conten
         <div className="flex flex-col gap-6 border-b border-white/15 pb-8 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeading
             overline={zh ? '核心设备' : 'CORE EQUIPMENT'}
-            title={zh ? '三款主推食品机械设备' : 'Three Featured Food Machinery Models'}
+            title={zh ? '家禽脱毛机与泡水浸烫设备' : 'Poultry Dehairing and Scalding Equipment'}
             description={zh ? '集中展示适合家禽泡水、脱毛和前处理的主力设备，方便根据加工方式进行对比。' : 'Compare core machines for poultry scalding, dehairing and pre-processing.'}
           />
           <Link href={`/${locale}/products`} className="industrial-link">
@@ -306,7 +307,7 @@ function SolutionSection({ locale, solutions }: { locale: Locale; solutions: Con
           </div>
 
           <div className="relative min-h-[560px] overflow-hidden border border-white/12 bg-[#061524]">
-            <Image src={assetPath(images.hero)} alt="" fill className="object-cover object-[68%_center] opacity-65" sizes="(max-width: 1280px) 100vw, 55vw" />
+            <Image src={assetPath(images.hero)} alt={zh ? '洪弟食品机械家禽泡水浸烫与脱毛设备配置' : 'Hongdi poultry scalding and dehairing equipment configuration'} fill className="object-cover object-[68%_center] opacity-65" sizes="(max-width: 1280px) 100vw, 55vw" />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,14,25,0.18),rgba(3,14,25,0.92))]" />
             <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
               <p className="text-xs font-black tracking-[0.18em] text-[#ff941f]">{zh ? '推荐配置路径' : 'RECOMMENDED PATH'}</p>
@@ -317,7 +318,7 @@ function SolutionSection({ locale, solutions }: { locale: Locale; solutions: Con
               <div className="mt-6 grid gap-2 sm:grid-cols-3">
                 {[images.scalding, images.integrated, images.mixer].map((image, index) => (
                   <div key={image} className="relative aspect-[16/9] overflow-hidden border border-white/15 bg-black/30">
-                    <Image src={assetPath(image)} alt="" fill className="object-cover" sizes="200px" />
+                    <Image src={assetPath(image)} alt={(zh ? ['泡水浸烫设备', '泡水脱毛一体设备', '家禽泡水搅拌设备'] : ['Poultry scalding equipment', 'Integrated scalding and dehairing equipment', 'Poultry scalding mixer'])[index]} fill className="object-cover" sizes="200px" />
                     <span className="absolute bottom-2 left-2 bg-[#051522]/90 px-2 py-1 text-xs font-black text-[#ffb25e]">0{index + 1}</span>
                   </div>
                 ))}
@@ -332,7 +333,7 @@ function SolutionSection({ locale, solutions }: { locale: Locale; solutions: Con
                 <div key={title} className="grid grid-cols-[3rem_1fr] gap-3 py-5 first:pt-0">
                   <span className="text-2xl font-black text-[#ff941f]">0{index + 1}</span>
                   <div>
-                    <h3 className="font-black text-white">{title}</h3>
+                    <p className="font-black text-white">{title}</p>
                     <p className="mt-2 text-xs font-semibold leading-5 text-slate-400">{description}</p>
                   </div>
                 </div>
@@ -376,7 +377,7 @@ function ProcessSection({ locale }: { locale: Locale }) {
           {steps.map(([number, title, description], index) => (
             <article key={title} className="group relative overflow-hidden border border-[#17314b]/20 bg-white/80 p-3 shadow-[0_18px_40px_rgba(14,33,51,0.08)]">
               <div className="relative aspect-[4/3] overflow-hidden bg-[#cfd2d1]">
-                <Image src={assetPath(stepImages[index])} alt="" fill className="object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0" sizes="(max-width: 1024px) 100vw, 20vw" />
+                <Image src={assetPath(stepImages[index])} alt={`${title} - ${zh ? '洪弟食品机械服务流程' : 'Hongdi Food Machinery service process'}`} fill className="object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0" sizes="(max-width: 1024px) 100vw, 20vw" />
                 <span className="absolute left-0 top-0 bg-[#ff8c16] px-3 py-2 text-lg font-black text-white">{number}</span>
               </div>
               <div className="p-3 pb-4">
@@ -411,7 +412,7 @@ function AdvantagesSection({ locale }: { locale: Locale }) {
     <section className="industrial-grid bg-[#031321] px-5 py-16 text-white md:px-10 lg:px-14 lg:py-24">
       <div className="mx-auto grid max-w-[1460px] overflow-hidden border border-[#cb873e]/45 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="relative min-h-[560px] overflow-hidden">
-          <Image src={assetPath(images.plucker)} alt="" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" />
+          <Image src={assetPath(images.plucker)} alt={zh ? '家禽脱毛机不锈钢结构与脱毛胶棒细节' : 'Poultry dehairing machine stainless structure and rubber finger details'} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_35%,rgba(2,13,23,0.94)_100%)]" />
           <div className="absolute inset-x-0 bottom-0 p-7 md:p-10">
             <p className="text-sm font-black tracking-[0.2em] text-[#ff941f]">{zh ? '设备细节' : 'EQUIPMENT DETAILS'}</p>
@@ -457,7 +458,7 @@ function KnowledgeSection({ locale, faq, articles }: { locale: Locale; faq?: Con
             <h3 className="mt-5 text-3xl font-black leading-tight md:text-4xl">{faq.title}</h3>
             <p className="mt-5 line-clamp-5 text-sm font-semibold leading-7 text-slate-300">{faq.description}</p>
             <div className="relative mt-7 aspect-[16/8] overflow-hidden border border-white/12">
-              <Image src={assetPath(images.integrated)} alt="" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" />
+              <Image src={assetPath(images.integrated)} alt={zh ? '家禽泡水脱毛一体设备' : 'Poultry scalding and dehairing integrated equipment'} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" />
             </div>
             <Link href={`/${locale}/faqs/${faq.slug}`} className="industrial-button industrial-button-primary mt-7">
               {zh ? '查看详细答案' : 'View answer'} <span>→</span>

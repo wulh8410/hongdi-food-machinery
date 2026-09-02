@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/generate-content-quality-map.mjs && node scripts/generate-geo-files.mjs",
     "dev": "next dev",
     "generate:solutions": "node scripts/generate-solution-content.mjs",
-    "prebuild": "node scripts/generate-geo-files.mjs",
+    "prebuild": "node scripts/generate-content-quality-map.mjs && node scripts/generate-geo-files.mjs",
     "build": "next build",
+    "verify:geo": "node scripts/verify-geo-export.mjs",
     "lint": "next lint"
   },
   "dependencies": {

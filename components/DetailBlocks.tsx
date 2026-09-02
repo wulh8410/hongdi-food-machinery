@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { getCanonicalContentSlug } from '@/lib/content';
 import type { ContentItem, Locale } from '@/lib/types';
 
 export function Section({ title, children }: { title: string; children: React.ReactNode }) {
@@ -68,7 +69,8 @@ export function RelatedLinks({
   slugs?: string[];
   items: ContentItem[];
 }) {
-  const related = items.filter((item) => slugs?.includes(item.slug));
+  const canonicalSlugs = new Set(slugs?.map((slug) => getCanonicalContentSlug(locale, section, slug)) ?? []);
+  const related = items.filter((item) => canonicalSlugs.has(item.slug));
   if (!related.length) return null;
   return (
     <Section title={title}>
@@ -119,11 +121,13 @@ export function ContactBlock({
         <div className="grid gap-4 rounded border border-white/15 bg-white/5 p-5 text-sm shadow-sm">
           <div className="grid grid-cols-[4em_1fr] gap-3">
             <p className="text-slate-300">{isZh ? '电话' : 'Phone'}</p>
-            <p className="font-bold">{isZh ? `${phone}\uff08\u5fae\u4fe1\u540c\u53f7\uff09` : `${phone} (same number on WeChat)`}</p>
+            <a href={`tel:${phone}`} className="font-bold text-white underline decoration-white/30 underline-offset-4 hover:text-orange-200">
+              {isZh ? `${phone}\uff08\u5fae\u4fe1\u540c\u53f7\uff09` : `${phone} (same number on WeChat)`}
+            </a>
           </div>
           <div className="grid grid-cols-[4em_1fr] gap-3">
             <p className="text-slate-300">{isZh ? '邮箱' : 'Email'}</p>
-            <p className="font-bold">{email}</p>
+            <a href={`mailto:${email}`} className="font-bold text-white underline decoration-white/30 underline-offset-4 hover:text-orange-200">{email}</a>
           </div>
           {douyinAccounts.length ? (
             <div className="grid grid-cols-[4em_1fr] gap-3">
@@ -179,7 +183,9 @@ export function BrandConsultation({
       <div className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-3">
         <div className="rounded bg-white p-4 ring-1 ring-slate-200">
           <p className="text-slate-500">{isZh ? '电话' : 'Phone'}</p>
-          <p className="mt-1 font-bold text-industrial-navy">{isZh ? `${phone}\uff08\u5fae\u4fe1\u540c\u53f7\uff09` : `${phone} (same number on WeChat)`}</p>
+          <a href={`tel:${phone}`} className="mt-1 inline-block font-bold text-industrial-blue underline decoration-industrial-blue/30 underline-offset-4 hover:text-industrial-orange">
+            {isZh ? `${phone}\uff08\u5fae\u4fe1\u540c\u53f7\uff09` : `${phone} (same number on WeChat)`}
+          </a>
         </div>
         <div className="rounded bg-white p-4 ring-1 ring-slate-200">
           <p className="text-slate-500">{isZh ? '地址' : 'Address'}</p>
