@@ -274,5 +274,12 @@
 - 新增 `scripts/generate-content-quality-map.mjs` 和 `data/content-quality.json`：只合并标题相同或仅带“二次确认/现场判断”等后缀且内容相同的确定重复页；重复页保留访问但使用 `noindex, follow` 与 canonical，并从列表、sitemap、llms.txt 排除。
 - 本轮识别并排除索引的确定重复页为中文文章 92 个、中文 FAQ 118 个；英文内容仍有模板相似性，不能继续通过批量扩页增加数量，应按真实产品、现场和客户资料分批重写。
 - 完整修复与验证清单保存于 `docs/qa/geo-audit-remediation-20260903.md`。
-- 本轮 `tsc`、Lint、完整构建和全站导出扫描均通过，1854 个静态页面生成成功；当前仅完成本地代码与预览验证，尚未提交 Git、推送或部署。
+- 本轮 `tsc`、Lint、完整构建和全站导出扫描均通过，1854 个静态页面生成成功；后续发布结果见 2026-09-04 记录。
 - 发布前可在完整构建后运行 `npm run verify:geo`，自动检查 canonical、hreflang、语言、重复页 noindex、JSON-LD 和索引文件，避免重复人工核验。
+
+## 2026-09-04 GEO/SEO 发布结果
+
+- GEO/SEO 修复功能提交为 `d38b536`，已推送 GitHub；Vercel 生产部署和 GitHub Pages 工作流均成功完成。
+- 正式域线上抽查通过：中英文首页使用 `hd.hong1234.com` canonical，分别输出 `lang=zh-CN` 与 `lang=en`，并包含 `zh-CN`、`en`、`x-default` hreflang；中英文隐私/条款页面可访问。
+- 线上 sitemap 含 1640 个正式域 URL，llms.txt 和 robots.txt 已更新；抽查重复文章正确返回 `noindex, follow` 并指向权威 canonical。
+- 当前本地网络会把旧 `hongdi-food-machinery.vercel.app` 解析到非 Vercel 地址，因此本机不能直接验证旧域 308；Vercel 已确认包含 Host 永久重定向配置的部署成功，后续遇到域名问题时应换网络或使用正常 DNS 再核验响应头。

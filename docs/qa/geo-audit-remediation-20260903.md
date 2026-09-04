@@ -48,10 +48,12 @@
 
 ## 发布状态
 
-- 代码与本地静态导出已验证完成。
-- 本轮尚未提交 Git、推送 GitHub 或部署到线上。
+- 代码已提交并推送 GitHub，功能提交为 `d38b536`（修复官网SEO与GEO审查问题并统一正式域名）。
+- Vercel 生产部署已成功完成，正式站点为 `https://hd.hong1234.com/zh/`；GitHub Pages 工作流也已成功完成。
+- 线上已抽查中英文首页、中文隐私政策、英文使用条款、robots.txt、sitemap.xml、llms.txt 和一个重复文章 URL，状态与本地验证一致。
+- 线上 sitemap 包含 1640 个正式域 URL，不包含旧 Vercel 域和抽查的重复文章 URL；重复文章返回 `noindex, follow` 并指向权威 canonical。
+- 当前网络将 `hongdi-food-machinery.vercel.app` 解析到非 Vercel 地址，无法从本机直接核验旧域 308 响应；Vercel 已确认包含 Host 永久重定向配置的部署成功，后续可在其他网络补一次响应头抽查。
 - 本地预览：`http://localhost:3000/zh/`。
-- Vercel 域名重定向必须随下一次部署才会生效。
 
 ## 参考规则
 
