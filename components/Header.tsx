@@ -9,6 +9,9 @@ const navKeys = ['products', 'solutions', 'faqs', 'articles', 'about', 'contact'
 export function Header({ locale, site, path }: { locale: Locale; site: SiteConfig; path: string }) {
   const targetLocale = locale === 'zh' ? 'en' : 'zh';
   const cleanPath = path.replace(/^\/(zh|en)/, '');
+  const isHomeActive = cleanPath === '' || cleanPath === '/';
+  const isNavActive = (key: (typeof navKeys)[number]) =>
+    cleanPath === `/${key}` || cleanPath.startsWith(`/${key}/`);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#041426] text-white shadow-[0_12px_32px_rgba(0,0,0,0.2)]">
@@ -27,12 +30,31 @@ export function Header({ locale, site, path }: { locale: Locale; site: SiteConfi
         </Link>
 
         <nav className="hidden min-w-0 flex-1 items-center justify-end gap-0.5 whitespace-nowrap text-sm font-bold lg:flex">
-          <Link href={`/${locale}`} className="border-b-2 border-[#ff941f] px-3 py-6 text-white">{site.nav.home}</Link>
-          {navKeys.map((key) => (
-            <Link key={key} href={`/${locale}/${key}`} className="border-b-2 border-transparent px-3 py-6 text-slate-200 transition hover:border-[#ff941f] hover:text-white xl:px-4">
-              {site.nav[key]}
-            </Link>
-          ))}
+          <Link
+            href={`/${locale}`}
+            aria-current={isHomeActive ? 'page' : undefined}
+            className={`border-b-2 px-3 py-6 transition hover:border-[#ff941f] hover:text-white ${
+              isHomeActive ? 'border-[#ff941f] text-white' : 'border-transparent text-slate-200'
+            }`}
+          >
+            {site.nav.home}
+          </Link>
+          {navKeys.map((key) => {
+            const isActive = isNavActive(key);
+
+            return (
+              <Link
+                key={key}
+                href={`/${locale}/${key}`}
+                aria-current={isActive ? 'page' : undefined}
+                className={`border-b-2 px-3 py-6 transition hover:border-[#ff941f] hover:text-white xl:px-4 ${
+                  isActive ? 'border-[#ff941f] text-white' : 'border-transparent text-slate-200'
+                }`}
+              >
+                {site.nav[key]}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="hidden shrink-0 items-center gap-3 border-l border-white/15 pl-5 xl:flex">
@@ -53,12 +75,29 @@ export function Header({ locale, site, path }: { locale: Locale; site: SiteConfi
           </summary>
           <div className="absolute right-0 top-[calc(100%+0.75rem)] z-50 w-[min(19rem,calc(100vw-2rem))] border border-white/15 bg-[#071a2c] p-3 shadow-2xl">
             <nav className="grid" aria-label={locale === 'zh' ? '移动端导航' : 'Mobile navigation'}>
-              <Link href={`/${locale}`} className="border-b border-white/10 px-4 py-3 text-sm font-bold text-white">{site.nav.home}</Link>
-              {navKeys.map((key) => (
-                <Link key={key} href={`/${locale}/${key}`} className="border-b border-white/10 px-4 py-3 text-sm font-bold text-slate-200 transition hover:bg-white/5 hover:text-[#ffb25e]">
-                  {site.nav[key]}
-                </Link>
-              ))}
+              <Link
+                href={`/${locale}`}
+                aria-current={isHomeActive ? 'page' : undefined}
+                className={`border-b border-white/10 px-4 py-3 text-sm font-bold ${isHomeActive ? 'bg-white/5 text-[#ffb25e]' : 'text-slate-200'}`}
+              >
+                {site.nav.home}
+              </Link>
+              {navKeys.map((key) => {
+                const isActive = isNavActive(key);
+
+                return (
+                  <Link
+                    key={key}
+                    href={`/${locale}/${key}`}
+                    aria-current={isActive ? 'page' : undefined}
+                    className={`border-b border-white/10 px-4 py-3 text-sm font-bold transition hover:bg-white/5 hover:text-[#ffb25e] ${
+                      isActive ? 'bg-white/5 text-[#ffb25e]' : 'text-slate-200'
+                    }`}
+                  >
+                    {site.nav[key]}
+                  </Link>
+                );
+              })}
               <a href={`tel:${site.phone}`} className="mt-2 px-4 py-3 text-sm font-black text-[#ffb25e]">
                 {locale === 'zh' ? `电话咨询 ${site.phone}` : `Call ${site.phone}`}
               </a>
