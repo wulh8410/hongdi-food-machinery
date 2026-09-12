@@ -5,7 +5,11 @@ question: 家禽自动烫脱一体机操作安全吗？
 answer: 安全取决于设备防护、接地、防水、人员培训和停机清洗习惯。采购时要确认防护罩、开关位置、急停或断电方式，并避免戴手套接触运转部位。
 description: 围绕家禽自动烫脱一体机的价格、选型、效果、场地水电、清洗维护和售后问题进行解答。
 date: '2026-06-30'
-updated: '2026-06-30'
+updated: '2026-09-12'
+sources:
+  - title: 机械电气安全 机械电气设备 第1部分：通用技术条件（GB/T 5226.1-2019）
+    publisher: 全国标准信息公共服务平台
+    url: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=BEE78AD7B1CEAA7CD32A4747974489A4
 relatedProducts:
   - new-generation-pneumatic-scalding-dehairing-machine
   - pneumatic-turnover-scalding-dehairing-machine

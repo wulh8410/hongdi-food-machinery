@@ -32,6 +32,10 @@ function schemasIn(html, label) {
   });
 }
 
+function hasSchemaType(schemas, type) {
+  return schemas.some((schema) => schema['@type'] === type || schema['@graph']?.some?.((entry) => entry['@type'] === type));
+}
+
 for (const locale of ['zh', 'en']) {
   const directory = path.join(output, locale);
   if (!fs.existsSync(directory)) throw new Error(`Missing export: ${directory}. Run npm run build first.`);
@@ -67,7 +71,31 @@ for (const locale of ['zh', 'en']) {
     const schemas = schemasIn(html, label);
     if (relative.length === 2) {
       for (const type of ['Organization', 'WebSite']) {
-        if (!schemas.some((schema) => schema['@type'] === type)) issues.push(`${label}: missing ${type}`);
+        if (!hasSchemaType(schemas, type)) issues.push(`${label}: missing ${type}`);
+      }
+    }
+
+
+    if (relative.length === 3) {
+      const staticSchemas = {
+        products: ['CollectionPage'],
+        articles: ['CollectionPage'],
+        faqs: ['CollectionPage'],
+        solutions: ['CollectionPage'],
+        about: ['Organization', 'AboutPage'],
+        contact: ['Organization', 'ContactPage']
+      };
+      for (const type of staticSchemas[relative[1]] ?? []) {
+        if (!hasSchemaType(schemas, type)) issues.push(`${label}: missing ${type}`);
+      }
+    }
+
+    if (relative.length === 4 && !target) {
+      const detailSchema = { products: 'Product', articles: 'BlogPosting', faqs: 'FAQPage', solutions: 'Service' }[kind];
+      if (detailSchema && !hasSchemaType(schemas, detailSchema)) issues.push(`${label}: missing ${detailSchema}`);
+      if (!html.includes('data-content-accountability')) issues.push(`${label}: missing content accountability`);
+      if (html.includes('data-content-sources') && !/data-content-sources[^>]*>[\s\S]*?href="https:\/\//i.test(html)) {
+        issues.push(`${label}: source section has no external source link`);
       }
     }
   }
@@ -78,10 +106,22 @@ for (const locale of ['zh', 'en']) {
 }
 
 const sitemap = fs.readFileSync(path.join(output, 'sitemap.xml'), 'utf8');
-const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+const sitemapEntries = [...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((match) => ({
+  location: match[1].match(/<loc>([^<]+)<\/loc>/)?.[1],
+  lastmod: match[1].match(/<lastmod>([^<]+)<\/lastmod>/)?.[1]
+}));
+const locations = sitemapEntries.map((entry) => entry.location).filter(Boolean);
 totals.sitemapUrls = locations.length;
-for (const url of locations) {
+const today = new Date().toISOString().slice(0, 10);
+for (const entry of sitemapEntries) {
+  const url = entry.location;
+  if (!url) {
+    issues.push('sitemap: URL entry missing loc');
+    continue;
+  }
   if (!url.startsWith(`${baseUrl}/`)) issues.push(`sitemap: noncanonical host ${url}`);
+  if (!entry.lastmod) issues.push(`sitemap: missing lastmod ${url}`);
+  if (entry.lastmod && (!/^\d{4}-\d{2}-\d{2}$/.test(entry.lastmod) || entry.lastmod > today)) issues.push(`sitemap: invalid lastmod ${url}`);
   const pathname = new URL(url).pathname;
   const segments = pathname.split('/').filter(Boolean);
   if (quality.aliases?.[segments[0]]?.[segments[1]]?.[segments[2]]) issues.push(`sitemap: duplicate URL ${url}`);

@@ -3,7 +3,12 @@ title: "Poultry Slaughter Line Cleaning Disinfection?"
 slug: "poultry-slaughter-line-cleaning-disinfection"
 description: "Hongdi Food Machinery answers this cleaning and maintenance question for poultry dehairing, scalding, cleaning, site preparation, and equipment matching."
 question: "Poultry Slaughter Line Cleaning Disinfection?"
-answer: "Confirm the material, output, scalding condition, site size, voltage, drainage, and required workflow before selecting equipment. Hongdi Food Machinery can recommend a configuration based on real processing conditions."
+answer: "After each shift, isolate power, remove feathers, blood, and grease, wash the scalding tank, plucker, receiving surfaces, and floor, then disinfect and dry them according to the site's food-production procedure. Record the work and prevent dirty water from recontaminating clean areas."
+updated: "2026-09-12"
+sources:
+  - title: Announcement of GB 14881-2025 General Hygiene Practice for Food Production
+    publisher: National Health Commission of China
+    url: https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml
 relatedProducts: ["new-generation-pneumatic-scalding-dehairing-machine", "double-lid-poultry-scalding-mixer", "rubber-rod-scalding-mixer"]
 relatedArticles: ["how-to-choose-poultry-dehairing-machine", "arrange-scalding-plucking-workstation", "delivery-installation-preparation"]
 relatedSolutions: ["small-slaughter-stall-dehairing-solution", "farm-poultry-processing-solution", "canteen-restaurant-poultry-solution"]
@@ -12,10 +17,10 @@ seo:
   description: "Hongdi Food Machinery answers this cleaning and maintenance question for poultry dehairing, scalding, cleaning, site preparation, and equipment matching."
 ---
 ## Answer
-For this question, the key is not only the model name or price. Buyers should confirm the processing material, average weight, daily output, scalding or soaking method, site drainage, voltage, and cleaning routine.
+After each shift, isolate power before cleaning. Remove feathers, blood, grease, and other residues, then wash the scalding tank, plucker, receiving surfaces, floor, drains, and feather interceptors.
 
 ## Buying Notes
-If the equipment is used for chickens, ducks, geese, pigeons, or small livestock, the scalding time, rubber finger layout, machine size, and operating rhythm may need to be different. Please compare the process first, then confirm the machine.
+Use a cleaning and disinfection procedure suited to the site, keep dirty water from flowing back into clean areas, allow equipment to dry, and record completion. The operator must also follow local licensing and inspection requirements.
 
 ## Information to Provide
 - Product type and average weight

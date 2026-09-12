@@ -2,8 +2,10 @@ import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { ArticleCard } from '@/components/Cards';
 import { PageShell } from '@/components/PageShell';
+import { SchemaJsonLd } from '@/components/SchemaJsonLd';
 import { getContentItems, getSiteConfig } from '@/lib/content';
 import { localizedMetadata } from '@/lib/seo';
+import { collectionPageSchema } from '@/lib/schema';
 import type { ContentItem, Locale } from '@/lib/types';
 
 export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
@@ -16,10 +18,12 @@ export default async function ArticlesPage({ params }: { params: { locale: Local
   const site = getSiteConfig(locale);
   const items = await getContentItems(locale, 'articles');
   const groups = groupArticles(items, locale);
+  const description = locale === 'zh' ? '提供食品机械选型、设备维护、使用场景和采购准备方面的参考文章。' : 'Practical articles about equipment selection, buying preparation, maintenance, and processing applications.';
   return (
     <PageShell locale={locale} path={`/${locale}/articles`}>
+      <SchemaJsonLd data={collectionPageSchema(locale, '/articles', site.nav.articles, description)} />
       <Breadcrumb locale={locale} items={[{ label: site.nav.articles, href: `/${locale}/articles` }]} />
-      <Title title={site.nav.articles} description={locale === 'zh' ? '提供食品机械选型、设备维护、使用场景和采购准备方面的参考文章。' : 'Practical articles about equipment selection, buying preparation, maintenance, and processing applications.'} />
+      <Title title={site.nav.articles} description={description} />
       <section className="mx-auto max-w-7xl px-4 pb-4 md:px-6">
         <nav className="flex flex-wrap gap-2" aria-label={locale === 'zh' ? '文章分类' : 'Article categories'}>
           {groups.map((group) => (

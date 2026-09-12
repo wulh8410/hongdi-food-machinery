@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getCanonicalContentSlug } from '@/lib/content';
-import type { ContentItem, Locale } from '@/lib/types';
+import type { ContentItem, Locale, SourceReference } from '@/lib/types';
 
 export function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -8,6 +8,57 @@ export function Section({ title, children }: { title: string; children: React.Re
       <h2 className="text-xl font-bold text-industrial-navy">{title}</h2>
       <div className="mt-4">{children}</div>
     </section>
+  );
+}
+
+export function ContentAccountability({
+  locale,
+  siteName,
+  date,
+  updated,
+  reviewedBy,
+  sourceNote,
+  sources
+}: {
+  locale: Locale;
+  siteName: string;
+  date?: string;
+  updated?: string;
+  reviewedBy?: string;
+  sourceNote?: string;
+  sources?: SourceReference[];
+}) {
+  const isZh = locale === 'zh';
+  return (
+    <aside data-content-accountability className="mt-7 border-t border-slate-200 pt-5 text-sm leading-6 text-slate-600">
+      <div className="flex flex-wrap gap-x-5 gap-y-2">
+        <span>
+          {isZh ? '内容编辑与维护：' : 'Edited and maintained by: '}
+          <Link href={`/${locale}/about`} className="font-semibold text-industrial-blue underline decoration-industrial-blue/25 underline-offset-4">
+            {siteName}
+          </Link>
+        </span>
+        {reviewedBy ? <span>{isZh ? '内容审核：' : 'Reviewed by: '}{reviewedBy}</span> : null}
+        {date ? <span>{isZh ? '发布日期：' : 'Published: '}<time dateTime={date}>{date}</time></span> : null}
+        {updated && updated !== date ? <span>{isZh ? '更新日期：' : 'Updated: '}<time dateTime={updated}>{updated}</time></span> : null}
+      </div>
+      {sourceNote ? <p className="mt-3 text-slate-500">{sourceNote}</p> : null}
+      {sources?.length ? (
+        <div data-content-sources className="mt-4">
+          <h2 className="font-bold text-industrial-navy">{isZh ? '参考来源' : 'References'}</h2>
+          <ul className="mt-2 grid gap-2">
+            {sources.map((source) => (
+              <li key={source.url}>
+                <a href={source.url} target="_blank" rel="noreferrer" className="text-industrial-blue underline decoration-industrial-blue/25 underline-offset-4">
+                  {source.title}
+                </a>
+                {source.publisher ? <span className="text-slate-500"> · {source.publisher}</span> : null}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+    </aside>
   );
 }
 
@@ -110,7 +161,7 @@ export function ContactBlock({
             {isZh ? '设备选型咨询' : 'Equipment Consultation'}
           </p>
           <h2 className="mt-3 text-2xl font-bold md:text-3xl">
-            {isZh ? '需要家禽脱毛、水产加工或配套设备建议？' : 'Need advice for poultry or aquatic processing equipment?'}
+            {isZh ? '需要家禽脱毛、泡水浸烫或配套设备建议？' : 'Need advice for poultry dehairing, scalding, or supporting equipment?'}
           </h2>
           <p className="mt-3 text-sm leading-7 text-slate-200 md:text-base">
             {isZh

@@ -4,7 +4,14 @@ slug: food-safety-without-chemical-dehairing
 category: usage-maintenance
 description: 正规食品加工脱毛不应依赖药水或火碱，应通过稳定水温、胶棒摩擦、投放量控制、换水清洗和排水毛渣管理保证效果。
 date: '2026-06-25'
-updated: '2026-06-25'
+updated: '2026-09-12'
+sources:
+  - title: 中华人民共和国食品安全法
+    publisher: 国家市场监督管理总局
+    url: https://www.samr.gov.cn/spxts/gzdt/art/2023/art_a54cbedacfd44ff5bd2b40504ea98649.html
+  - title: 关于发布《食品生产通用卫生规范》（GB 14881-2025）的公告
+    publisher: 国家卫生健康委员会
+    url: https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml
 relatedProducts:
   - rubber-rod-scalding-mixer
   - 58-turbine-stainless-poultry-plucker

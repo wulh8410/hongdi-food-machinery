@@ -5,7 +5,11 @@ question: 家禽宰杀线每天怎么清洗消毒？
 answer: 每班结束后应断电停机，清除羽毛、血水和油脂，冲洗浸烫槽、脱毛桶、接料台和地面，再按现场食品加工要求做消毒和干燥。
 description: 围绕家禽宰杀流水线设备的采购、配置、合规、场地水电和现场使用问题进行解答。
 date: '2026-06-29'
-updated: '2026-06-29'
+updated: '2026-09-12'
+sources:
+  - title: 关于发布《食品生产通用卫生规范》（GB 14881-2025）的公告
+    publisher: 国家卫生健康委员会
+    url: https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml
 relatedProducts:
   - new-generation-pneumatic-scalding-dehairing-machine
   - rubber-rod-scalding-mixer

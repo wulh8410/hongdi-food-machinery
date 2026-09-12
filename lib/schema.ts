@@ -50,6 +50,74 @@ export function websiteSchema(locale: Locale) {
   };
 }
 
+export function aboutPageSchema(locale: Locale) {
+  const site = getSiteConfig(locale);
+  const url = absoluteUrl(locale, '/about');
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    '@id': `${url}#about`,
+    url,
+    name: site.nav.about,
+    description: site.companyPositioning,
+    inLanguage: locale === 'zh' ? 'zh-CN' : 'en',
+    about: { '@id': `${site.baseUrl}/#organization` },
+    isPartOf: { '@id': `${site.baseUrl}/#website` }
+  };
+}
+
+export function contactPageSchema(locale: Locale) {
+  const site = getSiteConfig(locale);
+  const url = absoluteUrl(locale, '/contact');
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    '@id': `${url}#contact`,
+    url,
+    name: site.nav.contact,
+    description: locale === 'zh' ? '洪弟食品机械联系方式与设备选型咨询准备说明。' : 'Hongdi Food Machinery contact details and consultation checklist.',
+    inLanguage: locale === 'zh' ? 'zh-CN' : 'en',
+    mainEntity: { '@id': `${site.baseUrl}/#organization` },
+    isPartOf: { '@id': `${site.baseUrl}/#website` }
+  };
+}
+
+export function collectionPageSchema(
+  locale: Locale,
+  path: string,
+  name: string,
+  description: string,
+  items: ContentItem[] = []
+) {
+  const site = getSiteConfig(locale);
+  const url = absoluteUrl(locale, path);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${url}#collection`,
+    url,
+    name,
+    description,
+    inLanguage: locale === 'zh' ? 'zh-CN' : 'en',
+    publisher: { '@id': `${site.baseUrl}/#organization` },
+    isPartOf: { '@id': `${site.baseUrl}/#website` },
+    ...(items.length
+      ? {
+          mainEntity: {
+            '@type': 'ItemList',
+            numberOfItems: items.length,
+            itemListElement: items.map((item, index) => ({
+              '@type': 'ListItem',
+              position: index + 1,
+              name: item.title,
+              url: absoluteUrl(locale, `${path}/${item.slug}`)
+            }))
+          }
+        }
+      : {})
+  };
+}
+
 export function productSchema(locale: Locale, product: ContentItem) {
   const site = getSiteConfig(locale);
   return {
@@ -73,10 +141,28 @@ export function productSchema(locale: Locale, product: ContentItem) {
   };
 }
 
-export function faqPageSchema(faqs: { question: string; answer: string }[]) {
+export function faqPageSchema(
+  faqs: { question: string; answer: string }[],
+  context?: { locale: Locale; path: string; item?: ContentItem }
+) {
+  const site = context ? getSiteConfig(context.locale) : null;
+  const url = context ? absoluteUrl(context.locale, context.path) : null;
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    ...(context && site && url
+      ? {
+          '@id': `${url}#faq`,
+          url,
+          inLanguage: context.locale === 'zh' ? 'zh-CN' : 'en',
+          datePublished: context.item?.date,
+          dateModified: context.item?.updated ?? context.item?.date,
+          citation: context.item?.sources?.map((source) => source.url),
+          author: { '@id': `${site.baseUrl}/#organization` },
+          publisher: { '@id': `${site.baseUrl}/#organization` },
+          isPartOf: { '@id': `${site.baseUrl}/#website` }
+        }
+      : {}),
     mainEntity: faqs.map((faq) => ({
       '@type': 'Question',
       name: faq.question,
@@ -120,6 +206,7 @@ export function articleSchema(locale: Locale, article: ContentItem) {
       }
     },
     mainEntityOfPage: articleUrl,
+    citation: article.sources?.map((source) => source.url),
     isPartOf: {
       '@id': `${site.baseUrl}/#website`
     },
@@ -145,6 +232,9 @@ export function solutionSchema(locale: Locale, solution: ContentItem) {
     areaServed: site.serviceArea,
     serviceType: solution.solutionCategory ?? (locale === 'zh' ? '食品机械设备解决方案' : 'Food machinery solution'),
     audience: solution.suitableFor?.map((name) => ({ '@type': 'Audience', audienceType: name })),
+    dateCreated: solution.date,
+    dateModified: solution.updated ?? solution.date,
+    citation: solution.sources?.map((source) => source.url),
     url: absoluteUrl(locale, `/solutions/${solution.slug}`)
   };
 }

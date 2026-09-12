@@ -3,7 +3,12 @@ title: "Auto Scalding Dehairing FAQ 220V 380V?"
 slug: "auto-scalding-dehairing-faq-220v-380v"
 description: "Hongdi Food Machinery answers this site and utilities question for poultry dehairing, scalding, cleaning, site preparation, and equipment matching."
 question: "Auto Scalding Dehairing FAQ 220V 380V?"
-answer: "Confirm the material, output, scalding condition, site size, voltage, drainage, and required workflow before selecting equipment. Hongdi Food Machinery can recommend a configuration based on real processing conditions."
+answer: "The required supply is model-specific: some small machines may use 220 V, while higher-power or continuous-duty configurations commonly require 380 V. Confirm the nameplate, cable capacity, protective device, grounding, and wet-area installation with a qualified electrician before ordering."
+updated: "2026-09-12"
+sources:
+  - title: "GB/T 5226.1-2019 Electrical Safety of Machinery: General Requirements"
+    publisher: National Public Service Platform for Standards Information
+    url: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=BEE78AD7B1CEAA7CD32A4747974489A4
 relatedProducts: ["new-generation-pneumatic-scalding-dehairing-machine", "double-lid-poultry-scalding-mixer", "rubber-rod-scalding-mixer"]
 relatedArticles: ["how-to-choose-poultry-dehairing-machine", "arrange-scalding-plucking-workstation", "delivery-installation-preparation"]
 relatedSolutions: ["small-slaughter-stall-dehairing-solution", "farm-poultry-processing-solution", "canteen-restaurant-poultry-solution"]
@@ -12,10 +17,10 @@ seo:
   description: "Hongdi Food Machinery answers this site and utilities question for poultry dehairing, scalding, cleaning, site preparation, and equipment matching."
 ---
 ## Answer
-For this question, the key is not only the model name or price. Buyers should confirm the processing material, average weight, daily output, scalding or soaking method, site drainage, voltage, and cleaning routine.
+Voltage is not chosen from a generic rule. It depends on the exact motor, heater, control system, total load, operating duty, and the electrical supply available at the site.
 
 ## Buying Notes
-If the equipment is used for chickens, ducks, geese, pigeons, or small livestock, the scalding time, rubber finger layout, machine size, and operating rhythm may need to be different. Please compare the process first, then confirm the machine.
+Before ordering, confirm the model nameplate, cable capacity, circuit protection, grounding, disconnect method, and wet-area installation with a qualified electrician. Do not rely on an adapter or temporary wiring to make an incompatible machine work.
 
 ## Information to Provide
 - Product type and average weight

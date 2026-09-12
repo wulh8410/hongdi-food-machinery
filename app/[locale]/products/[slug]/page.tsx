@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { ContactBlock, FAQBlock, RelatedLinks, Section, SpecTable } from '@/components/DetailBlocks';
+import { ContactBlock, ContentAccountability, FAQBlock, RelatedLinks, Section, SpecTable } from '@/components/DetailBlocks';
 import { PageShell } from '@/components/PageShell';
 import { ProductGallery } from '@/components/ProductGallery';
 import { SchemaJsonLd } from '@/components/SchemaJsonLd';
@@ -31,7 +31,7 @@ export default async function ProductDetailPage({ params }: { params: { locale: 
     <PageShell locale={locale} path={`/${locale}/products/${slug}`}>
       <SchemaJsonLd data={productSchema(locale, product)} />
       <SchemaJsonLd data={breadcrumbSchema(locale, crumbs)} />
-      {product.faqs?.length ? <SchemaJsonLd data={faqPageSchema(product.faqs)} /> : null}
+      {product.faqs?.length ? <SchemaJsonLd data={faqPageSchema(product.faqs, { locale, path: `/products/${product.slug}`, item: product })} /> : null}
       <Breadcrumb locale={locale} items={[{ label: site.nav.products, href: `/${locale}/products` }, { label: product.title, href: `/${locale}/products/${slug}` }]} />
       <section className="mx-auto grid max-w-7xl items-start gap-7 px-4 py-8 md:grid-cols-[1.08fr_0.92fr] md:px-6 xl:grid-cols-[1.12fr_0.88fr]">
         <ProductGallery images={product.images} title={product.title} locale={locale} />
@@ -64,6 +64,15 @@ export default async function ProductDetailPage({ params }: { params: { locale: 
       <article className="mx-auto max-w-7xl px-4 pb-8 md:px-6">
         <Section title={locale === 'zh' ? '详细介绍与解决的问题' : 'Details and Problems Solved'}><div className="content" dangerouslySetInnerHTML={{ __html: product.bodyHtml }} /></Section>
         <Section title="FAQ"><FAQBlock faqs={product.faqs} /></Section>
+        <ContentAccountability
+          locale={locale}
+          siteName={site.name}
+          date={product.date}
+          updated={product.updated}
+          reviewedBy={product.reviewedBy}
+          sourceNote={product.sourceNote ?? (locale === 'zh' ? '产品资料由洪弟食品机械整理与维护；具体材质、功率、尺寸和配置以订单确认单为准。' : 'Product information is maintained by Hongdi Food Machinery. Final materials, power, dimensions, and configuration are subject to the order confirmation.')}
+          sources={product.sources}
+        />
         <RelatedLinks locale={locale} title={locale === 'zh' ? '相关产品' : 'Related Products'} section="products" slugs={product.relatedProducts} items={products} />
         <RelatedLinks locale={locale} title={locale === 'zh' ? '相关文章' : 'Related Articles'} section="articles" slugs={product.relatedArticles} items={articles} />
       </article>

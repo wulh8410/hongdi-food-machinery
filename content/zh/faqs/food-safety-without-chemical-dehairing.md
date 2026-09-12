@@ -5,7 +5,14 @@ question: 食品加工脱毛可以不用药水吗？
 answer: 正规食品加工应优先依靠热水浸烫、胶棒摩擦、合适投放量和及时清洗换水，不建议用药水或火碱来解决脱毛问题。客户更应该关注食品接触材质、排水、毛渣拦截和清洗流程。
 description: 回答食品加工脱毛是否可以不用药水，强调水温、胶棒、投放量、清洗换水和食品安全。
 date: '2026-06-25'
-updated: '2026-06-25'
+updated: '2026-09-12'
+sources:
+  - title: 中华人民共和国食品安全法
+    publisher: 国家市场监督管理总局
+    url: https://www.samr.gov.cn/spxts/gzdt/art/2023/art_a54cbedacfd44ff5bd2b40504ea98649.html
+  - title: 关于发布《食品生产通用卫生规范》（GB 14881-2025）的公告
+    publisher: 国家卫生健康委员会
+    url: https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml
 relatedProducts:
   - rubber-rod-scalding-mixer
   - 58-turbine-stainless-poultry-plucker

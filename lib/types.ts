@@ -40,6 +40,12 @@ export type SolutionCapacityOption = {
   note: string;
 };
 
+export type SourceReference = {
+  title: string;
+  url: string;
+  publisher?: string;
+};
+
 export type ContentItem = {
   slug: string;
   title: string;
@@ -69,6 +75,8 @@ export type ContentItem = {
   acceptancePoints?: string[];
   maintenanceTips?: string[];
   sourceNote?: string;
+  reviewedBy?: string;
+  sources?: SourceReference[];
   relatedProducts?: string[];
   relatedArticles?: string[];
   relatedFaqs?: string[];

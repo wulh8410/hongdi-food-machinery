@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { BrandConsultation, RelatedLinks, Section } from '@/components/DetailBlocks';
+import { BrandConsultation, ContentAccountability, RelatedLinks, Section } from '@/components/DetailBlocks';
 import { PageShell } from '@/components/PageShell';
 import { SchemaJsonLd } from '@/components/SchemaJsonLd';
 import { getContentItem, getContentItems, getContentSlugs, getSiteConfig, isCanonicalContent } from '@/lib/content';
@@ -34,7 +34,7 @@ export default async function FAQDetailPage({ params }: { params: { locale: Loca
 
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/faqs/${params.slug}`}>
-      {isCanonicalContent(params.locale, 'faqs', item.slug) ? <SchemaJsonLd data={faqPageSchema([{ question: q, answer: a }])} /> : null}
+      {isCanonicalContent(params.locale, 'faqs', item.slug) ? <SchemaJsonLd data={faqPageSchema([{ question: q, answer: a }], { locale: params.locale, path: `/faqs/${item.slug}`, item })} /> : null}
       <SchemaJsonLd data={breadcrumbSchema(params.locale, [{ name: site.nav.faqs, path: '/faqs' }, { name: item.title, path: `/faqs/${item.slug}` }])} />
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.faqs, href: `/${params.locale}/faqs` }, { label: item.title, href: `/${params.locale}/faqs/${item.slug}` }]} />
       <article className="mx-auto max-w-4xl px-4 py-8 md:px-6">
@@ -45,6 +45,7 @@ export default async function FAQDetailPage({ params }: { params: { locale: Loca
         <Section title={params.locale === 'zh' ? '采购说明' : 'Buying Notes'}>
           <div className="content" dangerouslySetInnerHTML={{ __html: item.bodyHtml }} />
         </Section>
+        <ContentAccountability locale={params.locale} siteName={site.name} date={item.date} updated={item.updated} reviewedBy={item.reviewedBy} sourceNote={item.sourceNote} sources={item.sources} />
         <RelatedLinks locale={params.locale} title={params.locale === 'zh' ? '关联产品' : 'Related Products'} section="products" slugs={item.relatedProducts} items={products} />
         <RelatedLinks locale={params.locale} title={params.locale === 'zh' ? '关联文章' : 'Related Articles'} section="articles" slugs={item.relatedArticles} items={articles} />
         <RelatedLinks locale={params.locale} title={params.locale === 'zh' ? '推荐解决方案' : 'Recommended Solutions'} section="solutions" slugs={item.relatedSolutions} items={solutions} />

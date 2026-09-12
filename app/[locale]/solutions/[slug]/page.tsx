@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { BrandConsultation, FAQBlock, RelatedLinks, Section } from '@/components/DetailBlocks';
+import { BrandConsultation, ContentAccountability, FAQBlock, RelatedLinks, Section } from '@/components/DetailBlocks';
 import { PageShell } from '@/components/PageShell';
 import { SchemaJsonLd } from '@/components/SchemaJsonLd';
 import { getContentItem, getContentItems, getContentSlugs, getSiteConfig, isCanonicalContent } from '@/lib/content';
@@ -34,7 +34,7 @@ export default async function SolutionDetailPage({ params }: { params: { locale:
     <PageShell locale={params.locale} path={`/${params.locale}/solutions/${params.slug}`}>
       <SchemaJsonLd data={breadcrumbSchema(params.locale, [{ name: site.nav.solutions, path: '/solutions' }, { name: item.title, path: `/solutions/${item.slug}` }])} />
       {isCanonicalContent(params.locale, 'solutions', item.slug) ? <SchemaJsonLd data={solutionSchema(params.locale, item)} /> : null}
-      {isCanonicalContent(params.locale, 'solutions', item.slug) && item.faqs?.length ? <SchemaJsonLd data={faqPageSchema(item.faqs)} /> : null}
+      {isCanonicalContent(params.locale, 'solutions', item.slug) && item.faqs?.length ? <SchemaJsonLd data={faqPageSchema(item.faqs, { locale: params.locale, path: `/solutions/${item.slug}`, item })} /> : null}
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.solutions, href: `/${params.locale}/solutions` }, { label: item.title, href: `/${params.locale}/solutions/${item.slug}` }]} />
       <article className="mx-auto max-w-5xl px-4 py-8 md:px-6">
         {item.solutionCategory ? <p className="text-sm font-bold text-industrial-orange">{item.solutionCategory}</p> : null}
@@ -57,7 +57,7 @@ export default async function SolutionDetailPage({ params }: { params: { locale:
         {item.maintenanceTips?.length ? <Section title={isZh ? '清洗维护建议' : 'Cleaning and Maintenance'}><List items={item.maintenanceTips} /></Section> : null}
         <Section title={isZh ? '完整方案说明' : 'Solution Notes'}><div className="content" dangerouslySetInnerHTML={{ __html: item.bodyHtml }} /></Section>
         {item.faqs?.length ? <Section title={isZh ? '方案常见问题' : 'Solution FAQ'}><FAQBlock faqs={item.faqs} /></Section> : null}
-        {item.sourceNote ? <p className="mt-6 border-t border-slate-200 pt-4 text-sm leading-6 text-slate-500">{item.sourceNote}</p> : null}
+        <ContentAccountability locale={params.locale} siteName={site.name} date={item.date} updated={item.updated} reviewedBy={item.reviewedBy} sourceNote={item.sourceNote} sources={item.sources} />
         <RelatedLinks locale={params.locale} title={isZh ? '相关产品' : 'Related Products'} section="products" slugs={item.relatedProducts ?? item.recommendedProducts} items={products} />
         <RelatedLinks locale={params.locale} title={isZh ? '延伸阅读' : 'Related Articles'} section="articles" slugs={item.relatedArticles} items={articles} />
         <RelatedLinks locale={params.locale} title={isZh ? '相关采购问答' : 'FAQ'} section="faqs" slugs={item.relatedFaqs} items={faqs} />

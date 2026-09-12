@@ -5,7 +5,11 @@ question: 家禽自动烫脱一体机用220V还是380V？
 answer: 小型设备可能支持220V，连续加工或较大功率设备通常建议380V。采购前要确认现场线路、空开、接地和防水保护，避免到货后临时接线影响安全。
 description: 围绕家禽自动烫脱一体机的价格、选型、效果、场地水电、清洗维护和售后问题进行解答。
 date: '2026-06-30'
-updated: '2026-06-30'
+updated: '2026-09-12'
+sources:
+  - title: 机械电气安全 机械电气设备 第1部分：通用技术条件（GB/T 5226.1-2019）
+    publisher: 全国标准信息公共服务平台
+    url: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=BEE78AD7B1CEAA7CD32A4747974489A4
 relatedProducts:
   - new-generation-pneumatic-scalding-dehairing-machine
   - pneumatic-turnover-scalding-dehairing-machine

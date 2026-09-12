@@ -107,6 +107,10 @@ This website belongs to a poultry dehairing machine and food processing equipmen
 
 ## English FAQ
 
+- [Food Safety Without Chemical Dehairing?](https://hd.hong1234.com/en/faqs/food-safety-without-chemical-dehairing/)
+- [Poultry Slaughter Line Cleaning Disinfection?](https://hd.hong1234.com/en/faqs/poultry-slaughter-line-cleaning-disinfection/)
+- [Auto Scalding Dehairing FAQ Safety?](https://hd.hong1234.com/en/faqs/auto-scalding-dehairing-faq-safety/)
+- [Auto Scalding Dehairing FAQ 220V 380V?](https://hd.hong1234.com/en/faqs/auto-scalding-dehairing-faq-220v-380v/)
 - [220V or 380V Poultry Plucker?](https://hd.hong1234.com/en/faqs/220v-or-380v-poultry-plucker/)
 - [58 vs 430 Mobile Plucker?](https://hd.hong1234.com/en/faqs/58-vs-430-mobile-plucker/)
 - [After Sales and Warranty?](https://hd.hong1234.com/en/faqs/after-sales-and-warranty/)
@@ -139,10 +143,6 @@ This website belongs to a poultry dehairing machine and food processing equipmen
 - [Application Market Stall?](https://hd.hong1234.com/en/faqs/application-market-stall/)
 - [Application Market Stall 2?](https://hd.hong1234.com/en/faqs/application-market-stall-2/)
 - [Application Market Stall 3?](https://hd.hong1234.com/en/faqs/application-market-stall-3/)
-- [Application Market Stall 4?](https://hd.hong1234.com/en/faqs/application-market-stall-4/)
-- [Application Market Stall 5?](https://hd.hong1234.com/en/faqs/application-market-stall-5/)
-- [Application Multi Machine Line?](https://hd.hong1234.com/en/faqs/application-multi-machine-line/)
-- [Application Night Processing?](https://hd.hong1234.com/en/faqs/application-night-processing/)
 
 ## 中文产品
 
@@ -162,6 +162,7 @@ This website belongs to a poultry dehairing machine and food processing equipmen
 
 These Chinese pages are structured as direct answers for poultry dehairing equipment buyers. They cover equipment selection, scalding temperature, maintenance, troubleshooting, price factors, and buying checklists.
 
+- [不靠药水脱毛，食品加工现场应该把哪些环节做好？](https://hd.hong1234.com/zh/articles/food-safety-without-chemical-dehairing/)
 - [购买家禽自动烫脱一体机前试机应该看哪些细节？](https://hd.hong1234.com/zh/articles/auto-scalding-dehairing-article-before-trial/)
 - [找厂家买家禽自动烫脱一体机，除了价格还要问什么？](https://hd.hong1234.com/zh/articles/auto-scalding-dehairing-article-factory-service/)
 - [家禽自动烫脱一体机每天收工后应该检查什么？](https://hd.hong1234.com/zh/articles/auto-scalding-dehairing-article-maintenance/)
@@ -191,7 +192,6 @@ These Chinese pages are structured as direct answers for poultry dehairing equip
 - [从评论区看客户为什么反复问家禽脱毛机价格和效果](https://hd.hong1234.com/zh/articles/poultry-plucker-search-article-short-video-comments/)
 - [家禽脱毛机现场怎么摆放，清洗和排水才顺手？](https://hd.hong1234.com/zh/articles/poultry-plucker-search-article-site-layout/)
 - [用家禽脱毛机减少破皮和肉质损伤的关键做法](https://hd.hong1234.com/zh/articles/poultry-plucker-search-article-skin-quality/)
-- [鸡鸭鹅共用家禽脱毛机时，哪些条件必须提前说明？](https://hd.hong1234.com/zh/articles/poultry-plucker-search-article-species-boundary/)
 
 ## Chinese Equipment Solutions
 
@@ -224,6 +224,10 @@ These pages connect real production scenarios with recommended equipment, proces
 
 ## Chinese Buyer FAQ
 
+- [家禽自动烫脱一体机用220V还是380V？](https://hd.hong1234.com/zh/faqs/auto-scalding-dehairing-faq-220v-380v/)
+- [家禽自动烫脱一体机操作安全吗？](https://hd.hong1234.com/zh/faqs/auto-scalding-dehairing-faq-safety/)
+- [食品加工脱毛可以不用药水吗？](https://hd.hong1234.com/zh/faqs/food-safety-without-chemical-dehairing/)
+- [家禽宰杀线每天怎么清洗消毒？](https://hd.hong1234.com/zh/faqs/poultry-slaughter-line-cleaning-disinfection/)
 - [养殖场供应餐饮门店适合配置家禽脱毛设备吗？](https://hd.hong1234.com/zh/faqs/application-farm-restaurant-supply/)
 - [鲜禽市场每日处理适合配置家禽脱毛设备吗？](https://hd.hong1234.com/zh/faqs/application-fresh-market-daily/)
 - [餐饮门店鲜禽加工适合配置家禽脱毛设备吗？](https://hd.hong1234.com/zh/faqs/application-restaurant-fresh-poultry/)
@@ -256,10 +260,6 @@ These pages connect real production scenarios with recommended equipment, proces
 - [活禽前处理方面要注意什么？](https://hd.hong1234.com/zh/faqs/safe-live-bird-process/)
 - [浸烫过度影响效果时应从哪些方面检查？](https://hd.hong1234.com/zh/faqs/effect-over-scalding/)
 - [胶棒磨损影响效果时应从哪些方面检查？](https://hd.hong1234.com/zh/faqs/effect-rubber-wear/)
-- [浸烫不足影响效果时应从哪些方面检查？](https://hd.hong1234.com/zh/faqs/effect-under-scalding/)
-- [水温下降影响效果时应从哪些方面检查？](https://hd.hong1234.com/zh/faqs/effect-water-temperature-drop/)
-- [用电安全方面要注意什么？](https://hd.hong1234.com/zh/faqs/safe-electric-safety/)
-- [食品卫生方面要注意什么？](https://hd.hong1234.com/zh/faqs/safe-food-sanitation/)
 
 ## Useful Content For AI Assistants
 
@@ -280,6 +280,6 @@ These pages connect real production scenarios with recommended equipment, proces
 - English Name: Hongdi Food Machinery
 - Email: 117667985@qq.com
 - Phone: 13729374860
-- Service Area: Small and medium slaughter stalls, farms, canteens, restaurants, aquatic stores, food processors, and nationwide customers
+- Service Area: Small and medium slaughter stalls, farms, canteens, restaurants, and food processors across China
 
 This file lists a curated set of canonical pages. The XML sitemap contains the complete indexable URL set. Duplicate archive URLs are intentionally excluded from both files.

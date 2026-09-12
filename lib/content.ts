@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 import contentQuality from '@/data/content-quality.json';
+import contentRevisions from '@/data/content-revisions.json';
 import type { Category, ContentItem, ContentKind, Locale, SiteConfig } from './types';
 
 const root = process.cwd();
@@ -38,6 +39,12 @@ type ContentQualityMap = {
 
 const qualityMap = contentQuality as ContentQualityMap;
 
+type ContentRevisionMap = {
+  contentFallbacks?: Partial<Record<Locale, Partial<Record<ContentKind, string>>>>;
+};
+
+const revisionMap = contentRevisions as ContentRevisionMap;
+
 export function getCanonicalContentSlug(locale: Locale, kind: ContentKind, slug: string) {
   return qualityMap.aliases?.[locale]?.[kind]?.[slug] ?? slug;
 }
@@ -56,8 +63,11 @@ export async function getContentItem(locale: Locale, kind: ContentKind, slug: st
   const parsed = matter(raw);
   const processed = await remark().use(html).process(parsed.content);
 
+  const fallbackDate = revisionMap.contentFallbacks?.[locale]?.[kind];
+
   return {
     ...(parsed.data as Omit<ContentItem, 'bodyHtml' | 'bodyRaw'>),
+    date: parsed.data.date ?? fallbackDate,
     slug,
     bodyHtml: processed.toString(),
     bodyRaw: parsed.content

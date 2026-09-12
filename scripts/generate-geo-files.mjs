@@ -6,6 +6,7 @@ const root = process.cwd();
 const publicDir = path.join(root, 'public');
 const baseUrl = JSON.parse(fs.readFileSync(path.join(root, 'data', 'site.en.json'), 'utf8')).baseUrl.replace(/\/$/, '');
 const contentQuality = JSON.parse(fs.readFileSync(path.join(root, 'data', 'content-quality.json'), 'utf8'));
+const contentRevisions = JSON.parse(fs.readFileSync(path.join(root, 'data', 'content-revisions.json'), 'utf8'));
 const locales = ['zh', 'en'];
 const kinds = ['products', 'articles', 'faqs', 'solutions'];
 const staticPaths = ['', '/products', '/articles', '/faqs', '/solutions', '/about', '/contact', '/privacy', '/terms'];
@@ -38,11 +39,16 @@ function readContent(locale, kind, slug) {
 function allEntries() {
   const entries = [];
   for (const locale of locales) {
-    for (const staticPath of staticPaths) entries.push({ path: `/${locale}${staticPath}/` });
+    for (const staticPath of staticPaths) {
+      entries.push({ path: `/${locale}${staticPath}/`, lastmod: contentRevisions.static?.[locale]?.[staticPath] });
+    }
     for (const kind of kinds) {
       for (const slug of slugs(locale, kind)) {
         const data = readContent(locale, kind, slug);
-        entries.push({ path: `/${locale}/${kind}/${slug}/`, lastmod: data.updated ?? data.date });
+        entries.push({
+          path: `/${locale}/${kind}/${slug}/`,
+          lastmod: data.updated ?? data.date ?? contentRevisions.contentFallbacks?.[locale]?.[kind]
+        });
       }
     }
   }

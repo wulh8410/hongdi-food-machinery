@@ -4,7 +4,7 @@ import { PageShell } from '@/components/PageShell';
 import { SchemaJsonLd } from '@/components/SchemaJsonLd';
 import { getSiteConfig } from '@/lib/content';
 import { localizedMetadata } from '@/lib/seo';
-import { organizationSchema } from '@/lib/schema';
+import { aboutPageSchema, organizationSchema } from '@/lib/schema';
 import type { Locale } from '@/lib/types';
 
 export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
@@ -19,7 +19,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
       ? [
           {
             title: '公司简介',
-            body: '洪弟食品机械专注家禽脱毛、水产加工和肉类加工配套设备，主要服务屠宰档口、养殖场、食堂餐厅、水产门店和食品加工厂。'
+            body: '洪弟食品机械拥有20年行业经验，当前专注家禽脱毛、泡水浸烫、烫脱一体和食品加工前处理配套设备，主要服务屠宰档口、养殖场、食堂餐厅和食品加工客户。'
           },
           {
             title: '主营设备',
@@ -49,7 +49,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
       : [
           {
             title: 'Company Profile',
-            body: 'Hongdi Food Machinery focuses on poultry dehairing, aquatic processing, and meat processing support equipment for slaughter stalls, farms, restaurants, aquatic stores, and food processors.'
+            body: 'Hongdi Food Machinery has 20 years of industry experience and currently focuses on poultry dehairing, scalding, integrated scalding-dehairing, and food pre-processing equipment for stalls, farms, restaurants, and food processors.'
           },
           {
             title: 'Main Equipment',
@@ -79,6 +79,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/about`}>
       <SchemaJsonLd data={organizationSchema(params.locale)} />
+      <SchemaJsonLd data={aboutPageSchema(params.locale)} />
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.about, href: `/${params.locale}/about` }]} />
       <section className="mx-auto max-w-7xl px-4 py-8 md:px-6">
         <h1 className="text-3xl font-bold text-industrial-navy">{site.name}</h1>

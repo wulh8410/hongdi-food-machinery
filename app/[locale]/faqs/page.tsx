@@ -2,8 +2,10 @@ import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { FAQCard } from '@/components/Cards';
 import { PageShell } from '@/components/PageShell';
+import { SchemaJsonLd } from '@/components/SchemaJsonLd';
 import { getContentItems, getSiteConfig } from '@/lib/content';
 import { localizedMetadata } from '@/lib/seo';
+import { collectionPageSchema } from '@/lib/schema';
 import type { ContentItem, Locale } from '@/lib/types';
 
 export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
@@ -15,10 +17,12 @@ export default async function FAQsPage({ params }: { params: { locale: Locale } 
   const site = getSiteConfig(params.locale);
   const items = await getContentItems(params.locale, 'faqs');
   const groups = groupFaqs(items, params.locale);
+  const description = params.locale === 'zh' ? '整理客户在选购食品机械前常问的问题，帮助提前了解设备配置、价格、定制和售后。' : 'Common questions about equipment configuration, pricing, customization, and after-sales support.';
   return (
     <PageShell locale={params.locale} path={`/${params.locale}/faqs`}>
+      <SchemaJsonLd data={collectionPageSchema(params.locale, '/faqs', site.nav.faqs, description)} />
       <Breadcrumb locale={params.locale} items={[{ label: site.nav.faqs, href: `/${params.locale}/faqs` }]} />
-      <Title title={site.nav.faqs} description={params.locale === 'zh' ? '整理客户在选购食品机械前常问的问题，帮助提前了解设备配置、价格、定制和售后。' : 'Common questions about equipment configuration, pricing, customization, and after-sales support.'} />
+      <Title title={site.nav.faqs} description={description} />
       <section className="mx-auto max-w-7xl px-4 pb-4 md:px-6">
         <nav className="flex flex-wrap gap-2" aria-label={params.locale === 'zh' ? '常见问题分类' : 'FAQ categories'}>
           {groups.map((group) => (
